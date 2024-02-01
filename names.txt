@@ -1,4 +1,8 @@
 hey this is Arpan.
+<<<<<<< HEAD
 This is a git file.
 making some chanegs
 
+=======
+This is a git file
+>>>>>>> fd2950096fefe2362fc51bfd28f431abb12cf830
