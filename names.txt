@@ -2,5 +2,5 @@ hey this is Arpan.
 <<<<<<< HEAD
 This is a git file.
 making some chanegs
-
+I'm changeing this file from another git profile
 
