@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Warehousing</fullName>
+    <active>true</active>
+    <description>Warehousing WO</description>
+    <label>Warehousing</label>
+    <picklistValues>
+        <picklist>Direct_Load_FCL__c</picklist>
+        <values>
+            <fullName>1 x 20%27 FCL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1 x 20%27 FCL %2B 1 x 40%27 FCL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1 x 20%27 FCL %2B 1 x 40%27HC %27 FCL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1 x 40%27 FCL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1 x 40%27 FCL %2B 1 x 40%27 HC FCL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1 x 40%27 HC FCL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2 x 40%27 FCL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2 x 40%27 HC FCL</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Job_Type__c</picklist>
+        <values>
+            <fullName>AIR EXPORT CLEARANCE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AIR IMPORT CLEARANCE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ANNUAL LEAVE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ATTACHED TO ARTMOVE DEPT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COLLECTION %26 DELIVERY ONLY %28NO PACKING REQUIRED%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COLLECTION OF DEBRIS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COLLECTION ONLY %28NO PACKING REQUIRED%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DELIVERY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DELIVERY ONLY NO UNPACKING REQUIRED</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IMPORT UNSTUFFING AND COMPLETE UNPACKING</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LOCAL TRANSFER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MEDICAL LEAVE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PACKING AND DELIVERY ONLY %28NO UNPACKING REQUIRED%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PARTIAL PACKING REQUIRED ONLY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PREDELIVERY OF MATERIALS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RETRIEVAL FOR DELIVERY AT A LATER DATE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RETRIEVAL FOR SHIPPER TO VIEW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SEA EXPORT CLEARANCE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SEA IMPORT CLEARANCE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STUFFING AT RESIDENCE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STUFFING AT WAREHOUSE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UNSTUFF FROM CONTAINER AT WHSE AND RE-DELIVERY TO RESIDENCE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UNSTUFFING AT WAREHOUSE INTO L%2FVANS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WAREHOUSE DUTIES</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Load_Type_Air__c</picklist>
+        <values>
+            <fullName>Triwall</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Load_Type_Sea__c</picklist>
+        <values>
+            <fullName>Liftvan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Loose</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Loading_At__c</picklist>
+        <values>
+            <fullName>Residence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warehouse</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Piano_Type__c</picklist>
+        <values>
+            <fullName>Baby</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Grand</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Upright</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Pickup_AddressN__c</picklist>
+        <values>
+            <fullName>HT WAREHOUSE</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Rate_Based_On__c</picklist>
+        <values>
+            <fullName>Canadian %24</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EURO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SG%24</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Swedish Kr</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>US%24</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>YEN</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Shuttle__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Superdry_Pole__c</picklist>
+        <values>
+            <fullName>20 FT - 4 pcs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>40FT %26 HC - 6 pcs</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

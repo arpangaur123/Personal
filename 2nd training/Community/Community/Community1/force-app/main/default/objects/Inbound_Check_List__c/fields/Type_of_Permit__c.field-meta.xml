@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_of_Permit__c</fullName>
+    <externalId>false</externalId>
+    <label>Type of Permit</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ATA Carnet</fullName>
+                <default>false</default>
+                <label>ATA Carnet</label>
+            </value>
+            <value>
+                <fullName>DNG - Duty and GST (Dutiable Goods)</fullName>
+                <default>false</default>
+                <label>DNG - Duty and GST (Dutiable Goods)</label>
+            </value>
+            <value>
+                <fullName>DP</fullName>
+                <default>false</default>
+                <label>DP - Duty Paid (Offset II/RM)</label>
+            </value>
+            <value>
+                <fullName>ID - Duty &amp; GST (Wine/Champagne/Liquors/Dutiable Goods)</fullName>
+                <default>false</default>
+                <label>ID - Duty &amp; GST (Wine/Champagne/Liquors/Dutiable Goods)</label>
+            </value>
+            <value>
+                <fullName>GST Relief (Embassy/Personal Effects)</fullName>
+                <default>false</default>
+                <label>IE - GST Relief (Embassy/Personal Effects)</label>
+            </value>
+            <value>
+                <fullName>Permanent</fullName>
+                <default>false</default>
+                <label>IG - Permanent (GST)</label>
+            </value>
+            <value>
+                <fullName>II - APS (Temporary Import, Fresh II)</fullName>
+                <default>false</default>
+                <label>II - APS (Temporary Import, Fresh II)</label>
+            </value>
+            <value>
+                <fullName>II - TCE (Temporary Import for exhibition/auctions without sales, MUSEUM)</fullName>
+                <default>false</default>
+                <label>II - TCE (Temporary Import for exhibition/auctions without sales, MUSEUM)</label>
+            </value>
+            <value>
+                <fullName>II - TCO (Temporary Import for other purposes, MUSEUM)</fullName>
+                <default>false</default>
+                <label>II - TCO (Temporary Import for other purposes, MUSEUM)</label>
+            </value>
+            <value>
+                <fullName>II - TCS (Temporary Import for exhibition/auctions with sales)</fullName>
+                <default>false</default>
+                <label>II - TCS (Temporary Import for exhibition/auctions with sales, MUSUEM)</label>
+            </value>
+            <value>
+                <fullName>II - TCI (Temporary Export/Re-imported goods, Offset Fresh OO)</fullName>
+                <default>false</default>
+                <label>II - TCI (Temporary Export/Re-imported goods, Offset Fresh OO)</label>
+            </value>
+            <value>
+                <fullName>IM - Storage in same FTZ per import</fullName>
+                <default>false</default>
+                <label>IM - Storage in same FTZ per import</label>
+            </value>
+            <value>
+                <fullName>IN-Storage in different FTZ from import FTZ</fullName>
+                <default>false</default>
+                <label>IN - Storage in different FTZ from import FTZ</label>
+            </value>
+            <value>
+                <fullName>IR - Re-Export Permit</fullName>
+                <default>false</default>
+                <label>IR - Re-Export Permit</label>
+            </value>
+            <value>
+                <fullName>RM</fullName>
+                <default>false</default>
+                <label>RM - Removal (Offset II/RM)</label>
+            </value>
+            <value>
+                <fullName>Import under LU (Not Applicable)</fullName>
+                <default>false</default>
+                <label>Import under LU (Not Applicable)</label>
+            </value>
+            <value>
+                <fullName>Transhipment (Not Applicable)</fullName>
+                <default>false</default>
+                <label>Transhipment (Not Applicable)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

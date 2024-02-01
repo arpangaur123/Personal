@@ -1,0 +1,21 @@
+<apex:page standardController="Billing__c" extensions="billingOppProducts">
+<style>
+.fewerMore { display: none;}
+</style>
+<apex:form >
+ <apex:pageMessages />
+ <apex:detail relatedList="true"></apex:detail>
+<apex:pageblock id="CustomList" title="Products and Services"  >
+   <apex:pageBlockTable value="{!oppLineItem}" var="o" rendered="{!NOT(ISNULL(oppLineItem))}">
+        <apex:column value="{!o.PricebookEntry.Name}"/>
+        <apex:column value="{!o.UnitPrice}"/>
+        <apex:column value="{!o.Quantity}"/>
+       <apex:column value="{!o.TotalPrice}"/>
+   </apex:pageBlockTable>
+   <apex:outputLabel value="No records to display" rendered="{!(ISNULL(oppLineItem))}" styleClass="noRowsHeader"></apex:outputLabel>
+ </apex:pageblock>
+</apex:form>
+ <apex:relatedList list="OpenActivities"/>
+ <apex:relatedList list="ActivityHistories"/>
+ <apex:relatedList list="NotesAndAttachments"/>
+</apex:page>

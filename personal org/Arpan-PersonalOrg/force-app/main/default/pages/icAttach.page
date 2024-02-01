@@ -1,0 +1,3 @@
+<apex:page standardController="Internal_Costing__c" Extensions="internalCostingQuotes" action="{!attachQuote1}">
+    {!Internal_Costing__c.Opportunity__c}{!Internal_Costing__c.name} 
+</apex:page>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>HTTR_to_View_Ida_s_AM_CEO</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>HTTR to View Ida&apos;s (AM CEO)</label>
+        <sharedTo>
+            <role>HTTR_CS</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>HTTR</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingOwnerRules>
+        <fullName>Artmove_Division_v2</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Artmove Division v2</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>Artmove_CEO</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>Artmove_CEO</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>HHGS_V2</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>HHGS V2</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>HHG_HOD</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>HHG_HOD</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>HTTR_BD</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>HTTR BD</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>HTTR_BD</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>HTTR_BD</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Read_for_AMCEO</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Read for AMCEO</label>
+        <sharedTo>
+            <role>Artmove_CEO</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>HTTR_BD</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

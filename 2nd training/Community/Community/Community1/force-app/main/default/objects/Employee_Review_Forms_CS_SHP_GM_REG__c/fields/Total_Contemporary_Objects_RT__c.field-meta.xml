@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Contemporary_Objects_RT__c</fullName>
+    <externalId>false</externalId>
+    <formula>VALUE(Text(Contemporary_Objects_Material_Identi__c))+
+VALUE(Text(Contemporary_Object_Data_Entry_Mgmt__c ))+
+VALUE(Text(Contemporary_Objects_Visual_Check__c ))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Total Contemporary Objects[RT]</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

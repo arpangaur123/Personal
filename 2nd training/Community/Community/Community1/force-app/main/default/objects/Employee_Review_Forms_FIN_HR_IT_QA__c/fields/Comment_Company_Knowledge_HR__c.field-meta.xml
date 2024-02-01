@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Comment_Company_Knowledge_HR__c</fullName>
+    <description>Supervisor Comment Company Knowledge [HR]</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Supervisor Comment Company Knowledge [HR].</inlineHelpText>
+    <label>Comment Company Knowledge [HR]</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

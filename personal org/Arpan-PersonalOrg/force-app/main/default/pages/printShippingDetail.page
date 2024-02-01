@@ -1,0 +1,12 @@
+<apex:page standardController="Shipping_Detail__c" showHeader="false" standardstylesheets="false" renderAs="PDF">
+<apex:stylesheet value="{!$Resource.PackListCSS}"/>
+<table border="0">
+<tr><td align="left"><font style="font-weight:bold;font-family:arial;font-size:x-large">Shipping Detail</font></td>
+<td align="right"><apex:image id="theImage" value="{!$Resource.AMLogo}"/></td>
+</tr>
+</table>
+<body>
+<apex:detail relatedList="true"></apex:detail>
+
+</body>
+</apex:page>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OOSG</fullName>
+    <active>false</active>
+    <label>OOSG</label>
+    <picklistValues>
+        <picklist>Container_Stuffing_Form__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Date_of_Arrival_Departure__c</picklist>
+        <values>
+            <fullName>Arrival</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Departure</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Empty_Crates_to_be__c</picklist>
+        <values>
+            <fullName>Disposed 弃</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stored 存</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Job_Completed_Infoi__c</picklist>
+        <values>
+            <fullName>Green -%3E Done</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Red -%3E Not Yet Done</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>White -%3E Not Applicable</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Job_Tasked__c</picklist>
+        <values>
+            <fullName>Green -%3E Done</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Red -%3E Not Yet Done</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>White -%3E Not Applicable</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Jobtrack_workflow_closed__c</picklist>
+        <values>
+            <fullName>Green -%3E Done</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Red -%3E Not Yet Done</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>White -%3E Not Applicable</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Necessary_Rectification__c</picklist>
+        <values>
+            <fullName>Green -%3E Done</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Red -%3E Not Yet Done</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>White -%3E Not Applicable</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OO_Type__c</picklist>
+        <values>
+            <fullName>OPS</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Payment__c</picklist>
+        <values>
+            <fullName>Cash</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cash or Cheque</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cheque</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Purpose_WWI__c</picklist>
+        <values>
+            <fullName>Carton Jacket</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Crating</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Export</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Local Delivery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Others</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Self-Collection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Storage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Viewing</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SF_Updated_Check__c</picklist>
+        <values>
+            <fullName>Green -%3E Done</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Red -%3E Not Yet Done</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>White -%3E Not Applicable</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_SG__c</picklist>
+        <values>
+            <fullName>OO only</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OO%2BWWI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WWI only</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Viewing_Rm__c</picklist>
+        <values>
+            <fullName>Viewing Rm AS1</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

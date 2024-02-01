@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Crate_order_to__c</fullName>
+    <externalId>false</externalId>
+    <label>Crate Order to</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>HT Workshop</fullName>
+                <default>false</default>
+                <label>HT Workshop</label>
+            </value>
+            <value>
+                <fullName>External Vendor</fullName>
+                <default>false</default>
+                <label>External Vendor</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

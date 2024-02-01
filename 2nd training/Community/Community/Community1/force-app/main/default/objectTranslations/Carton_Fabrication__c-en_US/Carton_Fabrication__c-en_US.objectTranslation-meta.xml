@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Carton Fabrication</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Carton Fabrications</value>
+    </caseValues>
+    <layouts>
+        <layout>Carton Fabrication Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label></label>
+        <name>Carton_Detail</name>
+    </webLinks>
+</CustomObjectTranslation>

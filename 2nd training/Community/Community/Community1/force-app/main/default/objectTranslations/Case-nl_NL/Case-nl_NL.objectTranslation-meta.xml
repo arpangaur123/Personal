@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>ACR/VO</layout>
+        <sections>
+            <label></label>
+            <section>ACR Only</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>CEO remarks</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Useful Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>ACR/VO - HHG</layout>
+        <sections>
+            <label></label>
+            <section>ACR Only</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>CEO remarks</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Useful Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>CCTV</layout>
+        <sections>
+            <label></label>
+            <section>CEO remarks</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Useful Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Case Layout</layout>
+        <sections>
+            <label></label>
+            <section>Not Applicable</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Useful Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>HTTR - ACR/VO Layout</layout>
+        <sections>
+            <label></label>
+            <section>ACR Only (Details of change)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>CEO remarks</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Useful Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>HTTR - Incident Report Layout</layout>
+        <sections>
+            <label></label>
+            <section>CEO remarks</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Follow up actions (by senior management)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Useful Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Incident Report</layout>
+        <sections>
+            <label></label>
+            <section>CEO remarks</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Follow up actions (by senior management)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Useful Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Merit/Demerit</layout>
+        <sections>
+            <label></label>
+            <section>Not Applicable</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Useful Links</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label></label>
+        <name>NewChildCase</name>
+    </quickActions>
+</CustomObjectTranslation>

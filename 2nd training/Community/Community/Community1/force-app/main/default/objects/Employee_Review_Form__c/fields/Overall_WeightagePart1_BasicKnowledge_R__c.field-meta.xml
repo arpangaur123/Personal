@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Overall_WeightagePart1_BasicKnowledge_R__c</fullName>
+    <description>Overall WeightagePart1:BasicKnowledge[R] (Number) = Weightage : 15 %</description>
+    <externalId>false</externalId>
+    <formula>VALUE(Text(  Part1_Grand_Total_Registrar__c ))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Overall WeightagePart1:BasicKnowledge[R] (Number) =Weightage : 15 %</inlineHelpText>
+    <label>Overall WeightagePart1:BasicKnowledge[R]</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Policy_Procedures_Standard_Compliances__c</fullName>
+    <description>-Ensure compliances with legal, safety, operations, labour, and service and product standards
+-Conduct both routine and short-notice quality assurance audits with specific departments
+-Hold HOD accountable for performing audits on regular basis
+-Conduct detailed walk-throughs to ensure facilities are well maintained, safe, and meet or exceed expectations
+-Ensure quality services by establishing and enforcing organization standards</description>
+    <externalId>false</externalId>
+    <inlineHelpText>-Ensure compliances with legal, safety, operations, labour, and service and product standards
+-Conduct both routine and short-notice quality assurance audits with specific departments
+-Hold HOD accountable for performing audits on regular basis
+-Conduct detailed walk-throughs to ensure facilities are well maintained, safe, and meet or exceed expectations
+-Ensure quality services by establishing and enforcing organization standards</inlineHelpText>
+    <label>Policy, Procedure &amp; Standard Compliances</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1</fullName>
+                <default>true</default>
+                <label>1</label>
+            </value>
+            <value>
+                <fullName>2</fullName>
+                <default>false</default>
+                <label>2</label>
+            </value>
+            <value>
+                <fullName>3</fullName>
+                <default>false</default>
+                <label>3</label>
+            </value>
+            <value>
+                <fullName>4</fullName>
+                <default>false</default>
+                <label>4</label>
+            </value>
+            <value>
+                <fullName>5</fullName>
+                <default>false</default>
+                <label>5</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

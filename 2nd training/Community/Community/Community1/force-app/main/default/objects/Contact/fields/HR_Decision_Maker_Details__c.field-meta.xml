@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HR_Decision_Maker_Details__c</fullName>
+    <description>Any forms of contact for the HR Decision Maker</description>
+    <externalId>false</externalId>
+    <label>HR Decision Maker Details</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>TextArea</type>
+</CustomField>

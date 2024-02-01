@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Outbound Checklist/Shipping Order</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Outbound Checklist/Shipping Orders</value>
+    </caseValues>
+    <layouts>
+        <layout>AM CN</layout>
+        <sections>
+            <label></label>
+            <section>Brand New Export</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Declaration</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Details of Shipment</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Documents Attached</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Permanent Export</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Temporary Export</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>HTTR - Outbound Checklist/Shipping Order Layout</layout>
+        <sections>
+            <label></label>
+            <section>Brand New Temp Export</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Declaration</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Details of Shipment</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Documents Attached</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Permanent Export</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Temporary Export</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>OutBoundChkList Layout</layout>
+        <sections>
+            <label></label>
+            <section>Brand New Temp Export</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Declaration</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Details of Shipment</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Documents Attached</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Permanent Export</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Temporary Export</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>AM_CN</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>AM_HK</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>AM_SG</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>HTTR</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label></label>
+        <name>New</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>NewCN</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>NewCN_L</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>New_L</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>New_SG</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>New_SG_L</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Print_Outbound_Checklist</name>
+    </webLinks>
+</CustomObjectTranslation>

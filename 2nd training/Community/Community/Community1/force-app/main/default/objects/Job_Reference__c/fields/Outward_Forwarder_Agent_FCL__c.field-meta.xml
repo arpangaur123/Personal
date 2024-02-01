@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Outward_Forwarder_Agent_FCL__c</fullName>
+    <externalId>false</externalId>
+    <label>Outward Forwarder Agent (FCL)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>C &amp; G Express Pte Ltd</fullName>
+                <default>false</default>
+                <label>C &amp; G Express Pte Ltd</label>
+            </value>
+            <value>
+                <fullName>CWT Globelink Pte Ltd</fullName>
+                <default>false</default>
+                <label>CWT Globelink Pte Ltd</label>
+            </value>
+            <value>
+                <fullName>ECU-Worldwide (Singapore) Pte. Ltd.</fullName>
+                <default>false</default>
+                <label>ECU-Worldwide (Singapore) Pte. Ltd.</label>
+            </value>
+            <value>
+                <fullName>Global Container Pte Ltd</fullName>
+                <default>false</default>
+                <label>Global Container Pte Ltd</label>
+            </value>
+            <value>
+                <fullName>Mac-Nels Line (S) Pte Ltd</fullName>
+                <default>false</default>
+                <label>Mac-Nels Line (S) Pte Ltd</label>
+            </value>
+            <value>
+                <fullName>PAL Line Pte Ltd</fullName>
+                <default>false</default>
+                <label>PAL Line Pte Ltd</label>
+            </value>
+            <value>
+                <fullName>Penanshin Shipping Pte Ltd</fullName>
+                <default>false</default>
+                <label>Penanshin Shipping Pte Ltd</label>
+            </value>
+            <value>
+                <fullName>Shipco Transport Pte Ltd</fullName>
+                <default>false</default>
+                <label>Shipco Transport Pte Ltd</label>
+            </value>
+            <value>
+                <fullName>TNK Global</fullName>
+                <default>false</default>
+                <label>TNK Global</label>
+            </value>
+            <value>
+                <fullName>Others_indicate_below</fullName>
+                <default>false</default>
+                <label>Others (indicate below)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

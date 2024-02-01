@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Carton_Lining__c</fullName>
+    <externalId>false</externalId>
+    <label>Carton Lining</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Silicon Paper (油紙)</fullName>
+                <default>false</default>
+                <label>Silicon Paper (油紙)</label>
+            </value>
+            <value>
+                <fullName>PE 1”</fullName>
+                <default>false</default>
+                <label>PE 1”</label>
+            </value>
+            <value>
+                <fullName>PE 1.5”</fullName>
+                <default>false</default>
+                <label>PE 1.5”</label>
+            </value>
+            <value>
+                <fullName>PE 2”</fullName>
+                <default>false</default>
+                <label>PE 2”</label>
+            </value>
+            <value>
+                <fullName>Grey Sponge 1”</fullName>
+                <default>false</default>
+                <label>Grey Sponge 1”</label>
+            </value>
+            <value>
+                <fullName>Grey Sponge 1.5”</fullName>
+                <default>false</default>
+                <label>Grey Sponge 1.5”</label>
+            </value>
+            <value>
+                <fullName>Grey Sponge 2”</fullName>
+                <default>false</default>
+                <label>Grey Sponge 2”</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

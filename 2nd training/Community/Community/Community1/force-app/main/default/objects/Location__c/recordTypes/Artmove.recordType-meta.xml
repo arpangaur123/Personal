@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Artmove</fullName>
+    <active>true</active>
+    <label>Artmove</label>
+    <picklistValues>
+        <picklist>Storage_Facility__c</picklist>
+        <values>
+            <fullName>* Not in Storage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ATL%2C Hong Kong</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CITIC%2C Hong Kong</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cheung Hing Shing%2C Hong Kong</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chun Sing%2C Hong Kong</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CityCentre Storage%2C Singapore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Display Site</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gehua</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Global Gateway%2C Hong Kong</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HKCEC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hellmann%2C Hong Kong</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Passage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jaguar%2C Hong Kong</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jin Ma Building%2C Beijing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kong Nam%2C Hong Kong</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LinJi Building%2C Beijing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MBS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mapletree%2C Hong Kong</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Richwealth%2C Hong Kong</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shanghai Storage%2C Shanghai</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Singapore FreePort%2C Singapore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Success Building%2C Hong Kong</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Terrada S Building</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tsing Yi%2C Hong Kong</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

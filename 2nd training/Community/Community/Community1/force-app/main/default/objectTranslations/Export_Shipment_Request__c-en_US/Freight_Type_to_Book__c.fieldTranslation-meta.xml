@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>Freight_Type_to_Book__c</name>
+    <picklistValues>
+        <masterLabel>Others (State type under &apos;Important Field&apos;)</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sea - FCL 20FT</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sea - FCL 40FT</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sea - FCL 40HC</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

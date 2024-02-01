@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opening_Side_HK3__c</fullName>
+    <externalId>false</externalId>
+    <label>Opening Side 開箱面</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>前開</fullName>
+                <default>false</default>
+                <label>前開</label>
+            </value>
+            <value>
+                <fullName>頂開</fullName>
+                <default>false</default>
+                <label>頂開</label>
+            </value>
+            <value>
+                <fullName>其他(見注釋)</fullName>
+                <default>false</default>
+                <label>其他(見注釋)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

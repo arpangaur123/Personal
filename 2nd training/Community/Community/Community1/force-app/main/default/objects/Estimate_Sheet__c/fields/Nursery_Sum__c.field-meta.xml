@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Nursery_Sum__c</fullName>
+    <externalId>false</externalId>
+    <formula>Bed_Youth_Sum__c  +  Nur_Chairs_Sum__c  +  Crib_Baby_Sum__c  +  Play_Pen_Sum__c  +  Nur_Table_Sum__c  +  Nur_Chest_Sum__c  +  Toy_Box_Sum__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Nursery Sum</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

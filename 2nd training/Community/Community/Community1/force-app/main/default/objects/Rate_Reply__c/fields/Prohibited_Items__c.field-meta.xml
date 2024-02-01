@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prohibited_Items__c</fullName>
+    <defaultValue>&quot;- Chewing Gum&quot; &amp; BR() &amp;
+&quot;- Chewing tobacco and imitation tobacco products&quot; &amp; BR() &amp;
+&quot;- Cigarette lighters of pistol or revolver shape&quot; &amp; BR() &amp;
+&quot;- Controlled drugs and psychotropic substances&quot; &amp; BR() &amp;
+&quot;- Endangered species of wildlife and their by-products&quot; &amp; BR() &amp;
+&quot;- Firecrackers, fireworks of explosive nature&quot; &amp; BR() &amp;
+&quot;- Obscene articles, publications, video tapes/discs and software&quot; &amp; BR() &amp;
+&quot;- Reproduction of copy right publications, video tapes,discs,records or cassettes&quot; &amp; BR() &amp;
+&quot;- Seditious and treasonable materials&quot;</defaultValue>
+    <externalId>false</externalId>
+    <label>Prohibited Items</label>
+    <length>32000</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>10</visibleLines>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New</fullName>
+    <availability>online</availability>
+    <displayType>massActionButton</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>New</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+    <url>/a18/e?CF00N20000003C0aV={!Job_Reference__c.Name}&amp;CF00N20000003C0aV_lkid={!Job_Reference__c.Id}&amp;00N20000002xWKm={!Job_Reference__c.AMJR_Shippers_Details__c}&amp;00N20000002xWJP={!Job_Reference__c.AMJR_Consignees_Details__c}&amp;00N20000002xWJe={!Job_Reference__c.AMJR_Delivery_Details__c}&amp;00N20000003a2Mb={!Job_Reference__c.AMJR_Notifying_Party__c}&amp;00N20000002xWKN={!Job_Reference__c.MAWB__c}&amp;00N20000002xWK3={!Job_Reference__c.Flight_Number__c}&amp;00N20000003aBfE={!Job_Reference__c.Packed_Dimensions_cm__c}&amp;00N20000002xWJt={!Job_Reference__c.ETD__c} 00:00&amp;00N20000002xWJo={!Job_Reference__c.ETA__c} 00:00&amp;00N20000002xWKX={!Job_Reference__c.Origin__c}&amp;00N20000002xWKS={!Job_Reference__c.Destination__c}&amp;00N20000002xWJj={!Job_Reference__c.Description_of_Goods__c}&amp;retURL={!Job_Reference__c.Id}</url>
+</WebLink>

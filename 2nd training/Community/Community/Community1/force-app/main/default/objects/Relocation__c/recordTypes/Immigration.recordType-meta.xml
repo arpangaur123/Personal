@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Immigration</fullName>
+    <active>true</active>
+    <description>Immigration Services</description>
+    <label>Immigration</label>
+    <picklistValues>
+        <picklist>Immigration_Document_Type__c</picklist>
+        <values>
+            <fullName>Dependent Pass</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employment Pass</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Long-Term Visitor Pass</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Special Pass</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Immigration_Service_Type__c</picklist>
+        <values>
+            <fullName>Application</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancellation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Renewal</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

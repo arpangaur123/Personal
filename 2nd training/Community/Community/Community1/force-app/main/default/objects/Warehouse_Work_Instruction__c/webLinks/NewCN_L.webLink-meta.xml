@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NewCN_L</fullName>
+    <availability>online</availability>
+    <displayType>massActionButton</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>NewCN(L)</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+    <url>/lightning/o/Warehouse_Work_Instruction__c/new?recordTypeId=012200000006ehgAAA&amp;navigationLocation=RELATED_LIST&amp;
+backgroundContext=%2Flightning%2Fr%2FJob_Reference__c%2F{!Job_Reference__c.Id}%2Fview&amp;defaultFieldValues=Job_Reference__c={!Job_Reference__c.Id}</url>
+</WebLink>

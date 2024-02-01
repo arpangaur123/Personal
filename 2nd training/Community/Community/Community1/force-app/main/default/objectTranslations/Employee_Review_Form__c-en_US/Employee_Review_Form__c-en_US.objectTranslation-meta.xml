@@ -1,0 +1,1381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Employee Review Form</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Employee Review Forms</value>
+    </caseValues>
+    <layouts>
+        <layout>Accounts</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Employee Particulars:</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Helutrans: Operation Crew Skill Matrix</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Overall Performance Rating (Add Part1-4)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 1: BASIC KNOWLEDGE (15%)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS  - Stone</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS  - Wood</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS (30%) - Subtotal &amp; Grand Total</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS -  Asian Works On Paper (Hand/Hanging/Folding Scroll)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - Ceramics &amp; Glass</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - Contemporary Objects/Plastics &amp; Electronic Materials</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - Metals</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - OTHERS - Oversize Objects</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - OTHERS - Site Survey</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - Other Works On Paper (Map/Document/Manuscript/Book)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - Painting (Framed &amp; Unframed)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - Textile</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - Works on Paper (Framed, Unframed &amp; Matted)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 3: JOB SKILLS (30%)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 4: SOFT SKILLS (25%)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 5: SPECIAL SKILLS</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 6: Training and Career Development</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 7: Supervisor&apos;s Comments</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part2 :TECHNICAL SKILLS - Photographic Works On Paper</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Admin</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Employee Particulars:</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Helutrans: Operation Crew Skill Matrix</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Overall Performance Rating (Add Part1-4)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 1: BASIC KNOWLEDGE (15%)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS  - Stone</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS  - Wood</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS (30%) - Subtotal &amp; Grand Total</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS -  Asian Works On Paper (Hand/Hanging/Folding Scroll)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - Ceramics &amp; Glass</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - Contemporary Objects/Plastics &amp; Electronic Materials</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - Metals</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - OTHERS - Oversize Objects</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - OTHERS - Site Survey</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - Other Works On Paper (Map/Document/Manuscript/Book)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - Painting (Framed &amp; Unframed)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - Textile</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - Works on Paper (Framed, Unframed &amp; Matted)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 3: JOB SKILLS (30%)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 4: SOFT SKILLS (25%)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 5: SPECIAL SKILLS</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 6: Training and Career Development</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 7: Supervisor&apos;s Comments</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part2 :TECHNICAL SKILLS - Photographic Works On Paper</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Customer Service</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Employee Particulars:</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Helutrans: Operation Crew Skill Matrix</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Overall Performance Rating (Add Part1-4)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 1: BASIC KNOWLEDGE (15%)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS  - Stone</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS  - Wood</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS (30%) - Subtotal &amp; Grand Total</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS -  Asian Works On Paper (Hand/Hanging/Folding Scroll)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - Ceramics &amp; Glass</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - Contemporary Objects/Plastics &amp; Electronic Materials</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - Metals</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - OTHERS - Oversize Objects</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - OTHERS - Site Survey</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - Other Works On Paper (Map/Document/Manuscript/Book)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - Painting (Framed &amp; Unframed)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - Textile</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - Works on Paper (Framed, Unframed &amp; Matted)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 3: JOB SKILLS (30%)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 4: SOFT SKILLS (25%)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 5: SPECIAL SKILLS</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 6: Training and Career Development</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 7: Supervisor&apos;s Comments</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part2 :TECHNICAL SKILLS - Photographic Works On Paper</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Employee Review Form Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Employee Particulars:</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Helutrans: Operation Crew Skill Matrix</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Overall Performance Rating (Add Part1-4)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 1: BASIC KNOWLEDGE (15%)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS  - Stone</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS  - Wood</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS (30%) - Subtotal &amp; Grand Total</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS -  Asian Works On Paper (Hand/Hanging/Folding Scroll)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - Ceramics &amp; Glass</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - Contemporary Objects/Plastics &amp; Electronic Materials</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - Metals</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - OTHERS - Oversize Objects</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - OTHERS - Site Survey</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - Other Works On Paper (Map/Document/Manuscript/Book)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - Painting (Framed &amp; Unframed)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - Textile</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - Works on Paper (Framed, Unframed &amp; Matted)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 3: JOB SKILLS (30%)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 4: SOFT SKILLS (25%)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 5: SPECIAL SKILLS</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 6: Training and Career Development</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 7: Supervisor&apos;s Comments</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part2 :TECHNICAL SKILLS - Photographic Works On Paper</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>HR</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Employee Particulars:</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Helutrans: Operation Crew Skill Matrix</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Overall Performance Rating (Add Part1-4)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 1: BASIC KNOWLEDGE (15%)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS  - Stone</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS  - Wood</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS (30%) - Subtotal &amp; Grand Total</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS -  Asian Works On Paper (Hand/Hanging/Folding Scroll)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - Ceramics &amp; Glass</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - Contemporary Objects/Plastics &amp; Electronic Materials</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - Metals</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - OTHERS - Oversize Objects</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - OTHERS - Site Survey</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - Other Works On Paper (Map/Document/Manuscript/Book)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - Painting (Framed &amp; Unframed)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - Textile</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - Works on Paper (Framed, Unframed &amp; Matted)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 3: JOB SKILLS (30%)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 4: SOFT SKILLS (25%)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 5: SPECIAL SKILLS</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 6: Training and Career Development</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 7: Supervisor&apos;s Comments</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part2 :TECHNICAL SKILLS - Photographic Works On Paper</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Operation Crew</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Employee Particulars:</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Helutrans: Operation Crew Skill Matrix</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Overall Performance Rating (Add Part1-4)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 1: BASIC KNOWLEDGE (15%)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS  - Stone</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS  - Wood</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS (30%) - Subtotal &amp; Grand Total</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS -  Asian Works On Paper (Hand/Hanging/Folding Scroll)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - Ceramics &amp; Glass</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - Contemporary Objects/Plastics &amp; Electronic Materials</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - Metals</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - OTHERS - Oversize Objects</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - OTHERS - Site Survey</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - Other Works On Paper (Map/Document/Manuscript/Book)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - Painting (Framed &amp; Unframed)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - Textile</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - Works on Paper (Framed, Unframed &amp; Matted)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 3: JOB SKILLS (30%)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 4: SOFT SKILLS (25%)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 5: SPECIAL SKILLS</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 6: Training and Career Development</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 7: Supervisor&apos;s Comments</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part2 :TECHNICAL SKILLS - Photographic Works On Paper</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Registrar Crew</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Employee Particulars:</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Helutrans: Operation Crew Skill Matrix</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Overall Performance Rating (Add Part1-4)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 1: BASIC KNOWLEDGE (15%)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS  - Stone</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS  - Wood</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS (30%) - Subtotal &amp; Grand Total</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS -  Asian Works On Paper (Hand/Hanging/Folding Scroll)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - Ceramics &amp; Glass</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - Contemporary Objects/Plastics &amp; Electronic Materials</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - Metals</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - OTHERS - Oversize Objects</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - Other Works On Paper (Map/Document/Manuscript/Book)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - Painting (Framed &amp; Unframed)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - Textile</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - Works on Paper (Framed, Unframed &amp; Matted)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 3: JOB SKILLS (30%)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 4: SOFT SKILLS (25%)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 5: SPECIAL SKILLS</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 6: Training and Career Development</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 7: Supervisor&apos;s Comments</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part2 :TECHNICAL SKILLS - Photographic Works On Paper</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Shipping Department</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Employee Particulars:</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Helutrans: Operation Crew Skill Matrix</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Overall Performance Rating (Add Part1-4)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 1: BASIC KNOWLEDGE (15%)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS  - Stone</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS  - Wood</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS (30%) - Subtotal &amp; Grand Total</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS -  Asian Works On Paper (Hand/Hanging/Folding Scroll)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - Ceramics &amp; Glass</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - Contemporary Objects/Plastics &amp; Electronic Materials</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - Metals</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - OTHERS - Oversize Objects</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - OTHERS - Site Survey</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - Other Works On Paper (Map/Document/Manuscript/Book)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - Painting (Framed &amp; Unframed)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - Textile</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - Works on Paper (Framed, Unframed &amp; Matted)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 3: JOB SKILLS (30%)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 4: SOFT SKILLS (25%)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 5: SPECIAL SKILLS</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 6: Training and Career Development</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 7: Supervisor&apos;s Comments</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part2 :TECHNICAL SKILLS - Photographic Works On Paper</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Warehouse</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Employee Particulars:</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Helutrans: Operation Crew Skill Matrix</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Overall Performance Rating (Add Part1-4)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 1: BASIC KNOWLEDGE (15%)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2A: Facilities Operation Management</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2B: TECHNICAL SKILLS  - Stone</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2B: TECHNICAL SKILLS  - Wood</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2B: TECHNICAL SKILLS (30%) - Subtotal &amp; Grand Total</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2B: TECHNICAL SKILLS -  Asian Works On Paper (Hand/Hanging/Folding Scroll)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2B: TECHNICAL SKILLS - Ceramics &amp; Glass</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2B: TECHNICAL SKILLS - Contemporary Objects/Plastics &amp; Electronic Materials</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2B: TECHNICAL SKILLS - Metals</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2B: TECHNICAL SKILLS - OTHERS - Oversize Objects</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2B: TECHNICAL SKILLS - Other Works On Paper (Map/Document/Manuscript/Book)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2B: TECHNICAL SKILLS - Painting (Framed &amp; Unframed)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2B: TECHNICAL SKILLS - Textile</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2B: TECHNICAL SKILLS - Works on Paper (Framed, Unframed &amp; Matted)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 3: JOB SKILLS (30%)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 4: SOFT SKILLS (25%)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 5: SPECIAL SKILLS</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 6: Training and Career Development</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 7: Supervisor&apos;s Comments</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part2B :TECHNICAL SKILLS - Photographic Works On Paper</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label></label>
+        <name>Accounts</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Admin</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Customer_Service</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>HR</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Operation_Crew</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Registrar</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Shipping_Department</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Warehouse</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_higest_grade</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_higest_grade1</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_higest_grade100</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_higest_grade101</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_higest_grade103</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_higest_grade104</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_higest_grade105</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_higest_grade106</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_higest_grade107</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_higest_grade108</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_higest_grade109</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_higest_grade110</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_higest_grade111</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_higest_grade112</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_higest_grade113</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_higest_grade114</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_higest_grade2</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_higest_grade3</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_higest_grade4</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_higest_grade5</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_higest_grade6</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_higest_grade7</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_highest_grade</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_highest_grade10</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_highest_grade11</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_highest_grade12</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_highest_grade13</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_highest_grade14</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_highest_grade15</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_highest_grade16</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_highest_grade17</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_highest_grade18</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_highest_grade19</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_highest_grade20</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_highest_grade21</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_highest_grade23</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_highest_grade24</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_highest_grade27</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_highest_grade28</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_highest_grade29</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_highest_grade30</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_highest_grade31</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_highest_grade32</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_highest_grade33</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_highest_grade34</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_highest_grade35</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_highest_grade36</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_highest_grade37</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_highest_grade38</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_highest_grade39</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_highest_grade40</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_highest_grade41</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_highest_grade42</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_highest_grade43</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_highest_grade44</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_highest_grade45</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_highest_grade46</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_highest_grade47</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_highest_grade48</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_highest_grade49</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_highest_grade50</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_highest_grade51</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_highest_grade52</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_highest_grade53</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_highest_grade54</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_highest_grade55</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_highest_grade56</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_highest_grade57</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_highest_grade59</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_highest_grade60</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_highest_grade61</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_highest_grade63</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_highest_grade65</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_highest_grade67</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_highest_grade68</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_highest_grade69</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_highest_grade70</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_highest_grade71</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_highest_grade73</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_highest_grade74</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_highest_grade75</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_highest_grade76</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_highest_grade8</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_highest_grade81</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_highest_grade83</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_highest_grade84</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_highest_grade85</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_highest_grade86</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_highest_grade87</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_highest_grade88</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_highest_grade89</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_highest_grade9</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Comment_Validation_highest_grade90</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Higest_Grading_Rule_would_take_Comment</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Higest_Grading_Rule_would_take_Comment72</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Higest_Grading_Rule_would_take_Comment77</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Higest_Grading_Rule_would_take_Comment78</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Higest_Grading_Rule_would_take_Comment80</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Higest_Grading_Rule_would_take_Comment_7</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Past_Review_date</name>
+    </validationRules>
+    <workflowTasks>
+        <description></description>
+        <name>BJCEO_Task_Completer</name>
+        <subject></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description></description>
+        <name>EFR_Completion_task</name>
+        <subject></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description></description>
+        <name>EFR_Completion_task1</name>
+        <subject></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description></description>
+        <name>EFR_Completion_task11</name>
+        <subject></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description></description>
+        <name>EFR_Completion_task_1</name>
+        <subject></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description></description>
+        <name>EFR_Completion_task_2</name>
+        <subject></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description></description>
+        <name>EFR_Completion_task_CEO</name>
+        <subject></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description></description>
+        <name>HKHR_Task_Completer</name>
+        <subject></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description></description>
+        <name>SHCEO_Task_Completer</name>
+        <subject></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description></description>
+        <name>Update_the_task_Complete_HR</name>
+        <subject></subject>
+    </workflowTasks>
+</CustomObjectTranslation>

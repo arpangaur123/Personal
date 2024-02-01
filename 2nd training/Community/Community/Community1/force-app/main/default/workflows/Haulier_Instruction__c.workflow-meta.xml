@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Upd_Local_AddressB</fullName>
+        <description>to auto populate Address details with the correct local address</description>
+        <field>Residence_Address__c</field>
+        <formula>Case(Address__c, &quot;HT Loading Bay&quot;, &quot;HELU-TRANS (S) PTE LTD&quot; &amp; BR () &amp; &quot;39 KEPPEL ROAD, BLK 2,&quot; &amp; BR () &amp; &quot;TANJONG PAGAR DISTRIPARK&quot; &amp; BR() &amp; &quot;SINGAPORE 089065&quot; &amp; BR() &amp; &quot;PLEASE PARK AT LOADING&quot; &amp; BR() &amp; &quot; BAY LOT NO: 19/20/21/22/23&quot;,
+   &quot;HT Along Fence&quot;, &quot;HELU-TRANS (S) PTE LTD&quot; &amp; BR () &amp; &quot;39 KEPPEL ROAD, BLK 2,&quot; &amp; BR () &amp; &quot;TANJONG PAGAR DISTRIPARK&quot; &amp; BR() &amp; &quot;SINGAPORE 089065&quot; &amp; BR() &amp; &quot;PLEASE PARK ALONG THE FENCE&quot;,
+&quot;FREEPORT&quot;, &quot;HELUTRANS ARTMOVE (S) PTE LTD, 32 CHANGI NORTH CRESCENT CHANGI SINGAPORE 499643&quot;,
+   &quot;If others: type address below&quot;)</formula>
+        <name>Upd Local AddressB</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Upd_Vendor_AddressB</fullName>
+        <field>Vendor_Address__c</field>
+        <formula>Case(Vendor__c, &quot;ML LOGISTICS SERVICES&quot;, &quot;1-B JUBILEE ROAD&quot; &amp; BR () &amp; &quot;SINGAPORE 128520&quot; &amp; BR() &amp; &quot;TEL: 6892 5342        FAX: 6314 4187&quot; &amp; BR() &amp; &quot;ATTN: MR DACKSON&quot; &amp; BR() &amp; &quot;UEN No.: 53055609W&quot;,
+   &quot;SIGMA CONTAINER LINE&quot;, &quot;Blk 151 Pasir Panjang Road #01-04&quot; &amp; BR() &amp; &quot;Pasir Panjang Distripark Singapore 118480&quot; &amp; BR() &amp; &quot;TEL: 6270 2166 FAX: 6270 1678&quot; &amp; BR() &amp; &quot;ATTN: MR MANDEEP SINGH&quot; &amp; BR() &amp; &quot;UEN NO.: 199204593R&quot;,
+   &quot;SUPREME CONTAINER &amp; WAREHOUSING&quot;, &quot;15 Jalan Kilang Barat #06-06&quot; &amp; BR() &amp; &quot;Frontech Centre Singapore 159357&quot; &amp; BR() &amp; &quot;TEL: 6377 0991 FAX: 6377 0881&quot; &amp; BR() &amp; &quot;ATTN: MR DIN / MR JERRY&quot; &amp; BR() &amp; &quot;UEN NO.: 197903711-Z&quot;,
+&quot;BHS KINETIC PTE LTD&quot;, &quot;10 Pandan Road&quot; &amp; BR() &amp; &quot;Singapore 609258&quot; &amp; BR() &amp; &quot;TEL: 6261 2665 FAX: 6262 0334&quot; &amp; BR() &amp; &quot;UEN NO.: 198800704-M&quot;,
+   &quot;If Others: input address below...&quot;)</formula>
+        <name>Upd Vendor AddressB</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Upd Local Address</fullName>
+        <actions>
+            <name>Upd_Local_AddressB</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Haulier_Instruction__c.Address__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>To auto populate the local HT address details by selecting from the picklist</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Upd Vendor Address</fullName>
+        <actions>
+            <name>Upd_Vendor_AddressB</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Haulier_Instruction__c.Vendor__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>Select Vendor from picklist and update Vendor Address field</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

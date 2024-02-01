@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>Artmove_CEO</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Artmove CEO</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>Artmove_CEO</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>Artmove_CEO</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>HTTR_BD</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>HTTR BD</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>HTTR_BD</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>HTTR_BD</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

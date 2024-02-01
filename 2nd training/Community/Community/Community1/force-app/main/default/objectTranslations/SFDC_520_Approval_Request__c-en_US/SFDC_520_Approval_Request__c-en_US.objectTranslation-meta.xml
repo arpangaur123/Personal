@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Approval Request</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Approval Requests</value>
+    </caseValues>
+    <layouts>
+        <layout>Approval Request Layout</layout>
+        <sections>
+            <label></label>
+            <section>Comments</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Rep Approval Request Layout</layout>
+        <sections>
+            <label></label>
+            <section>Comments</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <workflowTasks>
+        <name>ApproveRejectthisquote</name>
+        <subject></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <name>IBCostingApproval</name>
+        <subject></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <name>SendoutQuotation</name>
+        <subject></subject>
+    </workflowTasks>
+</CustomObjectTranslation>

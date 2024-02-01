@@ -1,0 +1,27 @@
+public class WorldClass {
+    List<World__c> worldRecordsList = [SELECT Id, Name, State__c, Capital__c 
+                                       FROM World__c];
+    public WorldClass(String countryName){
+        getStates(countryName);
+        getCapital(countryName);
+    }
+    Public void getStates(String countryName){
+        for(World__c w : worldRecordsList){
+            If(w.Name == countryName){
+                System.debug(W.State__c);  
+            }
+            
+        }
+    }
+    
+    public void getCapital(String countryName){
+        for(World__C w : worldRecordsList){
+            If(w.Name == countryName && w.Capital__c == True){
+                system.debug('When Capital is True:'+W.State__c);
+                 
+            }
+            
+        }
+        
+    }
+}

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Shipping Advice</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Shipping Advices</value>
+    </caseValues>
+    <layouts>
+        <layout>HHG Shipping Advice Layout</layout>
+        <sections>
+            <label></label>
+            <section>Client Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Others</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Shipping Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>HTTR - Shipping Advice Layout</layout>
+        <sections>
+            <label></label>
+            <section>Client Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Others</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Shipping Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Shipping Advice Layout</layout>
+        <sections>
+            <label></label>
+            <section>Client Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Others</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Shipping Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>ShippingAdviceBJ</layout>
+        <sections>
+            <label></label>
+            <section>Client Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Others</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Shipping Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>ShippingAdviceHK</layout>
+        <sections>
+            <label></label>
+            <section>Client Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Others</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Shipping Details</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label></label>
+        <name>HTTR</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label></label>
+        <name>New</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>NewHK</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>NewHK_L</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>New_L</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Print_SA</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Print_SABJ</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Print_SAHK</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Print_SAJP</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Print_Shipping_Advices</name>
+    </webLinks>
+</CustomObjectTranslation>

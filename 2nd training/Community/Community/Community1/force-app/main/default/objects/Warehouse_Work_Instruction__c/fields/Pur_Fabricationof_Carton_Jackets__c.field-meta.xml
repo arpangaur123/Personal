@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pur_Fabricationof_Carton_Jackets__c</fullName>
+    <defaultValue>false</defaultValue>
+    <externalId>false</externalId>
+    <label>Make Carton Jackets 造纸盒</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

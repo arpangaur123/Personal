@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Quote Cost Calculation_old</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Quote Cost Calculation_old</value>
+    </caseValues>
+    <layouts>
+        <layout>Inbound QCC Layout</layout>
+        <sections>
+            <label></label>
+            <section>Destination Cost</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Freight Cost</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Origin Cost</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Quote Cost Estimate</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Quote Number Generation</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Services</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Quote Cost Calculation Layout</layout>
+        <sections>
+            <label></label>
+            <section>Destination Cost</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Freight Cost</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Origin Cost</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Quote Cost Estimate</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Quote Number Generation</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Services</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>ContractApprover</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>NonContractApprover</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

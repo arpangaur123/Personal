@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Test_Field__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(DATEVALUE(Test_Date__c) &lt;= DATE(2020,11,30),
+IF( ISPICKVAL( Item_Type__c ,&quot;Fragile (Incl. Jewelry)&quot;)&amp;&amp; ISPICKVAL( Transit_Type__c ,&quot;Internal Transit (SG, HK, CN)&quot;) ,0.0005,
+IF( ISPICKVAL( Item_Type__c ,&quot;Fragile (Incl. Jewelry)&quot;)&amp;&amp; ISPICKVAL( Transit_Type__c ,&quot;Auction House Internal Transit (SG, HK, CN)&quot;) ,0.000375,
+IF( ISPICKVAL( Item_Type__c ,&quot;Fragile (Incl. Jewelry)&quot;)&amp;&amp; ISPICKVAL( Transit_Type__c ,&quot;Transit (Rest of Asia/Australia)&quot;) ,0.00080,
+IF( ISPICKVAL( Item_Type__c ,&quot;Fragile (Incl. Jewelry)&quot;)&amp;&amp; ISPICKVAL( Transit_Type__c ,&quot;Auction House Transit (Rest of Asia/Australia)&quot;) ,0.0006,
+IF( ISPICKVAL( Item_Type__c ,&quot;Fragile (Incl. Jewelry)&quot;)&amp;&amp; ISPICKVAL( Transit_Type__c ,&quot;Transit (Rest of World)&quot;) ,0.0015,
+IF( ISPICKVAL( Item_Type__c ,&quot;Fragile (Incl. Jewelry)&quot;)&amp;&amp; ISPICKVAL( Transit_Type__c ,&quot;Auction House Transit (Rest of World)&quot;) ,0.001125,
+IF( ISPICKVAL( Item_Type__c ,&quot;Fragile (Incl. Jewelry)&quot;)&amp;&amp; ISPICKVAL( Transit_Type__c ,&quot;Storage&quot;) ,0.00007,
+IF( ISPICKVAL( Item_Type__c ,&quot;Fragile (Incl. Jewelry)&quot;)&amp;&amp; ISPICKVAL( Transit_Type__c ,&quot;Auction House - Storage&quot;) ,0.000056,0
+)))))))),
+If(DATEVALUE(Test_Date__c) &gt;= DATE(2020,12,1) &amp;&amp; DATEVALUE(Test_Date__c) &lt;= DATE(2021,9,30),
+
+IF( ISPICKVAL( Item_Type__c ,&quot;Fragile (Incl. Jewelry)&quot;)&amp;&amp; ISPICKVAL( Transit_Type__c ,&quot;Internal Transit (SG, HK, CN)&quot;) ,0.0005,
+IF( ISPICKVAL( Item_Type__c ,&quot;Fragile (Incl. Jewelry)&quot;)&amp;&amp; ISPICKVAL( Transit_Type__c ,&quot;Auction House Internal Transit (SG, HK, CN)&quot;) ,0.0003938,
+IF( ISPICKVAL( Item_Type__c ,&quot;Fragile (Incl. Jewelry)&quot;)&amp;&amp; ISPICKVAL( Transit_Type__c ,&quot;Transit (Rest of Asia/Australia)&quot;) ,0.00080,
+IF( ISPICKVAL( Item_Type__c ,&quot;Fragile (Incl. Jewelry)&quot;)&amp;&amp; ISPICKVAL( Transit_Type__c ,&quot;Auction House Transit (Rest of Asia/Australia)&quot;) ,0.00063,
+IF( ISPICKVAL( Item_Type__c ,&quot;Fragile (Incl. Jewelry)&quot;)&amp;&amp; ISPICKVAL( Transit_Type__c ,&quot;Transit (Rest of World)&quot;) ,0.001575,
+IF( ISPICKVAL( Item_Type__c ,&quot;Fragile (Incl. Jewelry)&quot;)&amp;&amp; ISPICKVAL( Transit_Type__c ,&quot;Auction House Transit (Rest of World)&quot;) ,0.0011813,
+IF( ISPICKVAL( Item_Type__c ,&quot;Fragile (Incl. Jewelry)&quot;)&amp;&amp; ISPICKVAL( Transit_Type__c ,&quot;Storage&quot;) ,0.0000735,
+IF( ISPICKVAL( Item_Type__c ,&quot;Fragile (Incl. Jewelry)&quot;)&amp;&amp; ISPICKVAL( Transit_Type__c ,&quot;Auction House - Storage&quot;) ,0.0000588,0
+)))))))),
+If(DATEVALUE(Test_Date__c) &gt;= DATE(2021,10,1),
+
+IF( ISPICKVAL( Item_Type__c ,&quot;Fragile (Incl. Jewelry)&quot;)&amp;&amp; ISPICKVAL( Transit_Type__c ,&quot;Internal Transit (SG, HK, CN)&quot;) ,0.000525,
+IF( ISPICKVAL( Item_Type__c ,&quot;Fragile (Incl. Jewelry)&quot;)&amp;&amp; ISPICKVAL( Transit_Type__c ,&quot;Auction House Internal Transit (SG, HK, CN)&quot;) ,0.0004135,
+IF( ISPICKVAL( Item_Type__c ,&quot;Fragile (Incl. Jewelry)&quot;)&amp;&amp; ISPICKVAL( Transit_Type__c ,&quot;Transit (Rest of Asia/Australia)&quot;) ,0.00084,
+IF( ISPICKVAL( Item_Type__c ,&quot;Fragile (Incl. Jewelry)&quot;)&amp;&amp; ISPICKVAL( Transit_Type__c ,&quot;Auction House Transit (Rest of Asia/Australia)&quot;) ,0.0006615,
+IF( ISPICKVAL( Item_Type__c ,&quot;Fragile (Incl. Jewelry)&quot;)&amp;&amp; ISPICKVAL( Transit_Type__c ,&quot;Transit (Rest of World)&quot;) ,0.0016538,
+IF( ISPICKVAL( Item_Type__c ,&quot;Fragile (Incl. Jewelry)&quot;)&amp;&amp; ISPICKVAL( Transit_Type__c ,&quot;Auction House Transit (Rest of World)&quot;) ,0.0012404,
+IF( ISPICKVAL( Item_Type__c ,&quot;Fragile (Incl. Jewelry)&quot;)&amp;&amp; ISPICKVAL( Transit_Type__c ,&quot;Storage&quot;) ,0.0000772,
+IF( ISPICKVAL( Item_Type__c ,&quot;Fragile (Incl. Jewelry)&quot;)&amp;&amp; ISPICKVAL( Transit_Type__c ,&quot;Auction House - Storage&quot;) ,0.0000617,0
+)))))))),0)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Insured Cost % (F) for test</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>7</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>weightage4__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(Category_1__c,
+&quot;Manager&quot;,((( Subtotal_for_Part4__c /50 ) *100) *(35/100)),
+&quot;HOD&quot;,((( Subtotal_for_Part4__c /50 ) *100) *(35/100)),
+&quot;CEO&quot;,((( Subtotal_for_Part4__c /50 ) *100) *(35/100)),
+&quot;GM&quot;,((( Subtotal_for_Part4__c /50 ) *100) *(35/100)),
+&quot;Asst Manager&quot;,((( Subtotal_for_Part4__c /50 ) *100) *(35/100)),
+((( Subtotal_for_Part4__c /50 ) *100) *(25/100))
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>weightage4:</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

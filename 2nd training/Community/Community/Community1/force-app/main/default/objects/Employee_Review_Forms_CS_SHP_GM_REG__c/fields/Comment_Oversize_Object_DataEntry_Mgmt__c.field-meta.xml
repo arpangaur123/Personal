@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Comment_Oversize_Object_DataEntry_Mgmt__c</fullName>
+    <description>Comment Oversize Object [DataEntry/Management]</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Comment Oversize Object [DataEntry/Management]</inlineHelpText>
+    <label>Comment Oversize Object [DataEntry/Mgmt]</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New</fullName>
+    <availability>online</availability>
+    <displayType>massActionButton</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>New</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+    <url>/a1E/e?CF00N20000003aVbz={!Job_Reference__c.Name}&amp;CF00N20000003aVbz_lkid={!Job_Reference__c.Id}&amp;00N20000003aWAq={!Job_Reference__c.Account_Name2__c}&amp;00N20000003aWB5={!Job_Reference__c.No_of_Packages_Crates__c}&amp;00N20000003aWBF={!Job_Reference__c.Packed_Dimensions_cm__c}&amp;00N20000003aWCX={!Job_Reference__c.AMJR_Consignees_Details__c}&amp;00N20000003aWCh={!Job_Reference__c.AMJR_Notifying_Party__c}&amp;00N20000003aWCm={!Job_Reference__c.Description_of_Goods__c}&amp;retURL={!Job_Reference__c.Id}
+&amp;00N20000003aWBj={!Job_Reference__c.Destination__c}
+&amp;00N20000003aWCm={!Job_Reference__c.Description_of_Goods__c}
+&amp;00N0J000009rbez={!Job_Reference__c.Airport_Supervision__c}</url>
+</WebLink>

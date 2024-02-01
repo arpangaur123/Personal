@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>artAppE2__Create_as_Collector__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Add the checkbox to the account page layout for the user to choose if they want to create this account as a collector. Default value is unchecked. To have all accounts created as a collector activate the corresponding workflow rule.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Will create, update and delete the linked collector</inlineHelpText>
+    <label>Create/Manage as Collector</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

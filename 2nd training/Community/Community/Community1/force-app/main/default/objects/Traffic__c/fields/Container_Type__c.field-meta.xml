@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Container_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Container Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>CASE</fullName>
+                <default>false</default>
+                <label>CASE</label>
+            </value>
+            <value>
+                <fullName>CRATE</fullName>
+                <default>false</default>
+                <label>CRATE</label>
+            </value>
+            <value>
+                <fullName>LIFTVAN</fullName>
+                <default>false</default>
+                <label>LIFTVAN</label>
+            </value>
+            <value>
+                <fullName>20&apos; CONTAINER</fullName>
+                <default>false</default>
+                <label>20&apos; CONTAINER</label>
+            </value>
+            <value>
+                <fullName>40&apos; CONTAINER</fullName>
+                <default>false</default>
+                <label>40&apos; CONTAINER</label>
+            </value>
+            <value>
+                <fullName>40&apos; HIGH CUBE CONTAINER</fullName>
+                <default>false</default>
+                <label>40&apos; HIGH CUBE CONTAINER</label>
+            </value>
+            <value>
+                <fullName>45&apos; HC</fullName>
+                <default>false</default>
+                <label>45&apos; HC</label>
+            </value>
+            <value>
+                <fullName>TRIWALL</fullName>
+                <default>false</default>
+                <label>TRIWALL</label>
+            </value>
+            <value>
+                <fullName>CASES</fullName>
+                <default>false</default>
+                <label>CASES</label>
+            </value>
+            <value>
+                <fullName>LIFTVANS</fullName>
+                <default>false</default>
+                <label>LIFTVANS</label>
+            </value>
+            <value>
+                <fullName>LOOSE PACKAGES</fullName>
+                <default>false</default>
+                <label>LOOSE PACKAGES</label>
+            </value>
+            <value>
+                <fullName>PALLET</fullName>
+                <default>false</default>
+                <label>PALLET</label>
+            </value>
+            <value>
+                <fullName>PALLETS</fullName>
+                <default>false</default>
+                <label>PALLETS</label>
+            </value>
+            <value>
+                <fullName>LOOSE</fullName>
+                <default>false</default>
+                <label>LOOSE</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

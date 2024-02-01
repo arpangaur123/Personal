@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<script src="/soap/ajax/8.0/connection.js" type="text/javascript"></script>
+<script>
+var opId="{!Opportunity.Id}";
+var Work_Order__c; // added global, will become the new object id
+
+function setupPage() {
+ createWork_Order();
+ parent.frames.location.replace("/"+Work_Order__c+"/e");
+}
+ 
+ 
+ function createWork_Order() {
+
+var wo__c = new sforce.SObject("Work_Order__c");
+//alert("Opportunity Id= " + opId + " Opportunity Record Type= " + opRecType );
+var opPackDate = "{!Opportunity.Pack_Date_1__c }";
+var opSalesCom ="{!Opportunity.Sales_Person_Remark__c}";
+//var opDestAddr = "{!Opportunity.Destination_Address__c}";
+
+	wo__c.Opportunity__c = opId; //  added
+        wo__c.Sales_Remarks__c = opSalesCom;
+        //wo__c.Contact_Delivery_Address__c = opDestAddr;
+        //wo__c.Pack_Date__c = opPackDate;
+	
+try {
+
+ result = sforce.connection.create([wo__c]);
+}catch(error) {
+alert("got an error: " + error);
+}
+
+  if (result[0].getBoolean("success")) {
+    // alert("new Work Order created with id " + result[0].id);
+    Work_Order__c = result[0].id; // added
+
+
+    
+  } else {
+    alert("failed to create Work Order " + result[0]);
+  }
+  
+}
+ 
+</script>
+</head>
+<body onload="setupPage();"></body>
+</html>

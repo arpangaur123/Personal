@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Project_Management_Shipping__c</fullName>
+    <description>-Ability to coordinate and execute services according to quotation/costing
+-Ability to work with overseas partners to manage import/export activities
+-Ability to convey clearly and accurately for shipment instructions, to other relevant departments (especially Operations, Warehouse, Customer Service, Accounts, and Registrar) for timely follow-up and delivery/receipt of shipment
+-Ability to monitor, track shipments enroute to destination. Ensure that shipment is delivered in a timely and correct manner
+-Ability to monitor and update relevant parties on shipment scheduling
+-Ability to monitor, track and update documentation in a timely manner
+-Ability to manage all discrepancies to avoid any delays or incurring any additional costs</description>
+    <externalId>false</externalId>
+    <inlineHelpText>-Able to coordinate &amp; execute services according to quotation/costing
+-Able to work with overseas partners to manage import/export activities
+-Able to convey clearly shipment instructions to other relevant departments timely
+-Able to monitor &amp; track shipments enroute to destination in a timely &amp; correct manner
+-Able to monitor &amp; update relevant parties on shipment scheduling
+-Able to update documentation timely
+-Able to manage all discrepancies to avoid any delays or incurring any additional costs</inlineHelpText>
+    <label>Project Management [Shipping]</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1</fullName>
+                <default>true</default>
+                <label>1</label>
+            </value>
+            <value>
+                <fullName>2</fullName>
+                <default>false</default>
+                <label>2</label>
+            </value>
+            <value>
+                <fullName>3</fullName>
+                <default>false</default>
+                <label>3</label>
+            </value>
+            <value>
+                <fullName>4</fullName>
+                <default>false</default>
+                <label>4</label>
+            </value>
+            <value>
+                <fullName>5</fullName>
+                <default>false</default>
+                <label>5</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

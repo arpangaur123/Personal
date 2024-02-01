@@ -1,0 +1,9 @@
+@page {
+
+	/* Put page numbers in the top right corner of each
+   	page in the pdf document. */
+	@bottom-right {
+ 	content: "Page " counter(page);
+	font-size:8px;
+	}	
+}

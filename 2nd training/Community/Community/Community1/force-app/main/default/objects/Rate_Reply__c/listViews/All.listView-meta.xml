@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Quote_Reference2__c</columns>
+    <columns>Date__c</columns>
+    <columns>Agent_Email__c</columns>
+    <columns>Agent_Name__c</columns>
+    <columns>CREATEDBY_USER.ALIAS</columns>
+    <columns>Mode_DS__c</columns>
+    <columns>Mode_OS__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Quote_Reference2__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>All</label>
+    <sharedTo>
+        <role>GroupCEO</role>
+        <role>HHG_CS</role>
+        <role>HHG_HOD</role>
+        <role>HHG_Inbound</role>
+        <role>HHG_Sales</role>
+        <role>HK_Admin</role>
+    </sharedTo>
+</ListView>

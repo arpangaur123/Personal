@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Employee Review Forms (CS/SHP/GM/REG)</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Employee Review Forms (CS/SHP/GM/REG)</value>
+    </caseValues>
+    <layouts>
+        <layout>Customer Service</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Employee Particulars</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Helutrans: CUSTOMER SERVICE TEAM Skill Matrix</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Overall Performance Rating (Add Part1-4)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 1: BASIC KNOWLEDGE (15%)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: CUSTOMER SERVICE &amp; TECHNICAL SKILLS (30%)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 3: JOB SKILLS (30%)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 4: SOFT SKILLS (25%)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 5: SPECIAL SKILLS (For Payrise &amp; Promotion Opportunities)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 6: Training and Career Development</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 7: Supervisor&apos;s Comments</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>_</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Employee Review Forms (Office) Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Employee Particulars</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Helutrans: CUSTOMER SERVICE TEAM Skill Matrix</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Overall Performance Rating (Add Part1-4)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 1: BASIC KNOWLEDGE (15%)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: CUSTOMER SERVICE &amp; TECHNICAL SKILLS (30%)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 3: JOB SKILLS (30%)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 4: SOFT SKILLS (25%)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 5: SPECIAL SKILLS (For Payrise &amp; Promotion Opportunities)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 6: Training and Career Development</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 7: Supervisor&apos;s Comments</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>_</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>General Manager / Station Manager</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Employee Particulars</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Helutrans: CUSTOMER SERVICE TEAM Skill Matrix</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Overall Performance Rating (Add Part1-4)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 1: BASIC KNOWLEDGE (15%)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: CUSTOMER SERVICE &amp; TECHNICAL SKILLS (30%)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 3: JOB SKILLS (30%)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 4: SOFT SKILLS (25%)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 5: SPECIAL SKILLS (For Payrise &amp; Promotion Opportunities)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 6: Training and Career Development</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 7: Supervisor&apos;s Comments</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>_</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Operation Supervisory</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Employee Particulars</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Helutrans: CUSTOMER SERVICE TEAM Skill Matrix</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Overall Performance Rating (Add Part1-4)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 1: BASIC KNOWLEDGE (15%)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: CUSTOMER SERVICE &amp; TECHNICAL SKILLS (30%)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 3: JOB SKILLS (30%)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 4: SOFT SKILLS (25%)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 5: SPECIAL SKILLS (For Payrise &amp; Promotion Opportunities)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 6: Training and Career Development</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 7: Supervisor&apos;s Comments</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>_</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Registrar Crew</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Employee Particulars</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Helutrans: CUSTOMER : Registrar Crew Skill  Matrix</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Overall Performance Rating (Add Part1-4)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 1: BASIC KNOWLEDGE (15%)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS  - Stone</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS  - Wood</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS (30%) - Subtotal &amp; Grand Total</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS -  Asian Works On Paper (Hand/Hanging/Folding Scroll)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - Ceramics &amp; Glass</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - Contemporary Objects/Plastics &amp; Electronic Materials</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - Metals</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - OTHERS - Oversize Objects</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - Other Works On Paper (Map/Document/Manuscript/Book)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - Painting (Framed &amp; Unframed)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - Textile</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS - Works on Paper (Framed, Unframed &amp; Matted)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 3: JOB SKILLS (30%)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 4: SOFT SKILLS (25%)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 5: SPECIAL SKILLS (For Payrise &amp; Promotion Opportunities)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 6: Training and Career Development</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 7: Supervisor&apos;s Comments</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part2 :TECHNICAL SKILLS - Photographic Works On Paper</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>_</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Shipping</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Employee Particulars</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Helutrans: SHIPPING TEAM Skill Matrix</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Overall Performance Rating (Add Part1-4)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 1: BASIC KNOWLEDGE (15%)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: SHIPPING SERVICES (30%)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 3: JOB SKILLS (30%)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 4: SOFT SKILLS (25%)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 5: SPECIAL SKILLS (For Payrise &amp; Promotion Opportunities)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 6: Training and Career Development</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 7: Supervisor&apos;s Comments</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>_</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label></label>
+        <name>Customer_Service</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>General_Manager_Station_Manager</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Operation_Supervisory</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Registrar</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Shipping</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Past_Review_date</name>
+    </validationRules>
+</CustomObjectTranslation>

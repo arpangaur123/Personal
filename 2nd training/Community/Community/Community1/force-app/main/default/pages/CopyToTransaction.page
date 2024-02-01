@@ -1,0 +1,153 @@
+<apex:page docType="html-5.0" standardController="artApp__Artwork__c" lightningStylesheets="true" recordSetVar="var" extensions="CopyToTransactionConExt">
+  <script type="text/javascript">
+    function selectAllCheckboxes(obj,receivedInputID){
+        var inputCheckBox = document.getElementsByTagName("input");                  
+        for(var i=0; i<inputCheckBox.length; i++){          
+            if(inputCheckBox[i].id.indexOf(receivedInputID)!=-1){                                     
+                inputCheckBox[i].checked = obj.checked;
+            }
+        }
+    }
+  </script>
+  <apex:slds />
+  <apex:sectionHeader title="Copy Artwork from {!objectLabel} to Transaction"/>
+  <apex:outputPanel id="availablePanel">
+  <apex:form >
+  <apex:pageMessages />
+  <apex:pageBlock mode="edit" title="Step 1: Please select the Transaction">
+      <apex:pageBlockSection showHeader="false">
+          <apex:pageBlockSectionItem >
+              <apex:outputLabel value="Transaction"/>
+              <apex:inputField value="{!t.artApp__Transaction__c}" required="true"/>
+          </apex:pageBlockSectionItem>         
+      </apex:pageBlockSection>
+  </apex:pageBlock>
+  <apex:pageBlock mode="edit" title="Step 2: Select the Artwork to copy to Transaction">
+      <apex:pageBlockButtons >
+            <apex:commandButton action="{!AddSelected}" value="Add Selected"/>
+            <apex:commandButton action="{!cancel}" value="Cancel" immediate="true"/>
+      </apex:pageBlockButtons>      
+      <apex:pageBlockSection showHeader="false"  columns="1">
+          
+          <c:DynamicPaginator pController="{!controller}" panel="availablePanel"/>
+          <apex:pageBlockTable value="{!artworks}" var="a">
+              <apex:column title="Select to Add">
+                  <apex:facet name="header"><apex:inputCheckbox onclick="selectAllCheckboxes(this,'inputId')" value="{!selectAll}"/> </apex:facet>
+                  <apex:inputCheckbox value="{!a.isSelected}" id="inputId"/>
+              </apex:column>
+              <apex:column >
+                <apex:facet name="header">
+                    <c:SortHeader sController="{!controller}" header="Title" column="Name" panel="availablePanel"/>
+                </apex:facet>
+                <apex:outputLink value="/{!a.artwork.Id}" target="_blank">{!a.artwork.Name}</apex:outputLink>
+              </apex:column>
+              
+              <apex:column >
+                <apex:facet name="header">
+                    <c:SortHeader sController="{!controller}" header="Artist" column="artApp__Artist__c" panel="availablePanel"/>
+                </apex:facet>
+                <apex:outputField value="{!a.artwork.artApp__Artist__c}"/>
+              </apex:column>
+              
+              <apex:column >
+                <apex:facet name="header">
+                    <c:SortHeader sController="{!controller}" header="Barcode ID" column="Barcode_ID__c" panel="availablePanel"/>
+                </apex:facet>
+                <apex:outputField value="{!a.artwork.Barcode_ID__c}"/>
+              </apex:column>
+                            
+              <apex:column >
+                <apex:facet name="header">
+                    <c:SortHeader sController="{!controller}" header="Part of" column="Part_of__c" panel="availablePanel"/>
+                </apex:facet>
+                <apex:outputField value="{!a.artwork.Part_of__c}"/>
+              </apex:column>
+             
+              <apex:column >
+                <apex:facet name="header">
+                    <c:SortHeader sController="{!controller}" header="Lot No" column="Lot_No__c" panel="availablePanel"/>
+                </apex:facet>
+                <apex:outputField value="{!a.artwork.Lot_No__c}"/>
+              </apex:column>
+              
+              <apex:column >
+                <apex:facet name="header">
+                    <c:SortHeader sController="{!controller}" header="Item No" column="Item_No__c" panel="availablePanel"/>
+                </apex:facet>
+                <apex:outputField value="{!a.artwork.Item_No__c}"/>
+              </apex:column>
+              
+              <apex:column >
+                <apex:facet name="header">
+                    <c:SortHeader sController="{!controller}" header="Artwork Dimensions" column="Dimensions__c" panel="availablePanel"/>
+                </apex:facet>
+                <apex:outputField value="{!a.artwork.Dimensions__c}"/>
+              </apex:column>
+              
+              <apex:column >
+                <apex:facet name="header">
+                    <c:SortHeader sController="{!controller}" header="Bond Status" column="Bond_Status__c" panel="availablePanel"/>
+                </apex:facet>
+                <apex:outputField value="{!a.artwork.Bond_Status__c}"/>
+              </apex:column>
+              
+              <apex:column >
+                <apex:facet name="header">
+                    <c:SortHeader sController="{!controller}" header="Primary Image" column="artApp__Primary_Image__c" panel="availablePanel"/>
+                </apex:facet>
+                <apex:outputField value="{!a.artwork.artApp__Primary_Image__c}"/>
+              </apex:column>
+              
+          
+          </apex:pageBlockTable>
+          
+      </apex:pageBlockSection>
+  </apex:pageBlock>
+  
+  <apex:pageBlock title="Step 3: Copy Artwork to Transaction">
+            <apex:pageBlockButtons location="top">
+                <apex:commandButton action="{!copyArtwork}" value="Copy Artwork to Transaction"/>
+                <apex:commandButton action="{!cancel}" value="Cancel"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockTable value="{!selectedArtworks}" var="s">
+                <apex:column headerValue="Title">
+                    <apex:outputField value="{!s.artwork.Name}"/>        
+                </apex:column>
+                <apex:column headerValue="Artist">
+                    <apex:outputField value="{!s.artwork.artApp__Artist__c}"/>
+                </apex:column>
+                
+                <apex:column headerValue="Barcode ID">
+                <apex:outputField value="{!s.artwork.Barcode_ID__c}"/>
+              </apex:column>
+              
+              <apex:column headerValue="Part of">
+                <apex:outputField value="{!s.artwork.Part_of__c}"/>
+              </apex:column>
+              
+              <apex:column headerValue="Lot No">
+                <apex:outputField value="{!s.artwork.Lot_No__c}"/>
+              </apex:column>
+              
+              <apex:column headerValue="Item No">
+                <apex:outputField value="{!s.artwork.Item_No__c}"/>
+              </apex:column>
+              
+              <apex:column headerValue="Artwork Dimensions">
+                <apex:outputField value="{!s.artwork.Dimensions__c}"/>
+              </apex:column>
+              
+              <apex:column headerValue="Bond Status">
+                <apex:outputField value="{!s.artwork.Bond_Status__c}"/>
+              </apex:column>
+              
+              <apex:column headerValue="Primary Image">
+                <apex:outputField value="{!s.artwork.artApp__Primary_Image__c}"/>
+              </apex:column>               
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+  
+  
+  </apex:form>
+  </apex:outputPanel>
+</apex:page>

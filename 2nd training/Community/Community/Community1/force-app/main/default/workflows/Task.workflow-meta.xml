@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Send_email_notification_when_task_is_completed</fullName>
+        <description>Send email notification when task is completed</description>
+        <protected>false</protected>
+        <recipients>
+            <type>campaignMemberDerivedOwner</type>
+        </recipients>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Internalmailtemplates/Email_Notification_for_Task_Completion</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Close_Task</fullName>
+        <description>Updates task status to Completed</description>
+        <field>Status</field>
+        <literalValue>Completed</literalValue>
+        <name>Close Task</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Close Task</fullName>
+        <actions>
+            <name>Close_Task</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Task.Close_Task__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <description>Used to close multiple tasks from a list view</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Task performed</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Task.IsClosed</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <description>Sends an email to the creator of the task when the task has been performed</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

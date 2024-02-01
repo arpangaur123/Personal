@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>JobComInfoUpd_Status__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( ISPICKVAL(Job_Completed_Infoi__c ,&quot;Green -&gt; Done&quot;) , IMAGE(&quot;/servlet/servlet.FileDownload?file=0152000000146yQ&quot;, &quot;Green&quot;, 17,17),
+IF( ISPICKVAL(Job_Completed_Infoi__c ,&quot;White -&gt; Not Applicable&quot;), IMAGE(&quot;/servlet/servlet.FileDownload?file=0152000000146yV&quot;, &quot;Black&quot;, 17,17),
+
+IF( ISBLANK(TEXT(Job_Completed_Infoi__c)), IMAGE(&quot;/servlet/servlet.FileDownload?file=0152000000146yL&quot;, &quot;Red&quot;, 17,17),
+
+IF( ISPICKVAL(Job_Completed_Infoi__c ,&quot;Red -&gt; Not Yet Done&quot;), IMAGE(&quot;/servlet/servlet.FileDownload?file=0152000000146yL&quot;, &quot;Red&quot;, 17,17), null)
+)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Job Completed / Info Updated</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

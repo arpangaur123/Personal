@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Job Reference</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Job References</value>
+    </caseValues>
+    <layouts>
+        <layout>HTTR - Job Reference Layout</layout>
+        <sections>
+            <label></label>
+            <section>Addresses</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Drag N Drop to attach !!!</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Goods Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Shipment Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Job RefBJ</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Drag N Drop to attach !!!</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Goods Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>New section</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Shipment Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Job RefHK</layout>
+        <sections>
+            <label></label>
+            <section>Art Basel HK</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Drag N Drop to attach !!!</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>ETA ETD Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Goods Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Insurance (Fragile)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Insurance (Non-Fragile)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Shipment Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Shipping Info</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Job RefHK Export</layout>
+        <sections>
+            <label></label>
+            <section>Art Basel HK</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Drag N Drop to attach !!!</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>ETA ETD Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Goods Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Insurance (Fragile)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Insurance (Non-Fragile)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>New section</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Shipment Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Job RefHK Import</layout>
+        <sections>
+            <label></label>
+            <section>Art Basel HK</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Drag N Drop to attach !!!</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>ETA ETD Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Goods Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Insurance (Fragile)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Insurance (Non-Fragile)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>New section</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Shipment Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Job RefSH</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Drag N Drop to attach !!!</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Goods Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>New section</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Shipment Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Job Reference Layout</layout>
+        <sections>
+            <label></label>
+            <section>Addresses</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Drag N Drop to attach !!!</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Goods Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Insurance - Installation w/wo Hoisting</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Insurance - Transit (Fragile)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Insurance - Transit (Non-Fragile)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Portal Integration Section</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Shipment Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Shipping Cost (Air)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Shipping Cost (FCL)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Shipping Cost (LCL)</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label></label>
+        <name>New_Crate_Fabrication_SG</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>New_Export_Shipment_Request</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>New_Export_Shipment_Request_SG_Air</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>New_Export_Shipment_Request_SG_FCL</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>New_Export_Shipment_Request_SG_LCL</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>New_Haulier_Instruction</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>New_Inbound_Checklist_CN</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>New_Inbound_Checklist_SG</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>New_Incident_Report</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>New_Operation_Order_OO</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>New_Outbound_Checklist_SG</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>New_Transporter_Instruction_Air</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>New_Transporter_Instruction_Sea</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>New_Warehouse_Work_CN</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>New_Warehouse_Work_SG</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Push_Job_Reference_To_Portal</name>
+    </quickActions>
+    <recordTypes>
+        <label></label>
+        <name>HK_Export</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>HK_Import</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>HK_Import_Export</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>HTTR</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>CheckCSInitials</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>CheckOppDate_B4_Create_Job_Ref</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>CheckOppStage</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>ChkOppIFLastYr</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Job_Completion_Future_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Prevent_Duplicate_Job_Ref_Number</name>
+    </validationRules>
+    <webLinks>
+        <label></label>
+        <name>JRNew</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Multi_Upload</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>New</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>NewOld_L</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>New_For_Lighting</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>New_L</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Push_Job_Info</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Shipping_Mark</name>
+    </webLinks>
+</CustomObjectTranslation>

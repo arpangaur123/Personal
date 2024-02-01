@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Special_Instruction_Details__c</fullName>
+    <externalId>false</externalId>
+    <label>Special Instruction Details</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Shipment_Type__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Door to Door shipment, please contact shippers for immediate clearance and delivery. Helutrans will not be responsible for any storage charges.</fullName>
+                <default>true</default>
+                <label>Door to Door shipment, please contact shippers for immediate clearance and delivery. Helutrans will not be responsible for any storage charges.</label>
+            </value>
+            <value>
+                <fullName>Door to Port shipment, please contact shippers for immediate clearance. Helutrans will not be responsible for any storage charges.</fullName>
+                <default>false</default>
+                <label>Door to Port shipment, please contact shippers for immediate clearance. Helutrans will not be responsible for any storage charges.</label>
+            </value>
+            <value>
+                <fullName>Door to Door shipment, please contact shippers for immediate clearance and delivery. Helutrans will not be responsible for any charges and delivery incurred at destination.</fullName>
+                <default>false</default>
+                <label>Door to Door shipment, please contact shippers for immediate clearance and delivery. Helutrans will not be responsible for any charges and delivery incurred at destination.</label>
+            </value>
+            <value>
+                <fullName>Door to Port shipment, please contact shippers for immediate clearance. Helutrans will not be responsible for any charges incurred at destination.</fullName>
+                <default>false</default>
+                <label>Door to Port shipment, please contact shippers for immediate clearance. Helutrans will not be responsible for any charges incurred at destination.</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Door to Door</controllingFieldValue>
+            <controllingFieldValue>Door to Storage</controllingFieldValue>
+            <valueName>Door to Door shipment, please contact shippers for immediate clearance and delivery. Helutrans will not be responsible for any storage charges.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Door to Port</controllingFieldValue>
+            <valueName>Door to Port shipment, please contact shippers for immediate clearance. Helutrans will not be responsible for any storage charges.</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

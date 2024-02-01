@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Comment_Knowledge_of_Registration_Coll__c</fullName>
+    <description>Comment Knowledge of Registration &amp; Collections</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Comment Knowledge of Registration &amp; Collections</inlineHelpText>
+    <label>Comment Knowledge of Registration &amp; Coll</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

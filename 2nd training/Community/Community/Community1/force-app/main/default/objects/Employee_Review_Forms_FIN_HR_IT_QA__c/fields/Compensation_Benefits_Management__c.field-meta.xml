@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Compensation_Benefits_Management__c</fullName>
+    <description>-Review remuneration offered to market trend
+-Performance Management
+-Review employee welfare
+-Efforts in narrowing the expectation gap between employee and employer eg Work-life balance</description>
+    <externalId>false</externalId>
+    <inlineHelpText>-Review remuneration offered to market trend
+-Performance Management
+-Review employee welfare
+-Efforts in narrowing the expectation gap between employee and employer (Eg work-life balance)</inlineHelpText>
+    <label>Compensation &amp; Benefits Management</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1</fullName>
+                <default>true</default>
+                <label>1</label>
+            </value>
+            <value>
+                <fullName>2</fullName>
+                <default>false</default>
+                <label>2</label>
+            </value>
+            <value>
+                <fullName>3</fullName>
+                <default>false</default>
+                <label>3</label>
+            </value>
+            <value>
+                <fullName>4</fullName>
+                <default>false</default>
+                <label>4</label>
+            </value>
+            <value>
+                <fullName>5</fullName>
+                <default>false</default>
+                <label>5</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Air_Freight__c</fullName>
+    <defaultValue>&quot;- Subject to changes on ISS and FSC&quot; &amp; BR() &amp;
+&quot;- Subject to unforeseen Emergency Charges impose by Carrier&quot; &amp; BR() &amp;
+&quot;- Rates quoted are subject to airline’s space availability&quot; &amp; BR() &amp;
+&quot;- Rates quoted in US Dollars per kg are chargeable or gross, whichever is greater&quot; &amp; BR() &amp;
+&quot;- Rates are subject to airline changes with or without prior notice&quot; &amp; BR() &amp;
+&quot;- Rates are not applicable for freight collects&quot;</defaultValue>
+    <description>Air Freight information for OS</description>
+    <externalId>false</externalId>
+    <label>Air Freight</label>
+    <length>32000</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>7</visibleLines>
+</CustomField>

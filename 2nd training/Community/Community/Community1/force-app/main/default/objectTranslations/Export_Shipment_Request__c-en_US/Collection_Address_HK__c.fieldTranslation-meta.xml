@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>Collection_Address_HK__c</name>
+    <picklistValues>
+        <masterLabel>9/F, ATL Logistics Centre B, Berth 3, Kwai Chung, N.T., Hong Kong</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Others (Indicate below)</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unit 1003, 11th Floor Mapletree Logistics Centre 30 Tsing Yi Road Tsing Yi, N.T. Hong Kong</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unit 2, 11th Floor, Global Gateway, 168 Yeung Uk Road, Tsuen Wan, Hong Kong</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_Crate_Supports_Only</fullName>
+    <active>true</active>
+    <description>If No Crate Supports Only , is chosen as Crate Type, then either Triangle Supports or Base Support must be chosen.</description>
+    <errorConditionFormula>IF ( AND ( ISPICKVAL(Crate_Type__c , &quot;No Crate. Supports Only&quot; ) , 
+               AND ( Triangle_Supports__c = FALSE , Base_Support__c = FALSE )
+                    ) , TRUE, FALSE )</errorConditionFormula>
+    <errorDisplayField>Crate_Type__c</errorDisplayField>
+    <errorMessage>If No Crate Supports Only , is chosen as Crate Type, then either Triangle Supports or Base Support must be chosen.</errorMessage>
+</ValidationRule>

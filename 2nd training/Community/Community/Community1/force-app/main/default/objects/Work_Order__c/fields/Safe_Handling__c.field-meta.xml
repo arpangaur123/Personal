@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Safe_Handling__c</fullName>
+    <defaultValue>&quot;DIMs =  x   x   inches&quot;&amp; BR() &amp;
+&quot;Weight = kg &quot;&amp; BR() &amp;
+&quot; &quot;&amp; BR() &amp;
+&quot;Vendor: &quot;&amp; BR() &amp;
+&quot;Date of Service: dd/mm/yy&quot;&amp; BR() &amp;
+&quot;Time of Service: hrs&quot;</defaultValue>
+    <externalId>false</externalId>
+    <label>Safe Handling</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

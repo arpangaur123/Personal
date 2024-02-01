@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IT_Continuous_Learning_Update__c</fullName>
+    <description>-Provide account administration and user support including Active Directory, Email Exchange, File / Printer Servers, TrendMicro Anti-Virus Management Console, Wi-Fi, Telephony, Door Access Systems and etc.
+-Support systems activities on installation of servers, storage and server room facilities.
+-Support end-users Computing on Windows Operating Systems and MS Office Suite.
+-Ensure operating environment are secured and security patches are up-to-date.
+-Maximise computer system capabilities, and ensure constant updating, &amp; improvement of existing programs by evaluating objectives and specifications, reviewing proposed changes, and making recommendations.  
+-Test and evaluate new and latest software applications and update users on a routine basis</description>
+    <externalId>false</externalId>
+    <inlineHelpText>-Account administration and users support including Active Directory, Emails, File/Printer Servers, Anti-Virus Management, Wi-Fi, Telephony, Door Access Systems and MS Office etc.
+-Support systems activities on installation of servers, storage and server room facilities.
+-Ensure operating environment are secured &amp; security patches are up-to-date.
+-Maximise computer system capabilities &amp; ensure constant updating &amp; improvement of programs, review &amp; propose changes
+-Test &amp; evaluate new/latest software</inlineHelpText>
+    <label>IT Continuous Learning Update</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1</fullName>
+                <default>true</default>
+                <label>1</label>
+            </value>
+            <value>
+                <fullName>2</fullName>
+                <default>false</default>
+                <label>2</label>
+            </value>
+            <value>
+                <fullName>3</fullName>
+                <default>false</default>
+                <label>3</label>
+            </value>
+            <value>
+                <fullName>4</fullName>
+                <default>false</default>
+                <label>4</label>
+            </value>
+            <value>
+                <fullName>5</fullName>
+                <default>false</default>
+                <label>5</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

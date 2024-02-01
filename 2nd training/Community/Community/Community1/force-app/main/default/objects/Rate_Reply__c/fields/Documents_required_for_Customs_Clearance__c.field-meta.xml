@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Documents_required_for_Customs_Clearance__c</fullName>
+    <defaultValue>&quot;- Passport copy&quot; &amp; BR() &amp;
+&quot;- Employment pass or In principle of Approval letter from Ministry of Manpower, Singapore&quot; &amp; BR() &amp;
+&quot;- Declaration of facts (attached)&quot; &amp; BR() &amp;
+&quot;- Detailed Wine list (if included in shipment) - Custom duties &amp; GST will apply &quot;</defaultValue>
+    <externalId>false</externalId>
+    <label>Documents required for Customs Clearance</label>
+    <length>32000</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>4</visibleLines>
+</CustomField>

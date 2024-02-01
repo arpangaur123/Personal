@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sea_FCLPick__c</fullName>
+    <externalId>false</externalId>
+    <label>For Sea - FCL(pick)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1 X 20&apos; GP</fullName>
+                <default>false</default>
+                <label>1 X 20&apos; GP</label>
+            </value>
+            <value>
+                <fullName>2 X 40&apos; GP</fullName>
+                <default>false</default>
+                <label>2 X 40&apos; GP</label>
+            </value>
+            <value>
+                <fullName>1 X 40&apos; GP</fullName>
+                <default>false</default>
+                <label>1 X 40&apos; GP</label>
+            </value>
+            <value>
+                <fullName>1 X 40&apos; HC</fullName>
+                <default>false</default>
+                <label>1 X 40&apos; HC</label>
+            </value>
+            <value>
+                <fullName>2 X 40&apos; HC</fullName>
+                <default>false</default>
+                <label>2 X 40&apos; HC</label>
+            </value>
+            <value>
+                <fullName>1 X 20&apos; OPEN TOP</fullName>
+                <default>false</default>
+                <label>1 X 20&apos; OPEN TOP</label>
+            </value>
+            <value>
+                <fullName>1 X 40&apos; OPEN TOP</fullName>
+                <default>false</default>
+                <label>1 X 40&apos; OPEN TOP</label>
+            </value>
+            <value>
+                <fullName>1 X 20&apos; REEFER</fullName>
+                <default>false</default>
+                <label>1 X 20&apos; REEFER</label>
+            </value>
+            <value>
+                <fullName>1 X 40&apos; REEFER</fullName>
+                <default>false</default>
+                <label>1 X 40&apos; REEFER</label>
+            </value>
+            <value>
+                <fullName>1 X 40&apos; HC REEFER</fullName>
+                <default>false</default>
+                <label>1 X 40&apos; HC REEFER</label>
+            </value>
+            <value>
+                <fullName>1 X 20&apos; FLAT RACK</fullName>
+                <default>false</default>
+                <label>1 X 20&apos; FLAT RACK</label>
+            </value>
+            <value>
+                <fullName>1 X 40&apos; FLAT RACK</fullName>
+                <default>false</default>
+                <label>1 X 40&apos; FLAT RACK</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>7</visibleLines>
+</CustomField>

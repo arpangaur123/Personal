@@ -1,0 +1,717 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Vendor</fullName>
+    <active>true</active>
+    <label>Vendor</label>
+    <picklistValues>
+        <picklist>AccountSource</picklist>
+        <values>
+            <fullName>ARTIM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Agent Rate Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Artmove Referal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Artspace Tenant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Call-in Enquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Client%27s Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Existing Account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>External Networking %2F Marketing Events</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Helutrans Group</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Helutrans Website</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>House Accounts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ICEFAT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IML Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal Networking %2F Marketing Events</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>International Marketing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Job Applicants</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Key Account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NA House Account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NA International Marketing - Others</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NA International Mktg - Belgian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NA International Mktg - Dutch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NA Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NA SP Account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Networking Acquantainces</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Previous Inbound Clients</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Previous Local Move Client</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Previous Outbound Client</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Printed Advertising</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales Person Personal Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales person Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Target Account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tender</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WWW Advertising</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Walk-In</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web Advertising</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Industry</picklist>
+        <values>
+            <fullName>Advertising%2C Media %26 Public Relations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Arts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Automobile</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BioTech %26 Chemicals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Services %28ie%2E HR companies%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carpentry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cleaning Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clock Repairer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consulting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Designing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diplomatic %26 Government</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electronics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entertainment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fashion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finance%2C Banking %26 Insurance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Food %26 Beverages</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fumigators</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Handyman</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Healthcare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hospitality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Info Tech</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legal Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Media</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mining</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NVOCC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pet Handling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Piano Handler</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Property %26 Real Estate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Removal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Research %26 Development</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Safe Handler</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shipping Line</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telecommunications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transportation %26 Logistics</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Intl_Marketing__c</picklist>
+        <values>
+            <fullName>AC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SH</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Nationalities__c</picklist>
+        <values>
+            <fullName>American</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Australian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Austrian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Belgian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Brazilian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>British</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bulgarian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Canadian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chinese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Danish</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dutch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Filipino</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finnish</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>French</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>German</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hellenic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hong Kong</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indonesian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Irish</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Italian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Japanese</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Korean</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Luxembourger</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Malaysian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Zealander</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Norwegian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Romania</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scottish</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Singaporean</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>South African</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spanish</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Swedish</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Swiss</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thai</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Turkish</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Ownership</picklist>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Private</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Subsidiary</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Rating</picklist>
+        <values>
+            <fullName>Cold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warm</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Rating__c</picklist>
+        <values>
+            <fullName>A - Contract</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AA - Contract Rates</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B - Prefer us</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BB - Prefer us</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C - Competitive Quotes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CC - Competitive Quotes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D - Prefer Vendor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DD - Prefer others</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E - Survey %28No Jobs%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EE - Quoted but no jobs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>F - Never use us before</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FF - Never even quoted before</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Terms__c</picklist>
+        <values>
+            <fullName>30 Days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Immediate</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Agent Account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Art Exhibition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Artist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Auction House</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competitor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consultant%2FDealer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corporate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Existing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gallery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Institution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Key</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Media Owner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Museum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nat Acc A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nat Acc B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nat Acc C</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Overseas Agent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner - Agent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner - Vendor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Personal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Private Collector</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Regional Account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shipper</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TPR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Target</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Target Account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tendered Account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vendor%2FService Provider</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

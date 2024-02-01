@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_L</fullName>
+    <availability>online</availability>
+    <displayType>massActionButton</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>New(L)</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+    <url>/lightning/o/Shipping_Order__c/new?navigationLocation=RELATED_LIST&amp;
+backgroundContext=%2Flightning%2Fr%2FJob_Reference__c%2F{!Job_Reference__c.Id}%2Fview&amp;defaultFieldValues=Job_Reference__c={!Job_Reference__c.Id},
+Consignee_Details__c={!Job_Reference__c.AMJR_Consignees_Details__c}</url>
+</WebLink>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Our_charges__c</fullName>
+    <externalId>false</externalId>
+    <label>Our charges</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>are prepaid up to Port</fullName>
+                <default>false</default>
+                <label>are prepaid up to Port</label>
+            </value>
+            <value>
+                <fullName>Please collect on behalf. Our invoice will be forwarded to you shortly.</fullName>
+                <default>false</default>
+                <label>Please collect on behalf. Our invoice will be forwarded to you shortly.</label>
+            </value>
+            <value>
+                <fullName>Door to Door</fullName>
+                <default>false</default>
+                <label>Door to Door</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

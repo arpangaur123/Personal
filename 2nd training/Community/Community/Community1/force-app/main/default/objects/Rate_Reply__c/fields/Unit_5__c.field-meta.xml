@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unit_5__c</fullName>
+    <externalId>false</externalId>
+    <label>Unit 5</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>cbm</fullName>
+                <default>false</default>
+                <label>cbm</label>
+            </value>
+            <value>
+                <fullName>cuft</fullName>
+                <default>false</default>
+                <label>cuft</label>
+            </value>
+            <value>
+                <fullName>lbs</fullName>
+                <default>false</default>
+                <label>lbs</label>
+            </value>
+            <value>
+                <fullName>kg</fullName>
+                <default>false</default>
+                <label>kg</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

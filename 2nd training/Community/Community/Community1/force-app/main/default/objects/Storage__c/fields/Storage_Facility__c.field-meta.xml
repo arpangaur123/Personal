@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Storage_Facility__c</fullName>
+    <externalId>false</externalId>
+    <label>Storage Facility</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ATL</fullName>
+                <default>false</default>
+                <label>ATL</label>
+            </value>
+            <value>
+                <fullName>City Centre</fullName>
+                <default>false</default>
+                <label>City Centre</label>
+            </value>
+            <value>
+                <fullName>Freeport</fullName>
+                <default>false</default>
+                <label>Freeport</label>
+            </value>
+            <value>
+                <fullName>Global Gateway</fullName>
+                <default>false</default>
+                <label>Global Gateway</label>
+            </value>
+            <value>
+                <fullName>Linji</fullName>
+                <default>false</default>
+                <label>Linji</label>
+            </value>
+            <value>
+                <fullName>Mapletree</fullName>
+                <default>false</default>
+                <label>Mapletree</label>
+            </value>
+            <value>
+                <fullName>Multiple WH</fullName>
+                <default>false</default>
+                <label>Multiple WH</label>
+            </value>
+            <value>
+                <fullName>Terrada Art Complex</fullName>
+                <default>false</default>
+                <label>Terrada Art Complex</label>
+            </value>
+            <value>
+                <fullName>Jinma</fullName>
+                <default>false</default>
+                <label>Jinma</label>
+            </value>
+            <value>
+                <fullName>TsingYi</fullName>
+                <default>false</default>
+                <label>TsingYi</label>
+            </value>
+            <value>
+                <fullName>Cheung Hing Shing</fullName>
+                <default>false</default>
+                <label>Cheung Hing Shing</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

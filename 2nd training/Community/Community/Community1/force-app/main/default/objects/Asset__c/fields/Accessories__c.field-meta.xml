@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Accessories__c</fullName>
+    <externalId>false</externalId>
+    <label>Accessories</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Air Ride</fullName>
+                <default>false</default>
+                <label>Air Ride</label>
+            </value>
+            <value>
+                <fullName>Aluminium Box</fullName>
+                <default>false</default>
+                <label>Aluminium Box</label>
+            </value>
+            <value>
+                <fullName>Cooling system</fullName>
+                <default>false</default>
+                <label>Cooling system</label>
+            </value>
+            <value>
+                <fullName>Power Tailgate</fullName>
+                <default>false</default>
+                <label>Power Tailgate</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DS_Labour__c</fullName>
+    <description>changed from 0.60 to 0.75 on 27052013 until Aug 2013</description>
+    <externalId>false</externalId>
+    <formula>DS_Labour_Volume_in_cuft__c * 0.75</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>DS Labour</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

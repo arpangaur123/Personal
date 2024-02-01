@@ -1,0 +1,183 @@
+<apex:component >
+  <style>
+    .tHeader {
+        margin-top:20px;
+        background-color:#F5F5F5;
+    }
+    .paginator {
+    margin: 0;
+    white-space: normal !important;
+    display:flex;
+    justify-content:space-between;
+    }
+    
+    /*.paginator .left {
+    position: absolute;
+    left: 0;
+    }
+    
+    .paginator .right {
+    position: absolute;
+    right: 0;
+    }*/
+    
+    .paginator .prevNextLinks {
+    color: #a8a8a8;
+    }
+    
+    .paginator .prevNextLinks .prevNext {
+    margin: 0 3px;
+    }
+    
+    .paginator .firstoff {
+    background-image: url(/img/paginationArrows.gif);
+    background-repeat: no-repeat;
+    background-position: 0 -10px;
+    width: 9px;
+    height: 10px;
+    }
+    
+    .paginator .prevoff {
+    background-image: url(/img/paginationArrows.gif);
+    background-repeat: no-repeat;
+    background-position: -10px -10px;
+    margin: 0;
+    padding: 0;
+    width: 9px;
+    height: 10px;
+    }
+    
+    .paginator .nextoff {
+    background-image: url(/img/paginationArrows.gif);
+    background-repeat: no-repeat;
+    background-position: -17px -10px;
+    width: 9px;
+    height: 10px;
+    }
+    
+    .paginator .lastoff {
+    background-image: url(/img/paginationArrows.gif);
+    background-repeat: no-repeat;
+    background-position: -27px -10px;
+    width: 9px;
+    height: 10px;
+    }
+    
+    .paginator .prevNextLinks a {
+    color: #333;
+    text-decoration: none;
+    }
+    
+    .paginator .prev {
+    background-image: url(/img/paginationArrows.gif);
+    background-repeat: no-repeat;
+    background-position: -10px 1px;
+    margin: 0;
+    padding: 0;
+    width: 9px;
+    height: 10px;
+    }
+    
+    .paginator .first {
+    background-image: url(/img/paginationArrows.gif);
+    background-repeat: no-repeat;
+    background-position: 0 1px;
+    width: 9px;
+    height: 10px;
+    }
+    
+    .paginator .next {
+    background-image: url(/img/paginationArrows.gif);
+    background-repeat: no-repeat;
+    background-position: -17px 1px;
+    width: 9px;
+    height: 10px;
+    }
+    
+    .paginator .last {
+    background-image: url(/img/paginationArrows.gif);
+    background-repeat: no-repeat;
+    background-position: -27px 1px;
+    width: 9px;
+    height: 10px;
+    }
+    
+    
+    .{
+    border-bottom: solid 1px #C0C0C0;
+    }
+    
+    th {
+    text-align: left;
+    font-weight: bold;
+    white-space: nowrap;
+    }
+    
+    .paginator_parent_div{
+        display:flex !important;
+    }
+      
+  </style>
+    
+    <apex:attribute name="pController" description="DynamicListController that requires pagination" type="DynamicListController" required="true"/>
+    <apex:attribute name="panel" description="Panel to refresh when pagination methods are clicked." type="String" required="true"/>
+    <!-- pagination controls -->
+    <table width="100%">
+        <tr>
+            <td>
+                <div class="paginator">
+                    <div class="left">
+                        <apex:actionStatus id="status">
+                            <apex:facet name="start">
+                                <!--<apex:image value="{!$Resource.Waiting}"/>-->
+                            </apex:facet>
+                        </apex:actionStatus>
+                        <apex:outputText >page {!IF(pController.pageCount=0, 0, pController.pageNumber)} of {!pController.pageCount} ({!pController.resultSize} records total)</apex:outputText>
+                    </div>
+                    <div class="prevNextLinks">
+                        <apex:commandLink styleClass="paginator_parent_div" action="{!pController.first}" rendered="{!pController.hasPrevious}" rerender="{!panel}" status="status">
+                            <span class="prevNext"><apex:image value="/s.gif" styleClass="first"/></span>
+                        </apex:commandlink>
+                        <apex:outputPanel styleClass="paginator_parent_div" rendered="{!!pController.hasPrevious}">
+                            <span class="prevNext"><apex:image value="/s.gif" styleClass="firstoff"/></span>
+                        </apex:outputPanel>
+                        <apex:commandLink styleClass="paginator_parent_div" action="{!pController.previous}" rendered="{!pController.hasPrevious}" rerender="{!panel}" status="status">
+                            <span class="prevNext"><apex:image value="/s.gif" styleClass="prev"/></span>
+                            Previous
+                        </apex:commandlink>
+                        <apex:outputPanel styleClass="paginator_parent_div" rendered="{!!pController.hasPrevious}">
+                            <span class="prevNext"><apex:image value="/s.gif" styleClass="prevoff"/></span>
+                            Previous
+                        </apex:outputPanel>
+                        <apex:commandLink styleClass="paginator_parent_div" action="{!pController.next}" rendered="{!pController.hasNext}" rerender="{!panel}" status="status">
+                            Next
+                            <span class="prevNext"><apex:image value="/s.gif" styleClass="next"/></span>
+                        </apex:commandlink>
+                        <apex:outputPanel styleClass="paginator_parent_div" rendered="{!!pController.hasNext}">
+                            Next
+                            <span class="prevNext"><apex:image value="/s.gif" styleClass="nextoff"/></span>
+                        </apex:outputPanel>
+                        <apex:commandLink styleClass="paginator_parent_div" action="{!pController.last}" rendered="{!pController.hasNext}" rerender="{!panel}" status="status">
+                            <span class="prevNext"><apex:image value="/s.gif" styleClass="last"/></span>
+                        </apex:commandlink>
+                        <apex:outputPanel styleClass="paginator_parent_div" rendered="{!!pController.hasNext}">
+                            <span class="prevNext"><apex:image value="/s.gif" styleClass="lastoff"/></span>
+                        </apex:outputPanel>
+                    </div>
+                    <div class="right">
+                        <apex:outputLabel value="Page Size" for="pageSizeOptions"/>
+                        <apex:selectList value="{!pController.pageSize}" size="1" id="pageSizeOptions">
+                            <apex:selectOption itemValue="2" itemLabel="2"/>
+                            <apex:selectOption itemValue="5" itemLabel="5"/>
+                            <apex:selectOption itemValue="10" itemLabel="10"/>
+                            <apex:selectOption itemValue="20" itemLabel="20"/>
+                            <apex:selectOption itemValue="50" itemLabel="50"/>
+                            <apex:actionSupport event="onchange" rerender="{!panel}" status="status"/>
+                        </apex:selectList>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <!-- end pagination controls -->
+</apex:component>

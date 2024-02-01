@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HTTR</fullName>
+    <active>true</active>
+    <label>HTTR</label>
+    <picklistValues>
+        <picklist>Remarks__c</picklist>
+        <values>
+            <fullName>Shipment to be collected on</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shipment will be lodge on</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ToHK__c</picklist>
+        <values>
+            <fullName>BEL International Logistics Limited</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Grand Power Express International Limited</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Norman Express Limited</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

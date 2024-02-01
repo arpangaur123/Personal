@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Origin_Services__c</fullName>
+    <defaultValue>&quot;US$ 38.00 / 100 lbs min 4000 lbs / 20&apos;&quot; &amp; BR() &amp;
+&quot;US$ 38.00 /  100 lbs min 8000 lbs / 40&apos;&quot; &amp; BR() &amp;
+&quot;US$ 70.00 / 100 lbs min 1000 lbs&quot; &amp; BR() &amp;
+&quot;US$ 3.50 / cft net min $400.00&quot; &amp; BR() &amp;
+&quot;Note: Shuttling 3rd party &amp; other additional local ancillary services rendered here will be subjected to GST 7%.&quot; &amp; BR() &amp;  &quot;Private apartments here require non refundable fees for lift usage of approx US$ 15.00 - 50.00 which we will invoice back at costs with supporting receipts.&quot;</defaultValue>
+    <externalId>false</externalId>
+    <label>Origin Services</label>
+    <length>32000</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>7</visibleLines>
+</CustomField>

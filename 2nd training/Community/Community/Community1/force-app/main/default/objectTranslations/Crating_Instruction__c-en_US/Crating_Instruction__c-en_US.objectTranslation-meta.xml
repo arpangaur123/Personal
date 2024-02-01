@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Crate Fabrication Instructions</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Crate Fabrication Instructions</value>
+    </caseValues>
+    <layouts>
+        <layout>Crating Instruc Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Crating Instruc Layout HHG</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Crating InstrucHK</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>HTTR - Crating Instruc Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label></label>
+        <name>HTTR</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label></label>
+        <name>Crating_Instruction_Summary_Chinese_Simplified</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Crating_Instruction_Summary_Hong_Kong_Traditional</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Generate_PDF_Simplified_Chinese</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Generate_PDF_Traditional_Chines</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>New</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>New_L</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>New_SG</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>New_SG_L</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Print_Crating_Instructions</name>
+    </webLinks>
+</CustomObjectTranslation>

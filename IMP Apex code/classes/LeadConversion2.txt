@@ -1,0 +1,39 @@
+public class AutoConvertLeads {
+
+    @InvocableMethod
+
+    public static void assignLeads(List<Id> LeadIds){
+		List<Account> accountList = [SELECT Id, Name, Partner_WPID__c	 FROM Account WHERE Partner_WPID__c	 != null];
+        Map<string, string> WPIDToAccountIdMap = new Map<string, string>();
+        for(Account acc : accountList){
+            WPIDToAccountIdMap.put(acc.Partner_WPID__c	 , acc.Id);
+        }
+        
+        LeadStatus cLeadStatus=[Select Id,MasterLabel from LeadStatus where isConverted=true limit 1];
+        List<Lead> leadList = [SELECT Id, Partner_WPID__c	 FROM Lead WHERE Id IN:LeadIds ];
+        system.debug('cLeadStatus ' + cLeadStatus);
+        List<Database.LeadConvert> massLeadConvert=new List<Database.LeadConvert>();
+        
+        for(Lead currentLead : leadList){
+        system.debug('LeadIds ' + LeadIds);
+            Database.LeadConvert LeadConvert=new Database.LeadConvert();
+            LeadConvert.setLeadId(currentLead.Id);
+            LeadConvert.setConvertedStatus(cLeadStatus.MasterLabel);
+            if(string.isNotBlank(currentLead.Partner_WPID__c	)){
+                if(WPIDToAccountIdMap.keyset().contains(currentLead.Partner_WPID__c	)){
+					string accId = WPIDToAccountIdMap.get(currentLead.Partner_WPID__c	);
+                    system.debug('in account selection');
+                	LeadConvert.setAccountId(accId);
+                }
+            }
+            massLeadConvert.add(LeadConvert);
+        }
+
+        if(!massLeadConvert.isEmpty()){
+        system.debug('isEmpty ' );
+            List<Database.LeadConvertResult> lcr=Database.convertLead(massLeadConvert);
+        }
+
+    }
+
+}

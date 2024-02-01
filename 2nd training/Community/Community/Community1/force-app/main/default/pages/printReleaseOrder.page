@@ -1,0 +1,39 @@
+<!--<apex:page standardController="artApp__Transaction__c" showHeader="false" standardstylesheets="false" renderAs="PDF">-->
+<apex:page standardController="artApp__Transaction__c" showHeader="false" renderAs="PDF">
+<apex:stylesheet value="{!$Resource.PackListCSSAS13}"/>
+<table border="0">
+<tr><td align="left"><font style="font-weight:bold;font-family:arial;font-size:x-large">Release Order</font></td>
+<td align="right"><apex:image id="theImage" value="{!$Resource.AMLogo}"/></td>
+</tr>
+</table>
+<body>
+<apex:detail relatedList="true"></apex:detail>
+<br /><br />
+<div style="page-break-after: always;">&nbsp;</div>
+<table style="text-align: left; width: 100%;border-width: 0px;border-spacing: 0px;" border="0" cellpadding="2" cellspacing="2">
+<tbody>
+<tr>
+<td style="vertical-align: top;background-color: rgb(255, 255, 255);"><br />
+Released in Good Order by  <br /><br /><br />
+Name:____________________________ <br />
+<br/>
+Signature: ____________________<br/><br/>
+On behalf of Helu-Trans (S) Pte Ltd<br/>
+<br />
+Date: &nbsp;{!DAY(TODAY())}/{!MONTH(TODAY())}/{!YEAR(TODAY())}<br />
+</td>
+<td style="vertical-align: top;background-color: rgb(255, 255, 255);" align="right"><br />
+Received in Good Order by  <br /><br /><br />
+Name:____________________________ <br />
+<br/>
+Signature: ____________________<br/><br/>
+<!--On behalf of Helu-Trans (S) Pte Ltd--><br/>
+<br />
+Date: &nbsp;{!DAY(TODAY())}/{!MONTH(TODAY())}/{!YEAR(TODAY())}<br />
+</td>
+</tr>
+<tr><td style="background-color: rgb(255, 255, 255);" colspan="2" align="center"><br/><br/><br/><br/><br/><br/><br/><br/><br/>39 Keppel Road, Tanjong Pagar Distripark, #02-04/05 Singapore 089065 <br/>TEL: (+65) 6225 5448 | FAX: (+65) 62732282 | www.helutrans.com</td></tr>
+</tbody>
+</table>
+</body>
+</apex:page>

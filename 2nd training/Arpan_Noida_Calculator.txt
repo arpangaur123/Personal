@@ -1,0 +1,28 @@
+public class SimpleCalculator {
+    public static integer totalInstanceCount = 0;
+
+    public   void add(integer num1 , Integer num2){
+        system.debug('add :'+(num1 +num2));
+    }
+    
+    public  void Subtract(integer num1 , Integer num2){
+        system.debug('subtract : '+(num1>num2 ? num1-num2 : num2-num1));
+    }
+    
+    public  void multiply(integer num1 , Integer num2){
+        system.debug('multiply : '+(num1 * num2));
+    }
+    
+    public   void divide(integer num1 , Integer num2){
+        system.debug('divide : '+(num1 /num2));
+    }
+    
+    //Initialization block
+    {    
+     totalInstanceCount += 1;
+    }
+    public static void getTotalCount(){
+        system.debug('totalInstanceCount :' +totalInstanceCount);
+    }
+}
+

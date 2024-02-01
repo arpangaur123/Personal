@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <description>Helutrans Performance Review for all employees</description>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <label>Helutrans Performance Review</label>
+    <navType>Standard</navType>
+    <tabs>standard-Account</tabs>
+    <tabs>standard-Contact</tabs>
+    <tabs>Employee__c</tabs>
+    <tabs>Skills__c</tabs>
+    <tabs>BASIC_KNOWLEDGE__c</tabs>
+    <tabs>TECHNICAL_SKILLS_1__c</tabs>
+    <tabs>Employee_Review_Form__c</tabs>
+    <tabs>Training_Record_Certification__c</tabs>
+    <tabs>Approval_Matrix__c</tabs>
+    <tabs>Employee_Review_Forms_FIN_HR_IT_QA__c</tabs>
+    <tabs>Artwork_Clone__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>Helutrans_Performance_Review_UtilityBar</utilityBar>
+</CustomApplication>

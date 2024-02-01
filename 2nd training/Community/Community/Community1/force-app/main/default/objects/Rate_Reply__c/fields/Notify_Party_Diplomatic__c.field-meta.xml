@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Notify_Party_Diplomatic__c</fullName>
+    <defaultValue>&quot;Helu-Trans (S) Pte Ltd&quot; &amp; BR() &amp;
+&quot;Tel: (65) 6225 5448&quot; &amp; BR() &amp;
+&quot;Fax: (65) 6273 2282&quot;</defaultValue>
+    <externalId>false</externalId>
+    <label>Notify Party (Diplomatic)</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sea_Export</fullName>
+    <availability>online</availability>
+    <displayType>massActionButton</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Sea Export</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+    <url>/a0J/e
+?CF00N2000000129Zf={!Opportunity.Name}
+&amp;CF00N2000000129Zf_lkid={!Opportunity.Id}
+&amp;00N20000003E3SD={!Opportunity.Account}
+&amp;00N2000000129ZL={!Opportunity.OB_Job_Number__c}{!Opportunity.IB_Quote_Reference_2__c}
+&amp;00N20000003ECSC={!Opportunity.Survey_Address__c}%0D{!Opportunity.Survey_City__c}%0D{!Opportunity.Survey_Zip__c}%0D{!Opportunity.Survey_Country__c}
+&amp;00N20000003ECTF={!Opportunity.Destination_Address__c}%0D{!Opportunity.Destination_City__c}%0D{!Opportunity.Destination_Zip__c}%0D{!Opportunity.Destination_Country__c}
+&amp;00N200000012QPT={!Opportunity.Destination_Agent__c}
+&amp;00N20000003ECoN={!Account.BillingAddress}
+&amp;00N20000003yvkY={!Opportunity.Pack_Date_1__c}
+&amp;00N200000012ANk={!Opportunity.Pack_Date_1__c}
+&amp;00N200000012PDl={!Opportunity.Loading_Date__c}
+&amp;00N20000003ECS7={!Opportunity.Estimated_Volume__c}
+&amp;00N200000012mo0={!Opportunity.Shipment_Details__c}
+&amp;00N200000012mjL={!Opportunity.Mode_of_Transport__c}
+&amp;00N20000003ECdK={!Opportunity.ETD__c}
+&amp;00N20000003ECdP={!Opportunity.ETA__c}
+&amp;00N20000003yg9o={!Opportunity.Load_Type__c}
+&amp;00N20000003yjXO={!Opportunity.APOE_POE__c}
+&amp;00N2000000129Zk={!Opportunity.Survey_Address__c}
+&amp;00N0J000003waEP={!Opportunity.Destination_Address__c}, 
+{!Opportunity.Destination_City__c}, {!Opportunity.Destination_Country__c}
+&amp;00N20000003ECer={!Opportunity.Sales_Person_HHG__c} 
+&amp;00N20000003ECeh={!Opportunity.CS_Shipping_HHG__c}
+&amp;RecordType=0120J000000Yfdd
+&amp;retURL={!Opportunity.Id}</url>
+</WebLink>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Export Shipment Request</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Export Shipment Requests</value>
+    </caseValues>
+    <layouts>
+        <layout>HK Export Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>HTTR - Export Shipment Request Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SG Air Export Layout</layout>
+        <sections>
+            <label></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Air Freight Booking Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>General Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Permit Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SG FCL Export Layout</layout>
+        <sections>
+            <label></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>FCL Freight Booking Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>General Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Permit Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SG LCL Export Layout</layout>
+        <sections>
+            <label></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>General Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>LCL Freight Booking Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Permit Information</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label></label>
+        <name>HK_Export_Shipment_Request</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>HTTR</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>SG_Air_Export</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>SG_FCL_Export</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>SG_LCL_Export</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label></label>
+        <name>Email_Freight_Booking_Air</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Email_Freight_Booking_FCL</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Email_Freight_Booking_LCL</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>New</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>New_L</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Print_Export_Shipment_Request</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Print_Shipping_Mark</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>SG_Air</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>SG_Air_L</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>SG_FCL</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>SG_FCL_L</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>SG_LCL</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>SG_LCL_L</name>
+    </webLinks>
+</CustomObjectTranslation>

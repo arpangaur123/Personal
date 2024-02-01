@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Job_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Job Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>DELIVERY</fullName>
+                <default>false</default>
+                <label>DELIVERY</label>
+            </value>
+            <value>
+                <fullName>PARTIAL PACKING REQUIRED ONLY</fullName>
+                <default>false</default>
+                <label>PARTIAL PACKING REQUIRED ONLY</label>
+            </value>
+            <value>
+                <fullName>STUFFING AT RESIDENCE</fullName>
+                <default>false</default>
+                <label>STUFFING AT RESIDENCE</label>
+            </value>
+            <value>
+                <fullName>STUFFING AT WAREHOUSE</fullName>
+                <default>false</default>
+                <label>STUFFING AT WAREHOUSE</label>
+            </value>
+            <value>
+                <fullName>UNSTUFFING AT WAREHOUSE INTO L/VANS</fullName>
+                <default>false</default>
+                <label>UNSTUFFING AT WAREHOUSE INTO L/VANS</label>
+            </value>
+            <value>
+                <fullName>COLLECTION &amp; DELIVERY ONLY (NO PACKING REQUIRED)</fullName>
+                <default>false</default>
+                <label>COLLECTION &amp; DELIVERY ONLY (NO PACKING REQUIRED)</label>
+            </value>
+            <value>
+                <fullName>PACKING AND DELIVERY ONLY (NO UNPACKING REQUIRED)</fullName>
+                <default>false</default>
+                <label>PACKING AND DELIVERY ONLY (NO UNPACKING REQUIRED)</label>
+            </value>
+            <value>
+                <fullName>DELIVERY ONLY NO UNPACKING REQUIRED</fullName>
+                <default>false</default>
+                <label>DELIVERY ONLY NO UNPACKING REQUIRED</label>
+            </value>
+            <value>
+                <fullName>IMPORT UNSTUFFING AND COMPLETE UNPACKING</fullName>
+                <default>false</default>
+                <label>IMPORT UNSTUFFING AND COMPLETE UNPACKING</label>
+            </value>
+            <value>
+                <fullName>LOCAL TRANSFER</fullName>
+                <default>false</default>
+                <label>LOCAL TRANSFER</label>
+            </value>
+            <value>
+                <fullName>RETRIEVAL FOR SHIPPER TO VIEW</fullName>
+                <default>false</default>
+                <label>RETRIEVAL FOR SHIPPER TO VIEW</label>
+            </value>
+            <value>
+                <fullName>RETRIEVAL FOR DELIVERY AT A LATER DATE</fullName>
+                <default>false</default>
+                <label>RETRIEVAL FOR DELIVERY AT A LATER DATE</label>
+            </value>
+            <value>
+                <fullName>AIR IMPORT CLEARANCE</fullName>
+                <default>false</default>
+                <label>AIR IMPORT CLEARANCE</label>
+            </value>
+            <value>
+                <fullName>SEA IMPORT CLEARANCE</fullName>
+                <default>false</default>
+                <label>SEA IMPORT CLEARANCE</label>
+            </value>
+            <value>
+                <fullName>AIR EXPORT CLEARANCE</fullName>
+                <default>false</default>
+                <label>AIR EXPORT CLEARANCE</label>
+            </value>
+            <value>
+                <fullName>SEA EXPORT CLEARANCE</fullName>
+                <default>false</default>
+                <label>SEA EXPORT CLEARANCE</label>
+            </value>
+            <value>
+                <fullName>PREDELIVERY OF MATERIALS</fullName>
+                <default>false</default>
+                <label>PREDELIVERY OF MATERIALS</label>
+            </value>
+            <value>
+                <fullName>COLLECTION OF DEBRIS</fullName>
+                <default>false</default>
+                <label>COLLECTION OF DEBRIS</label>
+            </value>
+            <value>
+                <fullName>UNSTUFF FROM CONTAINER AT WHSE AND RE-DELIVERY TO RESIDENCE</fullName>
+                <default>false</default>
+                <label>UNSTUFF FROM CONTAINER AT WHSE AND RE-DELIVERY TO RESIDENCE</label>
+            </value>
+            <value>
+                <fullName>WAREHOUSE DUTIES</fullName>
+                <default>false</default>
+                <label>WAREHOUSE DUTIES</label>
+            </value>
+            <value>
+                <fullName>ANNUAL LEAVE</fullName>
+                <default>false</default>
+                <label>ANNUAL LEAVE</label>
+            </value>
+            <value>
+                <fullName>COLLECTION ONLY (NO PACKING REQUIRED)</fullName>
+                <default>false</default>
+                <label>COLLECTION ONLY (NO PACKING REQUIRED)</label>
+            </value>
+            <value>
+                <fullName>MEDICAL LEAVE</fullName>
+                <default>false</default>
+                <label>MEDICAL LEAVE</label>
+            </value>
+            <value>
+                <fullName>ATTACHED TO ARTMOVE DEPT</fullName>
+                <default>false</default>
+                <label>ATTACHED TO ARTMOVE DEPT</label>
+            </value>
+            <value>
+                <fullName>PREPACKING FOR LOCAL MOVE</fullName>
+                <default>false</default>
+                <label>PREPACKING FOR LOCAL MOVE</label>
+            </value>
+            <value>
+                <fullName>REMOVAL AND COMPLETE UNPACKING</fullName>
+                <default>false</default>
+                <label>REMOVAL AND COMPLETE UNPACKING</label>
+            </value>
+            <value>
+                <fullName>PACKING FOR WAREHOUSING SERVICES</fullName>
+                <default>false</default>
+                <label>PACKING FOR WAREHOUSING SERVICES</label>
+            </value>
+            <value>
+                <fullName>SEA EXPORT PACKING</fullName>
+                <default>false</default>
+                <label>SEA EXPORT PACKING</label>
+            </value>
+            <value>
+                <fullName>AIR EXPORT PACKING</fullName>
+                <default>false</default>
+                <label>AIR EXPORT PACKING</label>
+            </value>
+            <value>
+                <fullName>PRE-DELIVERY OF PACKING MATERIALS &amp; CRATING MEASUREMENTS TO BE TAKEN</fullName>
+                <default>false</default>
+                <label>PRE-DELIVERY OF PACKING MATERIALS &amp; CRATING MEASUREMENTS TO BE TAKEN</label>
+            </value>
+            <value>
+                <fullName>MCST COLLECTION</fullName>
+                <default>false</default>
+                <label>MCST COLLECTION</label>
+            </value>
+            <value>
+                <fullName>RETRIEVAL FOR CONDITION CHECKING</fullName>
+                <default>false</default>
+                <label>RETRIEVAL FOR CONDITION CHECKING</label>
+            </value>
+            <value>
+                <fullName>RETRIEVAL FOR DELIVERY AND COMPLETE UNPACKING</fullName>
+                <default>false</default>
+                <label>RETRIEVAL FOR DELIVERY AND COMPLETE UNPACKING</label>
+            </value>
+            <value>
+                <fullName>RETRIEVAL FOR DELIVERY, NO UNPACKING REQUIRED</fullName>
+                <default>false</default>
+                <label>RETRIEVAL FOR DELIVERY, NO UNPACKING REQUIRED</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

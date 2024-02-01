@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Initials_Uppercase</fullName>
+    <active>true</active>
+    <description>Initials to be uppercase</description>
+    <errorConditionFormula>IF (UPPER( Initials__c ) = Initials__c, false,true)</errorConditionFormula>
+    <errorDisplayField>Initials__c</errorDisplayField>
+    <errorMessage>Initials must be in UPPER CASE.</errorMessage>
+</ValidationRule>

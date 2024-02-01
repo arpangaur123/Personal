@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Agent_Name__c</fullName>
+    <defaultValue>&quot;Helu-Trans (S) Pte Ltd, UEN No. 197902286N (HT)&quot;</defaultValue>
+    <externalId>false</externalId>
+    <label>Agent Name &amp; UEN No.</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Helu-Trans (S) Pte Ltd, UEN No. 197902286N (HT)</fullName>
+                <default>true</default>
+                <label>Helu-Trans (S) Pte Ltd, UEN No. 197902286N (HT)</label>
+            </value>
+            <value>
+                <fullName>Helutrans Artmove (S) Pte Ltd, UEN No. 200916870M (HTAM)</fullName>
+                <default>false</default>
+                <label>Helutrans Artmove (S) Pte Ltd, UEN No. 200916870M (HTAM)</label>
+            </value>
+            <value>
+                <fullName>HT</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HT</label>
+            </value>
+            <value>
+                <fullName>Helu-Trans Singapore</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Helu-Trans Singapore</label>
+            </value>
+            <value>
+                <fullName>Martinspeed</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Martinspeed</label>
+            </value>
+            <value>
+                <fullName>Momart Ltd</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Momart Ltd</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

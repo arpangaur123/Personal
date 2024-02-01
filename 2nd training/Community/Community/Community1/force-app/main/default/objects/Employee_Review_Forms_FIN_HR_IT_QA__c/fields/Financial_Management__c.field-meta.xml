@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Financial_Management__c</fullName>
+    <description>-Financial reporting: Prepare financial reports for management &amp; authorities&apos; submission in a timely manner
+-Financial governance: track financial transactions, manage performance &amp; control data, compliance, operations, &amp; disclosures.
+-Ensure all revenue &amp; cost have been properly taken up in the correct accounting period with error below 5%
+-Sales report
+-Resolve issues in accounts &amp; reconciliation on General Ledger
+-Ad-hoc reports
+-Consistency: for classification of information in the report</description>
+    <externalId>false</externalId>
+    <inlineHelpText>-Financial reporting: Prepare financial reports for management &amp; authorities&apos; submission in a timely manner
+-Financial governance: track financial transactions, manage performance &amp; control data, compliance, operations, &amp; disclosures.
+-Ensure all revenue &amp; cost have been properly taken up in the correct accounting period with error below 5%
+-Sales report
+-Resolve issues in accounts &amp; reconciliation on General Ledger
+-Ad-hoc reports
+-Consistency: for classification of information in the report</inlineHelpText>
+    <label>Financial Management</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1</fullName>
+                <default>true</default>
+                <label>1</label>
+            </value>
+            <value>
+                <fullName>2</fullName>
+                <default>false</default>
+                <label>2</label>
+            </value>
+            <value>
+                <fullName>3</fullName>
+                <default>false</default>
+                <label>3</label>
+            </value>
+            <value>
+                <fullName>4</fullName>
+                <default>false</default>
+                <label>4</label>
+            </value>
+            <value>
+                <fullName>5</fullName>
+                <default>false</default>
+                <label>5</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

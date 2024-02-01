@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NewCN_L</fullName>
+    <availability>online</availability>
+    <displayType>massActionButton</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>New(L)</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+    <url>/lightning/o/Inbound_Check_List__c/new?recordTypeId=01220000000JOdYAAW&amp;navigationLocation=RELATED_LIST&amp;
+backgroundContext=%2Flightning%2Fr%2FJob_Reference__c%2F{!Job_Reference__c.Id}%2Fview&amp;defaultFieldValues=Job_Reference__c={!Job_Reference__c.Id},
+MAWB_OBL_No__c={!Job_Reference__c.MAWB__c} {!Job_Reference__c.OBL__c},
+Mode_of_Shipment__c={!Job_Reference__c.Mode_of_Shipment__c},
+Flight__c={!Job_Reference__c.Flight_Number__c},
+Vessel_Voyage__c={!Job_Reference__c.Vessel_Voyage__c},
+Description_of_Goods__c={!Job_Reference__c.Description_of_Goods__c},
+No_of_Items__c={!Job_Reference__c.No_of_Packages_Crates__c}</url>
+</WebLink>

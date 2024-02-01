@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Locations_in_Freeport</fullName>
+    <columns>NAME</columns>
+    <columns>Storage_Facility__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Storage_Facility__c</field>
+        <operation>contains</operation>
+        <value>freeport</value>
+    </filters>
+    <label>Locations in Freeport</label>
+    <language>en_US</language>
+</ListView>

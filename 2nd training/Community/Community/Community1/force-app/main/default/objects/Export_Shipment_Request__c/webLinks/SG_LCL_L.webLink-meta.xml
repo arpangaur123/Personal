@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SG_LCL_L</fullName>
+    <availability>online</availability>
+    <displayType>massActionButton</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>SG - LCL(L)</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+    <url>/lightning/o/Export_Shipment_Request__c/new?recordTypeId=0120J000000R2zqQAC&amp;
+navigationLocation=RELATED_LIST&amp;backgroundContext=%2Flightning%2Fr%2FJob_Reference__c%2F{!Job_Reference__c.Id}%2Fview&amp;defaultFieldValues=Job_Reference__c={!Job_Reference__c.Id},
+No_of_Packages_Crates__c={!Job_Reference__c.No_of_Packages_Crates__c},
+Est_Crate_Dimensions_CM__c={!Job_Reference__c.Packed_Dimensions_cm__c},
+Consignee_Details__c={!Job_Reference__c.AMJR_Consignees_Details__c},
+Notify_Party_Details__c={!Job_Reference__c.AMJR_Notifying_Party__c},
+Cargo_Description__c={!Job_Reference__c.Description_of_Goods__c},
+Collector__c={!Job_Reference__c.Client_Account__c},
+Final_port_of_arrival_Air_Sea__c={!Job_Reference__c.Destination__c},
+Est_Chargeable_Volume_CBM__c={!Job_Reference__c.Chargeable_Volume_cbm__c},
+Est_Chargeable_Weight_kg__c={!Job_Reference__c.Chargeable_Weight_kg__c},
+Outward_Forwarder_Agent__c={!Job_Reference__c.Outward_Forwarder_Agent_LCL__c},
+LCL_Freight_Unit_Cost_SGD__c={!Job_Reference__c.Freight_Unit_Cost_LCL__c},
+Other_OFA__c={!Job_Reference__c.Others_LCL__c},
+Shipper_Name_Address__c={!Job_Reference__c.AMJR_Shippers_Details__c}</url>
+</WebLink>

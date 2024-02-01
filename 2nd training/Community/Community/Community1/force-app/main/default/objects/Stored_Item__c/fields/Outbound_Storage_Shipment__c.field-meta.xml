@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Outbound_Storage_Shipment__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Outbound Storage Shipment</label>
+    <referenceTo>Storage_Shipment__c</referenceTo>
+    <relationshipLabel>Stored Items (Outbound Storage Shipment)</relationshipLabel>
+    <relationshipName>Stored_Item1</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

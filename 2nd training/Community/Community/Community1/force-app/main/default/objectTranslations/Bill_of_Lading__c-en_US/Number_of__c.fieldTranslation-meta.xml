@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>Number_of__c</name>
+    <picklistValues>
+        <masterLabel>ORIGINAL BL - 3 COPIES</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SEA WAY BILL COPY</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TELEX RELEASE / SURRENDER BL COPY</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

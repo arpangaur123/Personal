@@ -1,0 +1,64 @@
+<apex:page controller="shartwkdetails" sidebar="false">
+<STYLE>div#home_Tab{display:none!important;}</STYLE>
+<div id="demoContainer"><script
+language="JavaScript">try{var
+pa=document.getElementById("demoContainer").parentNode.parentNode;
+pa.style.display = "none";}catch(err){alert('There was an error on this
+webpage='+err.description);}</script><script
+language="JavaScript">function removeSerchbox(){var a = [];var re =
+new RegExp('\\bsearchCell\\b');var els =
+document.getElementsByTagName("td");for(var i=0,j=els.length; i<j;
+i++)if(re.test(els[i].className))a.push(els[i]);var
+parent=a[0];parent.style.display='none';} function removeSerchbox2(){var a = [];var re =
+new RegExp('\\blast\\b');var els =
+document.getElementsByTagName("td");for(var i=0,j=els.length; i<j;
+i++)if(re.test(els[i].className))a.push(els[i]);var
+parent=a[0];parent.style.display='none';} function removeSerchbox3(){var a = [];var re =
+new RegExp('\\bright\\b');var els =
+document.getElementsByTagName("td");for(var i=0,j=els.length; i<j;
+i++)if(re.test(els[i].className))a.push(els[i]);var
+parent=a[0];parent.style.display='none';} var oldonload = window.onload;
+   if (typeof window.onload != 'function')    {     window.onload =
+oldonload;   } else {     window.onload = function() {      if
+(oldonload) {      oldonload();    }    removeSerchbox();removeSerchbox2();removeSerchbox3();   }  }
+</script></div>
+<div align="right"><a href="../secur/logout.jsp" target="_top">Logout</a></div><br></br>
+Hello {!$User.FirstName}
+<p><b>My Collection of Artworks</b></p>
+<apex:form >
+<apex:pageblock >
+        <apex:pageblocktable value="{!artwkdetails}"  var="artwk">
+            <apex:column headervalue="Artist">
+                    <apex:outputtext value="{!artwk.artApp__Artist__r.Name}"/>                    
+            </apex:column>
+            <apex:column headervalue="Title">
+                    <apex:outputtext value="{!artwk.Name}"/>                    
+            </apex:column>            
+            <apex:column headervalue="Media">
+                    <apex:outputtext value="{!artwk.artApp__Media__c}"/>
+            </apex:column>
+            <apex:column headervalue="Dimensions">
+                    <apex:outputtext value="{!artwk.Dimensions__c}"/>
+            </apex:column>
+            <apex:column headervalue="Barcode">
+                    <apex:outputtext value="{!artwk.Barcode_ID__c}"/>
+            </apex:column>
+            <apex:column headervalue="II Permit Declared Date">
+                    <apex:outputtext value="{!artwk.II_Permit_Declared_Date__c}"/>
+            </apex:column>
+            <apex:column headervalue="Date In">
+                    <apex:outputtext value="{!artwk.Date_In__c}"/>
+            </apex:column>
+            <apex:column headervalue="Date Out">
+                    <apex:outputtext value="{!artwk.Date_Out__c}"/>
+            </apex:column>
+            <apex:column headervalue="Location">
+                    <apex:outputtext value="{!artwk.Internal_Location__r.Name}"/>
+            </apex:column>
+            <apex:column headervalue="Image">
+                    <apex:outputlink value="{!artwk.artApp__Primary_Image_URL__c}" target="_blank"><apex:image value="../servlet/servlet.FileDownload?file={!artwk.artApp__Primary_Image_Id__c}" width="25" height="25"/></apex:outputlink>
+            </apex:column>
+        </apex:pageblocktable>        
+    </apex:pageblock>    
+    </apex:form>        
+</apex:page>

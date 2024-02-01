@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ContractApprover</fullName>
+    <active>true</active>
+    <description>This view allows you to select &quot;Approved&quot; under QCC status</description>
+    <label>Contract Approver</label>
+    <picklistValues>
+        <picklist>In_Out_Bound__c</picklist>
+        <values>
+            <fullName>Inbound</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outbound</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Load_Type__c</picklist>
+        <values>
+            <fullName>Lifvans</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Loose Load</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Mode__c</picklist>
+        <values>
+            <fullName>DS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Quote_Status__c</picklist>
+        <values>
+            <fullName>Accepted by Client</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Draft</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected by Client</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sent Out</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>To be Approved</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Transport__c</picklist>
+        <values>
+            <fullName>AIR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ROAD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SEA</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Units__c</picklist>
+        <values>
+            <fullName>CuFt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kg</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Where2Where__c</picklist>
+        <values>
+            <fullName>Destination Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Door to Door</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Door to Port</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Free On Board</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Origin Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pack for Storage</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NewOld_L</fullName>
+    <availability>online</availability>
+    <displayType>massActionButton</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>NewOld(L)</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+    <url>/lightning/o/Job_Reference__c/new?navigationLocation=RELATED_LIST&amp;
+backgroundContext=%2Flightning%2Fr%2FOpportunity%2F{!Opportunity.Id}%2Fview&amp;defaultFieldValues=Opportunity__c={!Opportunity.Id},
+AMJR_Delivery_Details__c={!Opportunity.AMO_Delivery_Details__c},
+AMJR_Notifying_Party__c={!Opportunity.AMO_Notifying_Party__c},
+AMJR_Consignees_Details__c={!Opportunity.AMO_Consignees_Details__c},
+AMJR_Shippers_Details__c={!Opportunity.AMO_Shippers_Details__c},
+AMJR_Phone__c={!Opportunity.AMO_Phone__c},
+AMJR_Fax__c={!Opportunity.AMO_Fax__c},
+AMJR_Mobile__c={!Opportunity.AMO_Mobile__c},
+AMJR_Email__c={!Opportunity.AMO_Email__c},
+AMJR_Billing_Contact__c={!Opportunity.AMO_Billing_Contact__c},
+AMJR_Billing_Address__c={!Opportunity.AMO_Billing_Address__c}</url>
+</WebLink>

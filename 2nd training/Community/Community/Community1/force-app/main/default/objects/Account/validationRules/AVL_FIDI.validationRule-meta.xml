@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AVL_FIDI</fullName>
+    <active>true</active>
+    <description>FIDI should not be checked with AVL</description>
+    <errorConditionFormula>AVL__c = true  &amp;&amp;  FIDI__c  = true</errorConditionFormula>
+    <errorDisplayField>FIDI__c</errorDisplayField>
+    <errorMessage>FIDI should not be checked with AVL</errorMessage>
+</ValidationRule>

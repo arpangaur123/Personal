@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Permit_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Permit Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ATA Carnet</fullName>
+                <default>false</default>
+                <label>ATA Carnet</label>
+            </value>
+            <value>
+                <fullName>OD - Offset IM (Export from same FTZ)</fullName>
+                <default>false</default>
+                <label>OD - Offset IM (Export from same FTZ)</label>
+            </value>
+            <value>
+                <fullName>OD - Permanent</fullName>
+                <default>false</default>
+                <label>OD - Permanent</label>
+            </value>
+            <value>
+                <fullName>OO - TCI (Temporary Export/Re-imported goods, Fresh OO)</fullName>
+                <default>false</default>
+                <label>OO - TCI (Temporary Export/Re-imported goods, Fresh OO)</label>
+            </value>
+            <value>
+                <fullName>OO - Offset II under APS</fullName>
+                <default>false</default>
+                <label>OO - Offset II under APS</label>
+            </value>
+            <value>
+                <fullName>OO - Offset II under TCE, MUSUEM</fullName>
+                <default>false</default>
+                <label>OO - Offset II under TCE, MUSUEM</label>
+            </value>
+            <value>
+                <fullName>OO - Offset II under TCO, MUSUEM</fullName>
+                <default>false</default>
+                <label>OO - Offset II under TCO, MUSUEM</label>
+            </value>
+            <value>
+                <fullName>OO - Offset II under TCS, MUSUEM</fullName>
+                <default>false</default>
+                <label>OO - Offset II under TCS, MUSUEM</label>
+            </value>
+            <value>
+                <fullName>OO - Offset RM with Export Details</fullName>
+                <default>false</default>
+                <label>OO - Offset RM with Export Details</label>
+            </value>
+            <value>
+                <fullName>OT - Offset IM (Export from different FTZ)</fullName>
+                <default>false</default>
+                <label>OT - Offset IM (Export from different FTZ)</label>
+            </value>
+            <value>
+                <fullName>OU - Offset II &amp; RM without Export Details</fullName>
+                <default>false</default>
+                <label>OU - Offset II &amp; RM without Export Details</label>
+            </value>
+            <value>
+                <fullName>RM - Removal (Offset II/RM)</fullName>
+                <default>false</default>
+                <label>RM - Removal (Offset II/RM)</label>
+            </value>
+            <value>
+                <fullName>Export under LU (Not Applicable)</fullName>
+                <default>false</default>
+                <label>Export under LU (Not Applicable)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>10</visibleLines>
+</CustomField>

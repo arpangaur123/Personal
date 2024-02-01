@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Storage Shipment</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Storage Shipments</value>
+    </caseValues>
+    <layouts>
+        <layout>Inbound Shipment</layout>
+        <sections>
+            <label></label>
+            <section>Inbound Shipment Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Outbound Shipment</layout>
+        <sections>
+            <label></label>
+            <section>Destination Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Outbound Shipment Details</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label></label>
+        <name>InboundShipment</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>OutboundShipment</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

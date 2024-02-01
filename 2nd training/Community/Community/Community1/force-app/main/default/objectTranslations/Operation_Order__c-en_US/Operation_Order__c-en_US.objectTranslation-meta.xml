@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Operation Order</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Operation Orders</value>
+    </caseValues>
+    <layouts>
+        <layout>HTTR - Operation Order Layout</layout>
+        <sections>
+            <label></label>
+            <section>Collection &amp; Delivery Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Documents &amp; Acknowledgement</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>OO Instructions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Ops Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>WWI Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>WWI Instructions</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Manpower</layout>
+        <sections>
+            <label></label>
+            <section>Collection &amp; Delivery Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Ops Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>OO New</layout>
+        <sections>
+            <label></label>
+            <section>Collection &amp; Delivery Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Documents &amp; Acknowledgement</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>OO Instructions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Ops Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>WWI Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>WWI Instructions</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>OOBJ</layout>
+        <sections>
+            <label></label>
+            <section>Collection &amp; Delivery Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Documents &amp; Acknowledgement</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Instructions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Ops Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>WWI Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>WWI Instructions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>________________________________________________________________________________</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>OOBJ2</layout>
+        <sections>
+            <label></label>
+            <section>Collection &amp; Delivery Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Documents &amp; Acknowledgement</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>OO Instructions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Ops Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>WWI Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Warehouse Instructions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>________________________________________________________________________________</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>OOHK</layout>
+        <sections>
+            <label></label>
+            <section>Collection &amp; Delivery Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Documents &amp; Acknowledgement</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Ops Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Ops Instructions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>WWI Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>WWI Instructions</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>OOSG</layout>
+        <sections>
+            <label></label>
+            <section>Collection &amp; Delivery Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Documents &amp; Acknowledgement</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>OO Instructions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Ops Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>WWI Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>WWI Instructions</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>OOSH</layout>
+        <sections>
+            <label></label>
+            <section>Collection &amp; Delivery Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Documents &amp; Acknowledgement</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Instructions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Ops Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>WWI Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>WWI Instructions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>________________________________________________________________________________</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>OOSH2</layout>
+        <sections>
+            <label></label>
+            <section>Collection &amp; Delivery Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Documents &amp; Acknowledgement</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Instructions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Ops Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>WWI Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>WWI Instructions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>________________________________________________________________________________</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Operation Order Layout</layout>
+        <sections>
+            <label></label>
+            <section>Collection &amp; Delivery Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Documents &amp; Acknowledgement</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Instructions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Ops Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>________________________________________________________________________________</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>WWI-SG</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Instructions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Ops Details</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label></label>
+        <name>New_COSG</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>New_DOSG</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>New_RECOSG</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>New_RELOSG</name>
+    </quickActions>
+    <recordTypes>
+        <label></label>
+        <name>HTTR</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>OO</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>OOBJ</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>OOHK</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>OOSG</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>OOSH</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>RR</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>WWI</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Amount_and_Currency_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Job_date_equalmore_today</name>
+    </validationRules>
+    <webLinks>
+        <label></label>
+        <name>Email_OO</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>NEW_L</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>NEW_OOBJ_L</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>New</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>New_BJ</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>New_MP</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>New_OOHK</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>New_OOHK_L</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>New_OOSG</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>New_OOSG_L</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>New_OO_HTTR</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>New_OO_HTTR_L</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>New_RR_L</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>New_WWI</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>New_WWI_L</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Print_OO</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Print_OOCN</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Print_OOHK</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Print_OOSG</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Print_Operation_Order</name>
+    </webLinks>
+</CustomObjectTranslation>

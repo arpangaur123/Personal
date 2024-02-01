@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Quote_Status__c</fullName>
+    <description>Fill in the appriate status</description>
+    <externalId>false</externalId>
+    <label>Quote Status</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Draft</fullName>
+                <default>true</default>
+                <label>Draft</label>
+            </value>
+            <value>
+                <fullName>To be Approved</fullName>
+                <default>false</default>
+                <label>To be Approved</label>
+            </value>
+            <value>
+                <fullName>Approved</fullName>
+                <default>false</default>
+                <label>Approved</label>
+            </value>
+            <value>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+                <label>Rejected</label>
+            </value>
+            <value>
+                <fullName>Sent Out</fullName>
+                <default>false</default>
+                <label>Sent Out</label>
+            </value>
+            <value>
+                <fullName>Accepted by Client</fullName>
+                <default>false</default>
+                <label>Accepted by Client</label>
+            </value>
+            <value>
+                <fullName>Rejected by Client</fullName>
+                <default>false</default>
+                <label>Rejected by Client</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

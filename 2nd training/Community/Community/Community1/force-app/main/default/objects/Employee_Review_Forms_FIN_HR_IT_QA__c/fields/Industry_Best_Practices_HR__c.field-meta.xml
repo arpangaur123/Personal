@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Industry_Best_Practices_HR__c</fullName>
+    <description>-Develop long term sustainability via HR-related SOP, software to monitor/control, renewal of Group H&amp;S insurance, workmen compensation, etc. 
+-Support current and future business needs through the development, engagement, motivation and preservation of human capital (Eg staff training, skills upgrade, career progression, and welfare)
+-Perform the full lifecycle recruitment process, when required, and ensure that this is carried out in accordance with operating procedures and adhere to best practice principles.
+-Analyze Industry trends 
+-Schedule and conduct meetings with departments to proactively identify topics to be addressed or areas in need of additional instruction</description>
+    <externalId>false</externalId>
+    <inlineHelpText>-Develop long term sustainability via HR-related SOP, software to monitor/control, renewal of Group H&amp;S insurance, workmen compensation, etc. 
+-Support current and future business needs through the development, engagement, motivation and preservation of human capital (Eg staff training, skills upgrade, career progression, and welfare)
+-Perform the full lifecycle recruitment process, when required, and ensure that this is carried out in accordance with operating procedures and adhere to best practice</inlineHelpText>
+    <label>Industry Best Practices [HR]</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1</fullName>
+                <default>true</default>
+                <label>1</label>
+            </value>
+            <value>
+                <fullName>2</fullName>
+                <default>false</default>
+                <label>2</label>
+            </value>
+            <value>
+                <fullName>3</fullName>
+                <default>false</default>
+                <label>3</label>
+            </value>
+            <value>
+                <fullName>4</fullName>
+                <default>false</default>
+                <label>4</label>
+            </value>
+            <value>
+                <fullName>5</fullName>
+                <default>false</default>
+                <label>5</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mode_4__c</fullName>
+    <externalId>false</externalId>
+    <label>Mode 4</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Air</fullName>
+                <default>false</default>
+                <label>Air</label>
+            </value>
+            <value>
+                <fullName>LCL</fullName>
+                <default>false</default>
+                <label>LCL</label>
+            </value>
+            <value>
+                <fullName>20&apos; FCL</fullName>
+                <default>false</default>
+                <label>20&apos; FCL</label>
+            </value>
+            <value>
+                <fullName>40&apos; FCL</fullName>
+                <default>false</default>
+                <label>40&apos; FCL</label>
+            </value>
+            <value>
+                <fullName>40 HC</fullName>
+                <default>false</default>
+                <label>40 HC</label>
+            </value>
+            <value>
+                <fullName>20&apos; + 40&apos;</fullName>
+                <default>false</default>
+                <label>20&apos; + 40&apos;</label>
+            </value>
+            <value>
+                <fullName>40&apos; + 40&apos;</fullName>
+                <default>false</default>
+                <label>40&apos; + 40&apos;</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

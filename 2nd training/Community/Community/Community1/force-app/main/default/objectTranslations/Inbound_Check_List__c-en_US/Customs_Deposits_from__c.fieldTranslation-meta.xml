@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>Customs_Deposits_from__c</name>
+    <picklistValues>
+        <masterLabel>HT&apos;s BG</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LU</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other&apos;s BG</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

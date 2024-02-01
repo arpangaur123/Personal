@@ -1,0 +1,16 @@
+<apex:page controller="MyPagingController2" contentType="application/vnd.ms-excel#{!$User.FirstName}{!$User.LastName}{!todayDate}.xls" showHeader="false" standardStylesheets="false">
+
+    <apex:pageBlock >
+        <apex:dataTable value="{!artWorkWrapperList}" var="artwk">
+               <apex:column headervalue="Artist" value="{!artwk.apArt.artApp__Artist__r.Name}"/>           
+               <apex:column headervalue="Title" value="{!artwk.apArt.Name}"/>
+               <apex:column headervalue="Barcode" value="{!artwk.apArt.Barcode_ID__c}"/>                
+               <apex:column headervalue="Item No" value="{!artwk.apArt.Item_No__c}"/>               
+               <apex:column headervalue="Lot No." value="{!artwk.apArt.Lot_No__c}"/>
+               <apex:column headervalue="Dimension" value="{!artwk.apArt.Dimensions__c}"/>
+               <apex:column headervalue="Exhibition" value="{!artwk.apArt.artApp__Exhibition__r.Name}"/>              
+               <apex:column headervalue="Packed Dimensions" value="{!artwk.apArt.Packed_Dimensions__c}"/>                       
+               <apex:column headervalue="Packing Method" value="{!artwk.apArt.Packing_Method__c}"/>
+        </apex:dataTable>
+        </apex:pageBlock>
+</apex:page>

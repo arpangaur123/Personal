@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Freight_Type_to_Book__c</fullName>
+    <description>For FCL only</description>
+    <externalId>false</externalId>
+    <label>Freight Type to Book</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Sea - FCL 20FT</fullName>
+                <default>false</default>
+                <label>Sea - FCL 20FT</label>
+            </value>
+            <value>
+                <fullName>Sea - FCL 40FT</fullName>
+                <default>false</default>
+                <label>Sea - FCL 40FT</label>
+            </value>
+            <value>
+                <fullName>Sea - FCL 40HC</fullName>
+                <default>false</default>
+                <label>Sea - FCL 40HC</label>
+            </value>
+            <value>
+                <fullName>Others (State type under &apos;Important Field&apos;)</fullName>
+                <default>false</default>
+                <label>Others (State type under &apos;Important Field&apos;)</label>
+            </value>
+            <value>
+                <fullName>Air</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Air</label>
+            </value>
+            <value>
+                <fullName>Sea - LCL</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sea - LCL</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>6</visibleLines>
+</CustomField>

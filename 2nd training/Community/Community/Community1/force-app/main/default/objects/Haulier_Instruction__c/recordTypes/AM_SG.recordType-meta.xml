@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AM_SG</fullName>
+    <active>true</active>
+    <description>For Singapore office</description>
+    <label>AM SG</label>
+    <picklistValues>
+        <picklist>Address__c</picklist>
+        <values>
+            <fullName>Freeport</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HT Along Fence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HT Loading Bay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Others</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type__c</picklist>
+        <values>
+            <fullName>INBOUND</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>LOCAL TRANSPORT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OUTBOUND</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Vendor__c</picklist>
+        <values>
+            <fullName>BHS KINETIC PTE LTD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MAYOR EXPRESS FREIGHT SERVICES PTE LTD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ML LOGISTICS SERVICES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Others</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PROSPECT LOGISTICS PTE LTD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SIGMA CONTAINER LINE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SUPREME CONTAINER %26 WAREHOUSING</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

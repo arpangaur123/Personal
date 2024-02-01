@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>HT Invoice</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>HT Invoices</value>
+    </caseValues>
+    <layouts>
+        <layout>AM Invoice Layout</layout>
+        <sections>
+            <label></label>
+            <section>Credit Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Invoice Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Payment Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>HHG Invoice</layout>
+        <sections>
+            <label></label>
+            <section>Credit Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Invoice Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Payment Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>HTTR - HT Invoice Layout</layout>
+        <sections>
+            <label></label>
+            <section>Credit Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Invoice Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Payment Details</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>AM_Invoice</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>BJ_Invoice</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>FP_Invoice</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>HHG_Invoice</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>HK_Invoice</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>HTTR</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>SH_Invoice</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

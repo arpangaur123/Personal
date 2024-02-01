@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Employee Review Forms (FIN/HR/IT/QA)</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Employee Review Forms (FIN/HR/IT/QA)</value>
+    </caseValues>
+    <layouts>
+        <layout>Employee Review Forms (FIN/HR/IT/QA) Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Employee Particulars:</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Helutrans: FINANCE TEAM Skill Matrix</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Overall Performance Rating (Add Part1-4)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 1: BASIC KNOWLEDGE (15%)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: CUSTOMER SERVICE &amp; TECHNICAL SKILLS (30%)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 3: JOB SKILLS (30%)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 4: SOFT SKILLS (25%)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 5: SPECIAL SKILLS (For Payrise &amp; Promotion Opportunities)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 6: Training and Career Development</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 7: Supervisor&apos;s Comments</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>_</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Finance</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Employee Particulars:</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Helutrans: FINANCE TEAM Skill Matrix</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Overall Performance Rating (Add Part1-4)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 1: BASIC KNOWLEDGE (15%)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: CUSTOMER SERVICE &amp; TECHNICAL SKILLS (30%)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 3: JOB SKILLS (30%)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 4: SOFT SKILLS (25%)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 5: SPECIAL SKILLS (For Payrise &amp; Promotion Opportunities)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 6: Training and Career Development</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 7: Supervisor&apos;s Comments</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>_</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Human Resource</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Employee Particulars:</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Helutrans: IT TEAM Skill Matrix</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Overall Performance Rating (Add Part1-4)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 1: BASIC KNOWLEDGE (15%)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS (30%)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 3: JOB SKILLS (30%)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 4: SOFT SKILLS (25%)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 5: SPECIAL SKILLS (For Payrise &amp; Promotion Opportunities)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 6: Training and Career Development</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 7: Supervisor&apos;s Comments</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>_</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>IT</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Employee Particulars:</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Helutrans: IT TEAM Skill Matrix</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Overall Performance Rating (Add Part1-4)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 1: BASIC KNOWLEDGE (15%)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 2: TECHNICAL SKILLS (30%)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 3: JOB SKILLS (30%)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 4: SOFT SKILLS (25%)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 5: SPECIAL SKILLS (For Payrise &amp; Promotion Opportunities)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 6: Training and Career Development</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Part 7: Supervisor&apos;s Comments</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>_</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label></label>
+        <name>Finance</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Human_Resource</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>IT</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Past_Review_date</name>
+    </validationRules>
+</CustomObjectTranslation>

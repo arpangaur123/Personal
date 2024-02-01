@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Comment_Artwork_safety__c</fullName>
+    <description>Comment for Artwork safety</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Comment for Artwork safety</inlineHelpText>
+    <label>Comment Artwork safety</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

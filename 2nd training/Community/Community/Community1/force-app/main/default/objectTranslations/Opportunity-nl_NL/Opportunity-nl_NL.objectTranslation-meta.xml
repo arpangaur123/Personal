@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>Agent Booked</layout>
+        <sections>
+            <label></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Description Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Drag N Drop to attach !!!</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Insurance Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Job Visit Report: As a professional mover, how would you rate the following?</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Marketing Tracking</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Opportunity Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Other Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Outbound Pack Job Status</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Shipping Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Storage</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Work Orders</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Artmove</layout>
+        <sections>
+            <label></label>
+            <section>Drag N Drop to attach !!!</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Portal Integration Section</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Quote &amp; Payment Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Useful Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Artmove Storage</layout>
+        <sections>
+            <label></label>
+            <section>Drag N Drop to attach !!!</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Items Origin / Destination</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Shipping Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Useful Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Artmove2</layout>
+        <sections>
+            <label></label>
+            <section>Drag N Drop to attach !!!</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Useful Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>ArtmoveBJ</layout>
+        <sections>
+            <label></label>
+            <section>Drag N Drop to attach !!!</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Quote &amp; Payment Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Useful Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>ArtmoveHK</layout>
+        <sections>
+            <label></label>
+            <section>Drag N Drop to attach !!!</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Quote &amp; Payment Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Sotheby&apos;s Only</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Useful Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>ArtmoveSH</layout>
+        <sections>
+            <label></label>
+            <section>Drag N Drop to attach !!!</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Quote &amp; Payment Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Useful Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Corporate</layout>
+        <sections>
+            <label></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Description Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Drag N Drop to attach !!!</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Insurance Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Job Visit Report: As a professional mover, how would you rate the following?</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Marketing Tracking</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Opportunity Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Other Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Outbound Pack Job Status</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Shipping Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Storage</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Work Orders</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>FreePort</layout>
+        <sections>
+            <label></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Crates Summary</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Description Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Drag N Drop to attach !!!</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Insurance Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Marketing Tracking</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Opportunity Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Other Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Shipping Information (IM)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Storage</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Work Orders</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>FreePort - DS</layout>
+        <sections>
+            <label></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Drag N Drop to attach !!!</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Job Visit Report: As a professional mover, how would you rate the following?</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Marketing Tracking</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>New Section</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Opportunity Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Other Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Rate Request Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Shipping Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Useful Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>HTTR -  Layout</layout>
+        <sections>
+            <label></label>
+            <section>Drag N Drop to attach !!!</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Quote &amp; Payment Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Useful Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Inbound</layout>
+        <sections>
+            <label></label>
+            <section>Drag N Drop to attach !!!</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Job Visit Report: As a professional mover, how would you rate the following?</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Marketing Tracking</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>New Section</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Opportunity Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Other Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Rate Request Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Shipping Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Storage</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Useful Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Opportunity Layout</layout>
+        <sections>
+            <label></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Description Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Drag N Drop to attach !!!</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Insurance Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Job Visit Report: As a professional mover, how would you rate the following?</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Marketing Tracking</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Opportunity Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Other Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Outbound Pack Job Status</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Shipping Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Storage</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Work Orders</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Personal</layout>
+        <sections>
+            <label></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Description Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Drag N Drop to attach !!!</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Insurance Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Job Visit Report: As a professional mover, how would you rate the following?</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>New Section</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Opportunity Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Other Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Outbound Pack Job Status</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Shipping Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Storage</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Work Orders</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label></label>
+        <name>Create_Inbound_WO</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Create_Job_Reference</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Push_Status_To_Portal</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Push_To_Portal</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>TestOnlySendWithDocuSign</name>
+    </quickActions>
+    <workflowTasks>
+        <name>ContactShipperConfirmDeliveryDate</name>
+        <subject></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <name>PrepareSignedDocumentsforBookingAgent</name>
+        <subject></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <name>PrepareforCustomClearanceHaulierInstructions</name>
+        <subject></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <name>ProcessBillingRequest</name>
+        <subject></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <name>ReminderToBillforOpportunityIB_Job_number_cOpportunityName</name>
+        <subject></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <name>SIT_Storage_Out_alert</name>
+        <subject></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <name>SendQuote</name>
+        <subject></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description></description>
+        <name>ShipmentETDAlert</name>
+        <subject></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <name>Storage_Out_Alert</name>
+        <subject></subject>
+    </workflowTasks>
+</CustomObjectTranslation>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Subtotal_for_Part1_SHP__c</fullName>
+    <externalId>false</externalId>
+    <formula>VALUE(Text(Company_Knowledge__c))+
+VALUE(Text(Local_Authority_Declaration_System__c))+
+VALUE(Text(Salesforce_Processes__c))+
+VALUE(Text(Artmove_Operations_SHP__c))+
+VALUE(Text(International_Freight__c))+
+VALUE(Text(Customs_formalities_and_regulations__c))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Subtotal for Part1 [SHP]</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

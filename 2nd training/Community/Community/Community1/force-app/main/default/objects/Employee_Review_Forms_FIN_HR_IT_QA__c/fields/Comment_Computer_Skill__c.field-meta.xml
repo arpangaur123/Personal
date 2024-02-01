@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Comment_Computer_Skill__c</fullName>
+    <description>Supervisor Comment Computer Skill.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Supervisor Comment Computer Skill.</inlineHelpText>
+    <label>Comment Computer Skill</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

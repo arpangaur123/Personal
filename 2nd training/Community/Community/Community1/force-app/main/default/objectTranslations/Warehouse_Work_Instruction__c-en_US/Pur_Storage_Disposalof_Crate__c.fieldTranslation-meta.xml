@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>Pur_Storage_Disposalof_Crate__c</name>
+    <picklistValues>
+        <masterLabel>DIsposed 弃</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stored 存</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Blacklisted__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Blacklisted Account</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Blacklisted Account</inlineHelpText>
+    <label>Blacklisted</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

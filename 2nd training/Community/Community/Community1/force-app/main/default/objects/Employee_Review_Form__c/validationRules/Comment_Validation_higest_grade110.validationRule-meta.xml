@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Comment_Validation_higest_grade110</fullName>
+    <active>true</active>
+    <description>Comment_Validation_higest_grade110</description>
+    <errorConditionFormula>AND(
+ISPICKVAL( Compliance_Safety_regulation_and_SOP__c, &quot;5&quot;),
+ISBLANK(  Comment_Compliance_Safety_regulation__c)
+)</errorConditionFormula>
+    <errorDisplayField>Compliance_Safety_regulation_and_SOP__c</errorDisplayField>
+    <errorMessage>Please indicate a reason to justify the 5 points awarded.</errorMessage>
+</ValidationRule>

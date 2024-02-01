@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Permit_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Permit Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Offset II</fullName>
+                <default>false</default>
+                <label>Offset II</label>
+            </value>
+            <value>
+                <fullName>Offset OO</fullName>
+                <default>false</default>
+                <label>Offset OO</label>
+            </value>
+            <value>
+                <fullName>Permanent</fullName>
+                <default>false</default>
+                <label>Permanent</label>
+            </value>
+            <value>
+                <fullName>Temp Export</fullName>
+                <default>false</default>
+                <label>Temp Export</label>
+            </value>
+            <value>
+                <fullName>Temp Import</fullName>
+                <default>false</default>
+                <label>Temp Import</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

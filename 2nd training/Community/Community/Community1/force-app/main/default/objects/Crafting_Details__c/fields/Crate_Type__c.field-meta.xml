@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Crate_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Crate Type</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>B Crate</fullName>
+                <default>false</default>
+                <label>B Crate</label>
+            </value>
+            <value>
+                <fullName>C Crate</fullName>
+                <default>false</default>
+                <label>C Crate</label>
+            </value>
+            <value>
+                <fullName>D Crate</fullName>
+                <default>false</default>
+                <label>D Crate</label>
+            </value>
+            <value>
+                <fullName>A-Frame</fullName>
+                <default>false</default>
+                <label>A-Frame</label>
+            </value>
+            <value>
+                <fullName>T-Frame</fullName>
+                <default>false</default>
+                <label>T-Frame</label>
+            </value>
+            <value>
+                <fullName>Others</fullName>
+                <default>false</default>
+                <label>Others</label>
+            </value>
+            <value>
+                <fullName>No Crate. Supports Only</fullName>
+                <default>false</default>
+                <label>No Crate. Supports Only. 不需要木箱</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

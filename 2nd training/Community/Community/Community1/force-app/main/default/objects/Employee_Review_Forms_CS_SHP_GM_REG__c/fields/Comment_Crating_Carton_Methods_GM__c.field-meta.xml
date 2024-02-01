@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Comment_Crating_Carton_Methods_GM__c</fullName>
+    <description>Supervisor Comment Crating &amp; Carton Methods [GM].</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Supervisor Comment Crating &amp; Carton Methods [GM].</inlineHelpText>
+    <label>Comment Crating &amp; Carton Methods [GM]</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

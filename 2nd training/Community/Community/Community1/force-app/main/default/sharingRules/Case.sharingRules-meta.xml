@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Shared_SF_Account</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Shared SF Account</label>
+        <sharedTo>
+            <role>Shared_SF_Account</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Incident Reports</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Station__c</field>
+            <operation>equals</operation>
+            <value>Hong Kong</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Shared_SG_SF_Account</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Shared SG SF Account</label>
+        <sharedTo>
+            <role>AMSG_Shared_Account</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>ACR/VO,Incident Reports</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Station__c</field>
+            <operation>equals</operation>
+            <value>Singapore</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingOwnerRules>
+        <fullName>AM_Case_share</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>AM Case share</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>Artmove_CEO</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>Artmove_CEO</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>HHGS</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>HHGS</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>HHG_HOD</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>HHG_HOD</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>HTTR_BD</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>HTTR BD</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>HTTR_BD</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>HTTR_BD</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

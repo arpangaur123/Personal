@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_OO_HTTR</fullName>
+    <availability>online</availability>
+    <displayType>massActionButton</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>New OO</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+    <url>/a1B/e?CF00N20000003ZnVr={!Job_Reference__c.Name}&amp;CF00N20000003ZnVr_lkid={!Job_Reference__c.Id}&amp;00N20000003a3oI={!Job_Reference__c.AMJR_Delivery_Details__c}&amp;00N20000003aVbL={!Job_Reference__c.Account_Name2__c}&amp;RecordType=01220000000jlAl&amp;retURL={!Job_Reference__c.Id}</url>
+</WebLink>

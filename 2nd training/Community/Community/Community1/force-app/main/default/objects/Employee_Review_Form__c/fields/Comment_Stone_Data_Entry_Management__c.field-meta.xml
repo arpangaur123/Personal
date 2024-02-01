@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Comment_Stone_Data_Entry_Management__c</fullName>
+    <description>Comment Stone [Data Entry/Management]</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Comment Stone [Data Entry/Management]</inlineHelpText>
+    <label>Comment Stone [Data Entry/Management]</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

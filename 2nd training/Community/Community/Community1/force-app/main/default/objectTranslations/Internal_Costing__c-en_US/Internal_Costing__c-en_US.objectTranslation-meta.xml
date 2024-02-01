@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Internal Costing</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Internal Costing</value>
+    </caseValues>
+    <layouts>
+        <layout>Artmove IM</layout>
+        <sections>
+            <label></label>
+            <section>Costing Sheet Basics</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Destination Services</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Freight</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Insurance &amp; Commissions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Origin Services</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Destination Services (DS)</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Destination Services</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Other Charges</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Internal Costing Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>International Door-To-Door Service (IM DTD)</layout>
+        <sections>
+            <label></label>
+            <section>Costing Sheet Basics</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Destination Services</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Freight</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Insurance &amp; Commissions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Origin Services</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>International Door-To-Port Service (IM DTP)</layout>
+        <sections>
+            <label></label>
+            <section>Costing Sheet Basics</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Freight</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Insurance &amp; Commissions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Origin Services</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Local Move (LM)</layout>
+        <sections>
+            <label></label>
+            <section>Costing Sheet Basics</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Insurance &amp; Commissions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Origin Services</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Origin Services (OS)</layout>
+        <sections>
+            <label></label>
+            <section>Costing Sheet Basics</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Insurance &amp; Commissions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Origin Services</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Relocation Services (RS)</layout>
+        <sections>
+            <label></label>
+            <section>Costing Sheet Basics</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Insurance &amp; Commissions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Origin Services</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Warehouse (WH)</layout>
+        <sections>
+            <label></label>
+            <section>Costing Sheet Basics</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Insurance &amp; Commissions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Warehouse Services</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Artmove_IM</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>DS</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>IM_DTD</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>IM_DTP</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>LM</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>OS</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>RS</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>WH</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Freight_lumpsum</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Ocean_Freight_lumpsum</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Seal_Fee</name>
+    </validationRules>
+    <webLinks>
+        <label></label>
+        <name>Generate_PDF</name>
+    </webLinks>
+</CustomObjectTranslation>

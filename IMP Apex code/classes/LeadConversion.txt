@@ -1,0 +1,267 @@
+global class AutoConvertLeads {
+    @InvocableMethod
+    public static void leadAssign(List<Id> leadIds){        
+        LeadStatus cLeadStatus = [SELECT Id, MasterLabel FROM LeadStatus WHERE IsConverted = True AND MasterLabel = 'Accept Client' LIMIT 1];
+        
+        List<Lead> ldList = [SELECT Id, OwnerId FROM Lead Where id IN :leadIds];
+        List<Database.LeadConvert> massLeadConvert = new List<Database.LeadConvert>();
+        for(Lead lead : ldList) { 
+            Database.LeadConvert leadConvert = new Database.LeadConvert();
+            leadConvert.setLeadId(lead.id);
+            leadConvert.setConvertedStatus(cLeadStatus.MasterLabel);
+            leadConvert.setOwnerId(lead.OwnerId);
+            leadConvert.setDoNotCreateOpportunity(TRUE);
+            System.debug('Lead Convert'+leadConvert);
+            massLeadConvert.add(leadConvert);
+        }
+        if(!massLeadConvert.isEmpty()){
+            System.debug('massLeadConvert : '+massLeadConvert);
+            List<Database.LeadConvertResult> lCR = Database.convertLead(massLeadConvert);
+        }
+        
+        List<Lead> leadList = [SELECT Id,Solution__c, TentativeFee__c, Region__c, ClientContact__c, Expertise_LT__c, 
+                               GTEmployee__c, Company, IsLead__c, CMSpoc__c, CCApprovalRejectionRecommendation__c, 
+                               CCApprovalStatus__c, CCApprovedRejectedBy__c, CCApprovedRejectedDate__c, 
+                               Chamber_contacts__c, LeadSource, Client__c, ClientBackground__c, ClientName__c, 
+                               COCSL__c, CompanyHQ__c, Competitor__c, CAGR__c, Corridor__c, CountryCode__c, 
+                               CSL__c, Email, EstimatedRevenue__c,
+                               FindingPartner__c, GrowthPotential__c, InboundReferral__c, HeadQuarters__c, 
+                               HowDidYouArriveAThisTentativeFee__c, Industry, Investors_Private_Equity_Firms__c, 
+                               InvestorsPrivateEquityFirms__c, LawFirm__c, LawFirmContacts__c, Market__c,
+                               MobilePhone, Name, HowCanWeHelpYou__c, NewClientAge__c, OwnerId, Owner.Name, Channel__c, 
+                               NumberOfEmployees, NSL__c, NSLApprovalRejectionRecommendation__c, NSLApprovalStatus__c, 
+                               NSLApprovedRejectedBy__c, NSLApprovedRejectedDate__c, pi__campaign__c,pi__comments__c,
+                               pi__conversion_date__c, pi__created_date__c, pi__first_activity__c, pi__grade__c, 
+                               pi__last_activity__c, pi__Pardot_Last_Scored_At__c, pi__notes__c, pi__score__c, 
+                               PEInvestors__c, Phone,Rating, Recovery__c, Chamber__c, Remark__c, Sector__c, 
+                               SectorCoordinator__c, Segment__c, ShortSummary__c, SMELeader__c, SMEG_LT__c, 
+                               SubSector__c, TotalIncome__c, TotalRevenue__c, Website, YearFounded__c, YoungCSL__c, 
+                               CompanyHQ__City__s, CompanyHQ__CountryCode__s,CompanyHQ__GeocodeAccuracy__s, 
+                               CompanyHQ__Latitude__s, CompanyHQ__Longitude__s, CompanyHQ__PostalCode__s, 
+                               CompanyHQ__StateCode__s, CompanyHQ__Street__s, ConvertedAccountId, ConvertedContactId,
+                               CreatedById, SolutionOther__c, Client_Region__c, Description,GT_Alumni_Name__c,Campaign__c,
+                               GTI_Member_Firm_Referral_Country__c,GTI_Member_Firm_Referring_Person_s_name__c,GTI_Member_Firm_Office__c,
+                               Intermediary_Referral_Firm_Name__c,Intermediary_Referral_Person_Name__c,Investment_Bank_Firm_Name__c,
+                               Independent_Director_Contact_Name__c,Investment_Bank_Contact_Name__c
+                               From Lead Where id IN :leadIds];
+        System.debug('leadList : '+leadList);
+        List<IntegratedEnquiry__c> integEnqList = new List<IntegratedEnquiry__c>(); 
+        //DateTime TodayDate = System.today();
+        //String dateWithoutTime = TodayDate.format('ddMMyy');
+        //need to check if Lead list is null
+        System.debug('Lead Status'+cLeadStatus);
+        
+        String strFY  = CommonUtility_CLS.getFiscalYear(); //FY2023-24
+        System.debug(strFY);
+        Set<String> setIENames = new Set<String>();
+        Map<String, Integer> mapIEvsAutoNo = new Map<String, Integer>();
+        Map<Id, Account> mapAccountToUpdate = new Map<Id, Account>();
+        Account objAccount;
+        Map<Id, Contact> mapContactToUpdate = new Map<Id, Contact>();
+        Contact objContact;
+        for(Lead lead : leadList) { 
+            //setIENames.add(lead.Company+ '-' + lead.Solution__c+ '-' + strFY + '%');
+            setIENames.add(lead.Company + '%');
+            if(lead.ConvertedAccountId != null) {
+                objAccount = new Account();
+                objAccount.Id = lead.ConvertedAccountId;
+                objAccount.Client_s_Headquarter__Street__s = lead.CompanyHQ__Street__s;
+                objAccount.Client_s_Headquarter__City__s = lead.CompanyHQ__City__s;
+                objAccount.Client_s_Headquarter__PostalCode__s = lead.CompanyHQ__PostalCode__s;
+                objAccount.Client_s_Headquarter__StateCode__s = lead.CompanyHQ__StateCode__s;
+                objAccount.Client_s_Headquarter__CountryCode__s = lead.CompanyHQ__CountryCode__s;
+                objAccount.Client_s_Headquarter__Latitude__s = lead.CompanyHQ__Latitude__s;
+                objAccount.Client_s_Headquarter__Longitude__s = lead.CompanyHQ__Longitude__s;
+                objAccount.Client_s_Headquarter__GeocodeAccuracy__s = lead.CompanyHQ__GeocodeAccuracy__s;
+                //Start GS345-40 Added by Deepak Joshi 12-07-2023
+                objAccount.Status__c = ConstantUtility.NEW_CLIENT_CREATION;
+                //objAccount.Client_Category__c  = ConstantUtility.NON_KEY_CLIENT;
+                objAccount.AccountType__c = ConstantUtility.CLIENT_ACCOUNT;
+                objAccount.RecordTypeId = Schema.SObjectType.Account.getRecordTypeInfosByDeveloperName().get(ConstantUtility.RECORD_TYPE_CLIENT).getRecordTypeId();
+                //End GS345-40
+                
+                mapAccountToUpdate.put(lead.ConvertedAccountId, objAccount);
+            }
+            if(lead.ConvertedContactId != null) {
+                objContact = new Contact();
+                objContact.Id = lead.ConvertedContactId;
+                objContact.Contact_status__c = 'Active';
+                mapContactToUpdate.put(lead.ConvertedContactId, objContact);
+            }
+        }
+        if(setIENames.isEmpty()) {
+            List<IntegratedEnquiry__c> lstIEQueried = [SELECT Id, Name, Short_Description__c, Solution1__c FROM IntegratedEnquiry__c WHERE Name LIKE: setIENames];
+            for(IntegratedEnquiry__c ie: lstIEQueried) {
+                String strAutoNo = ie.Name.substringAfterLast('-');
+                if(strAutoNo.isNumeric()) {
+                    Integer intAutoNo = Integer.valueOf(strAutoNo);
+                    String strIENameWithoutAutoNo = ie.Name.substringBeforeLast('-');
+                    Integer intAutoNoFromMap = 0;
+                    if(mapIEvsAutoNo.containsKey(strIENameWithoutAutoNo)) {
+                        intAutoNoFromMap = mapIEvsAutoNo.get(strIENameWithoutAutoNo);
+                    }
+                    if(intAutoNoFromMap < intAutoNo) {
+                        mapIEvsAutoNo.put(strIENameWithoutAutoNo, intAutoNo);
+                    } 
+                }
+            }
+        }
+        for(Lead lead : leadList) { 
+            
+            // Integrated Enquiry Object
+            Integer autoNo = 1;
+            if(mapIEvsAutoNo.containsKey(lead.Company+ '-' + lead.Solution__c+ '-' + strFY)) {
+                autoNo += mapIEvsAutoNo.get(lead.Company+ '-' + lead.Solution__c+ '-' + strFY);
+            }
+            String IntegratedEnquiryName =lead.Company+ '-' + lead.Solution__c+ '-' + strFY + '-' + autoNo;
+            if(IntegratedEnquiryName.length() > 80 ){
+                IntegratedEnquiryName = IntegratedEnquiryName.substring(0, 80);
+            }
+            System.debug('IntegratedEnquiryName'+IntegratedEnquiryName);
+            IntegratedEnquiry__c integEnqObj = new IntegratedEnquiry__c();
+            integEnqObj.OwnerId = lead.OwnerId;
+            integEnqObj.Integrated_Enquiry_Name__c = IntegratedEnquiryName;
+            //changes start by rohitash
+            /*String str =  lead.Company+'-'+lead.Solution__c+'-'+lead.Region__c+'-'+dateWithoutTime;
+if(str.length() > 80 ){
+str = str.substring(0, 80);
+}*/
+            //changes end by rohitash
+            integEnqObj.Solution_PL__c = lead.Solution__c; //Solution1__c //Added By Prashant
+            integEnqObj.SolutionOther__c = lead.SolutionOther__c; //Added By Prashant
+
+            System.debug('lead.Expertise : '+lead.Expertise_LT__c);
+            integEnqObj.Expertise_LT__c = lead.Expertise_LT__c; //  Expertise__c
+            integEnqObj.Company__c = lead.Company!=null?lead.Company:'';
+            integEnqObj.GTEmployee__c = lead.GTEmployee__c!=null?lead.GTEmployee__c:null;
+            integEnqObj.GT_Alumni_Name__c = lead.GT_Alumni_Name__c!=null?lead.GT_Alumni_Name__c:null;
+            integEnqObj.Campaign__c = lead.Campaign__c!=null?lead.Campaign__c:null;
+            integEnqObj.GTI_Member_Firm_Referral_Country__c = lead.GTI_Member_Firm_Referral_Country__c;
+            integEnqObj.GTI_Member_Firm_Referring_Person_s_name__c = lead.GTI_Member_Firm_Referring_Person_s_name__c!=null?
+                                                                     lead.GTI_Member_Firm_Referring_Person_s_name__c:'';
+            integEnqObj.GTI_Member_Firm_Office__c = lead.GTI_Member_Firm_Office__c!=null?lead.GTI_Member_Firm_Office__c:'';
+            integEnqObj.Intermediary_Referral_Firm_Name__c = lead.Intermediary_Referral_Firm_Name__c!=null?lead.Intermediary_Referral_Firm_Name__c:'';
+            integEnqObj.Intermediary_Referral_Person_Name__c = lead.Intermediary_Referral_Person_Name__c!=null?lead.Intermediary_Referral_Person_Name__c:'';
+            integEnqObj.Investment_Bank_Firm_Name__c = lead.Investment_Bank_Firm_Name__c!=null?lead.Investment_Bank_Firm_Name__c:null;
+            integEnqObj.Investment_Bank_Contact_Name__c = lead.Investment_Bank_Contact_Name__c!=null?lead.Investment_Bank_Contact_Name__c:null;
+            integEnqObj.Independent_Director_Contact_Name__c = lead.Independent_Director_Contact_Name__c!=null?lead.Independent_Director_Contact_Name__c:null;
+            
+            integEnqObj.IsOriginatedFromLeadConversion__c = lead.IsLead__c?lead.IsLead__c:True;
+            integEnqObj.ClientContact__c = lead.ClientContact__c!=null?lead.ClientContact__c:null;
+            integEnqObj.TentativeFee__c = lead.TentativeFee__c;
+            //  integEnqObj.Address__c = lead.Address;
+            //integEnqObj.CMSpoc__c = lead.CMSpoc__c;
+            integEnqObj.CCApprovalRejectionRecommendation__c = lead.CCApprovalRejectionRecommendation__c!=null?lead.CCApprovalRejectionRecommendation__c:'Data Not Found';
+            integEnqObj.CCApprovalStatus__c = lead.CCApprovalStatus__c;
+            integEnqObj.CCApprovedRejectedBy__c = lead.CCApprovedRejectedBy__c!=null?lead.CCApprovedRejectedBy__c:'User Not Found';
+            integEnqObj.CCApprovedRejectedDate__c = lead.CCApprovedRejectedDate__c;
+            integEnqObj.Chamber_Contacts__c = lead.Chamber_contacts__c!=null?lead.Chamber_contacts__c:null;
+            //      integEnqObj.Client__c = lead.Client__c;
+            integEnqObj.ClientBackground__c = lead.ClientBackground__c;
+            integEnqObj.ClientName__c = lead.ClientName__c;
+            integEnqObj.COCSL__c = lead.COCSL__c!=null?lead.COCSL__c:null;
+            /* integEnqObj.CompanyHQ__City__s = lead.CompanyHQ__City__s;
+integEnqObj.CompanyHQ__CountryCode__s = lead.CompanyHQ__CountryCode__s;
+integEnqObj.CompanyHQ__GeocodeAccuracy__s = lead.CompanyHQ__GeocodeAccuracy__s;
+integEnqObj.CompanyHQ__Latitude__s = lead.CompanyHQ__Latitude__s;
+integEnqObj.CompanyHQ__Longitude__s = lead.CompanyHQ__Longitude__s;
+integEnqObj.CompanyHQ__PostalCode__s = lead.CompanyHQ__PostalCode__s;
+integEnqObj.CompanyHQ__StateCode__s = lead.CompanyHQ__StateCode__s;
+integEnqObj.CompanyHQ__Street__s = lead.CompanyHQ__Street__s;*/
+            
+            integEnqObj.Competitor__c = lead.Competitor__c!=null?lead.Competitor__c:null;
+            integEnqObj.CAGR__c = lead.CAGR__c!=null?lead.CAGR__c:0;
+            integEnqObj.Corridor__c = lead.Corridor__c;
+            //  integEnqObj.Country_Code__c = lead.CountryCode__c;
+            // integEnqObj.CreatedById = lead.CreatedById;
+            //   integEnqObj.CreatedByScanToSalesforce__c = lead.sansancard__CreatedByScanToSalesforce__c;
+            integEnqObj.CSL__c = lead.CSL__c!=null?lead.CSL__c:null;
+            //integEnqObj.CSP__c = lead.CSP__c!=null?lead.CSP__c:null;
+            integEnqObj.Email__c = lead.Email!=null?lead.Email:'';
+            integEnqObj.EstimatedRevenue__c = lead.EstimatedRevenue__c!=null?lead.EstimatedRevenue__c:0;
+            //integEnqObj.Fee_INR_Lacs__c = lead.Fee_INR_Lacs__c;
+            //integEnqObj.FindingPartner__c = lead.FindingPartner__c;
+            integEnqObj.GrowthPotential__c = lead.GrowthPotential__c;
+            integEnqObj.GTMemberFirms__c = lead.InboundReferral__c!=null?lead.InboundReferral__c:null;
+            integEnqObj.HeadQuarters__c = lead.HeadQuarters__c!=null?lead.HeadQuarters__c:'';
+            integEnqObj.HowDidYouArriveAThisTentativeFee__c = lead.HowDidYouArriveAThisTentativeFee__c;
+            / We comment industry because value is not matching with global industry value /
+            // integEnqObj.Industry__c = lead.Industry;
+            integEnqObj.Investors_Private_Equity_Firms__c = lead.Investors_Private_Equity_Firms__c!=null?lead.Investors_Private_Equity_Firms__c:null;
+            integEnqObj.InvestorsPrivateEquityFirms__c = lead.InvestorsPrivateEquityFirms__c!=null?lead.InvestorsPrivateEquityFirms__c:null;
+            //integEnqObj.KMP__c = lead.KMP__c!=null?lead.KMP__c:'';
+            //  integEnqObj.LastModifiedById = lead.LastModifiedById;
+            integEnqObj.Law_Firm__c = lead.LawFirm__c!=null?lead.LawFirm__c:null;
+            integEnqObj.Law_Firm_Contact__c = lead.LawFirmContacts__c!=null?lead.LawFirmContacts__c:null;
+            integEnqObj.Market__c = lead.Market__c!=null?lead.Market__c:'';
+            integEnqObj.Mobile__c = lead.MobilePhone!=null?lead.MobilePhone:'';
+            integEnqObj.NewClientName__c = lead.Name;
+            integEnqObj.HowCanWeHelpYou__c = lead.HowCanWeHelpYou__c!=null?lead.HowCanWeHelpYou__c:'';
+            integEnqObj.Region__c = lead.Region__c; // Added by Suraj on 23-06-2023 for REL/BUL/RMP users mapping on enquiry
+            //  integEnqObj.NewClientAge__c = lead.NewClientAge__c;
+            integEnqObj.NewClientOwner__c = lead.Owner.Name;
+            if(String.isNotBlank(lead.Channel__c)){
+                integEnqObj.Channel__c = lead.Channel__c;
+            }
+            if(String.isNotBlank(lead.LeadSource)){
+                integEnqObj.LeadSource__c = lead.LeadSource;
+            }
+            integEnqObj.NumberOEmployees__c = lead.NumberOfEmployees!=null?lead.NumberOfEmployees:0;
+            integEnqObj.NSL__c = lead.NSL__c!=null?lead.NSL__c:null;
+            integEnqObj.NSLApprovalRejectionRecommendation__c = lead.NSLApprovalRejectionRecommendation__c!=null?
+                lead.NSLApprovalRejectionRecommendation__c:'Data Not Found';
+            integEnqObj.NSLApprovalStatus__c = lead.NSLApprovalStatus__c;
+            integEnqObj.NSLApprovedRejectedBy__c = lead.NSLApprovedRejectedBy__c!=null?lead.NSLApprovedRejectedBy__c:'User Not Found';
+            integEnqObj.NSLApprovedRejectedDate__c = lead.NSLApprovedRejectedDate__c;
+            integEnqObj.PardotCampaign__c = lead.pi__campaign__c!=null?lead.pi__campaign__c:'';
+            integEnqObj.PardotComments__c = lead.pi__comments__c!=null?lead.pi__comments__c:'';
+            integEnqObj.PardotConversionDate__c = lead.pi__conversion_date__c!=null?lead.pi__conversion_date__c:null;
+            integEnqObj.PardotCreatedDate__c = lead.pi__created_date__c!=null?lead.pi__created_date__c:null;
+            integEnqObj.Pardot_First_Activity__c = lead.pi__first_activity__c!=null?lead.pi__first_activity__c:null;
+            integEnqObj.PardotGrade__c = lead.pi__grade__c!=null?lead.pi__grade__c:'';
+            integEnqObj.PardotLastActivity__c = lead.pi__last_activity__c!=null?lead.pi__last_activity__c:null;
+            integEnqObj.PardotLastScoredAt__c = lead.pi__Pardot_Last_Scored_At__c!=null?lead.pi__Pardot_Last_Scored_At__c:null;
+            integEnqObj.PardotNotes__c = lead.pi__notes__c!=null?lead.pi__notes__c:'';
+            integEnqObj.PardotScore__c = lead.pi__score__c!=null?lead.pi__score__c:0;
+            integEnqObj.PEInvestors__c = lead.PEInvestors__c!=null?lead.PEInvestors__c:'';
+            integEnqObj.Phone__c = lead.Phone!=null?lead.Phone:'';
+            //integEnqObj.ProbabilityOfWinning__c = lead.ProbabilityOfWinning__c;
+            integEnqObj.Rating__c = lead.Rating!=null?lead.Rating:'';
+            integEnqObj.Recovery__c = lead.Recovery__c!=null?lead.Recovery__c:0;
+            integEnqObj.Chamber__c = lead.Chamber__c!=null?lead.Chamber__c:null;
+            integEnqObj.Region__c = lead.Region__c;
+            integEnqObj.Remark__c = lead.Remark__c!=null?lead.Remark__c:'';
+            integEnqObj.Sector__c = lead.Sector__c;
+            
+            integEnqObj.SectorCoordinator__c = lead.SectorCoordinator__c!=null?lead.SectorCoordinator__c:null;
+            integEnqObj.Segment__c = lead.Segment__c!=null?lead.Segment__c:'';
+            integEnqObj.ShortSummary__c = lead.ShortSummary__c!=null?lead.ShortSummary__c:'';
+            integEnqObj.SMELeader__c = lead.SMELeader__c!=null?lead.SMELeader__c:null;
+            if(String.isNotBlank(lead.SMEG_LT__c)){
+                integEnqObj.SMEG_LT__c = lead.SMEG_LT__c;
+            }
+            if(String.isNotBlank(lead.SubSector__c)){
+                integEnqObj.SubSector__c = lead.SubSector__c;
+            }
+            integEnqObj.Client__c = lead.ConvertedAccountId; // added by Prashant
+            integEnqObj.CreatedByAutoConversion__c = true; // added by Prashant
+            integEnqObj.Corridor__c = lead.Corridor__c; // added by Prashant
+            
+            integEnqObj.New_Client__c =lead.Id; //Deepak joshi U_230 date 6 Jun 2023
+            integEnqObj.Description__c = lead.Description; // added by Prashant
+            integEnqList.add(integEnqObj);
+            System.debug('integEnqList : '+integEnqList);
+        }
+        
+        if(!mapAccountToUpdate.isEmpty()){
+            update mapAccountToUpdate.values();
+        }
+        if(!mapContactToUpdate.isEmpty()){
+            update mapContactToUpdate.values();
+        }
+        
+        if(!integEnqList.isEmpty()){
+            insert integEnqList;
+        }
+    }
+}

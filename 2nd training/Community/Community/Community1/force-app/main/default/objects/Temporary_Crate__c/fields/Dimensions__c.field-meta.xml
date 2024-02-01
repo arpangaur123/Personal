@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Dimensions__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(UOM__c,
+&quot;cm&quot;,
+IF(Width__c=0 &amp;&amp; Length__c=0 &amp;&amp; Height__c=0, &quot; &quot;,
+IF(Width__c=0, TEXT(Length__c) &amp; &quot;cm&quot; &amp; &quot; x &quot; &amp; TEXT(Height__c) &amp; &quot;cm&quot;,
+IF(Length__c=0, TEXT(Width__c) &amp; &quot;cm&quot; &amp; &quot; x &quot; &amp;
+TEXT(Height__c) &amp; &quot;cm&quot;,
+IF(Height__c=0, TEXT(Length__c) &amp; &quot;cm&quot; &amp; &quot; x &quot; &amp;
+TEXT(Width__c) &amp; &quot;cm&quot;,
+TEXT(Length__c) &amp; &quot;cm&quot; &amp; &quot; x &quot; &amp; TEXT(Width__c) &amp; &quot;cm&quot; &amp; &quot; x &quot; &amp; TEXT(Height__c) &amp; &quot;cm&quot;)))),
+&quot;inches&quot;,
+IF(Width__c=0 &amp;&amp; Length__c=0 &amp;&amp; Height__c=0, &quot; &quot;,
+IF(Width__c=0, TEXT(Length__c) &amp; &quot;inches&quot; &amp; &quot; x &quot; &amp; TEXT(Height__c) &amp; &quot;inches&quot;,
+IF(Length__c=0, TEXT(Width__c) &amp; &quot;inches&quot; &amp; &quot; x &quot; &amp;
+TEXT(Height__c) &amp; &quot;inches&quot;,
+IF(Height__c=0, TEXT(Length__c) &amp; &quot;inches&quot; &amp; &quot; x &quot; &amp; TEXT(Width__c) &amp; &quot;inches&quot;,
+TEXT(Length__c) &amp; &quot;inches&quot; &amp; &quot; x &quot; &amp; TEXT(Width__c) &amp; &quot;inches&quot; &amp; &quot; x &quot; &amp; TEXT(Height__c) &amp; &quot;inches&quot;)))),
+null)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Crate Dimensions</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

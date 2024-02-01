@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Comment_Project_Management_GM__c</fullName>
+    <description>Supervisor Comment Project Management [GM].</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Supervisor Comment Project Management [GM].</inlineHelpText>
+    <label>Comment Project Management [GM]</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

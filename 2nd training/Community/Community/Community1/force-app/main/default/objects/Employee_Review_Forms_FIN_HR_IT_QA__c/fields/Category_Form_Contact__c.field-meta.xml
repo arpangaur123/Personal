@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Category_Form_Contact__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( ISPICKVAL( Contact__r.Category__c , &apos;CEO&apos;) , &apos;CEO&apos;,
+IF( ISPICKVAL( Contact__r.Category__c , &apos;HOD&apos;) , &apos;HOD&apos;,
+IF( ISPICKVAL( Contact__r.Category__c , &apos;GM&apos;) , &apos;GM&apos;,
+IF( ISPICKVAL( Contact__r.Category__c , &apos;Manager&apos;) , &apos;Manager&apos;,
+IF( ISPICKVAL( Contact__r.Category__c , &apos;Executive&apos;) , &apos;Executive&apos;,
+IF( ISPICKVAL( Contact__r.Category__c , &apos;Assistant Manager&apos;) , &apos;Assistant Manager&apos;,
+IF( ISPICKVAL( Contact__r.Category__c , &apos;Team Leader&apos;) , &apos;Team Leader&apos;,
+IF( ISPICKVAL( Contact__r.Category__c , &apos;Operation Crew&apos;) , &apos;Operation Crew&apos;,
+IF( ISPICKVAL( Contact__r.Category__c , &apos;Warehouse Crew&apos;) , &apos;Warehouse Crew&apos;,
+IF( ISPICKVAL( Contact__r.Category__c , &apos;Registrar Crew&apos;) , &apos;Registrar Crew&apos;,
+IF( ISPICKVAL( Contact__r.Category__c , &apos;Carpenter&apos;) , &apos;Carpenter&apos;,
+IF( ISPICKVAL( Contact__r.Category__c , &apos;CFO&apos;) , &apos;CFO&apos;,
+IF( ISPICKVAL( Contact__r.Category__c , &apos;Executive Assistant&apos;) , &apos;Executive Assistant&apos;,
+IF( ISPICKVAL( Contact__r.Category__c , &apos;Team Leader&apos;) , &apos;Team Leader&apos;,
+IF( ISPICKVAL( Contact__r.Category__c , &apos;Supervisor&apos;) , &apos;Supervisor&apos;,
+IF( ISPICKVAL( Contact__r.Category__c , &apos;Intern&apos;) , &apos;Intern&apos;,
+IF( ISPICKVAL( Contact__r.Category__c , &apos;Art Conservator&apos;) , &apos;Art Conservator&apos;,
+IF( ISPICKVAL( Contact__r.Category__c , &apos;Driver&apos;) , &apos;Driver&apos;,&apos;--None--&apos;
+))))))))))))))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Category Form Contact</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

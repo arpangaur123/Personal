@@ -1,0 +1,73 @@
+@page {
+  size: A4 portrait;
+}
+
+body { 
+margin: 0;
+font-size:83%;
+font-family: Arial Unicode MS;
+}
+
+.rateTable { font-size:11px; }
+td, th { 
+padding: 0em;
+vertical-align: top;
+padding: 5px;
+ }
+thead { background: #FAF8CC; font-size:12px; }
+.labelName { font-weight:bold; font-size:11px; }
+.labelValue { font-size:11px; }
+.labelTitle { font-weight:bold; text-transform:uppercase; font-size:14px; }
+.imptLabel { font-weight:bold; font-size:11px; color:red; }
+.labelName2 { font-weight:bold; font-size:14px; }
+.labelValue2 { font-size:14px; }
+.labelTitle2 { font-weight:bold; text-transform:uppercase; font-size:15px; }
+.labelTitle3 { font-weight:bold; font-size:15px; }
+
+table {
+width:100%;
+table-layout: normal;
+
+}
+
+.labelCol{
+text-align: right;
+}
+
+input{
+display: none;
+}
+
+.mainTitle{
+display: none;
+}
+
+.actionColumn{
+display: none;
+}
+
+.backToTop{
+display: none;
+}
+
+.fewerMore{
+display: none;
+}
+
+
+.listHoverLinks{
+display: none;
+}
+
+
+.dataRow{
+background-color: #FFFFFF; color: blue;
+}
+
+h3{
+display: none;
+}
+
+.headerRow{
+background-color: #FFFFFF;
+}

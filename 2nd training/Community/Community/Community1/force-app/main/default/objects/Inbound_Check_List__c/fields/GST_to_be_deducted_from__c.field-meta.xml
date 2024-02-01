@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GST_to_be_deducted_from__c</fullName>
+    <description>*If GST exceeds SGD5,000 per declaration, cheque must be made to &quot;Singapore Customs&quot; for deposit at UOB.
+Bank-in slip to be attached with permit during clearance as proof of payment.</description>
+    <externalId>false</externalId>
+    <label>GST payable by*</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Importer</fullName>
+                <default>false</default>
+                <label>Importer</label>
+            </value>
+            <value>
+                <fullName>Helutrans (declaring agent)</fullName>
+                <default>false</default>
+                <label>Helutrans (declaring agent)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

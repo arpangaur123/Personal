@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Job_Completion_Future_Date</fullName>
+    <active>true</active>
+    <errorConditionFormula>(Job_Completion_Date__c) - TODAY() &gt; 0</errorConditionFormula>
+    <errorMessage>Job completion date is for Actual Date that job is completed.
+It is not a forecast. Clear the field in order to save.</errorMessage>
+</ValidationRule>

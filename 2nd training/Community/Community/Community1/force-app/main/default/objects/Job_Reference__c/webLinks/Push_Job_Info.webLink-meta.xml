@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Push_Job_Info</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Push Job Reference To Portal</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>{!REQUIRESCRIPT(&quot;/soap/ajax/43.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/43.0/apex.js&quot;)} 
+
+var res = sforce.apex.execute(&quot;PushJobReferenceToEportalJavasript&quot;,&quot;apiCallout&quot;,{recordId:&quot;{!Job_Reference__c.Id}&quot;});  
+if(res.toString().includes(&quot;success&quot;)){
+   var spltData = res.toString().split(&quot;@&quot;)[1];
+   alert(spltData);
+   setTimeout(function(){ location.reload(true) }, 3000);
+}else{
+   var spltData = res.toString().split(&quot;@&quot;)[1];
+   alert(spltData);
+}</url>
+</WebLink>

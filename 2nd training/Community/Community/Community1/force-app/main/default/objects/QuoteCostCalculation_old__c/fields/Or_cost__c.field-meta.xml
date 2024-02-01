@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Or_cost__c</fullName>
+    <externalId>false</externalId>
+    <formula>( Or_crate_s_unit__c *  Amount__c  )  + 
+  ( Or_Labour_unit__c  *  Amount__c   )+
+ (  Or_material_s_unit__c  *  Amount__c ) +  
+Or_transport__c  + 
+ Special_crate__c +
+ Haulage__c  + 
+ Fumigation__c+
+ Ad_Hoc_Cost1__c +
+ Ad_Hoc_Cost2__c  + 
+ Ad_Hoc_Cost3__c +
+ Or_lumpsum__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Origin cost</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

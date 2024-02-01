@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>For_Accounts_view_all</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>For Accounts view all</label>
+        <sharedTo>
+            <role>Accounts</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>startsWith</operation>
+            <value>AM,FP</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingOwnerRules>
+        <fullName>Artmove_CEO</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Artmove CEO</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>Artmove_CEO</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>Artmove_CEO</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>HTTR_BD</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>HTTR BD</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>HTTR_BD</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>HTTR_BD</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Read_for_AMCEO</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Read for AMCEO</label>
+        <sharedTo>
+            <role>Artmove_CEO</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>HTTR_BD</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

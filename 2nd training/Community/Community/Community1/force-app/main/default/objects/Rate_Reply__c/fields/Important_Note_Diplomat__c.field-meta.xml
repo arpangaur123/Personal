@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Important_Note_Diplomat__c</fullName>
+    <defaultValue>&quot;Diplomatic shipment is usually given free duty/tax entry into Singapore.&quot; &amp; BR() &amp; 
+&quot;The shipper must provide copies of his/her Diplomatic ID card and passport as proof of identity.&quot; &amp; BR() &amp; 
+&quot;Shipment/s has to arrive within six (6) months of shipper’s arrival in Singapore to qualify for GST tax relief and other pertinent documents in order.&quot;</defaultValue>
+    <description>Important Note for Diplomatic Shipment</description>
+    <externalId>false</externalId>
+    <label>Important Notes</label>
+    <length>32000</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>7</visibleLines>
+</CustomField>

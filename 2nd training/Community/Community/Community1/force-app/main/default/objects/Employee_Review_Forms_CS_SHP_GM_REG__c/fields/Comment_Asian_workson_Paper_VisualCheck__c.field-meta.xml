@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Comment_Asian_workson_Paper_VisualCheck__c</fullName>
+    <description>Comment Asian works on Paper[Visual Check]</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Comment Asian works on Paper[Visual Check]</inlineHelpText>
+    <label>Comment Asian workson Paper[VisualCheck]</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

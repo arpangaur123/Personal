@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Agent_Name__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Name of agent requesting rates</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Name of agent requesting rates</inlineHelpText>
+    <label>Agent Name</label>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Rate Reply</relationshipLabel>
+    <relationshipName>R00N2000000121wnEAA</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

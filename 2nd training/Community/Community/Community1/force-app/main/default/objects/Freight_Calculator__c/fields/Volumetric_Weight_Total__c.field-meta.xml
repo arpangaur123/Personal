@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Volumetric_Weight_Total__c</fullName>
+    <description>Volumetric Weight Total of all Crates Added</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Volumetric Weight Total of all Crates Added</inlineHelpText>
+    <label>Volumetric Weight Total</label>
+    <summarizedField>Temporary_Crate__c.Volumetric_Weight__c</summarizedField>
+    <summaryForeignKey>Temporary_Crate__c.Freight_No__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

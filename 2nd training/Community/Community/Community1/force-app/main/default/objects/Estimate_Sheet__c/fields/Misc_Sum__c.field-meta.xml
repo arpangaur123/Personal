@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Misc_Sum__c</fullName>
+    <externalId>false</externalId>
+    <formula>Pics_Paintings_Sum__c  +  BBQ_Sum__c  +  Bicycles_Sum__c  +  Cabinet_Filing_Sum__c  +  Dragon_Pots_Sum__c  +  Golf_Sum__c  +  Flower_Pots_Sum__c  +  Carpets_Sum__c  +  Rugs_Sum__c  +  Por_Elephant_Sum__c  +  Por_Stool_Sum__c +  Safe_Sum__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Misc Sum</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

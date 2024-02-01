@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ToHK__c</fullName>
+    <description>For HK staff</description>
+    <externalId>false</externalId>
+    <label>To</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Norman Express Limited</fullName>
+                <default>false</default>
+                <label>Norman Express Limited</label>
+            </value>
+            <value>
+                <fullName>BEL International Logistics Limited</fullName>
+                <default>false</default>
+                <label>BEL International Logistics Limited</label>
+            </value>
+            <value>
+                <fullName>Grand Power Express International Limited</fullName>
+                <default>false</default>
+                <label>Grand Power Express International Limited</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

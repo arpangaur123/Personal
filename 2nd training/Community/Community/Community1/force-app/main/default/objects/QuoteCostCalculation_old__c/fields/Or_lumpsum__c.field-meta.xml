@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Or_lumpsum__c</fullName>
+    <description>If the total cost of the origin is to be given as a lumpsum</description>
+    <externalId>false</externalId>
+    <label>Or. lumpsum</label>
+    <precision>8</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

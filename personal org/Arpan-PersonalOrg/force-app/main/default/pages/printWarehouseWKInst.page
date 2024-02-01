@@ -1,0 +1,12 @@
+<apex:page standardController="Warehouse_Work_Instruction__c" showHeader="false" standardstylesheets="false" renderAs="PDF">
+<apex:stylesheet value="{!$Resource.PackListCSS}"/>
+<table border="0">
+<tr><td align="left"><font style="font-weight:bold;font-family:arial;font-size:x-large">Warehouse Work Instructions</font></td>
+<td align="right"><apex:image id="theImage" value="{!$Resource.AMLogo}"/></td>
+</tr>
+</table>
+<body>
+<apex:detail relatedList="false"></apex:detail>
+
+</body>
+</apex:page>

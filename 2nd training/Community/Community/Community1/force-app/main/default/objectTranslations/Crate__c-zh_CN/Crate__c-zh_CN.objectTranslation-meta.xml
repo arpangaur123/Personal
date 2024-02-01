@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value></value>
+    </caseValues>
+    <layouts>
+        <layout>Crate Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Crate Layout SG</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>HHG Crate</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>HTTR - Crate Layout SG</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel></nameFieldLabel>
+    <quickActions>
+        <label></label>
+        <name>Sync_Artworks</name>
+    </quickActions>
+    <recordTypes>
+        <label></label>
+        <name>AMCrates</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>HHGCrate</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>HTTR</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Update_collector_field</name>
+    </validationRules>
+    <webLinks>
+        <label></label>
+        <name>Add_Artworks</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Copy_to_Transaction</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Delete_Artworks</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Print_Crate</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Sync_Artworks</name>
+    </webLinks>
+</CustomObjectTranslation>

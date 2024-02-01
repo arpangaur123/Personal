@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Operation_Instruction__c</fullName>
+    <defaultValue>&quot;ASSEMBLE DISMANTLED FURNITURE,&quot; &amp; BR() &amp;
+&quot;REMOVE ALL DEBRIS FROM RESIDENCE,&quot; &amp; BR() &amp;
+&quot;PHOTOS TO BE TAKEN FOR ALL DAMAGED ITEMS,&quot; &amp; BR() &amp;
+&quot;ENSURE THAT ALL FORMS ARE SIGNED BY CLIENT.&quot;</defaultValue>
+    <externalId>false</externalId>
+    <label>Operation Instruction</label>
+    <length>32768</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>5</visibleLines>
+</CustomField>

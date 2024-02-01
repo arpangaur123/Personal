@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>Type__c</columns>
+    <columns>NAME</columns>
+    <columns>Brand__c</columns>
+    <columns>Model__c</columns>
+    <columns>Serial_No__c</columns>
+    <columns>Asset_Type__c</columns>
+    <columns>Location_User__c</columns>
+    <columns>Remarks__c</columns>
+    <columns>Door_Size__c</columns>
+    <columns>Cabin_Size__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Asset_Type__c</field>
+        <operation>equals</operation>
+        <value>Singapore</value>
+    </filters>
+    <label>Singapore</label>
+    <language>en_US</language>
+</ListView>

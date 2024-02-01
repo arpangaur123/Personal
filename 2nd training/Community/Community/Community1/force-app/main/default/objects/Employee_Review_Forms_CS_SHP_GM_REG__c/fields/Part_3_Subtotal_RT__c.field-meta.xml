@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Part_3_Subtotal_RT__c</fullName>
+    <externalId>false</externalId>
+    <formula>VALUE(Text(Oral_Written_Communication_Skills__c))+
+VALUE(Text(Visual_Check__c))+
+VALUE(Text(Receive_Release__c))+
+VALUE(Text(Stock_Check_Cycle_Count__c))+
+VALUE(Text(Data_Management_RT__c))+
+VALUE(Text(Artwork_Safety__c))+
+VALUE(Text(Off_Site_Works__c))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Part 3 Subtotal [RT]</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>mc@ht.com.stg</contactEmail>
+    <label>Helutrans Singapore API</label>
+    <oauthConfig>
+        <callbackUrl>https://helutrans--stg.lightning.force.com/oAuth2/callback
+https://www.postman.com/oauth2/callback</callbackUrl>
+        <consumerKey>3MVG92H4TjwUcLlJEYP1zMzJjalpenJEHENUx7aOiIHERPtVfrqZssVfVdPtrZFeFCgwYGdIkvKG0PUvIQaZs</consumerKey>
+        <isAdminApproved>false</isAdminApproved>
+        <isClientCredentialEnabled>false</isClientCredentialEnabled>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
+        <isSecretRequiredForRefreshToken>false</isSecretRequiredForRefreshToken>
+        <scopes>Full</scopes>
+    </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>ENFORCE</ipRelaxation>
+        <refreshTokenPolicy>zero</refreshTokenPolicy>
+    </oauthPolicy>
+    <sessionPolicy>
+        <sessionTimeout>1440</sessionTimeout>
+    </sessionPolicy>
+</ConnectedApp>

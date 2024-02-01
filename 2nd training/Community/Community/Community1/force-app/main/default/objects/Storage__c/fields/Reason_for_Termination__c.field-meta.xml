@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_for_Termination__c</fullName>
+    <externalId>false</externalId>
+    <label>Reason for Termination</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Client moved to competitor warehouse (state reason in remarks)</fullName>
+                <default>false</default>
+                <label>Client moved to competitor warehouse (state reason in remarks)</label>
+            </value>
+            <value>
+                <fullName>Client moved to their own personal storage space</fullName>
+                <default>false</default>
+                <label>Client moved to their own personal storage space</label>
+            </value>
+            <value>
+                <fullName>Contract renewal</fullName>
+                <default>false</default>
+                <label>Contract renewal</label>
+            </value>
+            <value>
+                <fullName>Short term storage before re-export</fullName>
+                <default>false</default>
+                <label>Short term storage before re-export</label>
+            </value>
+            <value>
+                <fullName>Short term storage before collection</fullName>
+                <default>false</default>
+                <label>Short term storage before collection</label>
+            </value>
+            <value>
+                <fullName>Moved from HT PSA to HT CSA</fullName>
+                <default>false</default>
+                <label>Moved from HT PSA to HT CSA</label>
+            </value>
+            <value>
+                <fullName>Moved from HT CSA to HT PSA</fullName>
+                <default>false</default>
+                <label>Moved from HT CSA to HT PSA</label>
+            </value>
+            <value>
+                <fullName>Other (state reason in remarks)</fullName>
+                <default>false</default>
+                <label>Other (state reason in remarks)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

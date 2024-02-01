@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Comment_Validation_higest_grade108</fullName>
+    <active>true</active>
+    <description>Comment_Validation_higest_grade108</description>
+    <errorConditionFormula>AND(
+ISPICKVAL(Materials_Equipment__c, &quot;5&quot;),
+ISBLANK( Comment_Materials_Equipment__c)
+)</errorConditionFormula>
+    <errorDisplayField>Materials_Equipment__c</errorDisplayField>
+    <errorMessage>Please indicate a reason to justify the 5 points awarded.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>Cargo_Receipt_Unstuffing_Location__c</name>
+    <picklistValues>
+        <masterLabel>FASS</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HT</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HTAM</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

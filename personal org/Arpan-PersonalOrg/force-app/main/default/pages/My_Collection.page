@@ -1,0 +1,445 @@
+<apex:page controller="MyPagingController2" lightningStylesheets="true" showheader="false" sidebar="false" id="pg">
+    <apex:form id="frm">
+        <apex:slds />
+        <STYLE>
+            div#home_Tab{display:none!important;}
+            body .pbBody, .slds-vf-scope .pbBody {
+                overflow: unset;
+            }
+        
+        </STYLE>
+        <div id="demoContainer">
+            <script language="JavaScript">
+               /* try{
+                    var pa=document.getElementById("demoContainer").parentNode.parentNode;
+                    pa.style.display = "none";
+                }catch(err){
+                    alert('There was an error on this webpage='+err.description);
+                }*/
+            </script>
+            <script language="JavaScript">
+            function removeSerchbox(){
+                var a = [];
+                var re =new RegExp('\\bsearchCell\\b');
+                var els =document.getElementsByTagName("td");
+                for(var i=0,j=els.length; i<j;i++)
+                    if(re.test(els[i].className))a.push(els[i]);var parent=a[0];
+                        parent.style.display='none';
+            }
+            function removeSerchbox2(){
+                var a = [];
+                var re =new RegExp('\\blast\\b');
+                var els =document.getElementsByTagName("td");
+                for(var i=0,j=els.length; i<j;i++)
+                    if(re.test(els[i].className))
+                        a.push(els[i]);
+                    var parent=a[0];
+                    parent.style.display='none';
+            }
+            function removeSerchbox3(){
+                var a = [];
+                var re =new RegExp('\\bright\\b');
+                var els =document.getElementsByTagName("td");
+                for(var i=0,j=els.length; i<j; i++)
+                    if(re.test(els[i].className))
+                        a.push(els[i]);
+                    var parent=a[0];
+                    parent.style.display='none';
+            }
+            var oldonload = window.onload;
+            if (typeof window.onload != 'function')    {
+                 window.onload =oldonload;
+            }
+            else {
+                 window.onload = function() {
+                       if(oldonload) { oldonload();}
+                        removeSerchbox();
+                        removeSerchbox2();
+                        removeSerchbox3();
+                    }
+            }
+            function stopRKey(evt) {
+                var evt  = (evt) ? evt : ((event) ? event : null);
+                var node = (evt.target) ? evt.target : ((evt.srcElement) ? evt.srcElement : null);
+                if ((evt.keyCode == 13) && (node.type=="text")) { return false; }
+            }
+            document.onkeypress = stopRKey;
+            </script>
+            </div>
+        <div align="right"><a href="../secur/logout.jsp" target="_top">Logout</a>&nbsp;</div><br></br>
+    <apex:outputPanel id="pageBlockHeader">
+        <img src="{!$Resource.HeluTransLogo}" style="vertical-align:left;"/>
+        <div>
+            <p style="float:left">&nbsp;<b>Collection of Artworks by {!$User.FirstName}, ( Total No. of Artworks:&nbsp;<apex:outputLabel value="{!totalRecords}"/> )&nbsp;</b></p>
+            <p style="float:right">
+                <apex:commandButton value="Show/Hide Columns" action="{!showHideAction}" rerender="pageBlock"/>
+                <apex:commandButton value="Export to Excel" onclick="javascript:openExportToExcelPage();return false;" />
+            </p>
+        </div>
+    </apex:outputPanel>
+    <apex:pageBlock id="pageBlock">
+        <apex:pageMessages />
+        <apex:outputPanel id="op1" rendered="{!if(showHideColumn == true, True, False)}">
+            <p style="float:center">    
+                <apex:pageBlockSection >
+                    <apex:pageBlockSectionItem >
+                        Artist: <apex:inputCheckbox value="{!showArtist}"/>
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem >
+                        Title: <apex:inputCheckbox value="{!showTitle}"/>
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem >
+                        Bar Code: <apex:inputCheckbox value="{!showBarCode}"/>
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem >
+                        Item No.: <apex:inputCheckbox value="{!showItemNo}"/>
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem >
+                        Lot. No.: <apex:inputCheckbox value="{!showLotNo}"/>
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem >
+                        Packed Dimensions: <apex:inputCheckbox value="{!showDimension}"/>
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem >
+                        Exhibition: <apex:inputCheckbox value="{!showExhibition}"/>
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem >
+                        Image: <apex:inputCheckbox value="{!showImage}"/>
+                    </apex:pageBlockSectionItem>
+                    <!--<apex:pageBlockSectionItem >
+Condition Report.: <apex:inputCheckbox value="{!showConditionReport}"/>
+</apex:pageBlockSectionItem>-->
+                    <apex:pageBlockSectionItem >
+                        Artwork Dimensions: <apex:inputCheckbox value="{!showPD}"/>
+                    </apex:pageBlockSectionItem>
+                    <!--<apex:pageBlockSectionItem >
+Packing Method: <apex:inputCheckbox value="{!showPM}"/>
+</apex:pageBlockSectionItem>-->
+                    
+                    <!------------------------------------------------------added on 07072020--------------------------------------->
+                    <apex:pageBlockSectionItem >
+                        GST: <apex:inputCheckbox value="{!showgst}"/>
+                    </apex:pageBlockSectionItem>
+                    
+                    <apex:pageBlockSectionItem >
+                        Bond Status: <apex:inputCheckbox value="{!showbondstatus}"/>
+                    </apex:pageBlockSectionItem>
+                    <!----------------------------------------------------------end--------------------------------------------------->
+                    
+                    
+                </apex:pageBlockSection>
+                <apex:commandButton value="Save" action="{!goBack}" rerender="pageBlock,op1" />
+            </p>
+        </apex:outputPanel>
+        
+        <apex:outputPanel id="op2" rendered="{!if(showHideColumn == false, True, False)}">
+            
+            <div>
+                <p>
+                    <b><apex:outputLabel value="Search:" />&nbsp;</b>
+                    <apex:inputText value="{!searchText}" />
+                    <apex:commandButton action="{!searchRecords}" status="status" rerender="frm" value="Search">
+                        <apex:param name="searchClick" value="true" assignTo="{!searchClick}"></apex:param>
+                    </apex:commandButton>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <!--apex:commandButton action="{!reset}" status="status" rerender="artist,lotno,exhibition,frm" value="Reset"/-->
+                    <apex:commandButton value="Reset" onclick="javascript:openResetPage();return false;" />
+                    
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <b><apex:outputLabel value="Search Filters:" /></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <b>Artist: </b><apex:selectList value="{!artistSelected}" id="artist" size="1">
+                    <apex:selectOptions value="{!artistOptions}" />
+                    <apex:actionSupport event="onchange" action="{!subFilter}"  rerender="artist,lotno,exhibition,frm" status="status">
+                        <apex:param name="typeString" value="artist" />
+                        <apex:param name="subfilterClick" value="true" assignTo="{!subfilterClick}"/>
+                    </apex:actionSupport>
+                    </apex:selectList>&nbsp;&nbsp;
+                    <b>Lot No.</b> <apex:selectList value="{!lotnoSelected}" id="lotno" size="1"> 
+                    <apex:selectOptions value="{!lotnoOptions}" />
+                    <apex:actionSupport event="onchange" action="{!subFilter}"  rerender="artist,lotno,exhibition,frm" status="status">
+                        <apex:param name="typeString" value="lotno" />
+                        <apex:param name="subfilterClick" value="true" assignTo="{!subfilterClick}"/>
+                    </apex:actionSupport>
+                    </apex:selectList>&nbsp;&nbsp;&nbsp;
+                    <b>Exhibition: </b><apex:selectList value="{!exhibitionSelected}" id="exhibition" size="1">
+                    <apex:selectOptions value="{!exhibitionOptions}" />
+                    <apex:actionSupport event="onchange" action="{!subFilter}"  rerender="artist,lotno,exhibition,frm" status="status">
+                        <apex:param name="typeString" value="exhb" />
+                        <apex:param name="subfilterClick" value="true" assignTo="{!subfilterClick}"/>
+                    </apex:actionSupport>
+                    </apex:selectList>&nbsp;&nbsp;&nbsp;
+                    <b>Item No: </b><apex:selectList value="{!itemNoSelected}" id="ItemNo" size="1">
+                    <apex:selectOptions value="{!itemNoOptions}" />
+                    <apex:actionSupport event="onchange" action="{!subFilter}"  rerender="artist,lotno,exhibition,frm" status="status">
+                        <apex:param name="typeString" value="itemNo" />
+                        <apex:param name="subfilterClick" value="true" assignTo="{!subfilterClick}"/>
+                    </apex:actionSupport>
+                    </apex:selectList>&nbsp;&nbsp;&nbsp;
+                    <apex:outputLabel >
+                        <b>Bond Status: </b><apex:selectList value="{!bondnoSelected}" id="bondno" size="1">
+                        <apex:selectOptions value="{!bondNoOptions}" />
+                        <apex:actionSupport event="onchange" action="{!subFilter}"  rerender="artist,lotno,exhibition,bondno,frm" status="status" >
+                            <apex:param name="typeString" value="bondno" />
+                            <apex:param name="subfilterClick" value="true" assignTo="{!subfilterClick}"/>
+                        </apex:actionSupport>
+                        </apex:selectList>
+                    </apex:outputLabel>
+                </p>
+                
+                <p style="float:right;display:{!IF(NOT(ISNULL(accounts)),'block','none')}">
+                    <script>
+                    function runScript(obj){
+                        //alert(obj.keyCode);
+                        if(obj.keyCode == 13){
+                            callAction();   // call action function
+                            return false;
+                        }else if((obj.keyCode > 34 && obj.keyCode < 40) || (obj.keyCode > 95 && obj.keyCode < 106) || (obj.keyCode > 47 && obj.keyCode < 58) || obj.keyCode == 8 || obj.keyCode == 46 ){
+                            return true;
+                        }else{
+                            return false;
+                        }
+                    }
+                    </script>
+                    
+                </p>
+            </div>
+            <br/><br/>
+            <apex:actionStatus id="status">
+                <apex:facet name="start">
+                    <div >
+                        <img src="/img/loading24.gif" style="vertical-align:middle;"/>
+                        <span style="margin-left: 10px; font-size: 12px; font-weight: bold; color: #000000;">Please wait while we get the records...</span>
+                    </div>
+                </apex:facet>
+            </apex:actionStatus>
+            <apex:actionFunction name="first" action="{!first}" status="status" reRender="pageBlock,pageBlockHeader"/>
+            <apex:actionFunction name="last" action="{!last}" status="status" reRender="pageBlock,pageBlockHeader"/>
+            <apex:actionFunction name="next" action="{!next}" status="status" reRender="pageBlock,pageBlockHeader"/>
+            <apex:actionFunction name="previous" action="{!previous}" status="status" reRender="pageBlock,pageBlockHeader"/>
+            <apex:actionFunction name="changeLimit" action="{!changeLimit}" status="status" reRender="pageBlock,pageBlockHeader"/>
+            <apex:actionFunction name="callAction" action="{!pageNavigation}" status="status" reRender="pageBlock,pageBlockHeader"/>
+            
+            <apex:actionFunction name="encodeImageId" action="{!encodeTheChipperTxt}" status="stat" reRender="imgPops">
+                <apex:param name="arg11" value="" assignTo="{!imageId}"/>
+            </apex:actionFunction>
+            <apex:actionFunction name="setBoolfalse" action="{!setBoolToFalse}" status="stat" reRender="imgPops"/>
+            
+            <apex:actionStatus id="stat">
+                <apex:facet name="start"> 
+                    <apex:outputPanel id="tstpopup"> 
+                        <apex:outputPanel styleClass="popupBackground" layout="block"/> 
+                            <apex:outputPanel styleClass="custPopup" layout="block"> 
+                                <img src="/img/loading24.gif" style="vertical-align:middle; horizontal-align:middle"/> 
+                                <span>Please wait...</span> 
+                            </apex:outputPanel> 
+                    </apex:outputPanel> 
+                </apex:facet> 
+            </apex:actionStatus>
+            
+            <apex:outputPanel id="imgPops">
+                <script>
+                 if({!openPopUp}){
+                    var encodedId = '{!encodedImageId}';
+                    var dualScreenLeft = window.screenLeft != undefined ? window.screenLeft : screen.left; 
+                    var dualScreenTop = window.screenTop != undefined ? window.screenTop : screen.top; 
+                    width = window.innerWidth ? window.innerWidth : document.documentElement.clientWidth ? document.documentElement.clientWidth : screen.width; 
+                    height = window.innerHeight ? window.innerHeight : document.documentElement.clientHeight ? document.documentElement.clientHeight : screen.height; 
+                    var left = ((width / 2) - (800 / 2)) + dualScreenLeft; 
+                    var top = ((height / 2) - (900 / 2)) + dualScreenTop; 
+                    var url= '/apex/ImageView?eid='+encodedId; 
+                    var win=window.open(url, 'Title', 'scrollbars=yes,width=700,height=500, top=' + top + ', left=' + left); 
+                    
+                    if (win.closed) { 
+                        setBoolfalse();
+                    } 
+                }
+                </script>
+            </apex:outputPanel>
+            
+             <style>
+                 .custPopup{ 
+                    background-color: white; 
+                    border-width: 0px; 
+                    border-radius:10px; 
+                    z-index: 9999; 
+                    left: 40%; 
+                    padding:20px; 
+                    position: absolute; 
+                    margin-left: -10px; 
+                    top:30%; 
+                }
+                .popupBackground{
+                     background-color:#a6a6a6;
+                     opacity: 0.30;
+                     filter: alpha(opacity = 30);
+                     position: absolute;
+                     width: 100%; 
+                     height: 180%; 
+                     top: 0; 
+                     left: 0; 
+                     z-index: 9998;
+                 }
+                </style>
+            
+            
+            <apex:variable value="0" var="i"/>
+            <apex:pageBlockTable value="{!artWorkWrapperList}" var="artwk" rendered="{!NOT(ISNULL(accounts))}" id="pbt">
+                <apex:column rendered="{!if(showArtist == true, True, False)}">
+                    <apex:facet name="header">   
+                        <apex:outputText value="Artist{!IF(sortExpression=='artApp__Artist__r.Name',IF(sortDirection='ASC','',''),'')}" id="cmdSort" >
+                            <apex:param value="artApp__Artist__r.Name" name="column" assignTo="{!sortExpression}" ></apex:param>
+                        </apex:outputText>
+                    </apex:facet>
+                    <apex:outputtext value="{!artwk.apArt.artApp__Artist__r.Name}"/>         
+                </apex:column>
+                <apex:column rendered="{!if(showTitle == true, True, False)}">
+                    <apex:facet name="header">   
+                        <apex:outputText value="Title{!IF(sortExpression=='Name',IF(sortDirection='ASC','?','?'),'')}">
+                            <apex:param value="Name" name="column" assignTo="{!sortExpression}" ></apex:param>
+                        </apex:outputText>
+                    </apex:facet>
+                    <apex:outputtext value="{!artwk.apArt.Name}"/>         
+                </apex:column>
+                <apex:column rendered="{!if(showBarCode == true, True, False)}">
+                    <apex:facet name="header">   
+                        <apex:outputText value="Barcode{!IF(sortExpression=='Barcode_ID__c',IF(sortDirection='ASC','?','?'),'')}">
+                            <apex:param value="Barcode_ID__c" name="column" assignTo="{!sortExpression}" ></apex:param>
+                        </apex:outputText>
+                    </apex:facet>
+                    <apex:outputtext value="{!artwk.apArt.Barcode_ID__c}"/>         
+                </apex:column>
+                <apex:column rendered="{!if(showItemNo == true, True, False)}">
+                    <apex:facet name="header">   
+                        <apex:outputText value="Item No{!IF(sortExpression=='Item_No__c',IF(sortDirection='ASC','?','?'),'')}">
+                            <apex:param value="Item_No__c" name="column" assignTo="{!sortExpression}" ></apex:param>
+                        </apex:outputText>
+                    </apex:facet>
+                    <apex:outputtext value="{!artwk.apArt.Item_No__c}"/>         
+                </apex:column>
+                <apex:column rendered="{!if(showLotNo == true, True, False)}">
+                    <apex:facet name="header">   
+                        <apex:outputText value="Lot No.{!IF(sortExpression=='Lot_No__c',IF(sortDirection='ASC','?','?'),'')}">
+                            <apex:param value="Lot_No__c" name="column" assignTo="{!sortExpression}" ></apex:param>
+                        </apex:outputText>
+                    </apex:facet>
+                    <apex:outputtext value="{!artwk.apArt.Lot_No__c}"/>         
+                </apex:column>
+                <apex:column headervalue="Packed Dimensions" rendered="{!if(showDimension == true, True, False)}">
+                    <apex:outputtext value="{!artwk.apArt.Packed_Dimensions__c}"/>
+                </apex:column>
+                <apex:column rendered="{!if(showExhibition == true, True, False)}">
+                    <apex:facet name="header">   
+                        <apex:outputText value="Exhibition{!IF(sortExpression=='artApp__Exhibition__r.Name',IF(sortDirection='ASC','?','?'),'')}">
+                            <apex:param value="artApp__Exhibition__r.Name" name="column" assignTo="{!sortExpression}" ></apex:param>
+                        </apex:outputText>
+                    </apex:facet>
+                    <apex:outputtext value="{!artwk.apArt.artApp__Exhibition__r.Name}"/>         
+                </apex:column>            
+                <apex:column headervalue="Image" rendered="{!if(showImage == true, True, False)}">
+                    <!--<apex:outputlink value="../servlet/servlet.FileDownload?file={!artwk.apArt.artApp__Primary_Image_Id__c}" target="_blank"><apex:image value="../servlet/servlet.FileDownload?file={!artwk.apArt.artApp__Primary_Image_Id__c}" width="50" height="50"/></apex:outputlink>-->
+                    <!--apex:outputField value="{!artwk.apArt.Image__c}" style="width:50; height:50;"  html-disabled="true"/-->
+                    <apex:image value="../servlet/servlet.FileDownload?file={!artwk.apArt.artApp__Primary_Image_Id__c}" style="cursor:pointer;" width="50" height="50" id="img" onclick="encodeImageId('{!artwk.apArt.artApp__Primary_Image_Id__c}'); return false;" />
+                </apex:column>
+                <apex:variable value="{(i+1)}" var="i"/>
+                <apex:column headervalue="Condition Report" rendered="{!if(showConditionReport == true, False, False)}">
+                    <apex:outputlink value="../servlet/servlet.FileDownload?file={!artwk.attachmentrec}" target="_blank" rendered="{!if((artwk.attachmentrec != null && artwk.attachmentrec != '000000000000000000'),True,False)}">Download</apex:outputlink>
+                </apex:column>
+                
+                <apex:column headervalue="Artwork Dimensions" rendered="{!if(showPD == true, True, False)}">           
+                    <apex:outputtext value="{!artwk.apArt.Dimensions__c}"/>         
+                </apex:column>
+                
+                <apex:column headervalue="Packing Method" rendered="{!if(showPM == true, False, False)}">             
+                    <apex:outputtext value="{!artwk.apArt.Packing_Method__c}"/>         
+                </apex:column> 
+                
+                <!---------------------------------------added on 07072020------------------------------------->
+                
+                <apex:column headervalue="GST" rendered="{!if(showgst == true, True, False)}">             
+                    <apex:outputtext value="{!artwk.apArt.GST__c}"/>         
+                </apex:column> 
+                
+                <apex:column headervalue="Bond Status" rendered="{!if(showbondstatus == true, True, False)}">             
+                    <apex:outputText value="{!artwk.apArt.Bond_Status__c}" escape="false"/>
+                </apex:column> 
+
+                <!---------------------------------------End------------------------------------------------------>
+                
+            </apex:pageBlockTable>
+            <br></br><br></br>
+    <div>
+        <span>
+            <apex:outputLabel value="{!recordInfo}"/>
+            <apex:selectList value="{!limits}" size="1" onchange="changeLimit();return false;">
+                <apex:selectOptions value="{!items}"/>
+            </apex:selectList>
+        </span>
+        <span style="margin: 0 200px;">
+            <span style="margin: 0 3px;">
+                <apex:outputPanel rendered="{!firstOff}">
+                    <img src="/s.gif" onclick="first();return false;" style="cursor:pointer; cursor:hand; background-image: url('/img/paginationArrows.gif');background-position: 0 1px;background-repeat: no-repeat; height: 10px;width: 9px;"/>
+                </apex:outputPanel>
+                <apex:outputPanel rendered="{!(!firstOff)}">
+                    <img src="/s.gif" style="cursor:text; background-image: url('/img/paginationArrows.gif');background-position: 0 -10px;background-repeat: no-repeat; height: 10px;width: 9px;"/>
+                </apex:outputPanel>
+            </span>
+            <span style="margin: 0 3px;">
+                <apex:outputPanel rendered="{!firstOff}">
+                    <img class="prev" src="/s.gif" onclick="previous();return false;" style="cursor:pointer; cursor:hand;background-image: url('/img/paginationArrows.gif'); background-position: -10px 1px;background-repeat: no-repeat;height: 10px;margin: 0; padding: 0;width: 9px;"/>
+                    <apex:outputLabel value="Previous"  style="cursor:pointer; cursor:hand;" onclick="previous();return false;"/>
+                </apex:outputPanel>
+                <apex:outputPanel rendered="{!(!firstOff)}">
+                    <img src="/s.gif" style="cursor:text; background-image: url('/img/paginationArrows.gif');background-position: -10px -10px;background-repeat: no-repeat;height: 10px;margin: 0;padding: 0;width: 9px;"/>
+                    <apex:outputLabel value="Previous"  style="cursor:text; color: #A8A8A8"/>
+                </apex:outputPanel>
+            </span>
+            <span style="margin: 0 3px;">
+                <apex:outputPanel rendered="{!lastOff}">
+                    <apex:outputLabel value="Next" style="cursor:pointer; cursor:hand;" onclick="next();return false;"/>
+                    <img src="/s.gif" onclick="next();return false;" style="cursor:pointer; cursor:hand; background-image: url('/img/paginationArrows.gif');background-position: -17px 1px; background-repeat: no-repeat;height: 10px; width: 9px;"/>
+                </apex:outputPanel>
+                <apex:outputPanel rendered="{!(!lastOff)}">
+                    <apex:outputLabel value="Next" style="cursor:text; color: #A8A8A8"/>
+                    <img src="/s.gif" style="cursor:text; background-image: url('/img/paginationArrows.gif');background-position: -17px -10px;background-repeat: no-repeat;height: 10px;width: 9px;"/>
+                </apex:outputPanel>
+            </span>
+            <span style="margin: 0 3px;">
+                <apex:outputPanel rendered="{!lastOff}">
+                    <img src="/s.gif" onclick="last();return false;" style="cursor:pointer; cursor:hand; background-image: url('/img/paginationArrows.gif'); background-position: -27px 1px;background-repeat: no-repeat;height: 10px;width: 9px;"/>
+                </apex:outputPanel>
+                <apex:outputPanel rendered="{!(!lastOff)}">
+                    <img src="/s.gif" style="cursor:text; background-image: url('/img/paginationArrows.gif');background-position: -27px -10px;background-repeat: no-repeat;height: 10px;width: 9px; "/>
+                </apex:outputPanel>
+            </span>
+        </span>
+        <span style="margin: 0 -80px;">
+            <apex:outputLabel value="Page"/>
+            <apex:inputText id="pageNo" value="{!pageNumber}" style="width:20px; text-align:center" size="3" onkeydown="return runScript(event);"/>
+            <apex:outputLabel value="of {!totalPage}"/>
+        </span>
+    </div>
+    <div align="right" style="display:{!IF(NOT(ISNULL(accounts)),'block','none')}">
+        <br/>
+    </div>
+</apex:outputPanel>
+</apex:pageBlock> 
+<script type="text/javascript">
+
+   
+    
+    
+    
+    
+
+function openExportToExcelPage(){
+    window.open('/apex/My_ControllerExcel');
+}
+
+function openResetPage(){
+    window.open('/apex/My_Collection', '_self');
+}
+
+
+
+</script>
+</apex:form>
+</apex:page>

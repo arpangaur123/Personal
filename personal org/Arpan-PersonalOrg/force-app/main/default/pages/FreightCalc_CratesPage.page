@@ -1,0 +1,49 @@
+<apex:page standardController="Freight_Calculator__c" sidebar="false" showHeader="true"  extensions="FC_Crates_Controller">
+	
+	<apex:sectionHeader title="Freight Calculator" subtitle="Add/Modify Crates" />
+	
+    <apex:relatedList list="Temporary_Artworks__r"  title="View Artworks"/> 
+
+    <apex:form >
+	<apex:pageBlock title="Manage Crates">
+		<apex:pageBlockButtons location="top">
+             <apex:commandButton action="{!newCrate}" value="New" rerender="main" status="ajaxStatus"/>   
+             <apex:commandButton action="{!saveCrates}" value="Save" rerender="main" status="ajaxStatus" />              
+        </apex:pageBlockButtons>
+
+        <apex:pageBlockButtons location="bottom">    	
+		        <apex:commandButton action="{!Back}" value="Back" styleClass="btn"/>
+		        <apex:commandButton action="{!GoProductsPage}" value="Go To Products" styleClass="btn"/>	        
+	    </apex:pageBlockButtons>
+		
+		<apex:actionStatus id="ajaxStatus" startText="Updating Crates...">
+        <apex:facet name="stop">
+        <apex:outputPanel id="main">
+            <table>
+
+                <tr>
+                    <apex:repeat value="{!headers}" var="h">
+                        <td class="hdr">{!h}</td>
+                    </apex:repeat>
+                </tr>
+
+                <apex:repeat value="{!Crates}" var="crt">
+                 <tr>
+                  <td><apex:commandLink value="Delete" action="{!deleteCrate}" rerender="main" status="ajaxStatus">
+						<apex:param name="deleteId" value="{!crt.Id}" /> 
+					  </apex:commandLink>
+				  </td> 	  
+                  <td><apex:inputField value="{!crt.Type__c}" /></td>
+                  <td><apex:inputField value="{!crt.Length__c}" /></td>
+                  <td><apex:inputField value="{!crt.Width__c}" /></td>
+                  <td><apex:inputField value="{!crt.Height__c}" /></td> 
+                 </tr>
+                </apex:repeat>
+            </table>
+        </apex:outputPanel>
+        </apex:facet>
+        </apex:actionStatus>  
+
+	</apex:pageBlock>
+	</apex:form>
+</apex:page>

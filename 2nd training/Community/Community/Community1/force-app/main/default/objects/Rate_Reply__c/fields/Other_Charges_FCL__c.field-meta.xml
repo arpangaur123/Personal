@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Other_Charges_FCL__c</fullName>
+    <defaultValue>&quot;- Customs clearance (included)&quot; &amp; BR() &amp;
+&quot;- If temporary storage is required, storage charges will apply as per rates indicated under “Additional Charges” &quot; &amp; BR() &amp;
+&quot;- Warehouse handling charge will apply as per rates indicated under “Additional Charges” &quot; &amp; BR() &amp;
+&quot;- Re-delivery charge from warehouse to residence (waived)&quot;</defaultValue>
+    <externalId>false</externalId>
+    <label>Other Charges (FCL)</label>
+    <length>32000</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>7</visibleLines>
+</CustomField>

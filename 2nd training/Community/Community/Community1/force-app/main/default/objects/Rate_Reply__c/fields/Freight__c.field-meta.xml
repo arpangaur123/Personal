@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Freight__c</fullName>
+    <defaultValue>&quot;US$ 1850.00 / 20&apos;&quot; &amp; BR() &amp;
+&quot;(lump sum excluding BAF, PRS, PSS, GRI etc)&quot; &amp; BR() &amp;
+&quot;&amp; destination THC&quot; &amp; BR() &amp;
+&quot;WE WILL ADVISE/FORWARD THE NOTIFICATIONS/CIRCULARS IMPOSED BY&quot; &amp; BR() &amp; &quot;SHIPPING LINES ONCE WE HAVE THEM FROM THE CARRIERS&quot;</defaultValue>
+    <externalId>false</externalId>
+    <label>Freight</label>
+    <length>32768</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>2</visibleLines>
+</CustomField>

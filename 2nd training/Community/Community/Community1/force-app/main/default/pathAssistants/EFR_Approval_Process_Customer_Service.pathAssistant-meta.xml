@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Employee_Review_Form__c</entityName>
+    <fieldName>Form_Status__c</fieldName>
+    <masterLabel>EFR Approval Process_Customer_Service</masterLabel>
+    <recordTypeName>Customer_Service</recordTypeName>
+</PathAssistant>

@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HTTR</fullName>
+    <active>true</active>
+    <label>HTTR</label>
+    <picklistValues>
+        <picklist>Container_Type__c</picklist>
+        <values>
+            <fullName>FCL 20%E2%80%99 RF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FCL 40%E2%80%99 RF GP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FCL 40%E2%80%99 RF HC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FCL-20%E2%80%99</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FCL-40%E2%80%99</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FCL-40%E2%80%99 HC</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>DTD_DTP__c</picklist>
+        <values>
+            <fullName>DTD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DTP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PTD</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Insured__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Item_Type2__c</picklist>
+        <values>
+            <fullName>Non-Fragile</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Item_Type3__c</picklist>
+        <values>
+            <fullName>Non-Fragile</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Item_Type__c</picklist>
+        <values>
+            <fullName>Fragile %28Incl%2E Jewelry%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Job_Type__c</picklist>
+        <values>
+            <fullName>Installation Only</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installation with Hoisting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installation%2FHoisting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installation%2FHoisting %28Auction House%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Mode_of_Shipment__c</picklist>
+        <values>
+            <fullName>Air</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Land</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sea</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Outward_Forwarder_Agent_Air__c</picklist>
+        <values>
+            <fullName>AWOT Global Logistics %28S%29 Pte Ltd</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DHL Express %28Singapore%29 Pte Ltd</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Federal Express %28Singapore%29 Pte Ltd</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Global Container Freight Pte Ltd</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Others %28indicate below%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Speedmark Air Transportation Pte Ltd</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TNK Global</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yusen Logistics %28Singapore%29 Pte Ltd</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Outward_Forwarder_Agent_FCL__c</picklist>
+        <values>
+            <fullName>Others_indicate_below</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Outward_Forwarder_Agent_LCL__c</picklist>
+        <values>
+            <fullName>C %26 G Express Pte Ltd</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CWT Globelink Pte Ltd</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ECU-Worldwide %28Singapore%29 Pte%2E Ltd%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Global Container Pte Ltd</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mac-Nels Line %28S%29 Pte Ltd</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Others %28indicate below%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PAL Line Pte Ltd</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Penanshin Shipping Pte Ltd</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shipco Transport Pte Ltd</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TNK Global</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Payment_Terms__c</picklist>
+        <values>
+            <fullName>30 Days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Immediate</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Permit_Status__c</picklist>
+        <values>
+            <fullName>Offset II</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Offset OO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Permanent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Temp Export</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Temp Import</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Shipment_Type__c</picklist>
+        <values>
+            <fullName>Inbound</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outbound</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Final</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Invoiced</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Job</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Transit_Type2__c</picklist>
+        <values>
+            <fullName>Auction House - Storage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Auction House Internal Transit %28SG%2C HK%2C CN%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Auction House Transit %28Rest of Asia%2FAustralia%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Auction House Transit %28Rest of World%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal Transit %28SG%2C HK%2C CN%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transit %28Rest of Asia%2FAustralia%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transit %28Rest of World%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Transit_Type__c</picklist>
+        <values>
+            <fullName>Auction House - Storage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Auction House Internal Transit %28SG%2C HK%2C CN%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Auction House Transit %28Rest of Asia%2FAustralia%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Auction House Transit %28Rest of World%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal Transit %28SG%2C HK%2C CN%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transit %28Rest of Asia%2FAustralia%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transit %28Rest of World%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

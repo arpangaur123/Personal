@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Maintenance_IT__c</fullName>
+    <description>-Creative ways to improve the technologies and processes within the group organization
+-Keep updated and informed of the latest technology and software to enhance &amp; ensure that the company system stays updated and relevant 
+-Review maintenance contracts regularly for all IT equipment including desktops, laptops, servers, storage, firewalls and network devices.
+-Review, analyse and update IT hardware and software and upkeep of IT register.
+-Manage internal helpdesk support and equipment for employee on-/off-boarding
+-Responsible for day-to-day support and troubleshooting of all in- house software and equipment (desktops, laptops, printers)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>-Creative ways to improve the technologies and processes within the group organization
+-Keep  informed of the latest technology and software to ensure that the company system stays relevant 
+-Review contracts regularly for all IT equipment including desktops, laptops, servers, storage, firewalls and network devices.
+-Review, analyse and update IT hardware and software and upkeep of IT register.
+-Manage equipment for employee on-/off-boarding
+-Responsible for day-to-day support and troubleshooting</inlineHelpText>
+    <label>Maintenance [IT]</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1</fullName>
+                <default>true</default>
+                <label>1</label>
+            </value>
+            <value>
+                <fullName>2</fullName>
+                <default>false</default>
+                <label>2</label>
+            </value>
+            <value>
+                <fullName>3</fullName>
+                <default>false</default>
+                <label>3</label>
+            </value>
+            <value>
+                <fullName>4</fullName>
+                <default>false</default>
+                <label>4</label>
+            </value>
+            <value>
+                <fullName>5</fullName>
+                <default>false</default>
+                <label>5</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

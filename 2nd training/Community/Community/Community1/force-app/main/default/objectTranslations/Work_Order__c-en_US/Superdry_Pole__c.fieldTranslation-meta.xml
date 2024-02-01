@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>Superdry_Pole__c</name>
+    <picklistValues>
+        <masterLabel>20 FT - 4 pcs</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>40FT &amp; HC - 6 pcs</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

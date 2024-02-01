@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Overall_Performance_Rating_R__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( Overall_Weightage_Overall_Score_100__c &gt;= 90 , &quot;A&quot;, 
+   IF( Overall_Weightage_Overall_Score_100__c &gt;= 85 , &quot;B+&quot;,
+      IF( Overall_Weightage_Overall_Score_100__c &gt;= 80 , &quot;B&quot;, 
+         IF( Overall_Weightage_Overall_Score_100__c &gt;= 70 , &quot;C+&quot;, 
+            IF( Overall_Weightage_Overall_Score_100__c &gt;= 50 , &quot;C&quot;, &quot;D&quot;)
+
+         )
+      )
+   )
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>A    90% and above -Far exceed job requirements in all areas of work, making positive contributions in areas beyond immediate responsibility.
+B+   85% to &lt; 90%  -Exceed job requirements in most areas of works
+B    80% to &lt;85%   -Exceed job requirements in most areas of works
+C    70% to &lt; 80%  -Exceed job requirements in some areas of work.Additional contributions are more than shortcomings.
+C+   50% to &lt; 70%  -Meet Job requirements
+D    &lt; 50%         -Not meeting job requirements</inlineHelpText>
+    <label>Overall Performance Rating[R]</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>Collector Layout (SG)</layout>
+        <sections>
+            <label></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Beneficial Owner (Singapore Only)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Company Details (Singapore Only)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Storage info (for DS Agreement)</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>HTTR - Collector Layout</layout>
+        <sections>
+            <label></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label></label>
+        <name>Test_Only_Send_with_DocuSign</name>
+    </quickActions>
+</CustomObjectTranslation>

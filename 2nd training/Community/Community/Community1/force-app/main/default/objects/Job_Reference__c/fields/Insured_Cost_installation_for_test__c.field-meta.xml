@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Insured_Cost_installation_for_test__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(DATEVALUE(Test_Date__c) &lt;= DATE(2020,11,30),
+IF( ISPICKVAL( Item_Type3__c ,&quot;Non-Fragile&quot;)&amp;&amp; ISPICKVAL( Job_Type__c ,&quot;Installation Only&quot; ),0.000125,
+IF( ISPICKVAL( Item_Type3__c ,&quot;Non-Fragile&quot;)&amp;&amp; ISPICKVAL( Job_Type__c ,&quot;Installation with Hoisting&quot; ),0.00025,0
+)),
+If(DATEVALUE(Test_Date__c) &gt;= DATE(2020,12,1) &amp;&amp; DATEVALUE(Test_Date__c) &lt;= DATE(2021,9,30),
+
+IF( ISPICKVAL( Item_Type3__c ,&quot;Non-Fragile&quot;)&amp;&amp; ISPICKVAL( Job_Type__c ,&quot;Installation Only&quot; ),0.000131,0),
+If(DATEVALUE(Test_Date__c) &gt;= DATE(2021,10,1),
+
+IF( ISPICKVAL( Item_Type3__c ,&quot;Non-Fragile&quot;)&amp;&amp; ISPICKVAL( Job_Type__c ,&quot;Installation Only&quot; ),0.000125,
+IF( ISPICKVAL( Item_Type3__c ,&quot;Non-Fragile&quot;)&amp;&amp; ISPICKVAL( Job_Type__c ,&quot;Installation with Hoisting&quot; ),0.00025,
+IF( ISPICKVAL( Item_Type3__c ,&quot;Non-Fragile&quot;)&amp;&amp; ISPICKVAL( Job_Type__c ,&quot;Installation/Hoisting&quot; ),0.0001376,
+IF( ISPICKVAL( Item_Type3__c ,&quot;Non-Fragile&quot;)&amp;&amp; ISPICKVAL( Job_Type__c ,&quot;Installation/Hoisting (Auction House)&quot; ),0.0001379,0
+)))),0)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Insured Cost % (installation) for test</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>7</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

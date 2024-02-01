@@ -1,0 +1,10 @@
+trigger accountNameCheck on Account(before insert) {
+ 	if (Trigger.new.Name != NULL)
+ 	{
+ 		Account[] accounts = [select id from account where name = :Trigger.new.Name];
+ 		if (Accounts.size() > 0) {
+ 			Trigger.new.Name.addError('Account name already exists');
+ 		}
+ 		
+ 	}
+}

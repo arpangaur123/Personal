@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Freight Calculator</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Freight Calculator</value>
+    </caseValues>
+    <layouts>
+        <layout>Freight Calculator Layout</layout>
+        <sections>
+            <label></label>
+            <section>Collection Address</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Collection Address Info</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Delivery Address</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Destination Address Info</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Services Description</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>HTTR - Freight Calculator Layout</layout>
+        <sections>
+            <label></label>
+            <section>Collection Address</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Collection Address Info</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Delivery Address</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Destination Address Info</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Services Description</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label></label>
+        <name>HTTR</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Always_Hong_Kong_in_FC</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>CollectionCity_Changeafter_Products_Add</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>DestinationCity_ChangAfterProducts_Added</name>
+    </validationRules>
+    <webLinks>
+        <label></label>
+        <name>Create_Final_Quote</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Freight_Calculator_Wizard</name>
+    </webLinks>
+</CustomObjectTranslation>

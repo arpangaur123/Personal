@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Always_Hong_Kong_in_FC</fullName>
+    <active>true</active>
+    <description>Hong Kong must either be Collection or Destination of Freight Calculator</description>
+    <errorConditionFormula>OR(
+AND(ISPICKVAL(Collection_City__c , 
+                  &quot;Hong Kong (HKG airport)&quot;),
+    ISPICKVAL(Destination_City__c  ,
+                  &quot;Hong Kong (HKG airport)&quot;)
+    ),
+AND(NOT ISPICKVAL(Collection_City__c , 
+                  &quot;Hong Kong (HKG airport)&quot;),
+    NOT ISPICKVAL(Destination_City__c  ,
+                  &quot;Hong Kong (HKG airport)&quot;)
+    )
+)</errorConditionFormula>
+    <errorMessage>Hong Kong must either be Collection or Destination of Freight Calculator</errorMessage>
+</ValidationRule>

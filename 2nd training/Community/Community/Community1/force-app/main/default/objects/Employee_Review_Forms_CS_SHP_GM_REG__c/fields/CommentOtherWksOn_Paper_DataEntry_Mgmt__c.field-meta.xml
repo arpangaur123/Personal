@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CommentOtherWksOn_Paper_DataEntry_Mgmt__c</fullName>
+    <description>Other works on Paper (Maps, Documents, Manuscripts, Books, etc)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Other works on Paper (Maps, Documents, Manuscripts, Books, etc)</inlineHelpText>
+    <label>CommentOtherWksOn Paper [DataEntry/Mgmt]</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

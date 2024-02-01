@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rating__c</fullName>
+    <description>BD Account Rating System</description>
+    <externalId>false</externalId>
+    <label>BD Rating</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>A - Contract</fullName>
+                <default>false</default>
+                <label>A - Contract</label>
+            </value>
+            <value>
+                <fullName>B - Prefer us</fullName>
+                <default>false</default>
+                <label>B - Prefer us</label>
+            </value>
+            <value>
+                <fullName>C - Competitive Quotes</fullName>
+                <default>false</default>
+                <label>C - Competitive Quotes</label>
+            </value>
+            <value>
+                <fullName>D - Prefer Vendor</fullName>
+                <default>false</default>
+                <label>D - Prefer Vendor</label>
+            </value>
+            <value>
+                <fullName>E - Survey (No Jobs)</fullName>
+                <default>false</default>
+                <label>E - Survey (No Jobs)</label>
+            </value>
+            <value>
+                <fullName>F - Never use us before</fullName>
+                <default>false</default>
+                <label>F - Never use us before</label>
+            </value>
+            <value>
+                <fullName>AA - Contract Rates</fullName>
+                <default>false</default>
+                <label>AA - Contract Rates</label>
+            </value>
+            <value>
+                <fullName>BB - Prefer us</fullName>
+                <default>false</default>
+                <label>BB - Prefer us</label>
+            </value>
+            <value>
+                <fullName>CC - Competitive Quotes</fullName>
+                <default>false</default>
+                <label>CC - Competitive Quotes</label>
+            </value>
+            <value>
+                <fullName>DD - Prefer others</fullName>
+                <default>false</default>
+                <label>DD - Prefer others</label>
+            </value>
+            <value>
+                <fullName>EE - Quoted but no jobs</fullName>
+                <default>false</default>
+                <label>EE - Quoted but no jobs</label>
+            </value>
+            <value>
+                <fullName>FF - Never even quoted before</fullName>
+                <default>false</default>
+                <label>FF - Never even quoted before</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

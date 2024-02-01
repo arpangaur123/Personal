@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SIT_Liftvan_Load_OS__c</fullName>
+    <defaultValue>&quot;US$ 6.50 / 100 lbs net (min 1000 lbs)&quot;</defaultValue>
+    <description>SIT liftvan load for OS</description>
+    <externalId>false</externalId>
+    <label>SIT - Liftvan Load OS</label>
+    <length>50</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

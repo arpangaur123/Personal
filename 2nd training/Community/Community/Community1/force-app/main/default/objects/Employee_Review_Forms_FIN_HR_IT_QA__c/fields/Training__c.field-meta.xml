@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Training__c</fullName>
+    <description>-Contribution as a trainer or supervisor to team
+-Covering all aspects of routine accounting, taxation, and compliance rules. Such as but is not limited to examining records, reconciling accounts, preparing financial reports, and completing tax returns
+-Updated with recent developments and relevant regulatory changes</description>
+    <externalId>false</externalId>
+    <inlineHelpText>-Contribution as a trainer or supervisor to the team
+-Covering all aspects of routine accounting, taxation, and compliance rules. Such as but is not limited to examining records, reconciling accounts, preparing financial reports, and completing tax returns
+-Updated with recent developments and relevant regulatory changes</inlineHelpText>
+    <label>Training</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1</fullName>
+                <default>true</default>
+                <label>1</label>
+            </value>
+            <value>
+                <fullName>2</fullName>
+                <default>false</default>
+                <label>2</label>
+            </value>
+            <value>
+                <fullName>3</fullName>
+                <default>false</default>
+                <label>3</label>
+            </value>
+            <value>
+                <fullName>4</fullName>
+                <default>false</default>
+                <label>4</label>
+            </value>
+            <value>
+                <fullName>5</fullName>
+                <default>false</default>
+                <label>5</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

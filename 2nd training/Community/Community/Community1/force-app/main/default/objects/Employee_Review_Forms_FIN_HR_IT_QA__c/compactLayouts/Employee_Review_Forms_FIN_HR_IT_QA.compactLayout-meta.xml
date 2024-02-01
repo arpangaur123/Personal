@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Employee_Review_Forms_FIN_HR_IT_QA</fullName>
+    <fields>Contact__c</fields>
+    <fields>Name</fields>
+    <fields>Category__c</fields>
+    <fields>Department__c</fields>
+    <fields>Level_of_Proficiency__c</fields>
+    <fields>Overall_Performance_Rating_FIN__c</fields>
+    <label>Employee Review Forms (FIN/HR/IT/QA)</label>
+</CompactLayout>

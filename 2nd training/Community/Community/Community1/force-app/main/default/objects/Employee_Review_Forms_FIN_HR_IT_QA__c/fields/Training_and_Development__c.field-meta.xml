@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Training_and_Development__c</fullName>
+    <description>-Mapping out training plans and schedules, sourcing and identifying relevant training programs for organisation
+ (Coordinate internal &amp; external training only. Training plan &amp; schedule are initiated by HOD)
+-Research curriculum recommended by HODs actively. Assist to source for alternative replacement courses
+-Send out post-training survey (upon completion of EACH participant&apos;s training session) and ensure that all forms are completed on time for review by HOD &amp; Training team
+-Monthly report of training schedule &amp; progress be sent to Management for information  
+-Assist to update/create and implement each year&apos;s training courses and materials for each department
+-Training budget management: Propose an annual training budget for review intermittently. Apply training grants and absentee payroll claims and keep a constant lookout for other funding available for training programs.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>-Map training plans &amp; schedules
+-Research and identify relevant training programs
+-Coordinate internal &amp; external training
+-Send out post-training survey to each participant and ensure form completeness for further review
+-Send training schedule &amp; progress monthly to management
+-Assist to update/create and implement training courses for each department
+-Training budget management: Propose an annual training budget for review. Apply training grants, absentee payroll claims and other funding available</inlineHelpText>
+    <label>Training and Development</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1</fullName>
+                <default>true</default>
+                <label>1</label>
+            </value>
+            <value>
+                <fullName>2</fullName>
+                <default>false</default>
+                <label>2</label>
+            </value>
+            <value>
+                <fullName>3</fullName>
+                <default>false</default>
+                <label>3</label>
+            </value>
+            <value>
+                <fullName>4</fullName>
+                <default>false</default>
+                <label>4</label>
+            </value>
+            <value>
+                <fullName>5</fullName>
+                <default>false</default>
+                <label>5</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

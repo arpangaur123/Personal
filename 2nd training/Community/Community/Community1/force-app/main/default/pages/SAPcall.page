@@ -1,0 +1,11 @@
+<apex:page controller="SapclassController"  tabStyle="artApp__Artwork__c"  id="pg" action="{!webMethod}">
+
+    <apex:sectionHeader title="Call sap api"/>
+    
+    <apex:form id="frm">
+        <apex:pageMessages ></apex:pageMessages>
+        <span style="    float: left;    margin-left: 3%;    font-size: 17px;">Click <a href="/{!ld}">here</a> to go back</span>
+    </apex:form>
+
+    
+</apex:page>

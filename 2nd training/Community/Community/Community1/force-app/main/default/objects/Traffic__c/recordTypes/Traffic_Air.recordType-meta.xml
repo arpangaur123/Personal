@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Traffic_Air</fullName>
+    <active>true</active>
+    <description>Traffic - Air shipments</description>
+    <label>Traffic - Air</label>
+    <picklistValues>
+        <picklist>Billing_Instructions__c</picklist>
+        <values>
+            <fullName>NA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>You are to bill all destination charges to%3A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>You are to bill us according to your quote of%3A</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Container_Type_2__c</picklist>
+        <values>
+            <fullName>20%27 CONTAINER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>40%27 CONTAINER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>40%27 HIGH CUBE CONTAINER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>45%27 HC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CASE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CASES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CRATE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LIFTVAN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LIFTVANS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LOOSE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PALLET</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PALLETS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TRIWALL</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Container_Type__c</picklist>
+        <values>
+            <fullName>20%27 CONTAINER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>40%27 CONTAINER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>40%27 HIGH CUBE CONTAINER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>45%27 HC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CASE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CASES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CRATE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LIFTVAN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LIFTVANS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LOOSE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LOOSE PACKAGES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PALLET</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PALLETS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TRIWALL</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Enclosures__c</picklist>
+        <values>
+            <fullName>Air Way Bill</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bill of Lading</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customs Form</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Destination Rates</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electrical List</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Helutrans Way Bill</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insurance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inventory</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Keys</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Others</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Passport</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Personal Itinerary</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Shipment_Type__c</picklist>
+        <values>
+            <fullName>Door to Door</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Door to Port</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Door to Storage</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Shipping_Mode__c</picklist>
+        <values>
+            <fullName>BY AIR</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Special_Instruction_Details__c</picklist>
+        <values>
+            <fullName>Door to Door shipment%2C please contact shippers for immediate clearance and delivery%2E Helutrans will not be responsible for any charges and delivery incurred at destination%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Door to Door shipment%2C please contact shippers for immediate clearance and delivery%2E Helutrans will not be responsible for any storage charges%2E</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Door to Port shipment%2C please contact shippers for immediate clearance%2E Helutrans will not be responsible for any charges incurred at destination%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Door to Port shipment%2C please contact shippers for immediate clearance%2E Helutrans will not be responsible for any storage charges%2E</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Where2Where__c</fullName>
+    <externalId>false</externalId>
+    <label>Mode of Move</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Door to Door</fullName>
+                <default>false</default>
+                <label>Door to Door</label>
+            </value>
+            <value>
+                <fullName>Door to Port</fullName>
+                <default>false</default>
+                <label>Door to Port</label>
+            </value>
+            <value>
+                <fullName>Origin Service</fullName>
+                <default>false</default>
+                <label>Origin Service</label>
+            </value>
+            <value>
+                <fullName>Free On Board</fullName>
+                <default>false</default>
+                <label>Free On Board</label>
+            </value>
+            <value>
+                <fullName>Pack for Storage</fullName>
+                <default>false</default>
+                <label>Pack for Storage</label>
+            </value>
+            <value>
+                <fullName>Destination Service</fullName>
+                <default>false</default>
+                <label>Destination Service</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,46 @@
+<apex:component language="{!languageCode}" controller="CrateInstructionLineItemDetailController">
+
+    <apex:attribute name="crateinstructionItemList" description="List of Crafting Detail records to display." type="CrateInstructionLineItem__c[]" required="true"/>
+    <apex:attribute name="language" description="Language used to render the page." type="String" assignTo="{!languageCode}" required="true"/>
+ <br/>
+     <br/>
+     <br/>
+     <br/>
+    <table border="1" cellpadding="0" cellspacing="0" width="100%"  class="slds-table slds-table_bordered slds-table_cell-buffer"> 
+        <apex:variable value="{!0}" var="cdCount"/>
+        <apex:repeat value="{!crateinstructionItemList}" var="cd">
+        
+      
+            <tr >
+                <td></td>
+                <td colspan="3" align="center" style="color:Black;font-weight:bold;font-size: 16px;">{!$Label.Internal_Dims}</td>
+                <td></td>
+            </tr>
+            <tr>
+            	<td align="center" style="color:red;font-weight:bold;font-size: 16px;">{!$Label.Caton_Type}</td>
+                <td align="center" style="color:red;font-weight:bold;font-size: 16px;">{!$Label.Length}</td>
+                <td align="center" style="color:red;font-weight:bold;font-size: 16px;"><b>{!$Label.Height}</b></td>
+                <td align="center" style="color:red;font-weight:bold;font-size: 16px;">{!$Label.Breadth}</td>
+                <td align="center" style="color:red;font-weight:bold;font-size: 16px;">{!$Label.Additional_Notes}</td>
+            </tr>
+            <tr>
+              <td align="center" style="font-weight:bold;font-size: 16px;"><apex:outputField value="{!cd.Carton_Type__c}"/></td>
+              <td align="center" style="font-weight:bold;font-size: 16px;"><apex:outputField value="{!cd.Length_inch__c}"/></td>
+              <td align="center" style="font-size: 16px;"><apex:outputField value="{!cd.Height_inch__c}"/></td>
+              <td align="center" style="font-size: 16px;"><apex:outputField value="{!cd.Breadth_inch__c}"/></td>
+              <td align="center" style="font-weight:bold;font-size: 16px;"><apex:outputField value="{!cd.Additional_Notes__c}"/></td>
+
+            </tr>
+            <br/>
+            <br/>
+            <br/>
+            
+            <apex:variable value="{!cdCount+1}" var="cdCount"/>
+            <apex:outputPanel rendered="{!cdCount<crateinstructionItemList.size}">
+            <p style="page-break-after:always;"></p>
+            </apex:outputPanel>
+                
+        </apex:repeat>
+    </table>
+
+</apex:component>

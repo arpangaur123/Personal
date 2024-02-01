@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>Direct_Load_FCL__c</name>
+    <picklistValues>
+        <masterLabel>1 x 20&apos; FCL</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1 x 20&apos; FCL + 1 x 40&apos; FCL</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1 x 20&apos; FCL + 1 x 40&apos;HC &apos; FCL</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1 x 40&apos; FCL</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1 x 40&apos; FCL + 1 x 40&apos; HC FCL</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1 x 40&apos; HC FCL</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2 x 40&apos; FCL</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>2 x 40&apos; HC FCL</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

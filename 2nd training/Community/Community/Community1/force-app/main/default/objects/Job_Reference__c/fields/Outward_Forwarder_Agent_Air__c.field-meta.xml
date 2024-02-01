@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Outward_Forwarder_Agent_Air__c</fullName>
+    <externalId>false</externalId>
+    <label>Outward Forwarder Agent (Air)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AWOT Global Logistics (S) Pte Ltd</fullName>
+                <default>false</default>
+                <label>AWOT Global Logistics (S) Pte Ltd</label>
+            </value>
+            <value>
+                <fullName>DHL Express (Singapore) Pte Ltd</fullName>
+                <default>false</default>
+                <label>DHL Express (Singapore) Pte Ltd</label>
+            </value>
+            <value>
+                <fullName>Federal Express (Singapore) Pte Ltd</fullName>
+                <default>false</default>
+                <label>Federal Express (Singapore) Pte Ltd</label>
+            </value>
+            <value>
+                <fullName>Freight Mark Logistics (S) Pte Ltd</fullName>
+                <default>false</default>
+                <label>Freight Mark Logistics (S) Pte Ltd</label>
+            </value>
+            <value>
+                <fullName>Global Container Freight Pte Ltd</fullName>
+                <default>false</default>
+                <label>Global Container Freight Pte Ltd</label>
+            </value>
+            <value>
+                <fullName>Mayor Express Freight Services Pte Ltd</fullName>
+                <default>false</default>
+                <label>Mayor Express Freight Services Pte Ltd</label>
+            </value>
+            <value>
+                <fullName>Speedmark Air Transportation Pte Ltd</fullName>
+                <default>false</default>
+                <label>Speedmark Air Transportation Pte Ltd</label>
+            </value>
+            <value>
+                <fullName>Sky Leader Freight Pte Ltd</fullName>
+                <default>false</default>
+                <label>Sky Leader Freight Pte Ltd</label>
+            </value>
+            <value>
+                <fullName>TNK Global</fullName>
+                <default>false</default>
+                <label>TNK Global</label>
+            </value>
+            <value>
+                <fullName>Yusen Logistics (Singapore) Pte Ltd</fullName>
+                <default>false</default>
+                <label>Yusen Logistics (Singapore) Pte Ltd</label>
+            </value>
+            <value>
+                <fullName>Others (indicate below)</fullName>
+                <default>false</default>
+                <label>Others (indicate below)</label>
+            </value>
+            <value>
+                <fullName>Ben Art Trans Enterprise</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Ben Art Trans Enterprise</label>
+            </value>
+            <value>
+                <fullName>C &amp; G Express Pte Ltd</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>C &amp; G Express Pte Ltd</label>
+            </value>
+            <value>
+                <fullName>CEVA Logistics Singapore Pte Ltd</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>CEVA Logistics Singapore Pte Ltd</label>
+            </value>
+            <value>
+                <fullName>CWT Globalink Pte Ltd</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>CWT Globalink Pte Ltd</label>
+            </value>
+            <value>
+                <fullName>ECU-Worldwide (Singapore) Pte Ltd</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>ECU-Worldwide (Singapore) Pte Ltd</label>
+            </value>
+            <value>
+                <fullName>Mac-Nels Lines (S) Pte Ltd</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Mac-Nels Lines (S) Pte Ltd</label>
+            </value>
+            <value>
+                <fullName>PAL Line Pte Ltd</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>PAL Line Pte Ltd</label>
+            </value>
+            <value>
+                <fullName>Penanshin Shipping Pte Ltd</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Penanshin Shipping Pte Ltd</label>
+            </value>
+            <value>
+                <fullName>Shipco Transport Pte Ltd</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Shipco Transport Pte Ltd</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

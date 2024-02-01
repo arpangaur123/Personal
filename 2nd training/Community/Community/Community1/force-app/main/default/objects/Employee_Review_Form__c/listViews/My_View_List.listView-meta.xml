@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_View_List</fullName>
+    <columns>NAME</columns>
+    <columns>Name__c</columns>
+    <columns>Form_Status__c</columns>
+    <columns>ID_No__c</columns>
+    <columns>Level_of_Proficiency__c</columns>
+    <columns>Overall_Performance_Rating__c</columns>
+    <columns>Overall_Weightage_Overall_Score_100__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Mine</filterScope>
+    <label>My View List</label>
+</ListView>

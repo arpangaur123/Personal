@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FCCS__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>French Chamber of Commerce Singapore</description>
+    <externalId>false</externalId>
+    <label>FCCS</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Client_Servicing_CS__c</fullName>
+    <description>-Ability to interface with clients and respond in a timely manner to requests (via phone, email, calls)
+ -Manage client&apos;s expectation
+ -Actively seek feedback from client - share the information in a timely and accurate manner. So that team members can review &amp; track for improvements. 
+ -Ability to expand client base by reaching out to potential clients whenever possible</description>
+    <externalId>false</externalId>
+    <inlineHelpText>-Ability to interface with clients and respond in a timely manner to requests (via phone, email, calls)
+ -Manage client&apos;s expectation
+ -Actively seek feedback from client - share the information in a timely and accurate manner. So that team members can review &amp; track for improvements. 
+ -Ability to expand client base by reaching out to potential clients whenever possible</inlineHelpText>
+    <label>Client Servicing [CS]</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1</fullName>
+                <default>true</default>
+                <label>1</label>
+            </value>
+            <value>
+                <fullName>2</fullName>
+                <default>false</default>
+                <label>2</label>
+            </value>
+            <value>
+                <fullName>3</fullName>
+                <default>false</default>
+                <label>3</label>
+            </value>
+            <value>
+                <fullName>4</fullName>
+                <default>false</default>
+                <label>4</label>
+            </value>
+            <value>
+                <fullName>5</fullName>
+                <default>false</default>
+                <label>5</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

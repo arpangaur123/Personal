@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Collection_Address__c</fullName>
+    <description>Singapore</description>
+    <externalId>false</externalId>
+    <label>Collection Address</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Helu-Trans, 39 Keppel Road #02-04 Tanjong Pagar Distripark (S)089065</fullName>
+                <default>false</default>
+                <label>Helu-Trans, 39 Keppel Road #02-04 Tanjong Pagar Distripark (S)089065</label>
+            </value>
+            <value>
+                <fullName>Le Freeport, 32 Changi North Crescent (S)499643</fullName>
+                <default>false</default>
+                <label>Le Freeport, 32 Changi North Crescent (S)499643</label>
+            </value>
+            <value>
+                <fullName>Self-Lodge by Helu-Trans</fullName>
+                <default>false</default>
+                <label>Self-Lodge by Helu-Trans</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

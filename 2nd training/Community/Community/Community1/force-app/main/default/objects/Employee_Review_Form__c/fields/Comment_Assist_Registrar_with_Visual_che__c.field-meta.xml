@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Comment_Assist_Registrar_with_Visual_che__c</fullName>
+    <description>Comment Assist Registrar with Visual check Procedure</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Comment Assist Registrar with Visual check Procedure</inlineHelpText>
+    <label>Comment Assist Registrar with Visual chk</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

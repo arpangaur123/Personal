@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Comment_Prompt_accurate_update_of_inve__c</fullName>
+    <description>Comment Prompt &amp; accurate update of inventory</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Comment Prompt &amp; accurate update of the inventory</inlineHelpText>
+    <label>Comment Prompt &amp; accurate update of inve</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

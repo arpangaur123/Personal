@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Grading_for_Other_Works_On_Paper__c</fullName>
+    <externalId>false</externalId>
+    <formula>VALUE(Text( OtherWksOnPaper_Material_Identification__c  ))+
+VALUE(Text( OtherWksOnPaper_Handling__c  ))+
+VALUE(Text( OtherWksOnPaper_Installation__c  ))+
+VALUE(Text(  OtherWksOnPaper_Packing__c   ))+
+VALUE(Text( OtherWksOnPaper_Crating_Carton__c  ))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Total Grading for Other Works On Paper:</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

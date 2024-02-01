@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sup_ComPhotographicWorksPaper_Handling__c</fullName>
+    <description>Supervisor comments for Photographic Works On Paper of Material identification.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Supervisor comments for Photographic Works On Paper of Material identification.</inlineHelpText>
+    <label>Comment Photographic [Handling]</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>Cardboard_Type__c</name>
+    <picklistValues>
+        <masterLabel>Double Wall 双墙</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tri Wall 三墙</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

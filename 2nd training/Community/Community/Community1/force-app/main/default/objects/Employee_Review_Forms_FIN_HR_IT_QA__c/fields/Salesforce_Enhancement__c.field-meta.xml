@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Salesforce_Enhancement__c</fullName>
+    <description>-Work closely with Salesforce consultant to make the bridge between various departments&apos; requirements to enhance information transmission
+-Work with SF consultant to enhance the services and programs (E.g. portal) for client usage.
+-Provide user training and support for new hires and address any issues that arises
+-Build custom reports and dashboard whenever required</description>
+    <externalId>false</externalId>
+    <inlineHelpText>-Work closely with Salesforce consultant to make the bridge between various departments&apos; requirements to enhance information transmission
+-Work with SF consultant to enhance the services and programs (E.g. portal) for client usage
+-Provide user training and support for new hires and address any issues that arises
+-Build custom reports and dashboard whenever required</inlineHelpText>
+    <label>Salesforce Enhancement</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1</fullName>
+                <default>true</default>
+                <label>1</label>
+            </value>
+            <value>
+                <fullName>2</fullName>
+                <default>false</default>
+                <label>2</label>
+            </value>
+            <value>
+                <fullName>3</fullName>
+                <default>false</default>
+                <label>3</label>
+            </value>
+            <value>
+                <fullName>4</fullName>
+                <default>false</default>
+                <label>4</label>
+            </value>
+            <value>
+                <fullName>5</fullName>
+                <default>false</default>
+                <label>5</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Registrar_Skill_Matrix</fullName>
+    <active>true</active>
+    <description>To create Registrar Skill Matrix in the system</description>
+    <label>Registrar Skill Matrix</label>
+</RecordType>

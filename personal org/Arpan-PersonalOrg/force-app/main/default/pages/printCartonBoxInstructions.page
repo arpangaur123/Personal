@@ -1,0 +1,18 @@
+<apex:page standardController="Carton_Box_Instruction__c" showHeader="false" standardstylesheets="false" renderAs="PDF">
+<apex:stylesheet value="{!$Resource.PackListCSS}"/>
+<html>
+<!-- <head>
+  <style> 
+     body {font-family: Arial Unicode MS;}
+  </style>
+ </head> -->
+<table border="0">
+<tr><td align="left"><font style="font-weight:bold;font-family:arial;font-size:x-large">Carton Box Instructions</font></td>
+<td align="right"><apex:image id="theImage" value="{!$Resource.AMLogo}"/></td>
+</tr>
+</table>
+<body>
+<apex:detail relatedList="false"></apex:detail>
+
+</body></html>
+</apex:page>

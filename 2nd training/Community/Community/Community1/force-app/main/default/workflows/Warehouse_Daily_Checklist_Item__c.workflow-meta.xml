@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Status_change_to_close</fullName>
+        <field>Followup_Status__c</field>
+        <literalValue>Closed</literalValue>
+        <name>Status change to close</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>update_followup_status_to_open</fullName>
+        <field>Followup_Status__c</field>
+        <literalValue>Open</literalValue>
+        <name>update followup status to open</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Warehouse checkList Follow up Status Close</fullName>
+        <actions>
+            <name>Status_change_to_close</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Warehouse_Daily_Checklist_Item__c.Answer__c</field>
+            <operation>equals</operation>
+            <value>Yes</value>
+        </criteriaItems>
+        <description>Update Warehouse checkilist follow up status to open when the answer is Yes</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Warehouse checkList Followup Status Open</fullName>
+        <actions>
+            <name>update_followup_status_to_open</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Warehouse_Daily_Checklist_Item__c.Answer__c</field>
+            <operation>equals</operation>
+            <value>No</value>
+        </criteriaItems>
+        <description>Update Warehouse checkilist follow up status to open when the answer is No</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+</Workflow>

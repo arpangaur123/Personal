@@ -1,0 +1,74 @@
+public class World {
+    Map<String, Map<String,Map<String,Map<String, List<String>>>>> countryToStateMap;
+    Map<String, String> countryToCapital;
+    public World(){
+        countryToStateMap = new Map<String, Map<String,Map<String,Map<String, List<String>>>>>();
+        countryToCapital = new Map<String, String>();
+        For(World__c world : [SELECT Id, Name, Capital__c, State__c, City__c, Street__c , House_No__c
+                              FROM World__C ]){
+            if(countryToStateMap.containsKey(World.Name)){
+                if(countryToStateMap.get(World.Name).containsKey(World.State__c)){
+                    if(countryToStateMap.get(World.Name).get(World.State__c).containsKey(World.City__c)){
+                        if(countryToStateMap.get(World.Name).get(World.State__c).get(World.City__c).containsKey(World.Street__c)){
+                            countryToStateMap.get(World.Name).get(World.State__c).get(World.City__c).get(World.Street__c).add(World.House_No__c);
+                        }
+                        else{
+                            List<String> houseNoList = new List<String>();
+                            houseNoList.add(World.House_No__c);
+                            //Map<String, List<String>> streetToHouseNoMap = new Map<String, List<String>>();
+                            countryTostateMap.get(World.Name).get(World.State__c).get(World.City__c).put(World.Street__c,houseNoList);
+                        } 
+                    }
+                    else{
+                        List<String> houseNoList = new List<String>();
+                        houseNoList.add(World.House_No__c);
+                        Map<String, List<String>> streetToHouseNoMap = new Map<String, List<String>>();
+                        streetToHouseNoMap.put(World.Street__c,houseNoList);
+                        countryToStateMap.get(World.Name).get(World.State__c).put(World.City__c, streetToHouseNoMap);
+                    }
+                }
+                else{
+                   	List<String> houseNoList = new List<String>();
+                   	houseNoList.add(World.House_No__c);
+                    Map<String, List<String>> streetToHouseNoMap = new Map<String, List<String>>();
+                    streetToHouseNoMap.put(World.Street__c,houseNoList);
+                    Map<String, Map<String, List<String>>> cityToStreetMap = new Map<String, Map<String, List<String>>>();
+                    cityToStreetMap.put(World.City__c , streetToHouseNoMap);
+                    countryToStateMap.get(World.Name).put(World.State__c,cityToStreetMap);
+                } 
+            }
+            else{
+                List<String> houseNoList = new List<String>();
+                houseNoList.add(World.House_No__c);
+                Map<String, List<String>> streetToHouseNoMap = new Map<String, List<String>>();
+                streetToHouseNoMap.put(World.Street__c,houseNoList);
+                Map<String, Map<String, List<String>>> cityToStreetMap = new Map<String, Map<String, List<String>>>();
+                cityToStreetMap.put(World.City__c , streetToHouseNoMap);
+                Map<String,Map<String,Map<String,List<String>>>> stateToCityMap = new Map<String,Map<String,Map<String,List<String>>>>(); 
+                stateToCityMap.put(World.State__c,cityToStreetMap);
+                countryToStateMap.put(World.Name, stateToCityMap);
+            }
+            if(world.Capital__c){
+                countryToCapital.put(world.Name,world.State__c);
+            }
+        }
+        system.debug('map'+countryToStateMap);
+    }
+    
+    Public set<String> getStates(String countryName){
+        return countryToStateMap.get(countryName).keyset();
+    }
+    
+    Public Set<String> getCity(String countryName,String stateName){
+        return countryToStateMap.get(countryName).get(stateName).keyset();
+    }
+    Public Set<String> getStreet(String countryName, String stateName, String cityName){
+        Return countryToStateMap.get(countryName).get(stateName).get(cityName).keySet();
+    }
+    Public List<String> getHouseNo(String countryName, String stateName, String cityName, String streetName){
+        Return countryToStateMap.get(countryName).get(stateName).get(cityName).get(StreetName);
+    } 
+    Public String getCapital(String countryName){
+        return countryToCapital.get(countryName);
+    }
+}

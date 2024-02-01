@@ -1,0 +1,18 @@
+<apex:page standardController="Opportunity" lightningStylesheets="true" extensions="CreateTheInboundWOController">
+    <apex:slds />
+    <form id="inboundForm" action="https://helutrans--stg.lightning.force.com/a0J/e?CF00N2000000129Zf={!opp.Name}&CF00N2000000129Zf_lkid={!opp.Id}&00N200000012QPd={!opp.Sales_Person_Remark__c}&00N200000012PDu={!opp.Contact_Person_TEL__c}&00N200000012PDk={!opp.Contact_Person__c}&00N2000000129Zk={!opp.Survey_Address__c}&00N200000012QPX={!opp.Destination_Address__c}&00N200000012ANk={!opp.Pack_Date_1__c}&00N2000000129ZL={!opp.OB_Job_Number__c}&00N2000000129Zp={!opp.Estimated_Volume__c}&00N200000012mo0={!opp.Shipment_Details__c}&00N200000012mjM={!opp.Load_Type__c}&00N200000012mo1={!opp.Pack_Type__c}&00N200000012mjL={!opp.Mode_of_Transport__c}&RecordType=012200000008bRB&retURL=%2F{!opp.Id}&cancelURL=%2F{!opp.Id}&00N200000013dnj=false" target="_self">
+        
+    </form>
+    <script>       
+    var Stage = "{!opp.StageName}";
+    console.log('Stage------------>',Stage);
+    if (Stage != "Closed Won"){
+        location.href = "https://" + window.location.hostname + "/lightning/o/Work_Order__c/new?defaultFieldValues=Opportunity__c={!opp.Id}";
+        //location.href = "https://" + window.location.hostname + "/a0J/e?CF00N2000000129Zf={!opp.Name}&CF00N2000000129Zf_lkid={!opp.Id}&00N200000012QPd={!opp.Sales_Person_Remark__c}&00N200000012PDu={!opp.Contact_Person_TEL__c}&00N200000012PDk={!opp.Contact_Person__c}&00N2000000129Zk={!opp.Survey_Address__c}&00N200000012QPX={!opp.Destination_Address__c}&00N200000012ANk={!opp.Pack_Date_1__c}&00N2000000129ZL={!opp.OB_Job_Number__c}&00N2000000129Zp={!opp.Estimated_Volume__c}&00N200000012mo0={!opp.Shipment_Details__c}&00N200000012mjM={!opp.Load_Type__c}&00N200000012mo1={!opp.Pack_Type__c}&00N200000012mjL={!opp.Mode_of_Transport__c}&RecordType=012200000008bRB&retURL=%2F{!opp.Id}&cancelURL=%2F{!opp.Id}&00N200000013dnj=false";
+        //document.getElementById("inboundForm").submit();  
+        //console.log("https://" + window.location.hostname + "/a0J/e?CF00N2000000129Zf={!opp.Name}&CF00N2000000129Zf_lkid={!opp.Id}&00N200000012QPd={!opp.Sales_Person_Remark__c}&00N200000012PDu={!opp.Contact_Person_TEL__c}&00N200000012PDk={!opp.Contact_Person__c}&00N2000000129Zk={!opp.Survey_Address__c}&00N200000012QPX={!opp.Destination_Address__c}&00N200000012ANk={!opp.Pack_Date_1__c}&00N2000000129ZL={!opp.OB_Job_Number__c}&00N2000000129Zp={!opp.Estimated_Volume__c}&00N200000012mo0={!opp.Shipment_Details__c}&00N200000012mjM={!opp.Load_Type__c}&00N200000012mo1={!opp.Pack_Type__c}&00N200000012mjL={!opp.Mode_of_Transport__c}&RecordType=012200000008bRB&retURL=%2F{!opp.Id}&cancelURL=%2F{!opp.Id}&00N200000013dnj=false");
+    }else{
+        alert("Opportunity Is Not Closed Won");
+    }
+    </script>
+</apex:page>

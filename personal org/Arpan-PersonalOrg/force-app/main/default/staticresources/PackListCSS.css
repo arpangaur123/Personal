@@ -1,0 +1,71 @@
+@page {
+  size: A4 portrait;
+}
+
+body {
+margin: 0;
+font-size:83%;
+font-family: Arial Unicode MS;
+/*font-family: Arial, Arial Unicode MS;*/
+}
+
+
+table {
+width:100%;
+table-layout: normal;
+
+}
+
+
+th, td {
+/*border: 1px solid black;*/
+overflow: hidden;
+width: 100px;
+vertical-align: top;
+padding: 5px;
+/*text-align: left;*/
+}
+
+
+.labelCol{
+text-align: right;
+}
+
+
+input{
+display: none;
+}
+
+.mainTitle{
+display: none;
+}
+
+.actionColumn{
+display: none;
+}
+
+.backToTop{
+display: none;
+}
+
+.fewerMore{
+display: none;
+}
+
+
+.listHoverLinks{
+display: none;
+}
+
+
+.dataRow{
+background-color: #FFFFFF; color: blue;
+}
+
+h3{
+display: none;
+}
+
+.headerRow{
+background-color: #FFFFFF;
+}

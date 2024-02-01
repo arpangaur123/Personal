@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Material</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Materials</value>
+    </caseValues>
+    <layouts>
+        <layout>AM Material Layout</layout>
+        <sections>
+            <label></label>
+            <section>Cardboard: Corrugated Straw (COR)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Cardboard: Double Wall (DW)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Cardboard: Single Wall (SWC)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Cardboard: Triwall (TW)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Cartons: Large (LRG)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Cartons: Medium (MED)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Cartons: Small (SM)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Foam: Foam Chip (FMC)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Foam: Foam Sheet Roll (FS)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Foam: Grey Foam 1&quot; / 2&quot; (GF)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Foam: PE Foam 1&quot; / 2&quot; / 5&quot; (BPEF)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Foam: Styrofoam 1&quot; / 2&quot;  (SFOAM)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Others: (Others)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Others: Blanket (OB)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Others: Concrete / Wall Drill (PD)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Others: Cordless Drill (OCD)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Others: Cotton Gloves (GVS)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Others: Flat Trolley (OFT)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Others: Ladder Short/Med/Long (OL)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Others: Latex Gloves (GVL)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Others: Painting Trolley (OPT)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Soft Packing Material: Acid-Free Tissue (AFT)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Soft Packing Material: Bubble Pak 20&quot; / 40&quot; / 60&quot; (BP)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Soft Packing Material: Glassine Paper (GP)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Soft Packing Material: Newsprint (NP)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Soft Packing Material: Plastic Sheet (PS)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Soft Packing Material: Silicon Release Paper (SRP)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Soft Packing Material: Stretch Wrap (SW)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Soft Packing Material: Tyvek (T)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Soft Packing Material: Wax Oil Paper (BWP)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Tapes: Glass Tape (GT)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Tapes: Logo PVC Tape (LPVC)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Tapes: Masking Tape (MT)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Tapes: Normal PVC Tape (NPVC)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Tapes: Other Tape (OTT)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Tapes: Watergum Tape (WG)</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>HTTR - Material Layout</layout>
+        <sections>
+            <label></label>
+            <section>Cardboard: Corrugated Straw (COR)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Cardboard: Double Wall (DW)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Cardboard: Single Wall (SWC)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Cardboard: Triwall (TW)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Cartons: Large (LRG)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Cartons: Medium (MED)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Cartons: Small (SM)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Foam: Foam Chip (FMC)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Foam: Foam Sheet Roll (FS)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Foam: Grey Foam 1&quot; / 2&quot; (GF)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Foam: PE Foam 1&quot; / 2&quot; / 5&quot; (BPEF)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Foam: Styrofoam 1&quot; / 2&quot;  (SFOAM)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Others: (Others)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Others: Blanket (OB)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Others: Concrete / Wall Drill (PD)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Others: Cordless Drill (OCD)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Others: Cotton Gloves (GVS)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Others: Flat Trolley (OFT)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Others: Ladder Short/Med/Long (OL)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Others: Latex Gloves (GVL)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Others: Painting Trolley (OPT)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Soft Packing Material: Acid-Free Tissue (AFT)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Soft Packing Material: Bubble Pak 20&quot; / 40&quot; / 60&quot; (BP)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Soft Packing Material: Glassine Paper (GP)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Soft Packing Material: Newsprint (NP)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Soft Packing Material: Plastic Sheet (PS)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Soft Packing Material: Silicon Release Paper (SRP)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Soft Packing Material: Stretch Wrap (SW)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Soft Packing Material: Tyvek (T)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Soft Packing Material: Wax Oil Paper (BWP)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Tapes: Glass Tape (GT)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Tapes: Logo PVC Tape (LPVC)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Tapes: Masking Tape (MT)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Tapes: Normal PVC Tape (NPVC)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Tapes: Other Tape (OTT)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Tapes: Watergum Tape (WG)</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label></label>
+        <name>HTTR</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label></label>
+        <name>New</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>New_L</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>PrintMaterial</name>
+    </webLinks>
+</CustomObjectTranslation>

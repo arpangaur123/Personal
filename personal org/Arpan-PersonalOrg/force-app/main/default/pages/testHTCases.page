@@ -1,0 +1,26 @@
+<apex:page standardController="Case" recordSetvar="cases">
+
+    <apex:pageBlock >
+        <apex:form id="theForm">
+            <apex:panelGrid columns="2">
+                <apex:outputLabel value="View:"/>
+                <apex:selectList value="{!filterId}" size="1">
+                    <apex:actionSupport event="onchange" rerender="list"/>
+                    <apex:selectOptions value="{!listviewoptions}"/>
+                </apex:selectList>
+            </apex:panelGrid>
+            <apex:pageBlockSection columns="1">
+               <!-- <apex:dataList var="c" value="{!cases}" id="list">
+                {!c.Reporter__c}: {!c.subject}      </apex:dataList>-->
+                
+                <apex:pageblock title="Active Cases This Week">
+       <apex:pageBlockTable style="width:100%" value="{!cases}" var="c" id="list">
+          <apex:column style="width:70px" value="{!c.Reporter__c}"/>
+          <apex:column style="width:350px" value="{!c.subject}"/>
+       </apex:pageBlockTable>
+</apex:pageBlock>
+                
+            </apex:pageBlockSection>
+        </apex:form>
+    </apex:pageBlock>
+</apex:page>

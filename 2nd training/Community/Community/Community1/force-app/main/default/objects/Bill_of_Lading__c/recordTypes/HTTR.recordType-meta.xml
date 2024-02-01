@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HTTR</fullName>
+    <active>true</active>
+    <label>HTTR</label>
+    <picklistValues>
+        <picklist>Number_of__c</picklist>
+        <values>
+            <fullName>3 ORIGINAL %2B COPIES</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Place_of_Acceptance__c</picklist>
+        <values>
+            <fullName>CY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CYS</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Airport/Port of Discharge 卸货港</label>
+    <name>Airport_of_Discharge__c</name>
+</CustomFieldTranslation>

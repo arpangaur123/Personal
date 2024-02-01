@@ -1,0 +1,12 @@
+<apex:page standardController="Transport_Sea_Instruction__c" showHeader="false" standardstylesheets="false" renderAs="PDF">
+<apex:stylesheet value="{!$Resource.PackListCSS}"/>
+<table border="0">
+<tr><td align="left"><font style="font-weight:bold;font-family:arial;font-size:x-large">Helutrans Relocation - Transporter Instruction (Sea)</font></td>
+<td align="right"></td>
+</tr>
+</table>
+<body>
+<apex:detail relatedList="false"></apex:detail>
+
+</body>
+</apex:page>

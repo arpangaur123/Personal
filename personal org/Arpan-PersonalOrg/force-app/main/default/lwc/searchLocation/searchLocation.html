@@ -1,0 +1,45 @@
+<template>
+  <lightning-card title={title}>
+    <div class="container">
+      <div class="child-content">
+        <div class="detect-location">
+          <lightning-button-icon icon-name="utility:checkin" alternative-text="Detect location" title="Detect location"
+            onclick={detectLocationHandler}>
+          </lightning-button-icon>
+        </div>
+        <div class="all-countries">
+          <div><label>Select Country</label></div>
+          <select onchange={countryChangeHandler}>
+            <option value={countryAlphaCode} selected>{countryName}</option>
+            <template for:each={countries} for:item="countriesItem">
+              <option key={countriesItem.alpha2Code} value={countriesItem.alpha2Code}>{countriesItem.name}</option>
+            </template>
+          </select>
+        </div>
+        <div class="search-location">
+          <div class="search-input">
+            <lightning-input label="Search Location" placeholder="Search location" value={inputValue}
+              onchange={locationInputHandler}></lightning-input>
+          </div>
+          <template if:true={isSearchDataAvailable}>
+            <ul class="search-ul">
+              <template for:each={searchResponse} for:item="searchItem">
+                <li class="listItem" key={searchItem.place_id}>
+                  <a data-id={searchItem.place_id} data-name={searchItem.description}
+                    onclick={getPlaceId}>{searchItem.description}</a>
+                </li>
+              </template>
+            </ul>
+            <br>
+          </template>
+        </div>
+      </div><br>
+      <template if:true={isPlaceSelected}>
+        <div class="place-details">
+          <c-location-details place-info={placeInfo}></c-location-details>
+        </div>
+      </template>
+
+    </div>
+  </lightning-card>
+</template>

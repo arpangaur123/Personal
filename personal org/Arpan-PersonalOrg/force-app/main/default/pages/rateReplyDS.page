@@ -1,0 +1,237 @@
+<apex:page standardController="Rate_Reply__c" showHeader="false" renderAs="PDF" extensions="rateReplyAttach">
+<apex:stylesheet value="{!$Resource.visualforcePageCounter}"/>
+<apex:stylesheet value="{!$Resource.rateReplyCSS}"/>
+
+    <body>
+    <apex:panelGrid columns="1" width="100%">
+        <apex:image value="https://emea.salesforce.com/servlet/servlet.ImageServer?id=015200000013HQB&oid=00D200000001RQA&lastMod=1262155691000"/ width="100%">
+        <apex:image value="https://emea.salesforce.com/servlet/servlet.ImageServer?id=015200000013F0p&oid=00D200000001RQA&lastMod=1260237899000" width="100%" height="38"/>             
+    </apex:panelGrid>
+    
+    <apex:panelGrid columns="4" styleClass="rateTable" width="100%">
+        <apex:outputText value="To:" styleClass="labelName"/><apex:outputText value="{!Rate_Reply__c.Agent_Name__r.Name}" styleClass="labelValue"/>
+        <apex:outputText value="Date:" styleClass="labelName"/>
+        <apex:outputText value="{0,date,dd-MMM-yyyy}" styleClass="labelValue"><apex:param value="{!Rate_Reply__c.Date__c}" /></apex:outputText>
+        <apex:outputText value="Company:" styleClass="labelName"/><apex:outputText value="{!Rate_Reply__c.Agent_Name__r.Account.Name}" styleClass="labelValue"/>
+        <apex:outputText value="Quote Reference:" styleClass="labelName"/><apex:outputText value="{!Rate_Reply__c.Quote_Reference2__c}" styleClass="labelValue"/>
+        <apex:outputText value="Agent Email:" styleClass="labelName"/><apex:outputText value="{!Rate_Reply__c.Agent_Name__r.Email}" styleClass="labelValue"/>
+        <apex:outputText value="Currency:" styleClass="labelName"/><apex:outputText value="{!Rate_Reply__c.CurrencyIsoCode}" styleClass="labelValue"/>
+        <apex:outputText value="Quote Validity (days):" styleClass="labelName"/><apex:outputText value="{!Rate_Reply__c.Quote_Validity_days__c}" styleClass="labelValue"/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value="Subject:" styleClass="labelName"/><apex:outputText value="Destination Services" styleClass="labelValue"/>
+    </apex:panelGrid>
+    
+    <apex:panelGrid columns="1" styleClass="rateTable" width="100%">
+        <thead><tr><th><center>Summary of Services</center></th></tr></thead>
+    </apex:panelGrid>
+    
+    <apex:panelGrid columns="2" styleClass="rateTable" width="45%">
+        <apex:outputText value="Mode:" styleClass="labelName"/><apex:outputField value="{!Rate_Reply__c.Mode_DS__c}" styleClass="labelValue"/>
+        <apex:outputText value=""/>
+        <apex:outputText value=""/>
+        <apex:outputText value="Destination:" styleClass="labelName"/><apex:outputText value="{!Rate_Reply__c.Destination__c}" styleClass="labelValue"/>
+        <apex:outputText value=""/>
+        <apex:outputText value=""/>
+        <apex:outputText value="APOE:" styleClass="labelName"/><apex:outputText value="{!Rate_Reply__c.A_POE__c}" styleClass="labelValue"/>
+        <apex:outputText value=""/>
+        <apex:outputText value=""/>
+        <apex:outputText value="Estimated Volume:" styleClass="labelName"/><apex:outputText value="{!Rate_Reply__c.Estimated_Volume__c}" styleClass="labelValue"/>
+        <apex:outputText value=""/>
+        <apex:outputText value=""/>
+        <apex:outputText value="Estimated Weight:" styleClass="labelName"/><apex:outputText value="{!Rate_Reply__c.Estimated_Weight__c}" styleClass="labelValue"/>
+        <apex:outputText value=""/>
+        <apex:outputText value=""/>
+        </apex:panelGrid>
+        
+        <apex:panelGrid columns="1" styleClass="rateTable" width="100%">
+        <!--<thead><tr><th>&nbsp;</th></tr></thead>-->
+        <thead style="background-color: #000000; color: black;"><tr><th><center>&nbsp;</center></th></tr></thead>
+    </apex:panelGrid>
+        
+    <apex:panelGrid columns="2" styleClass="rateTable" width="100%">            
+        <apex:outputText value="Destination Services:" styleClass="labelName"/><apex:outputText value=""/><b STYLE="font-size: 12px; font-style: italic"><apex:outputField value="{!Rate_Reply__c.Destination_Services__c}"/></b>
+        <apex:outputText value=""/><b STYLE="font-size: 12px; font-style: italic"><apex:outputField value="{!Rate_Reply__c.Destination_Services_2__c}"/></b><apex:outputText value=""/>
+        <apex:outputText value=""/>
+        <apex:outputText value=""/>
+        </apex:panelGrid>
+        
+       <apex:panelGrid columns="1" styleClass="rateTable" width="100%">
+        <!--<thead><tr><th><center>&nbsp;</center></th></tr></thead>-->
+        <thead style="background-color: #000000; color: black;"><tr><th><center>&nbsp;</center></th></tr></thead>
+    </apex:panelGrid> 
+        
+    <apex:panelGrid columns="2" styleClass="rateTable" width="100%">    
+        <apex:outputText value="Density Factor:" styleClass="labelName"/><apex:outputField value="{!Rate_Reply__c.Density_Factor_Air__c}"/>
+        <apex:outputText value=""/>
+        <apex:outputText value=""/>
+        <apex:outputText value="Other Charges:" styleClass="labelName"/><apex:outputField value="{!Rate_Reply__c.Other_Charges_Air__c}" styleClass="labelValue"/>
+    </apex:panelGrid>
+    
+    <apex:panelGrid columns="2" styleClass="rateTable" width="100%">
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value="**Important Note:" styleClass="imptLabel"/><b><i><apex:outputField value="{!Rate_Reply__c.Important_Notes__c}"/></i></b>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+    </apex:panelGrid>
+    
+    <apex:panelGrid columns="1" styleClass="rateTable" width="100%" >
+        <thead><tr><th><center>Additional Charges (if required)</center></th></tr></thead>
+    </apex:panelGrid>
+    
+    <apex:panelGrid columns="2" styleClass="rateTable" width="100%">
+        <apex:outputText value="Stair Carry / Long Carry:" styleClass="labelName"/><apex:outputText value="{!Rate_Reply__c.Stair_Carry_Long_Carry__c}" styleClass="labelValue"/>
+        <apex:outputText value=""/>
+        <apex:outputText value=""/>
+        <apex:outputText value="Storage In Transit - Loose Load:" styleClass="labelName"/><apex:outputText value="{!Rate_Reply__c.SIT_Loose_Load_DS__c}" styleClass="labelValue"/>
+        <apex:outputText value=""/>
+        <apex:outputText value=""/>
+        <apex:outputText value="Storage In Transit - Liftvan Load:" styleClass="labelName"/><apex:outputText value="{!Rate_Reply__c.SIT_Liftvan_Load_DS__c}" styleClass="labelValue"/>
+        <apex:outputText value=""/>
+        <apex:outputText value=""/>
+        <apex:outputText value="WH (in/out) - Loose Load:" styleClass="labelName"/><apex:outputText value="{!Rate_Reply__c.WH_Loose_Load__c}" styleClass="labelValue"/>
+        <apex:outputText value=""/>
+        <apex:outputText value=""/>
+        <apex:outputText value="WH (in/out) - Liftvan Load:" styleClass="labelName"/><apex:outputText value="{!Rate_Reply__c.WH_Liftvan_Load__c}" styleClass="labelValue"/>
+    </apex:panelGrid>
+    <apex:panelGrid columns="2" styleClass="rateTable" width="100%">
+    <apex:outputText value=""/><apex:outputText value=""/>
+    <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value="Additional Notes:" styleClass="labelName"/><apex:outputField value="{!Rate_Reply__c.Additional_Notes__c}" styleClass="labelValue"/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+    </apex:panelGrid>
+    
+    <apex:panelGrid columns="1" styleClass="rateTable" width="100%" >
+        <thead><tr><th><center>Other Information</center></th></tr></thead>
+    </apex:panelGrid>
+    <apex:panelGrid columns="1" styleClass="rateTable" width="100%">
+        <apex:outputText value="Documents required for Customs Clearance:" styleClass="labelName"/>
+        <apex:outputField value="{!Rate_Reply__c.Documents_required_for_Customs_Clearance__c}"/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value="Prohibited Items:" styleClass="imptLabel"/>
+        <apex:outputField value="{!Rate_Reply__c.Prohibited_Items__c}"/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value="Inclusions:" styleClass="labelName"/>
+        <apex:outputField value="{!Rate_Reply__c.Inclusions_DS__c}"/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value="Exclusions:" styleClass="labelName"/>
+        <apex:outputField value="{!Rate_Reply__c.Exclusions_DS__c}"/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value="Payment Terms:" styleClass="labelName"/>
+        <b><i><apex:outputField value="{!Rate_Reply__c.Payment_Terms__c}"/></i></b>   
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+    </apex:panelGrid>
+    
+    <apex:panelGrid columns="1" styleClass="rateTable" width="100%" >
+        <thead><tr><th><center>Consign (Preferably OBL to be Express / telex released)</center></th></tr></thead>
+    </apex:panelGrid>
+    
+    <apex:panelGrid columns="2" styleClass="rateTable" width="100%">
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value="Normal Shipment:" styleClass="labelName"/>
+        <apex:outputText value="Diplomatic Shipment:" styleClass="labelName"/>
+        <apex:outputField value="{!Rate_Reply__c.Consign__c}"/>
+        <apex:outputField value="{!Rate_Reply__c.Consign_Diplomat__c}"/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+    </apex:panelGrid>
+        
+    <apex:panelGrid columns="1" styleClass="rateTable" width="100%" >
+        <thead><tr><th><center>Notify Party</center></th></tr></thead>
+    </apex:panelGrid>
+    
+    <apex:panelGrid columns="2" styleClass="rateTable" width="100%">    
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value="Normal Shipment:" styleClass="labelName"/>
+        <apex:outputText value="Diplomatic Shipment:" styleClass="labelName"/>
+        <apex:outputField value="{!Rate_Reply__c.Notify_Party__c}"/>
+        <apex:outputField value="{!Rate_Reply__c.Notify_Party_Diplomatic__c}"/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+    </apex:panelGrid>
+    
+    <apex:panelGrid columns="2" styleClass="rateTable" width="100%">
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value="Thank you for requesting a rate from Helu Trans, kindly review the above and let us know if you have any questions with regards to our quotation."/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/>
+        <apex:outputText value="Yours Sincerely,"/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/>
+        {!$User.FirstName} {!$User.LastName}
+        <apex:outputText value=""/><apex:outputText value=""/>
+        <apex:outputText value=""/>
+        {!$User.Title}
+        
+    </apex:panelGrid>
+               
+</body>
+</apex:page>

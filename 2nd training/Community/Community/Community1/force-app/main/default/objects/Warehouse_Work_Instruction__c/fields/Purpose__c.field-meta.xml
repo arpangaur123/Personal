@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Purpose__c</fullName>
+    <externalId>false</externalId>
+    <label>Purpose</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Carton Jacket</fullName>
+                <default>false</default>
+                <label>Carton Jacket</label>
+            </value>
+            <value>
+                <fullName>Crating</fullName>
+                <default>false</default>
+                <label>Crating</label>
+            </value>
+            <value>
+                <fullName>Export</fullName>
+                <default>false</default>
+                <label>Export</label>
+            </value>
+            <value>
+                <fullName>Local Delivery</fullName>
+                <default>false</default>
+                <label>Local Delivery</label>
+            </value>
+            <value>
+                <fullName>Repack Transfer</fullName>
+                <default>false</default>
+                <label>Repack Transfer</label>
+            </value>
+            <value>
+                <fullName>Storage</fullName>
+                <default>false</default>
+                <label>Storage</label>
+            </value>
+            <value>
+                <fullName>Viewing</fullName>
+                <default>false</default>
+                <label>Viewing</label>
+            </value>
+            <value>
+                <fullName>Self Collection</fullName>
+                <default>false</default>
+                <label>Self Collection</label>
+            </value>
+            <value>
+                <fullName>Others</fullName>
+                <default>false</default>
+                <label>Others</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>9</visibleLines>
+</CustomField>

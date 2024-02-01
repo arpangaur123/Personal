@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DestinationCity_ChangAfterProducts_Added</fullName>
+    <active>true</active>
+    <description>After the Freight calculator has been run and Products added, Destination City must not be changed.</description>
+    <errorConditionFormula>AND(
+   ISCHANGED(Destination_City__c),
+    Products_Added__c = TRUE 
+ )</errorConditionFormula>
+    <errorDisplayField>Destination_City__c</errorDisplayField>
+    <errorMessage>After the Freight calculator has been run and Products added, Destination City must not be changed.</errorMessage>
+</ValidationRule>

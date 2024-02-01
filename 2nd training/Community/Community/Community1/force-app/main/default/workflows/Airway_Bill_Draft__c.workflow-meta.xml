@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Upd_Vendor_Add_DetailsHKb</fullName>
+        <field>Address_DetailsHK__c</field>
+        <formula>Case(ToHK__c, &quot;Norman Express Limited&quot;, &quot;33/F, Billion Plaza, 8 Cheung Yue Street, Cheung Sha Wan, Kowloon, Hong Kong&quot; &amp; BR() &amp; &quot;Tel: (852) 2717 1228&quot; &amp; BR() &amp; &quot;Fax: (852) 2727 2877, 2727 7389&quot; &amp; BR() &amp; &quot;香港九龍長沙灣長裕街８號 &quot;&amp; BR() &amp;&quot;億京廣場３３樓全層&quot;,
+  &quot;BEL International Logistics Limited&quot;, &quot;8/F, MITA CENTRE, 552-566 CASTLE PEAK ROAD, KWAI CHUNG, N.T., HONG KONG.G, N.T., HONG KONG.&quot; &amp; BR() &amp; &quot;TEL : (852) 2796 0118&quot; &amp; BR() &amp; &quot;FAX : (852) 2402 2557, 2755 1508 (CUSTOMER  SERVICE)&quot;,
+
+&quot;Grand Power Express International Limited&quot;,&quot;13/F., Yoo Hoo Tower, No. 38-42 Kwai Fung Crescent, Kwai Chung, Hong Kong&quot; 
+&amp; BR() &amp; &quot;Tel	: 852 3582 4128, Fax	: 852 3582 4130&quot; 
+&amp; BR() &amp; &quot;Email	: cs@grandpowerexpress.com&quot;,
+   &quot;If Others: input address here...&quot;)</formula>
+        <name>Upd Vendor Add &amp; DetailsHKb</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Upd_Vendor_Add_DetailsHKc</fullName>
+        <field>Details_AHK__c</field>
+        <formula>Case(ToHK__c, &quot;Norman Express Limited&quot;, &quot;Please receive the undermentioned cargo for delivery by air in accordance with the Standard Trading conditions of HAFFA and the conditions and provisions stated or referred to on the air waybill form of the Carrier. In the case of shipments requiring transportation by air through air Carriers in the United States from the transhipment point(s) to final destination. I/We further agree to accept the limit of liability of that domestic air Carrier as full settlement in the event of loss and/or damage of goods.&quot;,
+
+&quot;BEL International Logistics Limited&quot;, &quot;Please receive the undermentioned cargo for delivery by air in accordance with the terms and conditions (copies of which are available upon request) and the conditions and provisions stated or referred to on the air waybill form of the Carrier(s). In the case of shipments requiring transportation by air through air Carriers in the United States from the transhipment point(s) to final destination. I/we further agree to accept the limit of liability of that domestic air Carrier as full settlement in the event of loss and/or damage of goods.&quot;,
+
+&quot;Grand Power Express International Limited&quot;,&quot;The Company acknowledges receipt of the above instructions from the Shipper. If the Company is held to be liable, all the provisions in the company&apos;s Standard Trading Conditions will apply. The Shipper shall reimburse the Company with all expense and costs incurred and will indemnify the Company for all losses and liabilities howsoever caused.&quot;,
+&quot;If Others: input address here...&quot;)</formula>
+        <name>Upd Vendor Add &amp; DetailsHKc</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Upd_Vendor_Add_DetailsHKd</fullName>
+        <field>Details_BHK__c</field>
+        <formula>Case(ToHK__c, &quot;Norman Express Limited&quot;, &quot;We hereby guarantee payment of all freight collect charges and any other charges incurred at destination due to the forwarders or to the Carrier if the shipment is abandoned, refused by the consignee, returned at our request, confiscated by the customs or for any other reason cannot be delivered within a reasonable time.&quot; &amp; BR() &amp; &quot;Also we hereby guarantee for the freightage due to NORMAN EXPRESS LIMITED within seven days upon receipt of either airfreight invoice or statement or within 30 days of execution of consignment note, otherwise we understand that full settlement plus an interest at 2% per month and other expense incurred will be charged.&quot; &amp; BR() &amp; &quot;Other arrangements: In case of any other special arrangements the undersigned agrees to hold the forwarders exempt from any liability whatsoever arising out of unforeseen circumstances and / or acts.&quot;,
+&quot;BEL International Logistics Limited&quot;, &quot;We hereby undertake payment of all freight collect charges and any other charges incurred at destination due to the forwarders or to the Carrier if the shipment is abandoned, refused by the consignee, returned at our request, confiscated by the customs or for any other reasons cannot be delivered within a reasonable time.&quot; &amp; BR() &amp; &quot;Also we hereby undertake payment of the freightage due to BEL International Logistics Limited within seven days upon receipt of either airfreight invoice or statement or within 30 days of execution of consignment note, otherwise, we understand that full settlement plus an interest at 2% per month and other expenses incurred will be charged.&quot; &amp; BR() &amp; &quot;Other arrangements: In case of any other or special arrangements the undersigned agrees to hold the forwarders and BEL International Logistics Ltd exempt from any liability whatsoever arising out of unforeseen circumstances and/or acts.&quot;,
+&quot;Grand Power Express International Limited&quot;,&quot;1.  The Shipper declares that all descriptions, values and other particulars furnished herein are accurate and complete. The Shipper undertakes to indemnify the Company against all losses damages expense fines and any other liabilities whatsoever arising from any inaccuracy or omission, even if such inaccuracy or omission is not due to any negligence.&quot; &amp; BR() &amp; &quot;2.  The Shipper declares that it shall be responsible for all charges and expenses relationto the goods whether or not the charges and expenses are to be prepaid or collected.&quot;,
+&quot;If Others: input address here...&quot;)</formula>
+        <name>Upd Vendor Add &amp; DetailsHKd</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Upd Vendor Add %26 DetailsHK</fullName>
+        <actions>
+            <name>Upd_Vendor_Add_DetailsHKb</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Upd_Vendor_Add_DetailsHKc</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Upd_Vendor_Add_DetailsHKd</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Airway_Bill_Draft__c.ToHK__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>Upd Vendor Add &amp; DetailsHK</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

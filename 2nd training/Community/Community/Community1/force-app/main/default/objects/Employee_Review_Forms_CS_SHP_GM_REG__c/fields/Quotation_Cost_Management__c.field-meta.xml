@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Quotation_Cost_Management__c</fullName>
+    <description>-Ability to plan and prepare the quotation in a timely, accurate and detailed manner based on Client&apos;s request. 
+-Ability to gather and source for the relevant and most cost effective solution based on Client&apos;s request
+-Plan and prepare the required resources to ensure that the services are in accordance with the quotation and costing</description>
+    <externalId>false</externalId>
+    <inlineHelpText>-Ability to plan and prepare the quotation in a timely, accurate and detailed manner based on Client&apos;s request. 
+-Ability to gather and source for the relevant and most cost effective solution based on Client&apos;s request
+-Plan and prepare the required resources to ensure that the services are in accordance with the quotation and costing</inlineHelpText>
+    <label>Quotation &amp; Cost Management</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1</fullName>
+                <default>true</default>
+                <label>1</label>
+            </value>
+            <value>
+                <fullName>2</fullName>
+                <default>false</default>
+                <label>2</label>
+            </value>
+            <value>
+                <fullName>3</fullName>
+                <default>false</default>
+                <label>3</label>
+            </value>
+            <value>
+                <fullName>4</fullName>
+                <default>false</default>
+                <label>4</label>
+            </value>
+            <value>
+                <fullName>5</fullName>
+                <default>false</default>
+                <label>5</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,108 @@
+<apex:page standardController="Internal_Costing__c" lightningStylesheets="true" showHeader="false" renderAs="PDF">
+<apex:stylesheet value="{!$Resource.visualforcePageCounter}"/>
+    <apex:slds />
+    <body>
+        <apex:pageBlock >
+            <apex:pageBlockSection title="Helutrans Costing Sheet Information" columns="2"> 
+                <apex:outputField value="{!Internal_Costing__c.Opportunity__r.IB_Job_number__c}" />
+                <apex:outputField value="{!Internal_Costing__c.Opportunity__r.Bill_to__c}" />
+                <apex:outputField value="{!Internal_Costing__c.Name}" />
+                <apex:outputField value="{!Internal_Costing__c.Quote_Amount__c}" />
+                <apex:outputField value="{!Internal_Costing__c.Opportunity__r.Name}" />
+                <apex:outputField value="{!Internal_Costing__c.Total_Cost_Final__c}" />
+                <apex:outputField value="{!Internal_Costing__c.RecordType.Name}" />
+                <apex:outputField value="{!Internal_Costing__c.Gross_Profit_Percentage_DS__c}" />
+                <apex:outputText value="" />
+                <apex:outputField value="{!Internal_Costing__c.Quote_Description__c}" />
+            </apex:pageBlockSection> 
+        </apex:pageBlock>
+        
+        <apex:pageBlock >
+            <apex:pageBlockSection title="Destination Services" columns="2">
+                    <apex:outputField value="{!Internal_Costing__c.DS_Labour_Volume_in_cuft__c}" />
+                    <apex:outputField value="{!Internal_Costing__c.DS_Labour__c}" />
+                    <apex:outputField value="{!Internal_Costing__c.Customs_Clearance_Permit_Number__c}" />
+                    <apex:outputField value="{!Internal_Costing__c.Customs_Clearance_Permit__c}" />
+                    <apex:outputText value="" />
+                    <apex:outputField value="{!Internal_Costing__c.Port_Net_Depot_Handling_Lumpsum__c}" />
+                    <apex:outputText value="" />
+                    <apex:outputField value="{!Internal_Costing__c.GST_Duties__c}" />
+                    <apex:outputField value="{!Internal_Costing__c.THC_for_20_FCL_No_of_containers__c}" />
+                    <apex:outputField value="{!Internal_Costing__c.THC_for_20_FCL__c}" />
+                    <apex:outputField value="{!Internal_Costing__c.THC_for_40_FCL_No_of_containers__c}" />
+                    <apex:outputField value="{!Internal_Costing__c.THC_for_40_FCL__c}" />
+                    <apex:outputField value="{!Internal_Costing__c.LOLO_for_20_FCL_cntr__c}" />
+                    <apex:outputField value="{!Internal_Costing__c.LOLO_for_20_FCL__c}" />
+                    <apex:outputField value="{!Internal_Costing__c.LOLO_for_40_FCL_cntr__c}" />
+                    <apex:outputField value="{!Internal_Costing__c.LOLO_for_40_FCL__c}" />
+                    <apex:outputText value="" />
+                    <apex:outputField value="{!Internal_Costing__c.THC_for_LCL_Lumpsum__c}" />
+                    <apex:outputText value="" />
+                    <apex:outputField value="{!Internal_Costing__c.LCL_Processing_Fee_Lumpsum__c}" />
+                    <apex:outputText value="" />
+                    <apex:outputField value="{!Internal_Costing__c.Forklift_Charges_Lumpsum__c}" />
+                    <apex:outputText value="" />
+                    <apex:outputField value="{!Internal_Costing__c.THC_for_Air_Lumpsum__c}" />
+                    <apex:outputField value="{!Internal_Costing__c.Container_Haulage_for_20_FCL__c}" />
+                    <apex:outputField value="{!Internal_Costing__c.Haulage_for_20_FCL__c}" />
+                    <apex:outputField value="{!Internal_Costing__c.Haulage_for_40_FCL_No_of_trips__c}" />
+                    <apex:outputField value="{!Internal_Costing__c.Haulage_for_40_FCL__c}" />
+                    <apex:outputField value="{!Internal_Costing__c.Shuttling_10_No_of_days__c}" />
+                    <apex:outputField value="{!Internal_Costing__c.Shuttling_10__c}" />
+                    <apex:outputField value="{!Internal_Costing__c.Shuttling_24_No_of_days__c}" />
+                    <apex:outputField value="{!Internal_Costing__c.Shuttling_24__c}" />
+                    <apex:outputField value="{!Internal_Costing__c.Transport_by_Small_Truck_No_of_days__c}" />
+                    <apex:outputField value="{!Internal_Costing__c.Transport_by_Small_Truck__c}" /> 
+                    <apex:outputField value="{!Internal_Costing__c.Transport_by_Big_Truck_No_of_days__c}" />
+                    <apex:outputField value="{!Internal_Costing__c.Transport_by_Big_Truck__c}" />   
+                    <apex:outputField value="{!Internal_Costing__c.Transport_No_of_half_days__c}" />
+                    <apex:outputField value="{!Internal_Costing__c.Transport_Half_Day_Trips__c}" />
+                    <apex:outputText value="" />
+                    <apex:outputField value="{!Internal_Costing__c.Local_Transfer_Lumpsum__c}" />
+                    <apex:outputField value="{!Internal_Costing__c.Destination_Storage_Volume_in_cuft__c}" />
+                    <apex:outputField value="{!Internal_Costing__c.Destination_Storage__c}" />
+                    <apex:outputField value="{!Internal_Costing__c.Destination_Storage_Unit_cost_per_cuft__c}" />
+                    <apex:outputText value="" />
+                    <apex:outputField value="{!Internal_Costing__c.DS_Warehouse_Handling_Volume_in_cuft__c}" />
+                    <apex:outputField value="{!Internal_Costing__c.DS_Warehouse_Handling__c}" />
+                    <apex:outputField value="{!Internal_Costing__c.DS_Warehouse_Handling_U_cst_cuft__c}" />         
+                    <apex:outputField value="{!Internal_Costing__c.Handyman_Services_No_of_hours__c}" />
+                    <apex:outputField value="{!Internal_Costing__c.Handyman_Services__c}" />
+                    <apex:outputField value="{!Internal_Costing__c.Cleaning_Services_Lumpsum__c}" />
+                    <apex:outputText value="" />
+                    <apex:outputField value="{!Internal_Costing__c.Stair_Carry_Lumpsum__c}" />
+                    <apex:outputText value="" />
+                    <apex:outputField value="{!Internal_Costing__c.Long_Carry__c}" />
+                    <apex:outputText value="" />
+                    <apex:outputField value="{!Internal_Costing__c.Piano_Handling_Lumpsum__c}" />
+                    <apex:outputText value="" />
+                    <apex:outputField value="{!Internal_Costing__c.Port_Storage_Lumpsum__c}" />
+                    <apex:outputText value="" />
+                    <apex:outputField value="{!Internal_Costing__c.Chassis_Demurrage_Lumpsum__c}" />
+                    <apex:outputText value="" />
+                    <apex:outputField value="{!Internal_Costing__c.Chassis_Detention_Lumpsum__c}" />          
+                </apex:pageBlockSection>
+            </apex:pageBlock>
+            <apex:pageBlock >
+                <apex:pageBlockSection title="Other Charges" columns="2">
+                <apex:outputField value="{!Internal_Costing__c.DA_Other_Charges_1__c}" />
+                <apex:outputField value="{!Internal_Costing__c.DA_Other_Charges_1_in_SGD__c}" />
+                <apex:outputField value="{!Internal_Costing__c.DA_Other_Charges_2__c}" />
+                <apex:outputField value="{!Internal_Costing__c.DA_Other_Charges_2_in_SGD__c}" />
+                <apex:outputField value="{!Internal_Costing__c.DA_Other_Charges_3__c}" />
+                <apex:outputField value="{!Internal_Costing__c.DA_Other_Charges_3_in_SGD__c}" />
+                <apex:outputField value="{!Internal_Costing__c.DA_Other_Charges_4__c}" />
+                <apex:outputField value="{!Internal_Costing__c.DA_Other_Charges_4_in_SGD__c}" />
+                <apex:outputField value="{!Internal_Costing__c.DA_Other_Charges_5__c}" />
+                <apex:outputField value="{!Internal_Costing__c.DA_Other_Charges_5_in_SGD__c}" />
+                </apex:pageBlockSection>
+            </apex:pageBlock>
+            <apex:pageBlock >
+                <apex:pageBlockSection columns="2">
+                    <apex:outputField value="{!Internal_Costing__c.CreatedDate}" />
+                    <apex:outputField value="{!Internal_Costing__c.LastModifiedDate}" />
+                </apex:pageBlockSection>
+            </apex:pageBlock>
+        
+    </body>
+</apex:page>

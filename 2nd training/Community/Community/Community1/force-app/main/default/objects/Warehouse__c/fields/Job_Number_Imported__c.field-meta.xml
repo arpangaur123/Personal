@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Job_Number_Imported__c</fullName>
+    <description>Job Number</description>
+    <externalId>false</externalId>
+    <formula>JN1__c &amp; &quot;/&quot; &amp; JN2__c &amp; &quot;/&quot; &amp; JN3__c &amp; &quot;/&quot; &amp; JN4__c &amp; &quot;/&quot; &amp; JN5__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Job Number</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

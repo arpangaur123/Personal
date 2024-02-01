@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Duplicate_Job_Ref_Number</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(Name==VLOOKUP(
+$ObjectType.Job_Reference__c.Fields.Name,
+$ObjectType.Job_Reference__c.Fields.Name,
+Name),Id!=VLOOKUP(
+$ObjectType.Job_Reference__c.Fields.Id,
+$ObjectType.Job_Reference__c.Fields.Name,
+Name))</errorConditionFormula>
+    <errorDisplayField>Name</errorDisplayField>
+    <errorMessage>Duplicate Job Reference Number</errorMessage>
+</ValidationRule>

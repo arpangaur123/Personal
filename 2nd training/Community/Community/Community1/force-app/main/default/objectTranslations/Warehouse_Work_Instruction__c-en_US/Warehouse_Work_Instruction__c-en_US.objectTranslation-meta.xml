@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Warehouse Work Instruction</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Warehouse Work Instructions</value>
+    </caseValues>
+    <layouts>
+        <layout>HTTR - Warehouse Work Instruction Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Documents</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Requestor</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Requirements</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Warehouse Work Instruction Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Documents</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Requestor</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Requirements</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Warehouse Work InstructionSG</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Others</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Requirements</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label></label>
+        <name>HTTR</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>WWICN</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>WWISG</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label></label>
+        <name>New</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>NewCN</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>NewCN_L</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>NewSG_L</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Print_Warehouse_Work_Instructions</name>
+    </webLinks>
+</CustomObjectTranslation>

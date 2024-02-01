@@ -1,0 +1,30 @@
+<template>
+	<lightning-card>
+		<div>
+			<h3 slot="title" class="slds-m-around_medium">
+				<lightning-icon icon-name="standard:client" size="small"></lightning-icon>
+				 <span> Artwork</span>
+				 
+				<lightning-button style="float:right" label="New"
+					onclick={navigateToNewArtwork}>
+				</lightning-button>
+
+
+			</h3>
+		</div>
+
+
+		<div class="slds-m-around_medium">
+			<lightning-input type="Search" label="Search" onchange={handleSearch} ></lightning-input> <br>
+
+			<div style="height: 255px">
+				<lightning-datatable key-field="id" data={ArtworkData} columns={Columns} enable-infinite-loading="true"
+					onloadmore={loadMoreData} hide-checkbox-column="true" show-row-number-column="true">
+				</lightning-datatable>
+			</div>
+		</div>
+		<div slot="footer"  class="slds-text-align_center">
+			{loadMoreStatus}
+		</div>
+	</lightning-card>
+</template>

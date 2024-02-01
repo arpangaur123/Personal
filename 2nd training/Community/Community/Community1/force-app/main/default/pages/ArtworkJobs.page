@@ -1,0 +1,51 @@
+<apex:page controller="ArtworkJobs" sidebar="false">
+<p>&nbsp;<b>Artworks with Job Details ( Total:&nbsp;<apex:outputLabel value="{!totalRecords}"/> records)&nbsp;</b></p>
+<apex:form >
+<apex:pageBlock title="" id="pageBlock">
+<apex:pageBlockButtons location="top">
+
+</apex:pageBlockButtons>
+<apex:pageMessages ></apex:pageMessages>
+<div align="right" style="display:{!IF(NOT(ISNULL(accounts)),'block','none')}">
+<font size="1pt">Page #:&nbsp;<apex:outputLabel value="{!PageNumber}"/>&nbsp;out of&nbsp;<apex:outputLabel value="{!totalPageNumber}"/>&nbsp;&nbsp;&nbsp;&nbsp;</font>
+<apex:commandButton value="Previous" action="{!previousBtnClick}" disabled="{!previousButtonEnabled}" reRender="pageBlock"></apex:commandButton>
+<apex:commandButton value="Next" action="{!nextBtnClick}" reRender="pageBlock" disabled="{!nextButtonDisabled}" ></apex:commandButton>
+</div>
+<br/><br/>
+<apex:pageBlockTable value="{!accounts}" var="artwk" rendered="{!NOT(ISNULL(accounts))}" rows="{!PageSize}">
+        <apex:column headervalue="Job Number">
+          <apex:outputlink value="../{!artwk.Id}" target="_blank"><apex:outputtext value="{!artwk.Job_No__c}"/></apex:outputlink>
+       </apex:column>
+       <apex:column headervalue="Artwork Title">
+          <apex:outputtext value="{!artwk.Name}"/>
+       </apex:column>
+        <apex:column >
+         <apex:facet name="header">   
+           <apex:commandLink action="{!ViewData}" value="Date Created{!IF(sortExpression=='CreatedDate',IF(sortDirection='ASC','▼','▲'),'')}" id="cmdSort">
+             <apex:param value="CreatedDate" name="column" assignTo="{!sortExpression}" ></apex:param>
+           </apex:commandLink>
+         </apex:facet>
+         <apex:outputtext value="{!artwk.CreatedDate}"/>         
+       </apex:column>       
+       <apex:column >
+         <apex:facet name="header">   
+           <apex:commandLink action="{!ViewData}" value="Created By{!IF(sortExpression=='CreatedBy.LastName',IF(sortDirection='ASC','▼','▲'),'')}">
+             <apex:param value="CreatedBy.LastName" name="column" assignTo="{!sortExpression}" ></apex:param>
+           </apex:commandLink>
+         </apex:facet>
+         <apex:outputtext value="{!artwk.CreatedBy.LastName}"/>         
+       </apex:column>   
+       <apex:column headervalue="Last Modified">
+           <apex:outputtext value="{!artwk.LastModifiedBy.LastName}"/>
+       </apex:column>            
+</apex:pageBlockTable>
+<div align="right" style="display:{!IF(NOT(ISNULL(accounts)),'block','none')}">
+<br/>
+<font size="1pt">Page #:&nbsp;<apex:outputLabel value="{!PageNumber}"/>&nbsp;out of&nbsp;<apex:outputLabel value="{!totalPageNumber}"/>&nbsp;&nbsp;&nbsp;&nbsp;</font>
+<apex:commandButton value="Previous" action="{!previousBtnClick}" disabled="{!previousButtonEnabled}" reRender="pageBlock"></apex:commandButton>
+<apex:commandButton value="Next" action="{!nextBtnClick}" reRender="pageBlock" disabled="{!nextButtonDisabled}" ></apex:commandButton>
+</div>
+
+</apex:pageBlock>
+</apex:form>
+</apex:page>

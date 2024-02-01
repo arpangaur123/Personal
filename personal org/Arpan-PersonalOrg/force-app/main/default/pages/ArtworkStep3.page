@@ -1,0 +1,15 @@
+<apex:page standardcontroller="artApp__Artwork__c" extensions="artworkCon2">
+ <apex:sectionHeader title="Create new Artwork" subtitle="Step 3 of 3"/>
+ 
+	<apex:form >
+	<apex:pageblock >
+		<apex:outputText value="Congratulations. All permit and artwork information are saved."/>
+		
+		<apex:pageBlockButtons >
+			<apex:commandbutton value="Create New" action="{!step1}"/>
+			<apex:commandbutton value="Return to Transaction" action="{!done}"/>
+		</apex:pageBlockButtons>
+		
+	</apex:pageblock>
+	</apex:form>
+</apex:page>

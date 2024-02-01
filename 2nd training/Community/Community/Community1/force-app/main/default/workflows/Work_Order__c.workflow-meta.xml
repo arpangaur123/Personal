@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <rules>
+        <fullName>WO Notification for CSE</fullName>
+        <actions>
+            <name>NewWorkOrderCSE</name>
+            <type>Task</type>
+        </actions>
+        <active>false</active>
+        <booleanFilter>1 OR 2 OR 3 OR 4 OR 5 OR 6 OR 7</booleanFilter>
+        <criteriaItems>
+            <field>Work_Order__c.Instructions_to_CSE__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Work_Order__c.Limousine__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Work_Order__c.Handy_Man__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Work_Order__c.Piano_Handling__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Work_Order__c.Cleaning_Service__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Work_Order__c.Safe_Removal__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Work_Order__c.MCST__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>WO Notification for OPS</fullName>
+        <actions>
+            <name>NewWorkOrderOPS</name>
+            <type>Task</type>
+        </actions>
+        <active>false</active>
+        <booleanFilter>1 OR 2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 8 OR 9 OR 10</booleanFilter>
+        <criteriaItems>
+            <field>Work_Order__c.Crating__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Work_Order__c.Labour_Requirement__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Work_Order__c.Crating__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Work_Order__c.Packing_Materials__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Work_Order__c.Instructions_to_OPS__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Work_Order__c.Colour_Stickers__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Work_Order__c.Patch_Holes__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Work_Order__c.Storage_Required__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Work_Order__c.Shuttle_Service__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Work_Order__c.Stairs_Carry__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>WO Notification for Traffic</fullName>
+        <actions>
+            <name>NewWorkOrderTraffic</name>
+            <type>Task</type>
+        </actions>
+        <active>false</active>
+        <booleanFilter>1 OR 2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 8 OR 9 OR 10</booleanFilter>
+        <criteriaItems>
+            <field>Work_Order__c.Job_Number__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Work_Order__c.Direct_Load_FCL__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Work_Order__c.Instructions_to_Traffic__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Work_Order__c.Packing_Materials__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Work_Order__c.Instructions_to_OPS__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Work_Order__c.Destination_POE__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Work_Order__c.Patch_Holes__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Work_Order__c.Storage_Required__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Work_Order__c.Insurance_Instructions__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Work_Order__c.Billing_Instructions__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <tasks>
+        <fullName>NewWorkOrderCSE</fullName>
+        <assignedTo>mala@helutrans.com.sg</assignedTo>
+        <assignedToType>user</assignedToType>
+        <description>Please proceed to the WO concerned for Instructions from Sales Person to CSE for this job.</description>
+        <dueDateOffset>1</dueDateOffset>
+        <notifyAssignee>true</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>New Work Order - CSE</subject>
+    </tasks>
+    <tasks>
+        <fullName>NewWorkOrderOPS</fullName>
+        <assignedTo>mala@helutrans.com.sg</assignedTo>
+        <assignedToType>user</assignedToType>
+        <description>New Work Order. Please act accordingly.</description>
+        <dueDateOffset>1</dueDateOffset>
+        <notifyAssignee>true</notifyAssignee>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>New Work Order - OPS</subject>
+    </tasks>
+    <tasks>
+        <fullName>NewWorkOrderTraffic</fullName>
+        <assignedTo>mala@helutrans.com.sg</assignedTo>
+        <assignedToType>user</assignedToType>
+        <description>New Work Order for Traffic. Please act accordingly.</description>
+        <dueDateOffset>1</dueDateOffset>
+        <notifyAssignee>true</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>New Work Order - Traffic</subject>
+    </tasks>
+</Workflow>

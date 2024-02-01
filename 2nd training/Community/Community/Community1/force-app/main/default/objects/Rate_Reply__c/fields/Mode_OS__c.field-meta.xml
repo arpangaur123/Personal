@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mode_OS__c</fullName>
+    <description>Mode for OS rate reply</description>
+    <externalId>false</externalId>
+    <label>Mode OS</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Airvan / Triwall packed</fullName>
+                <default>false</default>
+                <label>Airvan / Triwall packed</label>
+            </value>
+            <value>
+                <fullName>Liftvan loaded via LCL</fullName>
+                <default>false</default>
+                <label>Liftvan loaded via LCL</label>
+            </value>
+            <value>
+                <fullName>20&apos; FCL</fullName>
+                <default>false</default>
+                <label>20&apos; FCL</label>
+            </value>
+            <value>
+                <fullName>40&apos; FCL</fullName>
+                <default>false</default>
+                <label>40&apos; FCL</label>
+            </value>
+            <value>
+                <fullName>20&apos; + 20&apos; FCL</fullName>
+                <default>false</default>
+                <label>20&apos; + 20&apos; FCL</label>
+            </value>
+            <value>
+                <fullName>20&apos; + 40&apos; FCL</fullName>
+                <default>false</default>
+                <label>20&apos; + 40&apos; FCL</label>
+            </value>
+            <value>
+                <fullName>40&apos; + 40&apos; FCL</fullName>
+                <default>false</default>
+                <label>40&apos; + 40&apos; FCL</label>
+            </value>
+            <value>
+                <fullName>40 HC</fullName>
+                <default>false</default>
+                <label>40 HC</label>
+            </value>
+            <value>
+                <fullName>Door to Port</fullName>
+                <default>false</default>
+                <label>Door to Port</label>
+            </value>
+            <value>
+                <fullName>Door to Door</fullName>
+                <default>false</default>
+                <label>Door to Door</label>
+            </value>
+            <value>
+                <fullName>Overland by Truck</fullName>
+                <default>false</default>
+                <label>Overland by Truck</label>
+            </value>
+            <value>
+                <fullName>Origin services only</fullName>
+                <default>false</default>
+                <label>Origin services only</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Comment_Validation_highest_grade61</fullName>
+    <active>true</active>
+    <description>Please indicate a reason to justify the 5 points awarded.</description>
+    <errorConditionFormula>AND(
+ISPICKVAL( OversizeObject_2D_3D_Handling__c  , &quot;5&quot;),
+ISBLANK(  SupComment_OversizeObject_2D_3D_Handli__c  )
+)</errorConditionFormula>
+    <errorDisplayField>SupComment_OversizeObject_2D_3D_Handli__c</errorDisplayField>
+    <errorMessage>Please indicate a reason to justify the 5 points awarded.</errorMessage>
+</ValidationRule>

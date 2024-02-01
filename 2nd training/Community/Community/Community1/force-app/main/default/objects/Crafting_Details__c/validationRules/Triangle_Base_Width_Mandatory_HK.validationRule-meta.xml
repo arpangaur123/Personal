@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Triangle_Base_Width_Mandatory_HK</fullName>
+    <active>true</active>
+    <description>If Triangle Supports is chosen, Triangle Base Width field is mandatory</description>
+    <errorConditionFormula>IF ( AND ( RecordType.Name = &apos;Hong Kong&apos;, 
+Triangle_Supports__c = TRUE, 
+ISNULL(  Triangle_Base_Width_in__c ) 
+), TRUE , FALSE )</errorConditionFormula>
+    <errorDisplayField>Triangle_Base_Width_in__c</errorDisplayField>
+    <errorMessage>If Triangle Supports is chosen, Triangle Base Width field is mandatory</errorMessage>
+</ValidationRule>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Comment_Validation_higest_grade1</fullName>
+    <active>true</active>
+    <description>Comment Validation higest grade</description>
+    <errorConditionFormula>AND(
+ISPICKVAL( Crating_Methods__c , &quot;5&quot;),
+ISBLANK(  Comment_from_Supervisor4__c )
+)</errorConditionFormula>
+    <errorDisplayField>Comment_from_Supervisor4__c</errorDisplayField>
+    <errorMessage>Please indicate a reason to justify for the 5 points awarded.</errorMessage>
+</ValidationRule>

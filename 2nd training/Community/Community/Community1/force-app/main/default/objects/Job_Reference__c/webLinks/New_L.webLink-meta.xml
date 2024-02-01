@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_L</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>New(L)</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>/lightning/o/Job_Reference__c/new?defaultFieldValues=Name=Draft,
+Opportunity__c={!Opportunity.Id},
+Description_of_Goods__c={!Opportunity.Description},
+backgroundContext=%2Flightning%2Fr%2FOpportunity%2F{!Opportunity.Id}%2Fview</url>
+</WebLink>

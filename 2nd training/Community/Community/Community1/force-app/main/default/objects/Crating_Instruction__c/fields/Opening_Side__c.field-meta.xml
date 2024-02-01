@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opening_Side__c</fullName>
+    <externalId>false</externalId>
+    <label>Opening Side 开箱面</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Broadside 宽面</fullName>
+                <default>true</default>
+                <label>Broadside 宽面</label>
+            </value>
+            <value>
+                <fullName>Top 顶部</fullName>
+                <default>false</default>
+                <label>Top 顶部</label>
+            </value>
+            <value>
+                <fullName>Side+Top 宽面+顶</fullName>
+                <default>false</default>
+                <label>Side+Top 宽面+顶</label>
+            </value>
+            <value>
+                <fullName>All Sides 全面</fullName>
+                <default>false</default>
+                <label>All Sides 全面</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

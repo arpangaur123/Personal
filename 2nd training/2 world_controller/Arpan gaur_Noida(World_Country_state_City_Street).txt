@@ -1,0 +1,56 @@
+public class World {
+    Map<String, Map<String,Map<String,List<String>>>> countryToStateMap;
+    Map<String, String> countryToCapital;
+    public World(){
+        countryToStateMap = new Map<String, Map<String,Map<String,List<String>>>>();
+        countryToCapital = new Map<String, String>();
+        For(World__c world : [SELECT Id, Name, Capital__c, State__c, City__c, Street__c 
+                              FROM World__C ]){
+            if(countryToStateMap.containsKey(World.Name)){
+                if(countryToStateMap.get(World.Name).containsKey(World.State__c)){
+                    if(countryToStateMap.get(World.Name).get(World.State__c).containsKey(World.City__c)){
+                        countryToStateMap.get(World.Name).get(World.State__c).get(World.City__c).add((World.Street__c));
+                    }
+                    else{
+                        List<String> streetList = new List<String>();
+                        streetList.add(World.Street__c);
+                        countryToStateMap.get(World.Name).get(World.State__c).put(World.City__c, streetList);
+                    }
+                }
+                else{
+                    List<String> streetList = new List<String>();
+                    streetList.add(World.Street__c);
+                    Map<String,List<String>> cityToStreetMap = new Map<String, List<String>>();
+                    cityToStreetMap.put(World.City__c,streetList);
+                    countryToStateMap.get(World.Name).put(World.State__c,cityToStreetMap);
+                } 
+            }
+            else{
+                Map<String,Map<String,List<String>>> stateToCityMap = new  Map<String,Map<String,List<String>>>();
+                List<String> streetList = new List<String>();
+                streetList.add(world.Street__c);
+                Map<String,List<String>> cityToStreetMap =new Map<String,List<String>>();
+                cityToStreetMap.put(World.City__c, streetList);
+                stateToCityMap.put(World.State__c ,cityToStreetMap);
+                countryToStateMap.put(World.Name, stateToCityMap);
+            }
+            if(world.Capital__c){
+                countryToCapital.put(world.Name,world.State__c);
+            }
+        }
+    }
+    
+    Public set<String> getStates(String countryName){
+        return countryToStateMap.get(countryName).keyset();
+    }
+    
+    Public Set<String> getCity(String countryName,String stateName){
+        return countryToStateMap.get(countryName).get(stateName).keyset();
+    }
+    Public List<String> getStreet(String countryName, String stateName, String cityName){
+        Return countryToStateMap.get(countryName).get(stateName).get(cityName);
+    }
+    Public String getCapital(String countryName){
+        return countryToCapital.get(countryName);
+    }
+}

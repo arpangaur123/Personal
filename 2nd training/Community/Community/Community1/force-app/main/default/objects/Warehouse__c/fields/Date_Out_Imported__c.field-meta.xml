@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Date_Out_Imported__c</fullName>
+    <externalId>false</externalId>
+    <formula>DATE( If( do_yy__c &lt; 10, 2000 + do_yy__c , 1900 + do_yy__c) , do_mm__c , do_dd__c )</formula>
+    <label>Date Out</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

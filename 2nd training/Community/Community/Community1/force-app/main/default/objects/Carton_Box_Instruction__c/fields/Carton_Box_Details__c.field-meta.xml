@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Carton_Box_Details__c</fullName>
+    <defaultValue>&quot;No. / LxBxH (cm)&quot; &amp; BR() &amp;
+&quot;号 / 长x寬x高 (cm)&quot;</defaultValue>
+    <externalId>false</externalId>
+    <label>Carton Box Details 描述/尺寸</label>
+    <length>32768</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>5</visibleLines>
+</CustomField>

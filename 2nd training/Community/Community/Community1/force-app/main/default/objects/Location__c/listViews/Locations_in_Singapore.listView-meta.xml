@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Locations_in_Singapore</fullName>
+    <columns>NAME</columns>
+    <columns>Storage_Facility__c</columns>
+    <columns>UPDATEDBY_USER</columns>
+    <columns>CREATEDBY_USER</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>NAME</field>
+        <operation>contains</operation>
+        <value>SC</value>
+    </filters>
+    <label>Locations in Singapore</label>
+    <language>en_US</language>
+</ListView>

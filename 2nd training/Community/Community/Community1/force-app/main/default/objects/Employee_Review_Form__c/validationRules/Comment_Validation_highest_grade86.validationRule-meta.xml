@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Comment_Validation_highest_grade86</fullName>
+    <active>true</active>
+    <description>Comment Validation highest grade
+---------------------------------
+Please indicate a reason to justify the 5 points awarded.</description>
+    <errorConditionFormula>AND(
+ISPICKVAL( Effective_Team_Player__c  , &quot;5&quot;),
+ISBLANK(  Supervisor_Comment_Effective_TeamPlayer__c )
+)</errorConditionFormula>
+    <errorDisplayField>Supervisor_Comment_Effective_TeamPlayer__c</errorDisplayField>
+    <errorMessage>Please indicate a reason to justify the 5 points awarded.</errorMessage>
+</ValidationRule>

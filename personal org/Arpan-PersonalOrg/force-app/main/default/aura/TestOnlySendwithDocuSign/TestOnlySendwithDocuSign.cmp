@@ -1,0 +1,30 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction,force:hasSObjectName" access="global" >
+	
+    <aura:attribute name="sobjecttype" type="String" default="{!v.sObjectName}"/>
+    
+    <aura:attribute name="RC" type="string" default=""/>
+    <aura:attribute name="RSL" type="string" default=""/>
+    <aura:attribute name="RSRO" type="string" default=""/>
+    <aura:attribute name="RROS" type="string" default=""/>
+    <aura:attribute name="CCRM" type="string" default=""/>
+    <aura:attribute name="CCTM" type="string" default=""/>
+    <aura:attribute name="CCNM" type="string" default=""/>
+    <aura:attribute name="CRCL" type="string" default=""/>
+    <aura:attribute name="OCO" type="string" default=""/>
+    <aura:attribute name="DST" type="string" default="2ae34993-a8d1-48ea-8a11-d0288e9f3ad2"/>
+    <aura:attribute name="LA" type="string" default=""/>
+    <aura:attribute name="CRL" type="string" default="LoadDefaultContacts~0"/>
+    
+    <aura:attribute name="CEM" type="string" default=""/>
+    <aura:attribute name="CES" type="string" default=""/>
+    <aura:attribute name="STB" type="string" default=""/>
+    <aura:attribute name="SSB" type="string" default=""/>
+	
+    <aura:attribute name="SES" type="string" default=""/>
+    <aura:attribute name="SEM" type="string" default=""/>
+    <aura:attribute name="SRS" type="string" default=""/>
+    <aura:attribute name="SCS" type="string" default=""/>
+    <aura:attribute name="RES" type="string" default=""/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+</aura:component>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>If_Yes_against_II_permit_no__c</fullName>
+    <description>Note: please ensure that declared value is the same as per II permit.</description>
+    <externalId>false</externalId>
+    <label>If Yes, against II permit no.:</label>
+    <length>90</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

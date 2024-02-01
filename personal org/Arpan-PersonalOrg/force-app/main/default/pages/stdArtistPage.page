@@ -1,0 +1,8 @@
+<apex:page lightningStylesheets="true" action="{!if($Profile.Name =='artAppCPortal',
+    '/apex/My_Collection',
+    urlFor('/a08/o', null,
+    null, true))}">
+  
+ 
+  
+</apex:page>

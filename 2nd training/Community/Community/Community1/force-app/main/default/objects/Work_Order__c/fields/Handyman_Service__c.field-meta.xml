@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Handyman_Service__c</fullName>
+    <defaultValue>&quot;Vendor: &quot;&amp; BR() &amp;
+&quot;Date of Service: dd/mm/yy&quot;&amp; BR() &amp;
+&quot;Time of Service: hrs&quot;&amp; BR() &amp;
+&quot;Scope of Service: &quot;&amp; BR() &amp;
+&quot;a) Dismantle&quot;&amp; BR() &amp;
+&quot;b) Patch wall holes&quot;&amp; BR() &amp;
+&quot;c) Remove TV Bracket + Patch wall holes&quot;</defaultValue>
+    <externalId>false</externalId>
+    <label>Handyman Service</label>
+    <length>100000</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>10</visibleLines>
+</CustomField>

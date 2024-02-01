@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Client_Management_GM__c</fullName>
+    <description>-Interact with customers on a frequent basis to obtain feedback about their experiences with HT
+-Emphasizes and holds HOD accountable for addressing service failures or potential service failures, and for developing innovative ways to exceed customer satisfaction
+-Develop strategic alliances with local govt/agencies, businesses, and customers
+-Anticipates needs of high profile customers &amp; events to deliver a flawless service</description>
+    <externalId>false</externalId>
+    <inlineHelpText>-Interact with customers on a frequent basis to obtain feedback about their experiences with HT
+-Emphasizes and holds HOD accountable for addressing service failures or potential service failures, and for developing innovative ways to exceed customer satisfaction
+-Develop strategic alliances with local govt/agencies, businesses, and customers
+-Anticipates needs of high profile customers &amp; events to deliver a flawless service</inlineHelpText>
+    <label>Client Management [GM]</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1</fullName>
+                <default>true</default>
+                <label>1</label>
+            </value>
+            <value>
+                <fullName>2</fullName>
+                <default>false</default>
+                <label>2</label>
+            </value>
+            <value>
+                <fullName>3</fullName>
+                <default>false</default>
+                <label>3</label>
+            </value>
+            <value>
+                <fullName>4</fullName>
+                <default>false</default>
+                <label>4</label>
+            </value>
+            <value>
+                <fullName>5</fullName>
+                <default>false</default>
+                <label>5</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

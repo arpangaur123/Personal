@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Comment_IT_Continuous_Learning_Update__c</fullName>
+    <description>Supervisor Comment IT Continuous Learning Update</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Supervisor Comment IT Continuous Learning Update</inlineHelpText>
+    <label>Comment IT Continuous Learning Update</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

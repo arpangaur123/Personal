@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Storage_Facility__c</fullName>
+    <externalId>false</externalId>
+    <label>Storage Facility</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>* Not in Storage</fullName>
+                <default>false</default>
+                <label>* Not in Storage</label>
+            </value>
+            <value>
+                <fullName>ATL, Hong Kong</fullName>
+                <default>false</default>
+                <label>ATL, Hong Kong</label>
+            </value>
+            <value>
+                <fullName>Cheung Hing Shing, Hong Kong</fullName>
+                <default>false</default>
+                <label>Cheung Hing Shing, Hong Kong</label>
+            </value>
+            <value>
+                <fullName>Chun Sing, Hong Kong</fullName>
+                <default>false</default>
+                <label>Chun Sing, Hong Kong</label>
+            </value>
+            <value>
+                <fullName>CITIC, Hong Kong</fullName>
+                <default>false</default>
+                <label>CITIC, Hong Kong</label>
+            </value>
+            <value>
+                <fullName>CityCentre Storage, Singapore</fullName>
+                <default>false</default>
+                <label>CityCentre Storage, Singapore</label>
+            </value>
+            <value>
+                <fullName>Display Site</fullName>
+                <default>false</default>
+                <label>Display Site</label>
+            </value>
+            <value>
+                <fullName>Gehua</fullName>
+                <default>false</default>
+                <label>Gehua</label>
+            </value>
+            <value>
+                <fullName>Global Gateway, Hong Kong</fullName>
+                <default>false</default>
+                <label>Global Gateway, Hong Kong</label>
+            </value>
+            <value>
+                <fullName>Hellmann, Hong Kong</fullName>
+                <default>false</default>
+                <label>Hellmann, Hong Kong</label>
+            </value>
+            <value>
+                <fullName>HKCEC</fullName>
+                <default>false</default>
+                <label>HKCEC</label>
+            </value>
+            <value>
+                <fullName>In Passage</fullName>
+                <default>false</default>
+                <label>In Passage</label>
+            </value>
+            <value>
+                <fullName>Jaguar, Hong Kong</fullName>
+                <default>false</default>
+                <label>Jaguar, Hong Kong</label>
+            </value>
+            <value>
+                <fullName>Jin Ma Building, Beijing</fullName>
+                <default>false</default>
+                <label>Jin Ma Building, Beijing</label>
+            </value>
+            <value>
+                <fullName>Kong Nam, Hong Kong</fullName>
+                <default>false</default>
+                <label>Kong Nam, Hong Kong</label>
+            </value>
+            <value>
+                <fullName>LinJi Building, Beijing</fullName>
+                <default>false</default>
+                <label>LinJi Building, Beijing</label>
+            </value>
+            <value>
+                <fullName>Mapletree, Hong Kong</fullName>
+                <default>false</default>
+                <label>Mapletree, Hong Kong</label>
+            </value>
+            <value>
+                <fullName>MBS</fullName>
+                <default>false</default>
+                <label>MBS</label>
+            </value>
+            <value>
+                <fullName>Richwealth, Hong Kong</fullName>
+                <default>false</default>
+                <label>Richwealth, Hong Kong</label>
+            </value>
+            <value>
+                <fullName>Shanghai Storage, Shanghai</fullName>
+                <default>false</default>
+                <label>Shanghai Storage, Shanghai</label>
+            </value>
+            <value>
+                <fullName>Singapore FreePort, Singapore</fullName>
+                <default>false</default>
+                <label>Singapore FreePort, Singapore</label>
+            </value>
+            <value>
+                <fullName>Success Building, Hong Kong</fullName>
+                <default>false</default>
+                <label>Success Building, Hong Kong</label>
+            </value>
+            <value>
+                <fullName>Terrada S Building</fullName>
+                <default>false</default>
+                <label>Terrada S Building</label>
+            </value>
+            <value>
+                <fullName>Tsing Yi, Hong Kong</fullName>
+                <default>false</default>
+                <label>Tsing Yi, Hong Kong</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pickup_AddressN__c</fullName>
+    <externalId>false</externalId>
+    <label>Pickup Address</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>HT WAREHOUSE</fullName>
+                <default>false</default>
+                <label>HT WAREHOUSE</label>
+            </value>
+            <value>
+                <fullName>CONTAINER YARD TO RESIDENCE</fullName>
+                <default>false</default>
+                <label>CONTAINER YARD TO RESIDENCE</label>
+            </value>
+            <value>
+                <fullName>CONTAINER YARD TO WAREHOUSE</fullName>
+                <default>false</default>
+                <label>CONTAINER YARD TO WAREHOUSE</label>
+            </value>
+            <value>
+                <fullName>CONTAINER FROM WAREHOUSE TO RESIDENCE</fullName>
+                <default>false</default>
+                <label>CONTAINER FROM WAREHOUSE TO RESIDENCE</label>
+            </value>
+            <value>
+                <fullName>CONTAINER FREIGHT STATION (CFS)</fullName>
+                <default>false</default>
+                <label>CONTAINER FREIGHT STATION (CFS)</label>
+            </value>
+            <value>
+                <fullName>SATS</fullName>
+                <default>false</default>
+                <label>SATS</label>
+            </value>
+            <value>
+                <fullName>DNATA</fullName>
+                <default>false</default>
+                <label>DNATA</label>
+            </value>
+            <value>
+                <fullName>SKYLEADER FREIGHT</fullName>
+                <default>false</default>
+                <label>SKYLEADER FREIGHT</label>
+            </value>
+            <value>
+                <fullName>RESIDENCE</fullName>
+                <default>false</default>
+                <label>RESIDENCE</label>
+            </value>
+            <value>
+                <fullName>OTHER AIRFREIGHT FORWARDER</fullName>
+                <default>false</default>
+                <label>OTHER AIRFREIGHT FORWARDER</label>
+            </value>
+            <value>
+                <fullName>SINGAPORE FREEPORT</fullName>
+                <default>false</default>
+                <label>SINGAPORE FREEPORT</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

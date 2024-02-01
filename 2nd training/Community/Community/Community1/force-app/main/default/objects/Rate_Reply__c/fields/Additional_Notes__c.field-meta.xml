@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Additional_Notes__c</fullName>
+    <defaultValue>&quot;- Stair Carry charges only applicable to items that require stair carry walk up to 2nd floor and above without elevator&quot; &amp; BR() &amp;
+&quot;- Long Carry applies to long carry walk of more than 50 meters&quot; &amp; BR() &amp;
+&quot;- **WH (in/out) - Loose Load is a one-time charge&quot; &amp; BR() &amp;
+&quot;- For all additional services performed locally, GST 7% will be added to final invoice&quot;</defaultValue>
+    <description>Notes for Additional Charges</description>
+    <externalId>false</externalId>
+    <label>Additional Notes</label>
+    <length>1000</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>6</visibleLines>
+</CustomField>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Country__c</fullName>
+    <description>Country</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Country</inlineHelpText>
+    <label>Country</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>CS Singapore</fullName>
+                <default>false</default>
+                <label>CS Singapore</label>
+            </value>
+            <value>
+                <fullName>CS Hong Kong</fullName>
+                <default>false</default>
+                <label>CS Hong Kong</label>
+            </value>
+            <value>
+                <fullName>CS Beijing</fullName>
+                <default>false</default>
+                <label>CS Beijing</label>
+            </value>
+            <value>
+                <fullName>CS Shanghai</fullName>
+                <default>false</default>
+                <label>CS Shanghai</label>
+            </value>
+            <value>
+                <fullName>CS Indonesia</fullName>
+                <default>false</default>
+                <label>CS Indonesia</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

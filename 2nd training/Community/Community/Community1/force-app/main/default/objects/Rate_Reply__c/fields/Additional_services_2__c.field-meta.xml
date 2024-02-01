@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Additional_services_2__c</fullName>
+    <externalId>false</externalId>
+    <label>Additional services 2</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Handyman</fullName>
+                <default>false</default>
+                <label>Handyman</label>
+            </value>
+            <value>
+                <fullName>Re-delivery</fullName>
+                <default>false</default>
+                <label>Re-delivery</label>
+            </value>
+            <value>
+                <fullName>W/hse handling in/out</fullName>
+                <default>false</default>
+                <label>W/hse handling in/out</label>
+            </value>
+            <value>
+                <fullName>Normal storage</fullName>
+                <default>false</default>
+                <label>Normal storage</label>
+            </value>
+            <value>
+                <fullName>Air-con storage</fullName>
+                <default>false</default>
+                <label>Air-con storage</label>
+            </value>
+            <value>
+                <fullName>Piano handling</fullName>
+                <default>false</default>
+                <label>Piano handling</label>
+            </value>
+            <value>
+                <fullName>Safe handling</fullName>
+                <default>false</default>
+                <label>Safe handling</label>
+            </value>
+            <value>
+                <fullName>Maid service</fullName>
+                <default>false</default>
+                <label>Maid service</label>
+            </value>
+            <value>
+                <fullName>Difficult access</fullName>
+                <default>false</default>
+                <label>Difficult access</label>
+            </value>
+            <value>
+                <fullName>Pet Handling</fullName>
+                <default>false</default>
+                <label>Pet Handling</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

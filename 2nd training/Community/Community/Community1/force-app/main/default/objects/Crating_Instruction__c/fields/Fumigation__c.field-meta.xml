@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fumigation__c</fullName>
+    <externalId>false</externalId>
+    <label>Fumigation 熏蒸处理</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>No 否</fullName>
+                <default>true</default>
+                <label>No 否</label>
+            </value>
+            <value>
+                <fullName>Yes 是</fullName>
+                <default>false</default>
+                <label>Yes 是</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

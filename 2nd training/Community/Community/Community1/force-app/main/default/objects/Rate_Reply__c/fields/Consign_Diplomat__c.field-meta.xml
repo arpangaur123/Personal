@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Consign_Diplomat__c</fullName>
+    <defaultValue>&quot;Name of Embassy&quot; &amp; BR() &amp;
+&quot;Full Address in Singapore&quot; &amp; BR() &amp;
+&quot;Telephone / Fax&quot; &amp; BR() &amp;
+&quot;For:  Shipper&apos;s name (as appeared in passport)&quot;</defaultValue>
+    <description>Consignment for Diplomatic Shipment</description>
+    <externalId>false</externalId>
+    <label>Consign (Diplomat)</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

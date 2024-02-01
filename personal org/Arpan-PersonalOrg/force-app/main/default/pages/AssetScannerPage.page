@@ -1,0 +1,106 @@
+<apex:page controller="AssetScannerController" Id="PG" docType="html-5.0">
+	<apex:form Id="FRM">
+		<div class="bPageTitle">
+            <div class="ptBody secondaryPalette">
+                <div class="content">
+                    <img src="/img/icon/box32.png" class="pageTitleIcon"/>
+                    <h1 class="pageType">Asset Update</h1>
+                    <span class="titleSeparatingColon">:</span>
+                    <h2 class="pageDescription">Asset Scanner</h2>
+                    <div class="blank"></div>
+                </div>
+            </div>
+        </div>
+        <apex:pageBlock Id="PB1" title="Assets Update using Barcode" mode="View">
+        
+        	<apex:pageMessages rendered="{!messageFlag}" escape="True" showDetail="True">
+            </apex:pageMessages>
+        	<apex:pageBlockSection Id="PB1S1" columns="1">
+                <apex:pageBlockSectionItem Id="PB1S1I1">
+                    <apex:outputLabel style="align:right"><b>Please choose the Type of Item</b></apex:outputLabel>
+                    <apex:selectList value="{!selectedpickvalue}" size="1">
+                        <apex:selectOptions value="{!Options}"/>
+                        <apex:actionSupport event="onchange" action="{!VisibleMethod}" reRender="PB1, PB1S1, PB1S2" status="pageRefresh"/>
+                    </apex:selectList>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            
+            <center>
+                <apex:actionStatus id="pageRefresh">
+                    <apex:facet name="start">
+                        <div style="width: 500px;">
+                            <img src="/img/loading24.gif" style="vertical-align:middle;"/>
+                            <span style="margin-left: 10px; font-size: 12px; font-weight: bold; color: #000000;">Please wait while we refresh the page...</span>
+                        </div>
+                    </apex:facet>
+                </apex:actionStatus> 
+            </center>
+            
+            <apex:pageBlockSection Id="PB1S2" columns="1" rendered="{!visibleSection}" title="Please enter the Information for the Asset {!selectedpickvalue} records to Update" collapsible="false">
+            	<apex:pageBlockSectionItem Id="PB1S2I1">
+                    <apex:outputLabel >Date In</apex:outputLabel>
+                    <apex:inputField value="{!task1.ActivityDate}" Id="DateIn"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem Id="PB1S2I2">
+                    <apex:outputLabel >Date Out</apex:outputLabel>
+                    <apex:inputField value="{!task2.ActivityDate}" Id="DateOut"/> 
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem Id="PB1S2I4" rendered="{!IF(selectedpickvalue = 'Return',true,false)}">
+                    <apex:outputLabel >Location</apex:outputLabel>
+                    <apex:inputField value="{!assetNew.Location_New__c}" id="location"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem Id="PB1S2I3" rendered="{!IF(selectedpickvalue = 'Borrow',true,false)}">
+                    <apex:outputLabel >Loan To</apex:outputLabel>
+                    <apex:outputPanel layout="block" styleClass="requiredInput">
+                    	<div class="requiredBlock"></div>
+                    	<apex:inputText value="{!contactBarcode}" styleClass="form-control" html-placeholder="Scan Barcode of Contact" Id="contactId"/>
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection Id="PB1S3" columns="1" rendered="{!visibleSection}" title="Please enter the Barcodes of the Asset {!selectedpickvalue} records to Update" collapsible="false">
+                <apex:pageBlockSectionItem Id="PB1S3I1">
+                    <apex:outputLabel >Barcode IDs </apex:outputLabel>
+                    <apex:inputTextArea style="height:100px;width:99%" value="{!collection_string}" Id="assets"/>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            
+            <apex:actionStatus id="manageSaveStatus">
+                <apex:facet name="stop">
+                    <apex:outputPanel rendered="{!visibleSection}" id="buttonsPanel">
+                        <center>
+                            <apex:commandButton action="{!updateSave}" value="Update Records" rerender="PB1" style="width:150px;" status="manageSaveStatus"/>
+                            <apex:commandButton value="Reset" onclick="clear1()" rerender="PB1" style="width:100px;margin-left:5px;"/>
+                            <apex:commandButton value="Close" action="{!Close}" style="width:100px;margin-left:5px;"/>
+                        </center>
+                    </apex:outputPanel>
+                </apex:facet>
+                <apex:facet name="start">
+                    <apex:outputPanel >
+                        <center>
+                            <apex:commandButton action="{!updateSave}" value="Updating..." status="manageSaveStatus" disabled="true" style="width:150px;"/>
+                        </center>
+                    </apex:outputPanel>
+                </apex:facet>
+            </apex:actionStatus>
+        </apex:pageBlock>
+	</apex:form>
+	<script>
+		function clear1(){
+		//alert('Hi');
+			var obj1 = document.getElementById("{!$Component.PG.FRM.PB1.PB1S2.PB1S2I1.DateIn}");
+			var obj2 = document.getElementById("{!$Component.PG.FRM.PB1.PB1S2.PB1S2I2.DateOut}");
+			var obj3 = document.getElementById("{!$Component.PG.FRM.PB1.PB1S2.PB1S2I3.contactId}");
+			var obj4 = document.getElementById("{!$Component.PG.FRM.PB1.PB1S3.PB1S3I1.assets}");
+			//alert(obj1.value);
+			obj1.value = null;
+			obj2.value = null;
+			obj3.value = null;
+			obj4.value = null;
+		}
+		
+	</script>
+</apex:page>

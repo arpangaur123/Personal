@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Painting_Framed_Unframed__c</fullName>
+    <externalId>false</externalId>
+    <formula>VALUE(Text( Material_Identification__c  ))+
+VALUE(Text( Handling__c  ))+
+VALUE(Text( Installation__c ))+
+VALUE(Text( Packing__c  ))+
+VALUE(Text( Crating_Carton__c ))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Total Grading for Painting:</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

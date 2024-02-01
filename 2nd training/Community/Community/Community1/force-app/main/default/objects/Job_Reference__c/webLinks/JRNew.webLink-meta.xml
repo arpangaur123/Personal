@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>JRNew</fullName>
+    <availability>online</availability>
+    <displayType>massActionButton</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>NewOld</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+    <url>/a0t/e?CF00N20000002xXdu={!Opportunity.Name}&amp;CF00N20000002xXdu_lkid={!Opportunity.Id}&amp;00N20000002xXed={!Opportunity.AMO_Delivery_Details__c}&amp;00N20000002xXei={!Opportunity.AMO_Notifying_Party__c}&amp;00N20000002xXen={!Opportunity.AMO_Consignees_Details__c}&amp;00N20000002xXes={!Opportunity.AMO_Shippers_Details__c}&amp;00N20000002xY7f={!Opportunity.AMO_Phone__c}&amp;00N20000002xY7k={!Opportunity.AMO_Fax__c}&amp;00N20000002xY7p={!Opportunity.AMO_Mobile__c}&amp;00N20000002xY7u={!Opportunity.AMO_Email__c}&amp;00N20000002xY7V={!Opportunity.AMO_Billing_Contact__c}&amp;00N20000002xY7a={!Opportunity.AMO_Billing_Address__c}&amp;retURL={!Opportunity.Id}</url>
+</WebLink>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Density_Factor_OS__c</fullName>
+    <defaultValue>&quot;6.50 net lbs per cubic foot, or 230 net lbs per cubic meter&quot; &amp; BR() &amp;
+&quot;10.40 air chargeable lbs per cubic foot gross&quot;</defaultValue>
+    <description>Density Factor for OS</description>
+    <externalId>false</externalId>
+    <label>Density Factor OS</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

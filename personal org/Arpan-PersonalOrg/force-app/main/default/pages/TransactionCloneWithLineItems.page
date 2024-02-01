@@ -1,0 +1,26 @@
+<apex:page standardController="artApp__Transaction__c" extensions="TransactionCloneWithLineItemsConExt" lightningStylesheets="true">
+    <style>
+        .pbButton{
+            padding-left: 15.5% !important;    
+        }
+    </style>
+    <apex:slds />
+  <apex:sectionHeader title="Clone Transaction {!artApp__Transaction__c.Name} for Job Reference" subtitle="{!artApp__Transaction__c.Job_Reference__r.Name}"/>
+  <apex:form >
+  <apex:pageBlock title="Please select the new Recordtype" mode="edit">
+      <apex:pageBlockButtons >
+                <apex:commandButton action="{!onSave}" value="Save"/>
+                <apex:commandButton action="{!cancel}" value="Cancel" immediate="true"/>
+      </apex:pageBlockButtons>
+      <apex:pageBlockSection collapsible="false" >
+          <apex:pageBlockSectionItem >
+              <apex:outputLabel value="New Recordtype"/>
+              <apex:selectList value="{!rt}" multiselect="false" size="1" required="true">
+                  <apex:selectOptions value="{!rtOptions}"/>
+              </apex:selectList>
+          </apex:pageBlockSectionItem>
+          <apex:inputHidden value="{!artApp__Transaction__c.Job_Reference__c}" />
+      </apex:pageBlockSection>
+  </apex:pageBlock>
+  </apex:form>
+</apex:page>

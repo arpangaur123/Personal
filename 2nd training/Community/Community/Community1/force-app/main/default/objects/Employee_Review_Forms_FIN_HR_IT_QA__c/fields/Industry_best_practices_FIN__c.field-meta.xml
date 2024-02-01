@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Industry_best_practices_FIN__c</fullName>
+    <description>-Time Management: Ability to multi-task &amp; be able to handle multiple assignments. Focusing on being organised &amp; attention to details in a timely manner.   
+
+-Process Improvement: Constant review of process workflow and internal check &amp; control. Able to propose creative and innovative ideas to streamline the way tasks/jobs are executed. 
+
+-Consistency: for classification of information in the report 
+-Cost management: Improve cost control
+-Error &amp; Fraud detection</description>
+    <externalId>false</externalId>
+    <inlineHelpText>-Time Management: Ability to multi-task &amp; be able to handle multiple assignments. Focusing on being organized &amp; attention to detail in a timely manner.   
+
+-Process Improvement: Constant review of process workflow and internal check &amp; control. Able to propose creative and innovative ideas to streamline the way tasks/jobs are executed. 
+
+-Consistency: for classification of information in the report 
+-Cost management: Improve cost control
+-Error &amp; Fraud detection</inlineHelpText>
+    <label>Industry Best Practices (FIN)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1</fullName>
+                <default>true</default>
+                <label>1</label>
+            </value>
+            <value>
+                <fullName>2</fullName>
+                <default>false</default>
+                <label>2</label>
+            </value>
+            <value>
+                <fullName>3</fullName>
+                <default>false</default>
+                <label>3</label>
+            </value>
+            <value>
+                <fullName>4</fullName>
+                <default>false</default>
+                <label>4</label>
+            </value>
+            <value>
+                <fullName>5</fullName>
+                <default>false</default>
+                <label>5</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AM_HK</fullName>
+    <active>true</active>
+    <description>For Hong-Kong office</description>
+    <label>AM HK</label>
+    <picklistValues>
+        <picklist>Cargo_Release_Location__c</picklist>
+        <values>
+            <fullName>Changi FTZ</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Declaration__c</picklist>
+        <values>
+            <fullName>Every single item</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General Description</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Documents_Attached__c</picklist>
+        <values>
+            <fullName>INVOICE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PACKING LIST</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Freight_Charges__c</picklist>
+        <values>
+            <fullName>Collect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prepaid</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Gross_Weight_Metric__c</picklist>
+        <values>
+            <fullName>KGS</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>MTK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TNE</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Permit_Checked_By__c</picklist>
+        <values>
+            <fullName>Ben Lim</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zolene Chui</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Permit__c</picklist>
+        <values>
+            <fullName>Ben Lim</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zolene Chui</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>TempExp_Re_Export__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Terminal__c</picklist>
+        <values>
+            <fullName>DNATA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KD</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Others</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SATS</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_of_Permit__c</picklist>
+        <values>
+            <fullName>Permanent</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Background_Checks_Red_Flag</fullName>
+        <description>Background Checks Red Flag</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>idang@helutrans.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>mc@ht.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>michelleyim@helutrans.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Internalmailtemplates/Background_Checks_Red_Flag</template>
+    </alerts>
+    <rules>
+        <fullName>Background Checks Red Flag</fullName>
+        <actions>
+            <name>Background_Checks_Red_Flag</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 or 2 or 3 or 4 or 5</booleanFilter>
+        <criteriaItems>
+            <field>Check__c.Website_look_poorly_done__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Check__c.Interpol_Wanted__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Check__c.Company_Cancelled__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Check__c.Website_not_found_for_company__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Check__c.Google__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Background check Red Flag</fullName>
+        <active>false</active>
+        <booleanFilter>1 or 2 or 3 or 4</booleanFilter>
+        <criteriaItems>
+            <field>Check__c.Interpol_Wanted__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Check__c.Website_look_poorly_done__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Check__c.Website_not_found_for_company__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Check__c.Company_Cancelled__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <description>If any checkbox is TRUE</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

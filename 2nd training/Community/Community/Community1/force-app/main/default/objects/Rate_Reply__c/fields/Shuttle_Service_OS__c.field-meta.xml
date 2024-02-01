@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Shuttle_Service_OS__c</fullName>
+    <defaultValue>&quot;US$ 250.00 / 20&apos;&quot; &amp; BR() &amp; 
+&quot;US$ 300.00 / 40&apos;&quot;</defaultValue>
+    <description>Shuttle service for OS</description>
+    <externalId>false</externalId>
+    <label>Shuttle Service OS</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

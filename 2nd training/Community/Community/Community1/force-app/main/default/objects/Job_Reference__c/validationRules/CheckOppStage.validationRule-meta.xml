@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CheckOppStage</fullName>
+    <active>true</active>
+    <description>check if Opp Stage is Closed Won</description>
+    <errorConditionFormula>OppStage__c &lt;&gt; &quot;Closed Won&quot;</errorConditionFormula>
+    <errorMessage>Your Opportunity need to be at Stage = Closed Won before you can create and save a Job Reference.</errorMessage>
+</ValidationRule>

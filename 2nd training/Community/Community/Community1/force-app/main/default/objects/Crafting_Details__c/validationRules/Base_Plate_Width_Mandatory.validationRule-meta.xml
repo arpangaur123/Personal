@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Base_Plate_Width_Mandatory</fullName>
+    <active>false</active>
+    <description>If Base Plate Supports is chosen, Base Plate Length and  Width field are mandatory</description>
+    <errorConditionFormula>IF ( AND ( Base_Support__c = TRUE,
+            OR ( ISNULL( Base_Plate_Length_cm__c) ,
+    		  ISNULL( Base_Plate_Width_cm__c) )	
+         ), TRUE , FALSE )</errorConditionFormula>
+    <errorDisplayField>Base_Plate_Length_cm__c</errorDisplayField>
+    <errorMessage>If Base Plate Supports is chosen, Base Plate Length and  Width field are mandatory</errorMessage>
+</ValidationRule>

@@ -1,0 +1,107 @@
+<apex:page docType="html-5.0" standardController="Crate__c" recordSetVar="var" lightningStylesheets="true" extensions="CopyCrateToTransactionConExt">
+  <script type="text/javascript">
+    function selectAllCheckboxes(obj,receivedInputID){
+        var inputCheckBox = document.getElementsByTagName("input");                  
+        for(var i=0; i<inputCheckBox.length; i++){          
+            if(inputCheckBox[i].id.indexOf(receivedInputID)!=-1){                                     
+                inputCheckBox[i].checked = obj.checked;
+            }
+        }
+    }
+  </script>
+  <apex:slds />
+  <apex:sectionHeader title="Copy Artwork from {!objectLabel} to Transaction"/>
+  <apex:outputPanel id="availablePanel">
+  <apex:form >
+  <apex:pageMessages />
+  <apex:pageBlock mode="edit" title="Step 1: Please select the Transaction">
+      <apex:pageBlockSection showHeader="false">
+          <apex:pageBlockSectionItem >
+              <apex:outputLabel value="Transaction"/>
+              <apex:inputField value="{!t.artApp__Transaction__c}" required="true"/>
+          </apex:pageBlockSectionItem>         
+      </apex:pageBlockSection>
+  </apex:pageBlock>
+  <apex:pageBlock mode="edit" title="Step 2: Select the Artwork to copy to Transaction">
+      <apex:pageBlockButtons >
+            <apex:commandButton action="{!AddSelected}" value="Add Selected"/>
+            <apex:commandButton action="{!cancel}" value="Cancel" immediate="true"/>
+      </apex:pageBlockButtons>      
+      <apex:pageBlockSection showHeader="false"  columns="1">
+          
+          <c:DynamicPaginator pController="{!controller}" panel="availablePanel"/>
+          <apex:pageBlockTable value="{!crates}" var="a">
+              <apex:column title="Select to Add">
+                  <apex:facet name="header"><apex:inputCheckbox onclick="selectAllCheckboxes(this,'inputId')" value="{!selectAll}"/> </apex:facet>
+                  <apex:inputCheckbox value="{!a.isSelected}" id="inputId"/>
+              </apex:column>
+              <apex:column >
+                <apex:facet name="header">
+                    <c:SortHeader sController="{!controller}" header="Crate ID (barcode)" column="Name" panel="availablePanel"/>
+                </apex:facet>
+                <apex:outputLink value="/{!a.crate.Id}" target="_blank">{!a.crate.Name}</apex:outputLink>
+              </apex:column>
+              
+              <apex:column >
+                <apex:facet name="header">
+                    <c:SortHeader sController="{!controller}" header="Country of Origin" column="Country_of_Origin__c" panel="availablePanel"/>
+                </apex:facet>
+                <apex:outputField value="{!a.crate.Country_of_Origin__c}"/>
+              </apex:column>
+              
+              <apex:column >
+                <apex:facet name="header">
+                    <c:SortHeader sController="{!controller}" header="Crate No." column="Crate_No__c" panel="availablePanel"/>
+                </apex:facet>
+                <apex:outputField value="{!a.crate.Crate_No__c}"/>
+              </apex:column>
+                            
+              <apex:column >
+                <apex:facet name="header">
+                    <c:SortHeader sController="{!controller}" header="Crate Dimensions" column="Dimensions__c" panel="availablePanel"/>
+                </apex:facet>
+                <apex:outputField value="{!a.crate.Dimensions__c}"/>
+              </apex:column>
+              
+              <apex:column >
+                <apex:facet name="header">
+                    <c:SortHeader sController="{!controller}" header="Remarks" column="Remarks__c" panel="availablePanel"/>
+                </apex:facet>
+                <apex:outputField value="{!a.crate.Remarks__c}"/>
+              </apex:column>
+          </apex:pageBlockTable>
+          
+          <apex:pageBlock title="Step 3: Copy Crates to Transaction">
+            <apex:pageBlockButtons location="top">
+                <apex:commandButton action="{!copyCrates}" value="Copy Crates to Transaction"/>
+                <apex:commandButton action="{!cancel}" value="Cancel"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockTable value="{!selectedCrates}" var="s">
+                <apex:column headerValue="Crate ID (barcode)">
+                    <apex:outputField value="{!s.crate.Name}"/>        
+                </apex:column>
+                <apex:column headerValue="Country of Origin">
+                    <apex:outputField value="{!s.crate.Country_of_Origin__c}"/>
+                </apex:column>
+                
+                <apex:column headerValue="Crate No.">
+                <apex:outputField value="{!s.crate.Crate_No__c}"/>
+              </apex:column>
+              
+              <apex:column headerValue="Crate Dimensions">
+                <apex:outputField value="{!s.crate.Dimensions__c}"/>
+              </apex:column>
+              
+              <apex:column headerValue="Remarks">
+                <apex:outputField value="{!s.crate.Remarks__c}"/>
+              </apex:column>
+                            
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+      </apex:pageBlockSection>
+  </apex:pageBlock>
+  
+  
+  </apex:form>
+  </apex:outputPanel>    
+</apex:page>

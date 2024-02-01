@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_L</fullName>
+    <availability>online</availability>
+    <displayType>massActionButton</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>New(L)</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+    <url>/lightning/o/Bill_of_Lading__c/new?navigationLocation=RELATED_LIST&amp;
+backgroundContext=%2Flightning%2Fr%2FJob_Reference__c%2F{!Job_Reference__c.Id}%2Fview&amp;defaultFieldValues=Job_Reference__c={!Job_Reference__c.Id},
+Shipper__c={!Job_Reference__c.AMJR_Shippers_Details__c},
+Consignee__c={!Job_Reference__c.AMJR_Consignees_Details__c},
+Notify_Party__c={!Job_Reference__c.AMJR_Notifying_Party__c},
+Delivery_Details__c={!Job_Reference__c.AMJR_Delivery_Details__c},
+Description_of_Goods__c={!Job_Reference__c.Description_of_Goods__c},
+Vessel_s_Name__c={!Job_Reference__c.Vessel_Voyage__c},
+Number_of_Packages__c={!Job_Reference__c.No_of_Packages_Crates__c},
+Measurement_M3__c={!Job_Reference__c.Packed_Dimensions_cm__c}</url>
+</WebLink>

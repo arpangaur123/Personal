@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Shipping Order</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Shipping Orders</value>
+    </caseValues>
+    <layouts>
+        <layout>HTTR - Shipping Order Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>New Section</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>New Section2</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Please check against documents attached and declare permit type</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Shipping Order Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>New Section</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>New Section2</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Please check against documents attached and declare permit type</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label></label>
+        <name>HTTR</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label></label>
+        <name>New</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>New_L</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Print_Shipping_Order</name>
+    </webLinks>
+</CustomObjectTranslation>

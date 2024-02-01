@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Subtotal_for_Part2_Registrar__c</fullName>
+    <description>Subtotal for Part2[Registrar]:</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Subtotal for Part2[Registrar]:</inlineHelpText>
+    <label>Subtotal for Part2[Registrar]:</label>
+    <precision>12</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

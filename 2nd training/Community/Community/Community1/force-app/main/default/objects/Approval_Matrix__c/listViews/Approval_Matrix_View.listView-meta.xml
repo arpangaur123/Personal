@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Approval_Matrix_View</fullName>
+    <columns>NAME</columns>
+    <columns>Country__c</columns>
+    <columns>Department__c</columns>
+    <columns>HOD__c</columns>
+    <columns>CEO__c</columns>
+    <columns>GM__c</columns>
+    <columns>HR__c</columns>
+    <filterScope>Mine</filterScope>
+    <label>Approval Matrix View</label>
+</ListView>

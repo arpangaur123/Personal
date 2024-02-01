@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inbound_WO</fullName>
+    <availability>online</availability>
+    <description>To auto populate some WO fields from the related Opportunity for record type Inbound WO</description>
+    <displayType>massActionButton</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Inbound WO</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+    <url>/lightning/o/Work_Order__c/new?defaultFieldValues=Opportunity__c={!Opportunity.Id},CF00N2000000129Zf={!Opportunity.Name}&amp;CF00N2000000129Zf_lkid={!Opportunity.Id}&amp;00N20000003E3SD={!Opportunity.Account}&amp;00N2000000129ZL={!Opportunity.OB_Job_Number__c}{!Opportunity.IB_Quote_Reference_2__c}&amp;00N20000003ECTF={!Opportunity.Destination_Address__c}%0D{!Opportunity.Destination_City__c}%0D{!Opportunity.Destination_Country__c}%0D{!Opportunity.Destination_Zip__c}&amp;00N200000012QPT={!Opportunity.Destination_Agent__c}&amp;00N20000003ECoN={!Account.BillingAddress}&amp;00N200000012ANk={!Opportunity.Pack_Date_1__c}&amp;00N200000012PDl={!Opportunity.Loading_Date__c}&amp;00N20000003ECS7={!Opportunity.Actual_Volume_cuft__c}&amp;00N200000012mo0={!Opportunity.Shipment_Details__c}&amp;00N200000012mjL={!Opportunity.Mode_of_Transport__c}&amp;00N20000003ECdK={!Opportunity.ETD__c}&amp;00N20000003ECdP={!Opportunity.ETA__c}&amp;00N20000003yg9o={!Opportunity.Load_Type__c}&amp;00N20000003ygtr={!Opportunity.Delivery_Date__c}&amp;00N20000003ygtw={!Opportunity.Cntr__c}&amp;RecordType=012200000008bRB&amp;retURL={!Opportunity.Id}</url>
+</WebLink>

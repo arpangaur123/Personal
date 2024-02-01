@@ -1,0 +1,28 @@
+<apex:page standardController="Operation_Order__c" showHeader="false" standardstylesheets="false" renderAs="PDF"><!---->
+<apex:stylesheet value="{!$Resource.PackListCSS}"/>
+<table border="0">
+<tr><td align="left"><font style="font-weight:bold;font-family:arial;font-size:x-large">Operation Order</font></td>
+<td align="right"><apex:image id="theImage" value="{!$Resource.AMLogo}"/></td>
+</tr>
+</table>
+<body>
+<!--<p><table border="0">
+<tr><td align="left"><font style="font-weight:bold;font-family:arial;font-size:18">Helu-Trans (HK) Pte Ltd<br />Unit 2, 11th floor, Global Gateway Building <br />
+168 Yeung Uk Road, Tsuen Wan, Hong Kong <br />Tel: 2612 2711 &nbsp; Fax: 2612 2815</font></td>
+<td align="right">&nbsp;</td>
+</tr>
+</table></p>
+<p><table border="0">
+<tr><td align="left"><font style="font-weight:bold;font-family:arial;font-size:18">Fax Message<br />To: Mr X <br />
+Fax: 2412 4520 &nbsp; Tel: 2492 0064 <br />Attn: Mr. Wong</font></td>
+<td align="right">&nbsp;</td>
+</tr>
+</table></p>
+<p><table border="0">
+<tr><td align="left"><font style="font-weight:bold;font-family:arial;font-size:18">Details: </font></td>
+<td align="right">&nbsp;</td>
+</tr>
+</table></p>-->
+<apex:detail relatedList="false"></apex:detail>
+</body>
+</apex:page>

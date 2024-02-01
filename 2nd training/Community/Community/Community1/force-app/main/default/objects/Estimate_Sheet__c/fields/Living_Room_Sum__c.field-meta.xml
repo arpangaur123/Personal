@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Living_Room_Sum__c</fullName>
+    <externalId>false</externalId>
+    <formula>Bar_Sum__c  +  Bar_Stool_Sum__c  +  Buffet_Sum__c  +  Bookcase_Shelf_Sum__c  +  Cabinet_Sum__c  +  Chairs_Sum__c  +  Rugs_Sum__c  +  Rocker_Sum__c  +  Straight_Sum__c  +  Sofas_Sum__c  +  Liv_Tables_Sum__c  +  Lamps_Sum__c  +   Televisions_Sum__c  +  Hifi_Set_Sum__c  +  TV_Rack_Sum__c  +  Organ_Sum__c  +  Piano_Sum__c  +  Computer_Set_Sum__c  +  Desk_Sum__c +  Peacock_Pappasan_Sum__c  +  Tape_VCR_Sum__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Living Room Sum</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Insured_Cost2__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(DATEVALUE(CreatedDate) &lt;= DATE(2020,11,30),
+IF( ISPICKVAL( Item_Type2__c ,&quot;Non-Fragile&quot;)&amp;&amp; ISPICKVAL( Transit_Type2__c,&quot;Internal Transit (SG, HK, CN)&quot; ),0.0002,
+IF( ISPICKVAL( Item_Type2__c ,&quot;Non-Fragile&quot;)&amp;&amp; ISPICKVAL( Transit_Type2__c,&quot;Auction House Internal Transit (SG, HK, CN)&quot; ),0.00015,
+IF( ISPICKVAL( Item_Type2__c ,&quot;Non-Fragile&quot;)&amp;&amp; ISPICKVAL( Transit_Type2__c, &quot;Transit (Rest of Asia/Australia)&quot;),0.00035,
+IF( ISPICKVAL( Item_Type2__c ,&quot;Non-Fragile&quot;)&amp;&amp; ISPICKVAL( Transit_Type2__c, &quot;Auction House Transit (Rest of Asia/Australia)&quot;),0.0002625,
+IF( ISPICKVAL( Item_Type2__c ,&quot;Non-Fragile&quot;)&amp;&amp; ISPICKVAL( Transit_Type2__c, &quot;Transit (Rest of World)&quot;),0.00075,
+IF( ISPICKVAL( Item_Type2__c ,&quot;Non-Fragile&quot;)&amp;&amp; ISPICKVAL( Transit_Type2__c, &quot;Auction House Transit (Rest of World)&quot;),0.0005625,
+IF( ISPICKVAL( Item_Type2__c ,&quot;Non-Fragile&quot;)&amp;&amp; ISPICKVAL( Transit_Type2__c, &quot;Storage&quot;),(0.000045),
+IF( ISPICKVAL( Item_Type2__c ,&quot;Non-Fragile&quot;)&amp;&amp; ISPICKVAL( Transit_Type2__c, &quot;Auction House - Storage&quot;),0.000036,0
+)))))))),
+If(DATEVALUE(CreatedDate) &gt;= DATE(2020,12,1) &amp;&amp; DATEVALUE(CreatedDate) &lt;= DATE(2021,9,30),
+
+IF( ISPICKVAL( Item_Type2__c ,&quot;Non-Fragile&quot;)&amp;&amp; ISPICKVAL( Transit_Type2__c,&quot;Internal Transit (SG, HK, CN)&quot; ),0.0002,
+IF( ISPICKVAL( Item_Type2__c ,&quot;Non-Fragile&quot;)&amp;&amp; ISPICKVAL( Transit_Type2__c,&quot;Auction House Internal Transit (SG, HK, CN)&quot; ),0.0001575,
+IF( ISPICKVAL( Item_Type2__c ,&quot;Non-Fragile&quot;)&amp;&amp; ISPICKVAL( Transit_Type2__c, &quot;Transit (Rest of Asia/Australia)&quot;),0.00035,
+IF( ISPICKVAL( Item_Type2__c ,&quot;Non-Fragile&quot;)&amp;&amp; ISPICKVAL( Transit_Type2__c, &quot;Auction House Transit (Rest of Asia/Australia)&quot;),0.0002756,
+IF( ISPICKVAL( Item_Type2__c ,&quot;Non-Fragile&quot;)&amp;&amp; ISPICKVAL( Transit_Type2__c, &quot;Transit (Rest of World)&quot;),0.0007875,
+IF( ISPICKVAL( Item_Type2__c ,&quot;Non-Fragile&quot;)&amp;&amp; ISPICKVAL( Transit_Type2__c, &quot;Auction House Transit (Rest of World)&quot;),0.0005906,
+IF( ISPICKVAL( Item_Type2__c ,&quot;Non-Fragile&quot;)&amp;&amp; ISPICKVAL( Transit_Type2__c, &quot;Storage&quot;),(0.00004725),
+IF( ISPICKVAL( Item_Type2__c ,&quot;Non-Fragile&quot;)&amp;&amp; ISPICKVAL( Transit_Type2__c, &quot;Auction House - Storage&quot;),0.0000378,0
+)))))))),
+If(DATEVALUE(CreatedDate) &gt;= DATE(2021,10,1),
+
+IF( ISPICKVAL( Item_Type2__c ,&quot;Non-Fragile&quot;)&amp;&amp; ISPICKVAL( Transit_Type2__c,&quot;Internal Transit (SG, HK, CN)&quot; ),0.00021,
+IF( ISPICKVAL( Item_Type2__c ,&quot;Non-Fragile&quot;)&amp;&amp; ISPICKVAL( Transit_Type2__c,&quot;Auction House Internal Transit (SG, HK, CN)&quot; ),0.0001654,
+IF( ISPICKVAL( Item_Type2__c ,&quot;Non-Fragile&quot;)&amp;&amp; ISPICKVAL( Transit_Type2__c, &quot;Transit (Rest of Asia/Australia)&quot;),0.0003675,
+IF( ISPICKVAL( Item_Type2__c ,&quot;Non-Fragile&quot;)&amp;&amp; ISPICKVAL( Transit_Type2__c, &quot;Auction House Transit (Rest of Asia/Australia)&quot;),0.0002894,
+IF( ISPICKVAL( Item_Type2__c ,&quot;Non-Fragile&quot;)&amp;&amp; ISPICKVAL( Transit_Type2__c, &quot;Transit (Rest of World)&quot;),0.0008269,
+IF( ISPICKVAL( Item_Type2__c ,&quot;Non-Fragile&quot;)&amp;&amp; ISPICKVAL( Transit_Type2__c, &quot;Auction House Transit (Rest of World)&quot;),0.0006201,
+IF( ISPICKVAL( Item_Type2__c ,&quot;Non-Fragile&quot;)&amp;&amp; ISPICKVAL( Transit_Type2__c, &quot;Storage&quot;),(0.0000496),
+IF( ISPICKVAL( Item_Type2__c ,&quot;Non-Fragile&quot;)&amp;&amp; ISPICKVAL( Transit_Type2__c, &quot;Auction House - Storage&quot;),0.0000397,0
+)))))))),0)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Insured Cost % (NF)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>5</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

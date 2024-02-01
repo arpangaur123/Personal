@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_Of_Crates__c</fullName>
+    <externalId>false</externalId>
+    <label>No Of Crates</label>
+    <summaryForeignKey>Crafting_Details__c.Crating_Instruction__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

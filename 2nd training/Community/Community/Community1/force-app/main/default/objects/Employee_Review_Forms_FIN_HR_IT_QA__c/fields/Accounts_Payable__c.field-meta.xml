@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Accounts_Payable__c</fullName>
+    <description>Ability to manage vendor set-up in the System and process payment in a timely and accurate manner where cashflows permit.
+-Creditors: Credit/COD payment cycle, exchange rate, overseas remittance, Invoice/credit notes
+-Review &amp; Verify invoices to Purchase Order/Delivery Order/Physical Verification/Costing Sheet /Additional Cost Allocation
+-Schedule invoices according to payment terms for the payment processing cycle
+-Resolve invoice discrepancies &amp; issues
+-Error rate to be kept below 1%</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Ability to manage vendor set-up in the System and process payment in a timely and accurate manner where cashflows permit.
+-Creditors: Credit/COD payment cycle, exchange rate, overseas remittance, Invoice/credit notes
+-Review &amp; Verify invoices to Purchase Order/Delivery Order/Physical Verification/Costing Sheet /Additional Cost Allocation
+-Schedule invoices according to payment terms for the payment processing cycle
+-Resolve invoice discrepancies &amp; issues
+-Error rate to be kept below 1%</inlineHelpText>
+    <label>Accounts Payable</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1</fullName>
+                <default>true</default>
+                <label>1</label>
+            </value>
+            <value>
+                <fullName>2</fullName>
+                <default>false</default>
+                <label>2</label>
+            </value>
+            <value>
+                <fullName>3</fullName>
+                <default>false</default>
+                <label>3</label>
+            </value>
+            <value>
+                <fullName>4</fullName>
+                <default>false</default>
+                <label>4</label>
+            </value>
+            <value>
+                <fullName>5</fullName>
+                <default>false</default>
+                <label>5</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HTTR</fullName>
+    <active>true</active>
+    <label>HTTR</label>
+    <picklistValues>
+        <picklist>Cardboard_Type__c</picklist>
+        <values>
+            <fullName>Double Wall 双墙</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Tri Wall 三墙</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Carton_Box_Type__c</picklist>
+        <values>
+            <fullName>Envelope</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Pizza</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shoe</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Foam__c</picklist>
+        <values>
+            <fullName>1 inch PE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2 inch PE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+</RecordType>

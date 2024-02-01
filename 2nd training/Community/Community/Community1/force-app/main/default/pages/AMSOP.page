@@ -1,0 +1,5 @@
+<apex:page standardStylesheets="false" standardController="Opportunity" sidebar="false" showheader="false">
+  
+  <h1><font color="red">Only create new opportunities from existing contact records.</font></h1>
+
+</apex:page>

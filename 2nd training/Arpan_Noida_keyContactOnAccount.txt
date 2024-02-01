@@ -1,0 +1,19 @@
+//We have a field on account named as Key_contact__c which is lookup to Contact and contact has a field(Budget__c)
+//populate the contact on account which has highest budget
+
+Public Static Void populateKeyContactOnAccount(Set<Id> setOfAccountId){
+        List<Account> accountList = new List<Account>();
+        if(!setOfAccountId.isEmpty()){
+            For(Account acc: [SELECT Id , Name,(SELECT Id, Name From Contacts ORDER BY Budget__c desc LIMIT 1) 
+                              From Account 
+                              WHERE Id IN:setOfAccountId]){
+                Account newAccount = new Account();
+                newAccount.Id = acc.Id;
+                newAccount.Key_Contact__c = acc.Contacts[0].id;
+                accountList.add(newAccount);                   
+            }   
+        }
+        if(!accountList.isEmpty()){
+            update accountList;
+        }
+}

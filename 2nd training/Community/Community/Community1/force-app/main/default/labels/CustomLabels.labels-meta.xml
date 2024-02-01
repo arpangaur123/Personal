@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>AccountRecordTypeId_Artmove</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AccountRecordTypeId_Artmove</shortDescription>
+        <value>012200000008bivAAA</value>
+    </labels>
+    <labels>
+        <fullName>AccountRecordTypeId_HTTR</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AccountRecordTypeId_HTTR</shortDescription>
+        <value>01220000000jlCN</value>
+    </labels>
+    <labels>
+        <fullName>Account_Information</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Account Information</shortDescription>
+        <value>Test description</value>
+    </labels>
+    <labels>
+        <fullName>Additional_Notes</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Additional Notes</shortDescription>
+        <value>Additional Notes 
+其他</value>
+    </labels>
+    <labels>
+        <fullName>Artwork_Details</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Artwork Details</shortDescription>
+        <value>Artwork Details</value>
+    </labels>
+    <labels>
+        <fullName>Artwork_Type</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Artwork Type</shortDescription>
+        <value>Artwork Type</value>
+    </labels>
+    <labels>
+        <fullName>BarCodeLimit</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>BarCodeLimit</shortDescription>
+        <value>450</value>
+    </labels>
+    <labels>
+        <fullName>BarCodeLimitForAsset</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>BarCodeLimitForAsset</shortDescription>
+        <value>100</value>
+    </labels>
+    <labels>
+        <fullName>Base_Plate_Length_cm</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Base Plate Length (cm)</shortDescription>
+        <value>Base Plate Length (cm)</value>
+    </labels>
+    <labels>
+        <fullName>Base_Plate_Support</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Base Plate Support</shortDescription>
+        <value>Base Plate Support</value>
+    </labels>
+    <labels>
+        <fullName>Base_Plate_Width_cm</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Base Plate Width (cm)</shortDescription>
+        <value>Base Plate Width (cm)</value>
+    </labels>
+    <labels>
+        <fullName>Breadth</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Breadth</shortDescription>
+        <value>Breadth</value>
+    </labels>
+    <labels>
+        <fullName>CS_Contact_No</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CS Contact No.</shortDescription>
+        <value>CS Contact No.</value>
+    </labels>
+    <labels>
+        <fullName>Carton_Detail</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Carton Detail</shortDescription>
+        <value>Carton Fabrication Summary</value>
+    </labels>
+    <labels>
+        <fullName>Caton_Type</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Caton Type</shortDescription>
+        <value>Carton Type
+度箱紙類型</value>
+    </labels>
+    <labels>
+        <fullName>CheckList_Form</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CheckList Form</shortDescription>
+        <value>Please fill the checklist form</value>
+    </labels>
+    <labels>
+        <fullName>Client</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Client</shortDescription>
+        <value>Client</value>
+    </labels>
+    <labels>
+        <fullName>CollectorRecordTypeId_HTTR</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CollectorRecordTypeId_HTTR</shortDescription>
+        <value>01220000000jl94</value>
+    </labels>
+    <labels>
+        <fullName>CollectorRecordTypeId_Individual</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CollectorRecordTypeId_Individual</shortDescription>
+        <value>01220000000TzOR</value>
+    </labels>
+    <labels>
+        <fullName>CollectorRecordTypeId_PrivateCollectorO</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CollectorRecordTypeId_PrivateCollectorO</shortDescription>
+        <value>01220000000U0b0</value>
+    </labels>
+    <labels>
+        <fullName>ContactRecordTypeId_Artmove</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ContactRecordTypeId_Artmove</shortDescription>
+        <value>012200000008bxw</value>
+    </labels>
+    <labels>
+        <fullName>ContactRecordTypeId_HTTR</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ContactRecordTypeId_HTTR</shortDescription>
+        <value>01220000000jlBZ</value>
+    </labels>
+    <labels>
+        <fullName>Crate_Details_Carpenter</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Crate Details (Carpenter)</shortDescription>
+        <value>Crate Details (Carpenter)</value>
+    </labels>
+    <labels>
+        <fullName>Crate_No</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Crate No.</shortDescription>
+        <value>Crate No.</value>
+    </labels>
+    <labels>
+        <fullName>Crate_Type</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Crate Type</shortDescription>
+        <value>Crate Type</value>
+    </labels>
+    <labels>
+        <fullName>Crate_to_be_Fabricated_by</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Crate to be Fabricated by</shortDescription>
+        <value>Crate to be Fabricated by</value>
+    </labels>
+    <labels>
+        <fullName>Crating_Instructions_ops_crew</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Crating Instructions (ops crew)</shortDescription>
+        <value>Crating Instructions (ops crew)</value>
+    </labels>
+    <labels>
+        <fullName>Crating_Notes</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Crating Notes</shortDescription>
+        <value>Crating Notes</value>
+    </labels>
+    <labels>
+        <fullName>Created_By</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Created By</shortDescription>
+        <value>Created By</value>
+    </labels>
+    <labels>
+        <fullName>Created_Date_and_Time</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Created Date and Time</shortDescription>
+        <value>Created Date and Time</value>
+    </labels>
+    <labels>
+        <fullName>Foam</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Foam</shortDescription>
+        <value>Foam</value>
+    </labels>
+    <labels>
+        <fullName>HTTR_BD_Role_ID</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>HTTR_BD_Role_ID</shortDescription>
+        <value>00E20000001a278</value>
+    </labels>
+    <labels>
+        <fullName>HTTR_CS_Role_ID</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>HTTR_CS_Role_ID</shortDescription>
+        <value>00E20000001a3Nv</value>
+    </labels>
+    <labels>
+        <fullName>HTTR_Registrar_Role_ID</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>HTTR_Registrar_Role_ID</shortDescription>
+        <value>00E20000001a3O0</value>
+    </labels>
+    <labels>
+        <fullName>Height</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Height</shortDescription>
+        <value>Height</value>
+    </labels>
+    <labels>
+        <fullName>Internal_Dims</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Internal Dims</shortDescription>
+        <value>Internal DIMS 紙箱內碼</value>
+    </labels>
+    <labels>
+        <fullName>Job_Reference</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Job Reference of Crate Instruction</shortDescription>
+        <value>Job Reference</value>
+    </labels>
+    <labels>
+        <fullName>Length</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Length</shortDescription>
+        <value>Length</value>
+    </labels>
+    <labels>
+        <fullName>Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Crate Fabrication Instructions Name</shortDescription>
+        <value>Name</value>
+    </labels>
+    <labels>
+        <fullName>Notes</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Notes</shortDescription>
+        <value>Crate Notes</value>
+    </labels>
+    <labels>
+        <fullName>Opening_Side</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Opening Side</shortDescription>
+        <value>Opening Side</value>
+    </labels>
+    <labels>
+        <fullName>Picklist</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Picklist</shortDescription>
+        <value>Yes;No;NA</value>
+    </labels>
+    <labels>
+        <fullName>QrCodeScannerOnArtWork_Site_Link</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>QrCodeScannerOnArtWork Site Page Link referred on QrCodeScanner VF Page</shortDescription>
+        <value>http://stg-helutrans.cs82.force.com/QrCodeScannerOnArtWork</value>
+    </labels>
+    <labels>
+        <fullName>Triangle_Base_Width_cm</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Triangle Base Width (cm)</shortDescription>
+        <value>Triangle Base Width (cm)</value>
+    </labels>
+    <labels>
+        <fullName>Triangle_Supports</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Triangle Supports</shortDescription>
+        <value>Triangle Supports</value>
+    </labels>
+    <labels>
+        <fullName>mangeWelcomeMessage</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>mangeWelcomeMessage</shortDescription>
+        <value>welcome to the salesforce org</value>
+    </labels>
+</CustomLabels>

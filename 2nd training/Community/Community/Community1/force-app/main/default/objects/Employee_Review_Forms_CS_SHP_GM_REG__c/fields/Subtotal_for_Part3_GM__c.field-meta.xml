@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Subtotal_for_Part3_GM__c</fullName>
+    <externalId>false</externalId>
+    <formula>VALUE(Text(Communication_Skills_GM__c))+
+VALUE(Text(Business_MGMT_Brand_Product_awareness__c))+
+VALUE(Text(Data_Management_GM__c))+
+VALUE(Text(Quotation_Management_GM__c))+
+VALUE(Text(Client_Management_GM__c))+
+VALUE(Text(Policy_Procedures_Standard_Compliances__c))+
+VALUE(Text(Team_Management__c))+
+VALUE(Text(Professional_Practice_GM__c))+
+VALUE(Text(Custom_App_Freight_Formalities_GM__c))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Subtotal for Part3 [GM]</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

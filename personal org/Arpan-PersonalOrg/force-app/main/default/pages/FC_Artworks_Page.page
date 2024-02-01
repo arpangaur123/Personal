@@ -1,0 +1,59 @@
+<apex:page standardController="Freight_Calculator__c" lightningStylesheets="true" sidebar="false" showHeader="true" extensions="FC_Artworks_Controller">
+    <style>
+        .pbButton{
+            padding-left: 10% !important;
+        }
+    </style>
+    <apex:form > 
+    <apex:slds />
+    <apex:sectionHeader title="Freight Calculator" subtitle="Add/Modify Artworks" />
+
+    <apex:pageBlock title="Manage Artworks">
+        
+        <apex:pageBlockButtons location="top">
+             <apex:commandButton action="{!newArtwork}" value="New" rerender="main,errId" status="ajaxStatus"/>   
+             <apex:commandButton action="{!saveArtworks}" value="Save" rerender="main,errId" status="ajaxStatus"/>              
+        </apex:pageBlockButtons>
+        
+        <apex:pageBlockButtons location="bottom">       
+                <apex:commandButton action="{!Cancel}" value="Cancel" styleClass="btn"/>
+                <apex:commandButton action="{!GoCratePage}" value="Create Crates" styleClass="btn"/>
+                <apex:commandButton action="{!GoProductsPage}" value="Go To Products" styleClass="btn"/>            
+        </apex:pageBlockButtons>    
+        <apex:pageMessages id="errId"></apex:pageMessages>    
+        <apex:actionStatus id="ajaxStatus" startText="Updating Artworks...">
+        <apex:facet name="stop">
+        <apex:outputPanel id="main">
+            <table>
+
+                <tr>
+                    <apex:repeat value="{!headers}" var="h">
+                        <td class="hdr">{!h}</td>
+                    </apex:repeat>
+                </tr>
+
+                <apex:repeat value="{!Artworks}" var="art">
+                 <tr>
+                  <td><apex:commandLink value="Delete" action="{!deleteArtwork}" rerender="main" status="ajaxStatus">
+                                    <apex:param name="deleteId" value="{!art.Id}" /> 
+                                </apex:commandLink>
+                          </td>       
+                  <td><apex:inputField value="{!art.Type__c}" /></td>
+                  <td><apex:inputField value="{!art.Length__c}" /></td>
+                  <td><apex:inputField value="{!art.Breadth__c}" /></td>
+                  <td><apex:inputField value="{!art.Height__c}" /></td> 
+                  <td><apex:inputField value="{!art.Chargeable_Weight__c}" /></td>  
+                  <td><apex:inputField value="{!art.Declared_Value__c}" /></td>  
+                 </tr>
+                </apex:repeat>
+            </table>
+                     
+        </apex:outputPanel>
+        </apex:facet>
+        </apex:actionStatus>  
+        
+    
+    </apex:pageBlock>
+    </apex:form>
+
+</apex:page>

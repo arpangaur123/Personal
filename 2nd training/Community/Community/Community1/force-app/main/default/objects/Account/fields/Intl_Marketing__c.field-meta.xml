@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Intl_Marketing__c</fullName>
+    <externalId>false</externalId>
+    <label>Intl Marketing</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>KC</fullName>
+                <default>false</default>
+                <label>KC</label>
+            </value>
+            <value>
+                <fullName>AC</fullName>
+                <default>false</default>
+                <label>AC</label>
+            </value>
+            <value>
+                <fullName>SH</fullName>
+                <default>false</default>
+                <label>SH</label>
+            </value>
+            <value>
+                <fullName>AH</fullName>
+                <default>false</default>
+                <label>AH</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

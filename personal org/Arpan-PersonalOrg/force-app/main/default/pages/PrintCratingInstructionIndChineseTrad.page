@@ -1,0 +1,175 @@
+<apex:page standardController="Crating_Instruction__c" extensions="PrintCratingInstructionController" lightningStylesheets="true" showHeader="false" standardstylesheets="false" renderAs="pdf" language="zh_TW" docType="html-5.0" applyBodyTag="false" applyHtmlTag="false" sidebar="false">
+
+    <html>
+        
+        <head>
+            <apex:slds />
+            <style type="text/css">
+                body {
+                font-size:83%;
+                font-family: Arial Unicode MS;
+                /*font-family: Arial, Arial Unicode MS;*/
+                }
+                
+                
+                table {
+                width:100%;
+                table-layout: normal;
+                }
+                
+                                
+                th, td {
+                /*border: 1px solid black;*/
+                overflow: hidden;
+                width: 100px;
+                vertical-align: top;
+                padding: 5px;
+                /*text-align: left;*/
+                }
+                
+                
+                .labelCol{
+                text-align: right;
+                }
+                
+                
+                input{
+                display: none;
+                }
+                
+                .mainTitle{
+                display: none;
+                }
+                
+                .actionColumn{
+                display: none;
+                }
+                
+                .backToTop{
+                display: none;
+                }
+                
+                .fewerMore{
+                display: none;
+                }
+                
+                
+                .listHoverLinks{
+                display: none;
+                }
+                
+                
+                .dataRow{
+                background-color: #FFFFFF; color: blue;
+                }
+                
+                /*h3{
+                display: none;
+                }*/
+                
+                .headerRow{
+                background-color: #FFFFFF;
+                }
+                
+            </style>
+            
+            <style type="text/css" media="print">
+                @page {
+                    @top-center {
+                        content: element(header);
+                    }
+                    
+                    @bottom-right {
+                        content: element(footer);
+                    }
+                    margin-top:300px;
+                    margin-bottom:50px;
+                }
+                div.header {          
+                    font-size: 16px;      
+                    padding: 10px;
+                    position: running(header);
+                }
+                div.footer {
+                    display: block;
+                    padding: 5px;
+                    position: running(footer);
+                }
+                .pagenumber:before {
+                    content: counter(page);
+                }
+                .pagecount:before {
+                    content: counter(pages);
+                }
+            </style>
+            
+        </head>
+        
+        <div class="header">
+            <div>
+                <table border="0">
+                    <tr>
+                        <td align="left"><font style="font-weight:bold;font-family:arial;font-size:x-large">{!$Label.Crate_Details_Carpenter}</font></td>
+                        <td align="right"><apex:image id="theImage" value="{!$Resource.AMLogo}"/></td>
+                    </tr>
+                </table>
+                <br/>
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                        <td align="right">{!$Label.Client}</td>
+                        <td align="left"><apex:outputText value="{!crateIns.Client__c}"/></td>
+                        
+                        <td align="right">{!$Label.Created_Date_and_Time}</td>
+                        <td align="left" style="font-size:14px;">
+                            <apex:outputText value="{0,date,dd-MM-yyyy HH:mm:ss}">
+                                <apex:param value="{!crateIns.CreatedDate}"/>
+                            </apex:outputText>
+                        </td>
+                    </tr>
+                    <br/>
+                    <tr>
+                        <td align="right">{!$Label.Name}</td>
+                        <td align="left"><apex:outputText value="{!crateIns.Name}"/></td>
+                        
+                        <td align="right" style="color:red;">{!$Label.Job_Reference}</td>
+                        <td align="left"><apex:outputText value="{!crateIns.Job_Reference__r.Name}"/></td>
+                    </tr> 
+                    <br/>
+                    <tr>
+                        <td align="right" style="color:red;">{!$Label.Created_By}</td>
+                        <td align="left" style=" text-decoration: none; "><apex:outputField value="{!crateIns.CreatedBy.Name}"/></td>
+                        <td align="right" style="color:red;">{!$Label.Crate_to_be_Fabricated_by}</td>
+                        <td align="left">
+                            <apex:outputText value="{0,date,dd-MM-yyyy}">
+                                <apex:param value="{!crateIns.Required_Date__c}"/>
+                            </apex:outputText>
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td align="right" style="color:red;">{!$Label.CS_Contact_No}</td>
+                        <td align="left" style=" text-decoration: none; "><apex:outputField value="{!crateIns.CS_Contact_No_New__c}"/></td>
+                    </tr>
+                    
+                </table>
+                <!-- <apex:detail relatedList="false"></apex:detail> -->
+            </div>
+        </div>
+        
+        <div class="footer"> 
+            <div>Page <span class="pagenumber"/> of <span class="pagecount"/></div>
+        </div>
+        
+        <div class="content" >
+            <div>   
+                
+                <!-- CHINESE(SIMPLIFIED) LANGUAGE -->
+                <c:CraftingDetailsComponentHKTrad craftingDetailsList="{!craftingDetailsList}" language="zh_TW"/>               
+                
+                          
+            </div>
+        </div>
+    
+    </html>
+
+</apex:page>

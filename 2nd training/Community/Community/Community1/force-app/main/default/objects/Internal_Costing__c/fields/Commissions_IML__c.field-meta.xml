@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Commissions_IML__c</fullName>
+    <description>Commissions accual for International Marketing Representatives</description>
+    <externalId>false</externalId>
+    <formula>IF(
+IML_Commissions_Payable__c = true, 
+0.05 * Quote_Amount__c, 
+0
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Commissions accual for International Marketing Representatives</inlineHelpText>
+    <label>Commissions (IML)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

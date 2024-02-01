@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Dest_THC_2__c</fullName>
+    <externalId>false</externalId>
+    <label>Dest THC 2</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Included</fullName>
+                <default>true</default>
+                <label>Included</label>
+            </value>
+            <value>
+                <fullName>USD 40 / cbm gross</fullName>
+                <default>false</default>
+                <label>USD 40 / cbm gross</label>
+            </value>
+            <value>
+                <fullName>USD 180 / 20&apos; FCL</fullName>
+                <default>false</default>
+                <label>USD 180 / 20&apos; FCL</label>
+            </value>
+            <value>
+                <fullName>USD 250 / 40&apos; FCL</fullName>
+                <default>false</default>
+                <label>USD 250 / 40&apos; FCL</label>
+            </value>
+            <value>
+                <fullName>USD 0.15 / chargeable KG</fullName>
+                <default>false</default>
+                <label>USD 0.15 / chargeable KG</label>
+            </value>
+            <value>
+                <fullName>USD 0.20 / chargeable kg</fullName>
+                <default>false</default>
+                <label>USD 0.20 / chargeable kg</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

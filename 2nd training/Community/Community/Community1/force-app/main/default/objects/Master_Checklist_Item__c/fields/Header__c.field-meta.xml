@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Header__c</fullName>
+    <externalId>false</externalId>
+    <label>Header</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>VISITOR ENTRANCE AREA / LOADING AREA</fullName>
+                <default>false</default>
+                <label>VISITOR ENTRANCE AREA / LOADING AREA</label>
+            </value>
+            <value>
+                <fullName>INTERIOR AREA</fullName>
+                <default>false</default>
+                <label>INTERIOR AREA</label>
+            </value>
+            <value>
+                <fullName>RECEPTION AREA / VIEWING ROOMS</fullName>
+                <default>false</default>
+                <label>RECEPTION AREA / VIEWING ROOMS</label>
+            </value>
+            <value>
+                <fullName>TRANSIT AREA</fullName>
+                <default>false</default>
+                <label>TRANSIT AREA</label>
+            </value>
+            <value>
+                <fullName>RECEIVING/ RELEASING AREA</fullName>
+                <default>false</default>
+                <label>RECEIVING/ RELEASING AREA</label>
+            </value>
+            <value>
+                <fullName>VISUAL CHECK AREA（AREA DESIGNATED FOR THE DAY)</fullName>
+                <default>false</default>
+                <label>VISUAL CHECK AREA（AREA DESIGNATED FOR THE DAY)</label>
+            </value>
+            <value>
+                <fullName>TOOL AREA</fullName>
+                <default>false</default>
+                <label>TOOL AREA</label>
+            </value>
+            <value>
+                <fullName>EQUIPMENT AREA</fullName>
+                <default>false</default>
+                <label>EQUIPMENT AREA</label>
+            </value>
+            <value>
+                <fullName>MATERIAL AREA</fullName>
+                <default>false</default>
+                <label>MATERIAL AREA</label>
+            </value>
+            <value>
+                <fullName>CARTON WORKSHOP AREA</fullName>
+                <default>false</default>
+                <label>CARTON WORKSHOP AREA</label>
+            </value>
+            <value>
+                <fullName>STORAGE AREA</fullName>
+                <default>false</default>
+                <label>STORAGE AREA</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

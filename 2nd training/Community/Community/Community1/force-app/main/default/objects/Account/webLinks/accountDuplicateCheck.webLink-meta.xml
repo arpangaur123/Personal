@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>accountDuplicateCheck</fullName>
+    <availability>online</availability>
+    <displayType>link</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>600</height>
+    <isResizable>true</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>accountDuplicateCheck</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>trigger accountNameCheck on Account(before insert) {
+ 	if (Trigger.new.Name != NULL)
+ 	{
+ 		Account[] accounts = [select id from account where name = :Trigger.new.Name];
+ 		if (Accounts.size() &gt; 0) {
+ 			Trigger.new.Name.addError(&apos;Account name already exists&apos;);
+ 		}
+ 		
+ 	}
+}</url>
+</WebLink>

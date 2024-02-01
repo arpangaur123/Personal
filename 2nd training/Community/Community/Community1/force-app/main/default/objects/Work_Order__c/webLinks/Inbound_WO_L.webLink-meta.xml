@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inbound_WO_L</fullName>
+    <availability>online</availability>
+    <displayType>massActionButton</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Inbound WO(L)</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+    <url>/lightning/o/Work_Order__c/new?navigationLocation=RELATED_LIST&amp;
+backgroundContext=%2Flightning%2Fr%2FOpportunity%2F{!Opportunity.Id}%2Fview&amp;defaultFieldValues=RecordType=Inbound,
+Opportunity__c={!Opportunity.Id},
+Account__c={!Opportunity.Account},
+Job_Number__c={!Opportunity.OB_Job_Number__c}{!Opportunity.IB_Quote_Reference_2__c},
+Delivery_Address__c={!Opportunity.Destination_Address__c}%0D{!Opportunity.Destination_City__c}%0D{!Opportunity.Destination_Country__c}%0D{!Opportunity.Destination_Zip__c},
+Destination_Agent__c={!Opportunity.Destination_Agent__c},
+00N20000003ygtw={!Account.BillingAddress},
+Pack_Date__c={!Opportunity.Pack_Date_1__c},
+Unstuffing_Loading_Date__c={!Opportunity.Loading_Date__c},
+00N20000003ECS7={!Opportunity.Actual_Volume_cuft__c},
+Shipment_Details__c={!Opportunity.Shipment_Details__c},
+Mode__c={!Opportunity.Mode_of_Transport__c},
+ETD__c={!Opportunity.ETD__c},
+ETA__c={!Opportunity.ETA__c},
+Load_Type__c={!Opportunity.Load_Type__c},
+Delivery_Date__c={!Opportunity.Delivery_Date__c},
+00N20000003ygtw={!Opportunity.Cntr__c}</url>
+</WebLink>

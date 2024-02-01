@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Operation_Instruction_Air_New__c</fullName>
+    <defaultValue>&quot;AIR EXPORT PACKING&quot;&amp; BR() &amp;
+&quot; &quot;&amp; BR() &amp;
+&quot;Pack dates :&quot;&amp; BR() &amp;
+&quot; &quot;&amp; BR() &amp;
+&quot;1) Export packing for cuft / kg net - DO NOT EXCEED. Allowance is based on VOLUME / WEIGHT.&quot;&amp; BR() &amp;
+&quot;2) Weigh and block stack the air shipment on the first day. Any excess items should be transferred to the sea shipment with shipper&apos;s approval.&quot;&amp; BR() &amp;
+&quot;3) SEA shipment packing at same time, separate as per shipper&apos;s instructions.&quot;&amp; BR() &amp;
+&quot;4) Crates HAVE been measured on xx. Total : x pcs. Do condition check and TAKE PHOTOS before and after sealing the crates. All exceptions to be noted on packing list.&quot;&amp; BR() &amp;
+&quot;5) Crates - See attached list. Please order crates asap in the morning on the first day. Do condition check and TAKE PHOTOS before / after sealing the crates. All exceptions to be noted on packing list.&quot;&amp; BR() &amp;
+&quot;6) Clothings / shoes / bags – Please ensure sufficient silica gel is placed into the cartons.&quot;&amp; BR() &amp;
+&quot;7) Strictly no foodstuff / alcohol / liquids / batteries permitted.&quot;&amp; BR() &amp;
+&quot;8) Pack and bring back to warehouse for triwall crating, not to exceed cuft gross / kg acw.&quot;&amp; BR() &amp;
+&quot;9) PLEASE COLLECT BACK MCST CHEQUE UPON JOB COMPLETION.&quot;&amp; BR() &amp;
+&quot; &quot;&amp; BR() &amp;
+&quot;WHATSAPP PHOTOS TO 92310037.&quot;&amp; BR() &amp;
+&quot; &quot;&amp; BR() &amp;
+&quot;UPDATE CUSTOMER SERVICE ON THE FINAL VOLUME BEFORE LEAVING THE RESIDENCE.&quot;</defaultValue>
+    <externalId>false</externalId>
+    <label>Operation Instruction Air New</label>
+    <length>32768</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>30</visibleLines>
+</CustomField>

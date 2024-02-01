@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Warehouse_Detail__c</fullName>
+    <externalId>false</externalId>
+    <label>Warehouse Detail</label>
+    <referenceTo>Warehouse_Detail__c</referenceTo>
+    <relationshipLabel>Warehouse Daily CheckLists</relationshipLabel>
+    <relationshipName>Warehouse_Daily_CheckLists</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

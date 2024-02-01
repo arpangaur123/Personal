@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AM_SG</fullName>
+    <active>true</active>
+    <description>For Singapore office</description>
+    <label>AM SG</label>
+    <picklistValues>
+        <picklist>Agent_Name__c</picklist>
+        <values>
+            <fullName>Helu-Trans %28S%29 Pte Ltd%2C UEN No%2E 197902286N %28HT%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Helutrans Artmove %28S%29 Pte Ltd%2C UEN No%2E 200916870M %28HTAM%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>BG_Required__c</picklist>
+        <values>
+            <fullName>100%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>30%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>50%25</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>BNI_BG_Required__c</picklist>
+        <values>
+            <fullName>100%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>30%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>50%25</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>BNI_Customs_Deposit_From__c</picklist>
+        <values>
+            <fullName>HT%27s BG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other%27s BG</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Cargo_Receipt_Unstuffing_Location__c</picklist>
+        <values>
+            <fullName>FASS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HTAM</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Cargo_Release_Location__c</picklist>
+        <values>
+            <fullName>Changi FTZ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>T1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>T2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>T3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>T4</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Customs_Deposits_from__c</picklist>
+        <values>
+            <fullName>HT%27s BG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other%27s BG</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Declaration__c</picklist>
+        <values>
+            <fullName>Every Single Item</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General Description</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Documents_Attached__c</picklist>
+        <values>
+            <fullName>Arrival Notice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Calculation List</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INVOICE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MAWB%2FHAWB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OBL%2FHBL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PACKING LIST</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FCL_LCL__c</picklist>
+        <values>
+            <fullName>FCL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LCL</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Freight_Charges__c</picklist>
+        <values>
+            <fullName>Collect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prepaid</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>GST_to_be_deducted_from__c</picklist>
+        <values>
+            <fullName>Helutrans %28declaring agent%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Importer</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Gross_Weight_Metric__c</picklist>
+        <values>
+            <fullName>KGS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MTK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TNE</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Permit_Checked_By__c</picklist>
+        <values>
+            <fullName>Ben Lim</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kevin Chew</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zolene Chui</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Permit__c</picklist>
+        <values>
+            <fullName>Ben Lim</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kevin Chew</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zolene Chui</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Re_import__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sea_FCLPick__c</picklist>
+        <values>
+            <fullName>1 X 20%27 FLAT RACK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1 X 20%27 GP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1 X 20%27 OPEN TOP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1 X 20%27 REEFER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1 X 40%27 FLAT RACK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1 X 40%27 GP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1 X 40%27 HC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1 X 40%27 HC REEFER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1 X 40%27 OPEN TOP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1 X 40%27 REEFER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2 X 40%27 GP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2 X 40%27 HC</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Terminal__c</picklist>
+        <values>
+            <fullName>DNATA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KZ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Others</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PPZ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SATS</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_of_Permit__c</picklist>
+        <values>
+            <fullName>ATA Carnet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DNG - Duty and GST %28Dutiable Goods%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GST Relief %28Embassy%2FPersonal Effects%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ID - Duty %26 GST %28Wine%2FChampagne%2FLiquors%2FDutiable Goods%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>II - APS %28Temporary Import%2C Fresh II%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>II - TCE %28Temporary Import for exhibition%2Fauctions without sales%2C MUSEUM%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>II - TCI %28Temporary Export%2FRe-imported goods%2C Offset Fresh OO%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>II - TCO %28Temporary Import for other purposes%2C MUSEUM%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>II - TCS %28Temporary Import for exhibition%2Fauctions with sales%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IM - Storage in same FTZ per import</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IN-Storage in different FTZ from import FTZ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IR - Re-Export Permit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Import under LU %28Not Applicable%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Permanent</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>RM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transhipment %28Not Applicable%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

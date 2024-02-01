@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NewCN_L</fullName>
+    <availability>online</availability>
+    <displayType>massActionButton</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>New(L)-cn</masterLabel>
+    <openType>sidebar</openType>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+    <url>https://emea.salesforce.com/a0x/e?CF00N20000003C0VP=AMIM121056GZHT&amp;CF00N20000003C0VP_lkid=a0t20000002tAR7&amp;retURL=a0t20000002tAR7&amp;00N20000003C2Ev=125-83535772&amp;00N20000003C2FZ=Photographs+Installation+Sculputure&amp;00N20000003C2Eq=BA038&amp;00N20000003a2wF=&amp;00N20000003C2Fj=7&amp;00N20000003ZrCH=2012-8-23&amp;00N20000003a2y6=96+x+50+x+50%2F1%0D%0A99+x+76+x+62%2F1%0D%0A144+x+100+x+63%2F1%0D%0A160+x+100+x+63%2F1%0D%0A145+x+100+x+63%2F3&amp;RecordType=01220000000JOdx</url>
+</WebLink>

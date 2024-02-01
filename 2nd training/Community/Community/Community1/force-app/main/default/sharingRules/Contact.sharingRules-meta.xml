@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>All_HT_Staff</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>All HT Staff</label>
+        <sharedTo>
+            <role>Shared_SF_Account</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>All HT Staff Basic</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>All_HT_Staff_Acct</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>All HT Staff Acct</label>
+        <sharedTo>
+            <role>Accounts</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>All HT Staff Basic</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>All_HT_Staff_SG</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>All HT Staff SG</label>
+        <sharedTo>
+            <role>AMSG_Shared_Account</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>All HT Staff Basic</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingOwnerRules>
+        <fullName>Artmove_Division</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Artmove Division</label>
+        <sharedTo>
+            <group>Artmove_All</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>Artmove_All</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>HHGS</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>HHGS</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>HHG_HOD</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>HHG_HOD</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>HHGSDivision</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>HHGS Division</label>
+        <sharedTo>
+            <group>HHGSDivision</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>HHGSDivision</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>HTTR_BD</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>HTTR BD</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>HTTR_BD</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>HTTR_BD</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Comment_IT_Security_Update__c</fullName>
+    <description>Supervisor Comment IT Security Update.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Supervisor Comment IT Security Update.</inlineHelpText>
+    <label>Comment IT Security Update</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

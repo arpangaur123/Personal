@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Days_in_Storage__c</fullName>
+    <description>IF(  {!Closed__c} , ROUND(  {!DateOut__c} -  {!DateIn__c} , 0) , ROUND(NOW() -  {!DateIn__c}  ,0) )</description>
+    <externalId>false</externalId>
+    <formula>IF(  Closed__c , Lease_Expiry_Date__c -  Lease_Start_Date__c  , TODAY() -  Lease_Start_Date__c )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Days in Storage</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

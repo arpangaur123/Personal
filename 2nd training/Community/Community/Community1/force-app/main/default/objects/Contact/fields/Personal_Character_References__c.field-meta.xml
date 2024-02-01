@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Personal_Character_References__c</fullName>
+    <defaultValue>&quot;Name&quot;&amp;BR()&amp; 
+&quot;Address&quot;&amp;BR()&amp; 
+&quot;Occupation&quot;&amp;BR()&amp; 
+&quot;No. of years known&quot;&amp;BR()&amp; 
+&quot;Contact No. (Off)&quot;&amp;BR()&amp; 
+&quot;Contact No. (HP)&quot;&amp;BR()&amp; 
+&quot;Email Address&quot;&amp;BR()&amp;BR()&amp; 
+&quot;Name&quot;&amp;BR()&amp; 
+&quot;Address&quot;&amp;BR()&amp; 
+&quot;Occupation&quot;&amp;BR()&amp; 
+&quot;No. of years known&quot;&amp;BR()&amp; 
+&quot;Contact No. (Off)&quot;&amp;BR()&amp; 
+&quot;Contact No. (HP)&quot;&amp;BR()&amp; 
+&quot;Email Address&quot;</defaultValue>
+    <externalId>false</externalId>
+    <label>Personal Character References</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

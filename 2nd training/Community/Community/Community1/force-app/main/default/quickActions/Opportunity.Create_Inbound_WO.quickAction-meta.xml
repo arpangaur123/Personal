@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldOverrides>
+        <field>Delivery_Address__c</field>
+        <formula>IF(ISPICKVAL(Opportunity.StageName , &quot;Closed Won&quot;) , Opportunity.Destination_Address__c , NULL)</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Est_Volume_Sea__c</field>
+        <formula>IF(ISPICKVAL(Opportunity.StageName , &quot;Closed Won&quot;) , Opportunity.Estimated_Volume__c, NULL)</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Flag__c</field>
+        <formula>IF(ISPICKVAL(Opportunity.StageName , &quot;Closed Won&quot;) , &quot;False&quot;, &quot;true&quot;)</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Job_Number__c</field>
+        <formula>IF(ISPICKVAL(Opportunity.StageName , &quot;Closed Won&quot;) , Opportunity.OB_Job_Number__c, NULL)</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Mode__c</field>
+        <formula>IF(ISPICKVAL(Opportunity.StageName , &quot;Closed Won&quot;) , TEXT(Opportunity.Mode_of_Transport__c), NULL)</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Opportunity__c</field>
+        <formula>IF(ISPICKVAL(Opportunity.StageName , &quot;Closed Won&quot;) ,  Opportunity.Id, NULL)</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Pack_Date__c</field>
+        <formula>IF(ISPICKVAL(Opportunity.StageName , &quot;Closed Won&quot;) , Opportunity.Pack_Date_1__c, NULL)</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Pack_Type__c</field>
+        <formula>IF(ISPICKVAL(Opportunity.StageName , &quot;Closed Won&quot;) , TEXT(Opportunity.Pack_Type__c), NULL)</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Packing_Address__c</field>
+        <formula>IF(ISPICKVAL(Opportunity.StageName , &quot;Closed Won&quot;) , Opportunity.Survey_Address__c, NULL)</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Sales_Remarks__c</field>
+        <formula>IF(ISPICKVAL(Opportunity.StageName , &quot;Closed Won&quot;) , Opportunity.Sales_Person_Remark__c, NULL)</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Shipment_Details__c</field>
+        <formula>IF(ISPICKVAL(Opportunity.StageName , &quot;Closed Won&quot;) , Text(Opportunity.Shipment_Details__c), NULL)</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Shippers_Name__c</field>
+        <formula>IF(ISPICKVAL(Opportunity.StageName , &quot;Closed Won&quot;) , Opportunity.Contact_Person__c, NULL)</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Telephone__c</field>
+        <formula>IF(ISPICKVAL(Opportunity.StageName , &quot;Closed Won&quot;) , Opportunity.Contact_Person_TEL__c, NULL)</formula>
+    </fieldOverrides>
+    <label>Create Inbound WO</label>
+    <optionsCreateFeedItem>true</optionsCreateFeedItem>
+    <quickActionLayout>
+        <layoutSectionStyle>TwoColumnsLeftToRight</layoutSectionStyle>
+        <quickActionLayoutColumns>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Job_Number__c</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Opportunity__c</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Job_Date__c</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Job_Type__c</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>ETD__c</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+        </quickActionLayoutColumns>
+        <quickActionLayoutColumns>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Telephone__c</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Time__c</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Container_No__c</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Operation_Instruction__c</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+        </quickActionLayoutColumns>
+    </quickActionLayout>
+    <targetObject>Work_Order__c</targetObject>
+    <targetParentField>Opportunity__c</targetParentField>
+    <targetRecordType>Work_Order__c.Inbound</targetRecordType>
+    <type>Create</type>
+</QuickAction>

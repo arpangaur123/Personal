@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_L</fullName>
+    <availability>online</availability>
+    <displayType>massActionButton</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>New(L)</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+    <url>/lightning/o/Transport_Sea_Instruction__c/new?navigationLocation=RELATED_LIST&amp;
+backgroundContext=%2Flightning%2Fr%2FJob_Reference__c%2F{!Job_Reference__c.Id}%2Fview&amp;defaultFieldValues=Job_Reference__c={!Job_Reference__c.Id},
+Vessel_Voyage__c={!Job_Reference__c.Vessel_Voyage__c},
+Remarks__c={!Job_Reference__c.Remarks__c},
+Total_Outer_Pack__c={!Job_Reference__c.No_of_Packages_Crates__c},
+Measurement__c={!Job_Reference__c.Packed_Dimensions_cm__c},
+Delivery_To__c={!Job_Reference__c.AMJR_Delivery_Details__c},
+OBL__c={!Job_Reference__c.OBL__c},
+ETA__c={!Job_Reference__c.ETA__c},
+ETD__c={!Job_Reference__c.ETD__c},
+Port_of_Discharge__c={!Job_Reference__c.Destination__c},
+Weight_Measurement__c={!Job_Reference__c.Chargeable_Weight_kg__c}
+
+
+
+/*
+old URL
+
+/a15/e?CF00N20000003C0aL={!Job_Reference__c.Name}&amp;CF00N20000003C0aL_lkid={!Job_Reference__c.Id}&amp;00N20000003a2Fa={!Job_Reference__c.Vessel_Voyage__c}&amp;00N20000003C2OM={!Job_Reference__c.Remarks__c}&amp;00N20000003C2OC={!Job_Reference__c.No_of_Packages_Crates__c}&amp;00N20000003aBGS={!Job_Reference__c.Packed_Dimensions_cm__c}&amp;00N20000003C2NJ={!Job_Reference__c.AMJR_Delivery_Details__c}&amp;00N20000003C2NT={!Job_Reference__c.OBL__c}&amp;00N20000003C2Nd={!Job_Reference__c.ETA__c}&amp;00N20000003aBJ2={!Job_Reference__c.ETD__c}&amp;00N20000003C2O7={!Job_Reference__c.Destination__c}&amp;00N20000003C2OH={!Job_Reference__c.Chargeable_Weight_kg__c}&amp;retURL={!Job_Reference__c.Id}
+
+*/</url>
+</WebLink>

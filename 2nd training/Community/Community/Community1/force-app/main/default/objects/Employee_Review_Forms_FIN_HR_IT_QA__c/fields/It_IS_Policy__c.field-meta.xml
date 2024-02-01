@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>It_IS_Policy__c</fullName>
+    <description>-Review and update IT policies, procedures and standards documentation.
+-Evaluate and provide recommendation for IT strategies, policies, and procedures
+-Knowledge and compliance of local Audit guidelines for IT
+-Documenting processes and performing routine diagnostic tests
+ -Organize and file documentation pertaining to warranties and instructional guides for computer hardware
+ - Assist management in creating training materials pertaining to computer troubleshooting and usage
+-Assist in regulatory compliance audit and ensure appropriate closure</description>
+    <externalId>false</externalId>
+    <inlineHelpText>-Review &amp; update IT policies, procedures and standard documentation.
+-Evaluate &amp; provide recommendation for IT strategies, policies, and procedure
+-Knowledge &amp; compliance of local audit guidelines for IT
+-Documenting processes and performing routine diagnostic tests  
+-Organize &amp; file documentation pertaining to warranties and instructional guides for computer hardware 
+- Assist management in creating training materials pertaining to computer troubleshooting and usage
+-Assist in regulatory comply</inlineHelpText>
+    <label>IT &amp; IS Policy</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1</fullName>
+                <default>true</default>
+                <label>1</label>
+            </value>
+            <value>
+                <fullName>2</fullName>
+                <default>false</default>
+                <label>2</label>
+            </value>
+            <value>
+                <fullName>3</fullName>
+                <default>false</default>
+                <label>3</label>
+            </value>
+            <value>
+                <fullName>4</fullName>
+                <default>false</default>
+                <label>4</label>
+            </value>
+            <value>
+                <fullName>5</fullName>
+                <default>false</default>
+                <label>5</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

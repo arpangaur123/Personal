@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Comment_Customer_Service_IT__c</fullName>
+    <description>Supervisor Comment Customer Service [IT]</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Supervisor Comment Customer Service [IT].</inlineHelpText>
+    <label>Comment Customer Service [IT]</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

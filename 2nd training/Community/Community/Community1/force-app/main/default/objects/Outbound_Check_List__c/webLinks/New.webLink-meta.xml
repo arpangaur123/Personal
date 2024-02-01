@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New</fullName>
+    <availability>online</availability>
+    <displayType>massActionButton</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>New</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+    <url>/a0x/e?CF00N20000003C0VP={!Job_Reference__c.Name}&amp;CF00N20000003C0VP_lkid={!Job_Reference__c.Id}&amp;retURL={!Job_Reference__c.Id}&amp;00N20000003C2Ev={!Job_Reference__c.MAWB__c}{!Job_Reference__c.OBL__c}&amp;00N20000003C2FZ={!Job_Reference__c.Description_of_Goods__c}&amp;00N20000003C2Eq={!Job_Reference__c.Flight_Number__c}&amp;00N20000003a2wF={!Job_Reference__c.Vessel_Voyage__c}&amp;00N20000003C2Fj={!Job_Reference__c.No_of_Packages_Crates__c}&amp;00N20000003ZrCH={!Job_Reference__c.ETD__c}&amp;00N20000003a2y6={!Job_Reference__c.Packed_Dimensions_cm__c}&amp;RecordType=01220000000JOdi</url>
+</WebLink>

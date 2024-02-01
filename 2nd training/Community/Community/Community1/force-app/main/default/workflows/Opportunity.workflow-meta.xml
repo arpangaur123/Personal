@@ -1,0 +1,2060 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>FCL_Freight_Reminder_14Days</fullName>
+        <description>FCL Freight Reminder - 14Days before Pack</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>joy@helutrans.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>randychiu@helutrans.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>Internalmailtemplates/REMINDER_to_book_freight</template>
+    </alerts>
+    <alerts>
+        <fullName>FCL_Freight_Reminder_3Days_before_Pack</fullName>
+        <description>FCL Freight Reminder - 3Days before Pack</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>joy@helutrans.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>randychiu@helutrans.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>Internalmailtemplates/REMINDER_to_book_freight</template>
+    </alerts>
+    <alerts>
+        <fullName>FCL_Freight_Reminder_7Days_before_Pack</fullName>
+        <description>FCL Freight Reminder - 7 Days before Pack</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>joy@helutrans.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>randychiu@helutrans.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>Internalmailtemplates/REMINDER_to_book_freight</template>
+    </alerts>
+    <alerts>
+        <fullName>IBBilling7daysNotBilled</fullName>
+        <ccEmails>caroline@helutrans.com</ccEmails>
+        <ccEmails>waieng@helutrans.com</ccEmails>
+        <ccEmails>mala@helutrans.com</ccEmails>
+        <description>IB Billing 7 days Not Billed</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>Internalmailtemplates/DS7DaysDeliveryBillNotification</template>
+    </alerts>
+    <alerts>
+        <fullName>IBBillingReminder</fullName>
+        <ccEmails>mala@helutrans.com</ccEmails>
+        <description>IB Billing Reminder</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>Internalmailtemplates/IB_Billing_Reminder</template>
+    </alerts>
+    <alerts>
+        <fullName>IBSITStatusAlert</fullName>
+        <ccEmails>mala@helutrans.com</ccEmails>
+        <description>IB SIT Status Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>Internalmailtemplates/IB_SIT</template>
+    </alerts>
+    <alerts>
+        <fullName>IB_Storage_Billing_Alert</fullName>
+        <description>IB Storage Billing Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>Compliance/Storage_Billing_Reminder</template>
+    </alerts>
+    <alerts>
+        <fullName>Inbound_Post_Move_Quality_Audit_Reminder</fullName>
+        <description>Inbound Post-Move Quality Audit Reminder</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>mala@helutrans.com.sg</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>Internalmailtemplates/Inbound_Post_Move_Quality_Audit_Reminder</template>
+    </alerts>
+    <alerts>
+        <fullName>Insurance_Reminder_1_Days_before_Pack</fullName>
+        <description>Insurance Reminder - 1 Days before Pack</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>joy@helutrans.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>randychiu@helutrans.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>Internalmailtemplates/REMINDER_to_cut_insurance</template>
+    </alerts>
+    <alerts>
+        <fullName>Insurance_Reminder_7_Days_before_Pack</fullName>
+        <description>Insurance Reminder - 7 Days before Pack</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>joy@helutrans.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>randychiu@helutrans.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>Internalmailtemplates/REMINDER_to_cut_insurance</template>
+    </alerts>
+    <alerts>
+        <fullName>LCL_Freight_Reminder_14Days_after_Pack</fullName>
+        <description>LCL Freight Reminder - 14Days after Pack</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>joy@helutrans.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>randychiu@helutrans.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>Internalmailtemplates/REMINDER_to_book_freight</template>
+    </alerts>
+    <alerts>
+        <fullName>LCL_Freight_Reminder_3Days_after_Pack</fullName>
+        <description>LCL Freight Reminder - 3Days after Pack</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>joy@helutrans.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>randychiu@helutrans.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>Internalmailtemplates/REMINDER_to_book_freight</template>
+    </alerts>
+    <alerts>
+        <fullName>LCL_Freight_Reminder_7Days_after_Pack</fullName>
+        <description>LCL Freight Reminder - 7Days after Pack</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>joy@helutrans.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>randychiu@helutrans.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>Internalmailtemplates/REMINDER_to_book_freight</template>
+    </alerts>
+    <alerts>
+        <fullName>NotifyAccountsDeptJobNumberandBillingParty</fullName>
+        <ccEmails>allychin@helutrans.com</ccEmails>
+        <ccEmails>waieng@helutrans.com</ccEmails>
+        <ccEmails>mala@helutrans.com</ccEmails>
+        <ccEmails>matthewchow@helutrans.com</ccEmails>
+        <description>Notify Accounts Dept Job Number and Billing Party</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>HHG_Inbound</recipient>
+            <type>role</type>
+        </recipients>
+        <recipients>
+            <recipient>laurenchong@helutrans.com.sg</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>lizbeth@helutrans.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>Internalmailtemplates/Job_Billing_name</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_Accounts_Dept_of_OB_Job_Number_Change_Testing</fullName>
+        <ccEmails>allychin@helutrans.com</ccEmails>
+        <description>Notify Accounts Dept of OB Job Number Change (Testing)</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>estherchee@helutrans.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>waieng@helutrans.com.sg</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>Internalmailtemplates/Notify_Accounts_Dept_of_OB_Job_No_Change</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_Accounts_Dept_of_OB_Job_Number_and_Billing_Party</fullName>
+        <ccEmails>allychin@helutrans.com</ccEmails>
+        <description>Notify Accounts Dept of OB Job Number and Billing Party</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>estherchee@helutrans.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>josephinelee@helutrans.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>laurenchong@helutrans.com.sg</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>mala@helutrans.com.sg</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>myrasevilla@helutrans.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>waieng@helutrans.com.sg</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>Internalmailtemplates/HHGJob_NoNotIB</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_Accounts_Dept_of_OB_Job_Number_and_Billing_Party_Testing</fullName>
+        <ccEmails>allychin@helutrans.com</ccEmails>
+        <description>Notify Accounts Dept of OB Job Number and Billing Party (Testing)</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>estherchee@helutrans.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>laurenchong@helutrans.com.sg</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>lindayap@helutrans.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>myrasevilla@helutrans.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>waieng@helutrans.com.sg</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>Internalmailtemplates/HHGJob_NoNotIB</template>
+    </alerts>
+    <alerts>
+        <fullName>Outbound_Mid_Move_Quality_Audit_Reminder</fullName>
+        <description>Outbound Mid-Move Quality Audit Reminder</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>mala@helutrans.com.sg</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>Internalmailtemplates/Outbound_Mid_Move_Quality_Audit_Reminder</template>
+    </alerts>
+    <alerts>
+        <fullName>Outbound_Post_Move_Quality_Audit_Reminder</fullName>
+        <description>Outbound Post-Move Quality Audit Reminder</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>mala@helutrans.com.sg</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>Internalmailtemplates/Outbound_Post_Move_Quality_Audit_Reminder</template>
+    </alerts>
+    <alerts>
+        <fullName>Outbound_Pre_Move_Quality_Audit_Reminder</fullName>
+        <description>Outbound Pre-Move Quality Audit Reminder</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>mala@helutrans.com.sg</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>Internalmailtemplates/Outbound_Pre_Move_Quality_Audit_Reminder</template>
+    </alerts>
+    <alerts>
+        <fullName>Quote_Reminder</fullName>
+        <description>Quote Reminder</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>laurenchong@helutrans.com.sg</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>Compliance/Send_Quote_Reminder</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_Quote_Final_Reminder</fullName>
+        <description>Send Quote Final Reminder</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>laurenchong@helutrans.com.sg</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>Compliance/Send_Quote_Final_Reminder</template>
+    </alerts>
+    <alerts>
+        <fullName>TEST_Opp_no_Attach_but_Job_Ref_Created</fullName>
+        <description>TEST - Opp no Attach but Job Ref Created</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>mc@ht.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>Internalmailtemplates/Opp_w_o_Attachment</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>AM_Assign_ToB</fullName>
+        <field>SAMAssign__c</field>
+        <formula>Case(Person_In_Charge__c,
+&quot;IN&quot;, &quot;IN&quot;,
+&quot;KC&quot;, &quot;KC&quot;,
+&quot;KQ&quot;, &quot;KQ&quot;,
+&quot;KT&quot;, &quot;KT&quot;,
+&quot;MC&quot;, &quot;MC&quot;,
+&quot;MM&quot;, &quot;MM&quot;,
+&quot;XW&quot;, &quot;XW&quot;,
+&quot;SL&quot;,&quot;SL&quot;,
+&quot;EN&quot;,&quot;EN&quot;,
+&quot;WL&quot;,&quot;WL&quot;,
+&quot;SY&quot;,&quot;SY&quot;,
+&quot;JC&quot;,&quot;JC&quot;,
+&quot;ML&quot;,&quot;ML&quot;,
+&quot;TT&quot;,&quot;TT&quot;,
+&quot;JL&quot;,&quot;JL&quot;,
+&quot;MY&quot;,&quot;MY&quot;,
+&quot;LJ&quot;,&quot;LJ&quot;,
+&quot;ET&quot;,&quot;ET&quot;,
+&quot;LY&quot;,&quot;LY&quot;,
+&quot;IJ&quot;,&quot;IJ&quot;,
+&quot;XT&quot;,&quot;XT&quot;,
+&quot;NW&quot;,&quot;NW&quot;,
+&quot;RY&quot;,&quot;RY&quot;,
+&quot;KK&quot;,&quot;KK&quot;,
+&quot;BC&quot;,&quot;BC&quot;,
+&quot;JH&quot;,&quot;JH&quot;,
+&quot;JZ&quot;,&quot;JZ&quot;,
+&quot;AY&quot;,&quot;AY&quot;,
+&quot;SY&quot;,&quot;SY&quot;,
+&quot;KF&quot;,&quot;KF&quot;,
+&quot;YS&quot;,&quot;YS&quot;,
+&quot;TF&quot;,&quot;TF&quot;,
+&quot;EG&quot;,&quot;EG&quot;,
+&quot;IC&quot;,&quot;IC&quot;,
+&quot;JN&quot;,&quot;JN&quot;,
+&quot;PK&quot;,&quot;PK&quot;,
+&quot;ST&quot;,&quot;ST&quot;,
+&quot;CY&quot;,&quot;CY&quot;,
+&quot;EC&quot;,&quot;EC&quot;,
+&quot;EK&quot;,&quot;EK&quot;,
+&quot;NK&quot;,&quot;NK&quot;,
+&quot;CC&quot;,&quot;CC&quot;,
+&quot;LH&quot;,&quot;LH&quot;,
+&quot;NX&quot;,&quot;NX&quot;,
+&quot;LS&quot;,&quot;LS&quot;,
+&quot;CC&quot;,&quot;CC&quot;,
+&quot;MF&quot;,&quot;MF&quot;,
+&quot;TM&quot;,&quot;TM&quot;,
+&quot;YK&quot;,&quot;YK&quot;,
+&quot;TJ&quot;,&quot;TJ&quot;,
+&quot;HL&quot;,&quot;HL&quot;,
+&quot;CF&quot;,&quot;CF&quot;,
+&quot;LC&quot;,&quot;LC&quot;,
+&quot;EF&quot;,&quot;EF&quot;,
+&quot;TC&quot;,&quot;TC&quot;,
+&quot;RC&quot;,&quot;RC&quot;,
+&quot;RY&quot;,&quot;RY&quot;,
+&quot;MN&quot;,&quot;MN&quot;,
+&quot;QZ&quot;,&quot;QZ&quot;,
+&quot;DC&quot;,&quot;DC&quot;,
+&quot;NZ&quot;,&quot;NZ&quot;,
+&quot;EH&quot;,&quot;EH&quot;,
+&quot;NH&quot;,&quot;NH&quot;,
+&quot;JY&quot;,&quot;JY&quot;,
+&quot;YC&quot;,&quot;YC&quot;,
+&quot;SG&quot;,&quot;SG&quot;,
+&quot;EY&quot;,&quot;EY&quot;,
+&quot;EL&quot;,&quot;EL&quot;,
+&quot;NY&quot;,&quot;NY&quot;,
+&quot;HH&quot;,&quot;HH&quot;,
+&quot;SW&quot;,&quot;SW&quot;,
+&quot;LR&quot;,&quot;LR&quot;,
+&quot;GZ&quot;,&quot;GZ&quot;,
+&quot;SN&quot;,&quot;SN&quot;,
+&quot;MJ&quot;,&quot;MJ&quot;,
+&quot;JW&quot;,&quot;JW&quot;,
+&quot;NC&quot;,&quot;NC&quot;,
+&quot;DH&quot;,&quot;DH&quot;,
+&quot;LA&quot;,&quot;LA&quot;,
+&quot;CW&quot;,&quot;CW&quot;,
+&quot;AG&quot;,&quot;AG&quot;,
+&quot;CN&quot;,&quot;CN&quot;,
+&quot;FC&quot;,&quot;FC&quot;,
+&quot;PW&quot;,&quot;PW&quot;,
+&quot;EV&quot;,&quot;EV&quot;,
+&quot;BW&quot;,&quot;BW&quot;,
+&quot;YL&quot;,&quot;YL&quot;,
+&quot;SQ&quot;,&quot;SQ&quot;,
+&quot;LE&quot;,&quot;LE&quot;,
+&quot;JF&quot;,&quot;JF&quot;,
+&quot;VN&quot;,&quot;VN&quot;,
+&quot;LD&quot;,&quot;LD&quot;,
+&quot;TL&quot;,&quot;TL&quot;,
+&quot;HD&quot;,&quot;HD&quot;,
+&quot;EZ&quot;,&quot;EZ&quot;,
+&quot;SS&quot;,&quot;SS&quot;,
+&quot;IL&quot;,&quot;IL&quot;,
+&quot;RN&quot;,&quot;RN&quot;,
+&quot;AT&quot;,&quot;AT&quot;,
+&quot;FN&quot;,&quot;FN&quot;,
+&quot;KY&quot;,&quot;KY&quot;,
+&quot;AD&quot;,&quot;AD&quot;,
+&quot;CL&quot;,&quot;CL&quot;,
+&quot;WN&quot;,&quot;WN&quot;,
+&quot;AN&quot;,&quot;AN&quot;,
+NULL)</formula>
+        <name>AM Job Ref populate by CS in charge</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>AM_tariffB</fullName>
+        <field>Quote_Number__c</field>
+        <formula>&quot;Tariff&quot;</formula>
+        <name>AM tariffB</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>AutoPopQuoteNo2</fullName>
+        <field>Quote_Number__c</field>
+        <formula>HHGQuoteNoF__c</formula>
+        <name>AutoPopQuoteNo2</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>ChkApprovalOk</fullName>
+        <description>check the Approval checkbox after this opportunity is approved.</description>
+        <field>Approved__c</field>
+        <literalValue>1</literalValue>
+        <name>ChkApprovalOk</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>DeliveryDatechangeStage</fullName>
+        <field>StageName</field>
+        <literalValue>IB Billing</literalValue>
+        <name>Delivery Date change Stage</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Field_Update_to_Existing_Account</fullName>
+        <field>LeadSource</field>
+        <literalValue>Existing Account</literalValue>
+        <name>Field Update to Existing Account</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Field_Update_to_Key</fullName>
+        <field>LeadSource</field>
+        <literalValue>Key Account</literalValue>
+        <name>Field Update to Key</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Field_Update_to_New_Account</fullName>
+        <field>LeadSource</field>
+        <literalValue>New Account</literalValue>
+        <name>Field Update to New Account</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Field_Update_to_Target_Account</fullName>
+        <field>LeadSource</field>
+        <literalValue>Target Account</literalValue>
+        <name>Field Update to Target Account</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>For_AM_Job_Typeb</fullName>
+        <description>Update the SAMJobType__c with the correct AM Job Type acronym</description>
+        <field>SAMJobType__c</field>
+        <formula>Case(AM_Job_Type__c,
+&quot;AC - Crating Services&quot;, &quot;AC&quot;,
+&quot;AR - ArtSpace&quot;, &quot;AR&quot;,
+&quot;AS - Airport Supervision&quot;, &quot;AS&quot;,
+&quot;AX - Anything &amp; Everything&quot;, &quot;AX&quot;,
+&quot;DS - Destination Services&quot;, &quot;DS&quot;,
+&quot;IM - International Move&quot;, &quot;IM&quot;,
+&quot;IT - Third Party Management&quot;, &quot;IT&quot;,
+&quot;LS - Local Services&quot;, &quot;LS&quot;,
+&quot;MP - Manpower&quot;, &quot;MP&quot;,
+&quot;OS - Origin Services&quot;, &quot;OS&quot;,
+&quot;PC - Carton Box&quot;, &quot;PC&quot;,
+&quot;PD - Permit Declaration&quot;, &quot;PD&quot;,
+&quot;PR - Project&quot;, &quot;PR&quot;,
+&quot;ST - Storage&quot;, &quot;ST&quot;,
+&quot;AX&quot;)</formula>
+        <name>For AM Job Typeb</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>HHGAutoJobNob</fullName>
+        <field>OB_Job_Number__c</field>
+        <formula>OB_Job_NumberF__c</formula>
+        <name>HHGAutoJobNob</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>HHGAutoQuoteb</fullName>
+        <field>Quote_ModeT__c</field>
+        <formula>Case(Quote_Mode__c,
+&quot;IM&quot;,&quot;IM&quot;,
+&quot;LM&quot;,&quot;LM&quot;,
+&quot;WA&quot;,&quot;WA&quot;,
+&quot;OS&quot;,&quot;OS&quot;,
+&quot;OM&quot;,&quot;OM&quot;,
+&quot;IM&quot;)</formula>
+        <name>HHGAutoQuoteb</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>IBCustomClearanceStage</fullName>
+        <description>Changes stage to Custom Clearance 10 days before IB ETA.</description>
+        <field>StageName</field>
+        <literalValue>IB Customs Clearance</literalValue>
+        <name>IB Custom Clearance Stage</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>IBPostDelivery</fullName>
+        <description>Update Checkbox on Opportunity Page</description>
+        <field>IB_Post_Delivery_Workflow__c</field>
+        <literalValue>1</literalValue>
+        <name>IB Post-Delivery</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>IBPreDelivery</fullName>
+        <description>Updates Checkbox once workflow queue is triggered.</description>
+        <field>IB_Pre_Delivery_Workflow__c</field>
+        <literalValue>1</literalValue>
+        <name>IB Pre-Delivery</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Quote_Assign_ToB</fullName>
+        <field>SAM__c</field>
+        <formula>Case(Sales_Person__c,
+&quot;IN&quot;,&quot;IN&quot;, 
+&quot;AS&quot;,&quot;AS&quot;,
+&quot;KT&quot;,&quot;KT&quot;,
+&quot;KQ&quot;,&quot;KQ&quot;,
+&quot;AC&quot;,&quot;AC&quot;,
+&quot;SY&quot;,&quot;SY&quot;,
+&quot;JC&quot;,&quot;JC&quot;,
+&quot;JL&quot;,&quot;JL&quot;,
+&quot;MY&quot;,&quot;MY&quot;,
+&quot;ML&quot;,&quot;ML&quot;,
+&quot;TT&quot;,&quot;TT&quot;,
+&quot;DC&quot;,&quot;DC&quot;,
+&quot;XW&quot;,&quot;XW&quot;,
+&quot;EN&quot;,&quot;EN&quot;,
+&quot;SW&quot;,&quot;SW&quot;,
+&quot;LJ&quot;,&quot;LJ&quot;,
+&quot;GZ&quot;,&quot;GZ&quot;,
+&quot;IJ&quot;,&quot;IJ&quot;,
+&quot;KK&quot;,&quot;KK&quot;,
+&quot;BC&quot;,&quot;BC&quot;,
+&quot;EW&quot;,&quot;EW&quot;,
+&quot;KF&quot;,&quot;KF&quot;,
+&quot;YS&quot;,&quot;YS&quot;,
+&quot;EG&quot;,&quot;EG&quot;,
+&quot;TF&quot;,&quot;TF&quot;,
+&quot;AY&quot;,&quot;AY&quot;,
+&quot;JH&quot;,&quot;JH&quot;,
+&quot;JZ&quot;,&quot;JZ&quot;,
+&quot;LY&quot;,&quot;LY&quot;,
+&quot;MM&quot;,&quot;MM&quot;,
+&quot;NW&quot;,&quot;NW&quot;,
+&quot;IC&quot;,&quot;IC&quot;,
+&quot;JN&quot;,&quot;JN&quot;,
+&quot;AS&quot;,&quot;AS&quot;,
+&quot;SL&quot;,&quot;SL&quot;,
+&quot;PK&quot;,&quot;PK&quot;,
+&quot;ST&quot;,&quot;ST&quot;,
+&quot;CY&quot;,&quot;CY&quot;,
+&quot;EK&quot;,&quot;EK&quot;,
+&quot;EC&quot;,&quot;EC&quot;,
+&quot;CC&quot;,&quot;CC&quot;,
+&quot;NK&quot;,&quot;NK&quot;,
+&quot;FF&quot;,&quot;FF&quot;,
+&quot;LS&quot;,&quot;LS&quot;,
+&quot;LH&quot;,&quot;LH&quot;,
+&quot;CC&quot;,&quot;CC&quot;, 
+&quot;MF&quot;,&quot;MF&quot;, 
+&quot;TM&quot;,&quot;TM&quot;,
+&quot;YK&quot;,&quot;YK&quot;, 
+&quot;TJ&quot;,&quot;TJ&quot;,
+&quot;HL&quot;,&quot;HL&quot;,
+&quot;CF&quot;,&quot;CF&quot;,
+&quot;EF&quot;,&quot;EF&quot;,
+&quot;TC&quot;,&quot;TC&quot;,
+&quot;RC&quot;,&quot;RC&quot;,
+&quot;RY&quot;,&quot;RY&quot;,
+&quot;MN&quot;,&quot;MN&quot;,
+&quot;QZ&quot;,&quot;QZ&quot;,
+&quot;EH&quot;,&quot;EH&quot;,
+&quot;NH&quot;,&quot;NH&quot;,
+&quot;JY&quot;,&quot;JY&quot;,
+&quot;YC&quot;,&quot;YC&quot;,
+&quot;SN&quot;,&quot;SN&quot;,
+&quot;EY&quot;,&quot;EY&quot;,
+&quot;EL&quot;,&quot;EL&quot;,
+&quot;NY&quot;,&quot;NY&quot;,
+&quot;HH&quot;,&quot;HH&quot;,
+&quot;MJ&quot;,&quot;MJ&quot;,
+&quot;JW&quot;,&quot;JW&quot;,
+&quot;NC&quot;,&quot;NC&quot;,
+&quot;DH&quot;,&quot;DH&quot;,
+&quot;LA&quot;,&quot;LA&quot;,
+&quot;CW&quot;,&quot;CW&quot;,
+&quot;LC&quot;,&quot;LC&quot;,
+&quot;AG&quot;,&quot;AG&quot;,
+&quot;CN&quot;,&quot;CN&quot;,
+&quot;FC&quot;,&quot;FC&quot;,
+&quot;PW&quot;,&quot;PW&quot;,
+&quot;LR&quot;,&quot;LR&quot;,
+&quot;EV&quot;,&quot;EV&quot;,
+&quot;SQ&quot;,&quot;SQ&quot;,
+&quot;LE&quot;,&quot;LE&quot;,
+&quot;JF&quot;,&quot;JF&quot;, 
+&quot;VN&quot;,&quot;VN&quot;, 
+&quot;LD&quot;,&quot;LD&quot;,
+&quot;TL&quot;,&quot;TL&quot;,
+&quot;HD&quot;,&quot;HD&quot;,
+&quot;EZ&quot;,&quot;EZ&quot;,
+&quot;SS&quot;,&quot;SS&quot;,
+&quot;IL&quot;,&quot;IL&quot;,
+&quot;AT&quot;,&quot;AT&quot;,
+&quot;FN&quot;,&quot;FN&quot;,
+&quot;KY&quot;,&quot;KY&quot;,
+&quot;AD&quot;,&quot;AD&quot;,
+&quot;CL&quot;,&quot;CL&quot;,
+&quot;WN&quot;,&quot;WN&quot;,
+&quot;AN&quot;,&quot;AN&quot;,
+NULL)</formula>
+        <name>Quote Assign ToB</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>SetCloseDateequaltoPackDate</fullName>
+        <field>CloseDate</field>
+        <formula>Pack_Date_1__c</formula>
+        <name>Set Close Date equal to Pack Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>UpdHHGInitialsQuote</fullName>
+        <field>HHG_InitialsTQuote__c</field>
+        <formula>Case(HHG_Initials__c,
+&quot;AK/HT&quot;,&quot;AK/HT&quot;,
+&quot;AK/CP&quot;,&quot;AK/CP&quot;,
+&quot;HT/CP&quot;,&quot;HT/CP&quot;,
+&quot;HT/MB&quot;,&quot;HT/MB&quot;,
+&quot;MB/HT&quot;,&quot;MB/HT&quot;,
+&quot;AK/MB&quot;,&quot;AK/MB&quot;,
+&quot;RC/HT&quot;,&quot;RC/HT&quot;,
+&quot;RC/CP&quot;,&quot;RC/CP&quot;,
+&quot;HT/LR&quot;,&quot;HT/LR&quot;,
+&quot;RH/HT&quot;,&quot;RH/HT&quot;,
+&quot;AT/HT&quot;,&quot;AT/HT&quot;,
+&quot;AT/LV&quot;,&quot;AT/LV&quot;,
+&quot;RH/LV&quot;,&quot;RH/LV&quot;,
+&quot;AK/LV&quot;,&quot;AK/LV&quot;,
+&quot;JK/HT&quot;,&quot;JK/HT&quot;,
+&quot;AD/HT&quot;,&quot;AD/HT&quot;,
+&quot;KL/HT&quot;,&quot;KL/HT&quot;,
+&quot;KL/LV&quot;,&quot;KL/LV&quot;,
+&quot;HT/HT&quot;)</formula>
+        <name>UpdHHGInitialsQuote</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>UpdHHGInitialsb</fullName>
+        <field>HHG_InitialsT__c</field>
+        <formula>Case(HHG_Initials__c,
+&quot;AK/HT&quot;,&quot;AK/HT&quot;,
+&quot;AK/CP&quot;,&quot;AK/CP&quot;,
+&quot;HT/CP&quot;,&quot;HT/CP&quot;,
+&quot;HT/MB&quot;,&quot;HT/MB&quot;,
+&quot;AK/MB&quot;,&quot;AK/MB&quot;,
+&quot;MB/HT&quot;,&quot;MB/HT&quot;,
+&quot;RC/HT&quot;,&quot;RC/HT&quot;,
+&quot;RC/CP&quot;,&quot;RC/CP&quot;,
+&quot;HT/LR&quot;,&quot;HT/LR&quot;,
+&quot;RH/HT&quot;,&quot;RH/HT&quot;,
+&quot;AT/HT&quot;,&quot;AT/HT&quot;,
+&quot;AT/LV&quot;,&quot;AT/LV&quot;,
+&quot;RH/LV&quot;,&quot;RH/LV&quot;,
+&quot;AK/LV&quot;,&quot;AK/LV&quot;,
+&quot;JK/HT&quot;,&quot;JK/HT&quot;,
+&quot;AD/HT&quot;,&quot;AD/HT&quot;,
+&quot;KL/HT&quot;,&quot;KL/HT&quot;,
+&quot;HT/HT&quot;)</formula>
+        <name>UpdHHGInitialsb</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>UpdOpp4InvoiceN</fullName>
+        <field>Got_Invoiced__c</field>
+        <literalValue>0</literalValue>
+        <name>UpdOpp4InvoiceN</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>UpdOpp4Invoiceb</fullName>
+        <field>Got_Invoiced__c</field>
+        <literalValue>1</literalValue>
+        <name>UpdOpp4Invoiceb</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>UpdShippingDetailsHHGb</fullName>
+        <description>UpdShippingDetailsHHGb</description>
+        <field>Shipment_DetailsT__c</field>
+        <formula>Case(Shipment_Details__c,
+&quot;3rd Country Move&quot;,&quot;IM&quot;,
+&quot;IM Door to Door&quot;,&quot;IM&quot;,
+&quot;IM Door to Port&quot;,&quot;IM&quot;,
+&quot;IM DTD Inbound&quot;,&quot;IM&quot;,
+&quot;Local Move&quot;,&quot;LM&quot;,
+&quot;Office Move&quot;,&quot;OM&quot;,
+&quot;Origin Services&quot;,&quot;OS&quot;,
+&quot;Warehousing&quot;,&quot;WA&quot;,
+&quot;IM&quot;)</formula>
+        <name>UpdShippingDetailsHHGb</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Upd_AM_Quote_NumberD</fullName>
+        <field>Quote_Number__c</field>
+        <formula>Quote_Number_New__c</formula>
+        <name>Update AM Quote Number</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Upd_AM_Quote_Numberb</fullName>
+        <description>Update the actual Quote Number field from the formula</description>
+        <field>Quote_Number__c</field>
+        <formula>Quote_Number_New__c</formula>
+        <name>Upd AM Quote Numberb</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Upd_AM_Quote_Numberc</fullName>
+        <field>Quote_Number__c</field>
+        <formula>Quote_Number_New__c</formula>
+        <name>Upd AM Quote Numberc</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Upd_BJ_Quote</fullName>
+        <field>Quote_Number__c</field>
+        <formula>Quote_Number_New__c</formula>
+        <name>Upd BJ Quote</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>UpdateShipmentStatusEnroute</fullName>
+        <description>Updates shipment status to enroute 12 hours before ETD.</description>
+        <field>Shipment_Status__c</field>
+        <literalValue>Enroute</literalValue>
+        <name>Update Shipment Status: Enroute</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Amount_from_Final_Billing</fullName>
+        <field>Amount</field>
+        <formula>Invoice_Amount__c</formula>
+        <name>Update Amount from Final Billing</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Payment_term_to_30Days</fullName>
+        <field>Payment_Terms__c</field>
+        <literalValue>30 Days</literalValue>
+        <name>Update Payment term to 30Days</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_rate_reply_quote_reference</fullName>
+        <description>Auto update rate reply quote reference number</description>
+        <field>IB_Quote_Reference__c</field>
+        <formula>Rate_Reply_ID__r.Quote_Reference2__c</formula>
+        <name>Update rate reply quote reference</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>AM Assign To</fullName>
+        <actions>
+            <name>AM_Assign_ToB</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.Person_In_Charge__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>Get the Initials for the Assigned Person</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>AM tariff</fullName>
+        <actions>
+            <name>AM_tariffB</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>contains</operation>
+            <value>Artmove,ArtmoveFP,ArtmoveHK,ArtmoveBJ,ArtmoveSH</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Tariff_Rate__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Check4AMInvoice</fullName>
+        <actions>
+            <name>UpdOpp4Invoiceb</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.Total_Invoiced_Amount__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>1</value>
+        </criteriaItems>
+        <description>Check4AMInvoice</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Check4AMInvoiceN</fullName>
+        <actions>
+            <name>UpdOpp4InvoiceN</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.Total_Invoiced_Amount__c</field>
+            <operation>lessOrEqual</operation>
+            <value>0</value>
+        </criteriaItems>
+        <description>Check4AMInvoiceN</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Cut Insurance Reminder 7%2F1 Days before Pack date</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Personal Account,Corporate Account</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Policy_No__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.CreatedDate</field>
+            <operation>greaterOrEqual</operation>
+            <value>1/1/2017</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Closed Won</value>
+        </criteriaItems>
+        <description>Cut Insurance Reminder 7/1 Days before Pack date</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Insurance_Reminder_7_Days_before_Pack</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Opportunity.Pack_Date_1__c</offsetFromField>
+            <timeLength>-7</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Insurance_Reminder_1_Days_before_Pack</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Opportunity.Pack_Date_1__c</offsetFromField>
+            <timeLength>-1</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Delivery Date Change Status</fullName>
+        <actions>
+            <name>DeliveryDatechangeStage</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.Delivery_Date__c</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Inbound</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>FCL Freight Reminder - 14%2F7%2F3 Days before Pack Date</fullName>
+        <active>true</active>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6 and 7 and 8</booleanFilter>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Outbound,Agent Booked,Personal Account,Corporate Account</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.ETD__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Mode_of_Transport__c</field>
+            <operation>equals</operation>
+            <value>Sea</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.OB_Job_Number__c</field>
+            <operation>notContain</operation>
+            <value>OS</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Load_Type__c</field>
+            <operation>excludes</operation>
+            <value>LCL</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Shipment_Details__c</field>
+            <operation>contains</operation>
+            <value>IM Door to Door,IM Door to Port</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.CreatedDate</field>
+            <operation>greaterOrEqual</operation>
+            <value>1/1/2017</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Closed Won</value>
+        </criteriaItems>
+        <description>FCL Freight Reminder - 14/7/3 Days before Pack</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>FCL_Freight_Reminder_14Days</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Opportunity.Pack_Date_1__c</offsetFromField>
+            <timeLength>-14</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>FCL_Freight_Reminder_7Days_before_Pack</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Opportunity.Pack_Date_1__c</offsetFromField>
+            <timeLength>-7</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>FCL_Freight_Reminder_3Days_before_Pack</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Opportunity.Pack_Date_1__c</offsetFromField>
+            <timeLength>-3</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>For AM Job Type</fullName>
+        <actions>
+            <name>For_AM_Job_Typeb</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.AM_Job_Type__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>Get the acronym for AM job type</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>HHG OB Job No</fullName>
+        <actions>
+            <name>Notify_Accounts_Dept_of_OB_Job_Number_and_Billing_Party</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>(1 OR 6 OR 7 OR 8 OR 9) AND 2 AND 3 AND 4 AND 5</booleanFilter>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Outbound</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.HHG_Initials__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Closed Won</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.OB_Job_Number__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.CloseDate</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Inbound</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Agent Booked</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Corporate Account</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Personal Account</value>
+        </criteriaItems>
+        <description>To notify Accounts department if there is a new HHG OB Job</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>HHG OB Job No 1</fullName>
+        <actions>
+            <name>Notify_Accounts_Dept_of_OB_Job_Number_and_Billing_Party_Testing</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <description>To notify Accounts department if there is a new HHG OB Job (Testing)</description>
+        <formula>AND( 
+OR( 
+RecordType.Name = &apos;Outbound&apos;, 
+RecordType.Name = &apos;Agent Booked&apos;, 
+RecordType.Name = &apos;Personal Account&apos;, 
+RecordType.Name = &apos;Corporate Account&apos;), 
+!ISBLANK(TEXT(HHG_Initials__c)), 
+!ISBLANK(OB_Job_Number__c), 
+ISPICKVAL( StageName , &apos;Closed Won&apos;), 
+CloseDate = TODAY() )</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>HHG OB Job No 2</fullName>
+        <actions>
+            <name>Notify_Accounts_Dept_of_OB_Job_Number_Change_Testing</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>To notify Accounts department if there is a change of HHG OB Job (Testing)</description>
+        <formula>AND(
+OR(
+RecordType.Name = &apos;Outbound&apos;,
+RecordType.Name = &apos;Agent Booked&apos;,
+RecordType.Name = &apos;Personal Account&apos;,
+RecordType.Name = &apos;Corporate Account&apos;),
+!ISBLANK(OB_Job_Number__c),
+ISCHANGED( OB_Job_Number__c ),
+ISPICKVAL(StageName , &quot;Closed Won&quot;)
+)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>HHG OB Job No Test</fullName>
+        <active>false</active>
+        <booleanFilter>1 AND 2 AND 3</booleanFilter>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Outbound,Agent Booked,Personal Account,Corporate Account,Inbound</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.CloseDate</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Closed Won</value>
+        </criteriaItems>
+        <description>To notify Accounts department if there is a new HHG OB Job Test</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>HHGAutoQuote</fullName>
+        <actions>
+            <name>HHGAutoQuoteb</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>UpdHHGInitialsQuote</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>contains</operation>
+            <value>Outbound,Personal Account,Corporate Account</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Quote_Mode__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.HHG_Initials__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>automatically generate a Quote number for HHG Opportunities</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>HHGAutoQuote2</fullName>
+        <actions>
+            <name>AutoPopQuoteNo2</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>contains</operation>
+            <value>Outbound,Personal Account,Corporate Account</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Quote_Number__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Proposal/Price Quote</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>HHGAutoQuote3</fullName>
+        <actions>
+            <name>AutoPopQuoteNo2</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>contains</operation>
+            <value>Outbound,Agent Booked,Personal Account,Corporate Account</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Proposal/Price Quote</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Quote_Number__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>IB Billing</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.Delivery_Date__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Inbound</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Billing_done__c</field>
+            <operation>equals</operation>
+            <value>No</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <offsetFromField>Opportunity.Delivery_Date__c</offsetFromField>
+            <timeLength>1</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>IBBilling7daysNotBilled</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Opportunity.Delivery_Date__c</offsetFromField>
+            <timeLength>7</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>IB Post-Delivery</fullName>
+        <active>true</active>
+        <formula>NOT( ISNULL( Delivery_Date__c ) )</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <offsetFromField>Opportunity.Delivery_Date__c</offsetFromField>
+            <timeLength>5</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>IB Pre-Delivery</fullName>
+        <actions>
+            <name>NotifyAccountsDeptJobNumberandBillingParty</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Inbound</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Job_Initial_1__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Job_Initial_2__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <offsetFromField>Opportunity.IB_ETA__c</offsetFromField>
+            <timeLength>-10</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <offsetFromField>Opportunity.IB_ETA__c</offsetFromField>
+            <timeLength>-2</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>IB SIT</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>IB SIT</value>
+        </criteriaItems>
+        <description>To prompt owner to update SIT status.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <offsetFromField>Opportunity.SIT_in__c</offsetFromField>
+            <timeLength>-5</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>IB SIT billing</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.Next_Billing_Date__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Delivery_Date__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Inbound</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>IB_Storage_Billing_Alert</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Opportunity.Next_Billing_Date__c</offsetFromField>
+            <timeLength>-10</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Inbound Post-Move Quality Audit Reminder</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.Delivery_Date__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Inbound</value>
+        </criteriaItems>
+        <description>Inbound Post-Move Quality Audit Reminder</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Inbound_Post_Move_Quality_Audit_Reminder</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Opportunity.Delivery_Date__c</offsetFromField>
+            <timeLength>2</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>LCL Freight Reminder %E2%80%93 14%2F7%2F3 Days after Pack Date</fullName>
+        <active>true</active>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6 AND 7 AND 8</booleanFilter>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Outbound,Agent Booked,Personal Account,Corporate Account</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.ETD__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Mode_of_Transport__c</field>
+            <operation>equals</operation>
+            <value>Sea</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Load_Type__c</field>
+            <operation>equals</operation>
+            <value>LCL</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Shipment_Details__c</field>
+            <operation>notContain</operation>
+            <value>IM Door to Door,IM Door to Port</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.OB_Job_Number__c</field>
+            <operation>notContain</operation>
+            <value>OS</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.CreatedDate</field>
+            <operation>greaterOrEqual</operation>
+            <value>1/1/2017</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Closed Won</value>
+        </criteriaItems>
+        <description>LCL Freight Reminder – 14/7/3 Days after Pack Date</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>LCL_Freight_Reminder_14Days_after_Pack</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Opportunity.Pack_Date_1__c</offsetFromField>
+            <timeLength>14</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>LCL_Freight_Reminder_7Days_after_Pack</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Opportunity.Pack_Date_1__c</offsetFromField>
+            <timeLength>7</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>LCL_Freight_Reminder_3Days_after_Pack</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Opportunity.Pack_Date_1__c</offsetFromField>
+            <timeLength>3</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Lead Source Field Update to Existing Account</fullName>
+        <actions>
+            <name>Field_Update_to_Existing_Account</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.Type</field>
+            <operation>equals</operation>
+            <value>Existing</value>
+        </criteriaItems>
+        <description>Auto Update Lead Source field when Account Type = Existing</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Lead Source Field Update to Key Account</fullName>
+        <actions>
+            <name>Field_Update_to_Key</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.Type</field>
+            <operation>equals</operation>
+            <value>Key</value>
+        </criteriaItems>
+        <description>Auto Update Lead Source field when Account Type = Key</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Lead Source Field Update to New Account</fullName>
+        <actions>
+            <name>Field_Update_to_New_Account</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.Type</field>
+            <operation>equals</operation>
+            <value>New</value>
+        </criteriaItems>
+        <description>Auto Update Lead Source field when Account Type = New</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Lead Source Field Update to Target Account</fullName>
+        <actions>
+            <name>Field_Update_to_Target_Account</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>Account.Type</field>
+            <operation>equals</operation>
+            <value>Target</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Type</field>
+            <operation>equals</operation>
+            <value>Target Account</value>
+        </criteriaItems>
+        <description>Auto Update Lead Source field when Account Type = Target</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>OB SIT storage out alert</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>Opportunity.Next_Billing_Date__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Shipment_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Delivered (Delivery documents received),Delivered (Pending delivery documents)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Store_at_Destination__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <description>Alert on SIT shipment (Store at Origin)</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>SIT_Storage_Out_alert</name>
+                <type>Task</type>
+            </actions>
+            <offsetFromField>Opportunity.Next_Billing_Date__c</offsetFromField>
+            <timeLength>-14</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Opp Closed Won w%2Fo Attachment</fullName>
+        <actions>
+            <name>TEST_Opp_no_Attach_but_Job_Ref_Created</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Closed Won</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Attachment__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>User.Division</field>
+            <operation>contains</operation>
+            <value>BJ</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Outbound Mid-Move Quality Audit Reminder</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>Opportunity.ETD__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Outbound,Agent Booked,Corporate Account,Personal Account</value>
+        </criteriaItems>
+        <description>Outbound Mid-Move Quality Audit Reminder</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Outbound_Mid_Move_Quality_Audit_Reminder</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Opportunity.ETD__c</offsetFromField>
+            <timeLength>1</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Outbound Post-Move Quality Audit Reminder</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.Pack_Date_1__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Outbound,Agent Booked,Corporate Account,Personal Account</value>
+        </criteriaItems>
+        <description>Outbound Post Move Quality Audit Reminder</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Outbound_Post_Move_Quality_Audit_Reminder</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Opportunity.ETA__c</offsetFromField>
+            <timeLength>7</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Outbound Pre-Move Quality Audit Reminder</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>Opportunity.Pack_Date_1__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Outbound,Agent Booked,Corporate Account,Personal Account</value>
+        </criteriaItems>
+        <description>Outbound Pre-Move Quality Audit Reminder</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Outbound_Pre_Move_Quality_Audit_Reminder</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Opportunity.Pack_Date_1__c</offsetFromField>
+            <timeLength>-3</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Quotation Final Reminder</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Outbound,Agent Booked,Corporate Account,Personal Account</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Quotation_Deadline__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Survey_Date__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Quotation_Deadline__c</field>
+            <operation>greaterThan</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>notEqual</operation>
+            <value>Closed Won,Closed Lost,Negotiation/Review,Proposal/Price Quote,Proforma WON,Cancelled,Following Up on Quote</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Send_Quote_Final_Reminder</name>
+                <type>Alert</type>
+            </actions>
+            <offsetFromField>Opportunity.Quotation_Deadline__c</offsetFromField>
+            <timeLength>0</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Quotation Reminder Revised</fullName>
+        <actions>
+            <name>SendQuote</name>
+            <type>Task</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Agent Booked,Outbound,Corporate Account,Personal Account</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Team_BD_Booking__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Survey_Date__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Quotation_Deadline__c</field>
+            <operation>greaterThan</operation>
+            <value>TODAY</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Quote Assign To</fullName>
+        <actions>
+            <name>Quote_Assign_ToB</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Upd_AM_Quote_NumberD</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Artmove,ArtmoveFP,ArtmoveHK,ArtmoveSH,ArtmoveBJ</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Traffic Management</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Closed Won</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.ETD__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>UpdateShipmentStatusEnroute</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <offsetFromField>Opportunity.ETD__c</offsetFromField>
+            <timeLength>-12</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>ShipmentETDAlert</name>
+                <type>Task</type>
+            </actions>
+            <offsetFromField>Opportunity.ETD__c</offsetFromField>
+            <timeLength>-2</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>UpdShippingDetailsHHG</fullName>
+        <actions>
+            <name>UpdHHGInitialsb</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>UpdShippingDetailsHHGb</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.Shipment_Details__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>contains</operation>
+            <value>Outbound,Agent Booked,Personal Account,Corporate Account</value>
+        </criteriaItems>
+        <description>UpdShippingDetailsHHG</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>UpdShippingDetailsHHG2</fullName>
+        <actions>
+            <name>HHGAutoJobNob</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.Shipment_Details__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>contains</operation>
+            <value>Outbound,Agent Booked,Personal Account,Corporate Account</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Closed Won</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.OB_Job_Number__c</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <description>UpdShippingDetailsHHG2 - only update auto pop job number when Opp is closed won</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Close Date</fullName>
+        <actions>
+            <name>SetCloseDateequaltoPackDate</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Outbound</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Pack_Date_1__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update Payment term from Opp</fullName>
+        <actions>
+            <name>Update_Payment_term_to_30Days</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <booleanFilter>1 or 2</booleanFilter>
+        <criteriaItems>
+            <field>Account.ICEFAT__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.ARTIM__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update rate reply reference</fullName>
+        <actions>
+            <name>Update_rate_reply_quote_reference</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.IB_Quote_Reference__c</field>
+            <operation>notEqual</operation>
+            <value>Rate_Reply_ID__r.Quote_Reference2__c</value>
+        </criteriaItems>
+        <description>Auto update IB opp quote reference field</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <tasks>
+        <fullName>ContactShipperConfirmDeliveryDate</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>1</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Contact Shipper &amp; Confirm Delivery Date</subject>
+    </tasks>
+    <tasks>
+        <fullName>PrepareSignedDocumentsforBookingAgent</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>1</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Prepare Signed Documents for Booking Agent</subject>
+    </tasks>
+    <tasks>
+        <fullName>PrepareforCustomClearanceHaulierInstructions</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Prepare for Custom Clearance &amp; Haulier Instructions</subject>
+    </tasks>
+    <tasks>
+        <fullName>ProcessBillingRequest</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>7</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Opportunity.Delivery_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Process Billing Request</subject>
+    </tasks>
+    <tasks>
+        <fullName>ReminderToBillforOpportunityIB_Job_number_cOpportunityName</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>7</dueDateOffset>
+        <notifyAssignee>true</notifyAssignee>
+        <offsetFromField>Opportunity.Delivery_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Reminder: To Bill for {!Opportunity.IB_Job_number__c}, {!Opportunity.Name}</subject>
+    </tasks>
+    <tasks>
+        <fullName>SIT_Storage_Out_alert</fullName>
+        <assignedTo>benlim@helutrans.com.sg</assignedTo>
+        <assignedToType>user</assignedToType>
+        <dueDateOffset>-2</dueDateOffset>
+        <notifyAssignee>true</notifyAssignee>
+        <offsetFromField>Opportunity.Next_Billing_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>SIT Storage Out alert</subject>
+    </tasks>
+    <tasks>
+        <fullName>SendQuote</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>true</notifyAssignee>
+        <offsetFromField>Opportunity.Quotation_Deadline__c</offsetFromField>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Send Quote</subject>
+    </tasks>
+    <tasks>
+        <fullName>ShipmentETDAlert</fullName>
+        <assignedTo>mala@helutrans.com.sg</assignedTo>
+        <assignedToType>user</assignedToType>
+        <description>ETD in 48 hours&apos; time for the above-mentioned shipment.</description>
+        <dueDateOffset>-1</dueDateOffset>
+        <notifyAssignee>true</notifyAssignee>
+        <offsetFromField>Opportunity.ETD__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Shipment ETD Alert</subject>
+    </tasks>
+    <tasks>
+        <fullName>Storage_Out_Alert</fullName>
+        <assignedTo>benlim@helutrans.com.sg</assignedTo>
+        <assignedToType>user</assignedToType>
+        <dueDateOffset>-2</dueDateOffset>
+        <notifyAssignee>true</notifyAssignee>
+        <offsetFromField>Opportunity.Storage_Out__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Storage Out Alert</subject>
+    </tasks>
+</Workflow>

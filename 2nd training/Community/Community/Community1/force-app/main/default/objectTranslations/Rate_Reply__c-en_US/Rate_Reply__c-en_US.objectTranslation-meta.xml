@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Rate Reply</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Rate Replies</value>
+    </caseValues>
+    <layouts>
+        <layout>DS (Air) rate reply</layout>
+        <sections>
+            <label></label>
+            <section>Additional Charges (if required)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Other Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Summary of Services</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>DS (Diplomatic Shipment) rate reply</layout>
+        <sections>
+            <label></label>
+            <section>Additional Charges (if required)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Other Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Summary of Services</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>DS (FCL) rate reply</layout>
+        <sections>
+            <label></label>
+            <section>Additional Charges (if required)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Other Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Summary of Services</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>DS (LCL) rate reply</layout>
+        <sections>
+            <label></label>
+            <section>Additional Charges (if required)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Other Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Summary of Services</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>OS rate reply</layout>
+        <sections>
+            <label></label>
+            <section>Additional Charges (if required)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Other Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Summary of Services</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Rate reply</layout>
+        <sections>
+            <label></label>
+            <section>Additional services</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Quote 1</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Quote 2</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Quote 3</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Quote 4</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Quote 5</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>DS_Air_Shipment</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>DS_Diplomatic_Shipment</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>DS_FCL</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>DS_LCL</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Origin_Service</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Initials_Uppercase</name>
+    </validationRules>
+    <webLinks>
+        <label></label>
+        <name>Generate_PDF</name>
+    </webLinks>
+</CustomObjectTranslation>

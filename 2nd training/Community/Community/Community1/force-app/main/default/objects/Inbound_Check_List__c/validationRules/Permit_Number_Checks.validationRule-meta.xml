@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Permit_Number_Checks</fullName>
+    <active>true</active>
+    <description>For &apos;Permit No.&apos;  that starts with other irrelevant characters</description>
+    <errorConditionFormula>AND(
+NOT(BEGINS( Permit_No__c , &quot;II&quot;)) ,
+NOT(BEGINS( Permit_No__c , &quot;IG&quot;)) ,
+NOT(BEGINS( Permit_No__c , &quot;IN&quot;)) ,
+NOT(BEGINS( Permit_No__c , &quot;OD&quot;)),
+NOT(BEGINS( Permit_No__c , &quot;OO&quot;)),
+NOT(BEGINS( Permit_No__c , &quot;DP&quot;)),
+NOT(BEGINS( Permit_No__c , &quot;IM&quot;)),
+NOT(BEGINS( Permit_No__c , &quot;OU&quot;)),
+NOT(BEGINS( Permit_No__c , &quot;OT&quot;)),
+NOT(BEGINS( Permit_No__c , &quot;IE&quot;)),
+NOT(BEGINS( Permit_No__c , &quot;RM&quot;))
+)</errorConditionFormula>
+    <errorMessage>Permit number invalid</errorMessage>
+</ValidationRule>

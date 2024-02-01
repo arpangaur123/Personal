@@ -1,0 +1,61 @@
+<apex:page standardcontroller="artApp__Artwork__c" extensions="artworkCon2">
+ <apex:sectionHeader title="Attach Artwork Images" subtitle="Step 2 of 3"/>
+
+<apex:form >
+<apex:pageblock >
+ <apex:pageBlockSection title="Artwork Information"/>
+ <apex:repeat value="{!myListArtworks}" var="a" id="therepeat">
+	<apex:panelGrid columns="9"> 
+	
+		<apex:panelGrid >
+			<apex:facet name="header">Artist Name</apex:facet>
+			<apex:outputField value="{!a.artApp__Artist__c}"/>
+		</apex:panelGrid>
+		<apex:panelGrid >
+			<apex:facet name="header">Artwork Title</apex:facet>
+			<apex:outputField value="{!a.Name}"/>
+		</apex:panelGrid>
+		<apex:panelGrid >
+			<apex:facet name="header">Year</apex:facet>
+			<apex:outputField value="{!a.artApp__Year__c}"/>
+		</apex:panelGrid>
+		<apex:panelGrid >
+			<apex:facet name="header">Location</apex:facet>
+			<apex:outputField value="{!a.Internal_Location__c}"/>
+		</apex:panelGrid>
+		<apex:panelGrid >
+			<apex:facet name="header">Type</apex:facet>
+			<apex:outputField value="{!a.artApp__Type__c}"/>
+		</apex:panelGrid>
+		<apex:panelGrid >
+			<apex:facet name="header">Media</apex:facet>
+			<apex:outputField value="{!a.artApp__Media__c}"/>
+		</apex:panelGrid>
+		<apex:panelGrid >
+			<apex:facet name="header">Cost</apex:facet>
+			<apex:outputText value="{!a.CurrencyIsoCode}{!a.artApp__Cost__c}"/>
+		</apex:panelGrid>
+		<apex:panelGrid >
+			<apex:outputText value=""/>
+			<apex:outputText value=""/>
+			<apex:outputText value=""/>
+			<apex:outputLink value="https://emea.salesforce.com/p/attach/NoteAttach?pid={!a.Id}&retURL={!a.Id}" target="_blank">Add Image</apex:outputLink>
+		</apex:panelGrid>
+		<apex:panelGrid >
+			<apex:outputText value=""/>
+			<apex:outputText value=""/>
+			<apex:outputText value=""/>
+			<apex:outputLink value="https://emea.salesforce.com/apex/artApp__SetPrimaryImage?id={!a.Id}" target="_blank">Set Primary Image</apex:outputLink>
+		</apex:panelGrid>
+
+	</apex:panelGrid>	
+</apex:repeat>
+
+<apex:pageBlockButtons >
+	<apex:commandbutton value="Next" action="{!step3}"/>
+</apex:pageBlockButtons>
+
+</apex:pageblock>	
+</apex:form>
+
+</apex:page>

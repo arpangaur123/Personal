@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IT_Security__c</fullName>
+    <description>Market Trend/Knowledge
+-Keeping track of technological advancements and trends in IT support
+-Keeping track of the latest scam/phishing techniques. Inform, update and advice users promptly
+-Awareness and guidance of country specific legal and mandatory requirements impacting technology deployment or operations</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Market Trend/Knowledge
+-Keeping track of technological advancements and trends in IT support
+-Keeping track of the latest scam/phishing techniques. Inform, update and advice users promptly
+-Awareness and guidance of country specific legal and mandatory requirements impacting technology deployment or operations</inlineHelpText>
+    <label>IT Security</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1</fullName>
+                <default>true</default>
+                <label>1</label>
+            </value>
+            <value>
+                <fullName>2</fullName>
+                <default>false</default>
+                <label>2</label>
+            </value>
+            <value>
+                <fullName>3</fullName>
+                <default>false</default>
+                <label>3</label>
+            </value>
+            <value>
+                <fullName>4</fullName>
+                <default>false</default>
+                <label>4</label>
+            </value>
+            <value>
+                <fullName>5</fullName>
+                <default>false</default>
+                <label>5</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

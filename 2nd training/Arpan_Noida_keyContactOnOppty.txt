@@ -1,0 +1,29 @@
+//We have a Field on opportunity which is lookup to contact, on this field he have to populate contact which has 
+//budget just greater than ammount on the paticular opportunity not all the oppty which has budget more than that
+public class OpptyUtility {
+    Public static void populateKeyContactOnOpp(Set<Id> accountIdSet){
+        Map<Id, Opportunity> idToOppMap = new Map<Id, Opportunity>();
+        List<Opportunity> oppList = new List<Opportunity>();
+        for(Account acc : [SELECT Id, name, Key_Contact__c,
+                           (SELECT Id, Name,Budget__c FROM Contacts Where Budget__c != Null ORDER BY Budget__c desc), 
+                           (SELECT Id, Name,Amount FROM Opportunities WHERE Amount <> Null ) FROM Account WHERE Id IN:accountIdSet]){
+                               for(Contact con : acc.contacts){
+                                   for(Opportunity opp : acc.Opportunities){
+                                       if(opp.Amount < con.Budget__c){
+                                           opp.Key_Contact__c = con.Id; 
+                                           System.debug('key Contact ' +opp.Key_Contact__c);
+                                       }  
+                                       oppList.add(opp);
+                                   }
+                               } 
+                           }
+        system.debug('map'+idToOppMap);
+        idToOppMap.putAll(oppList);
+        system.debug('map2'+idToOppMap);
+        if(oppList.Size()>0){
+           update idToOppMap.values();  
+           // update oppList;
+        }
+        
+    }
+}

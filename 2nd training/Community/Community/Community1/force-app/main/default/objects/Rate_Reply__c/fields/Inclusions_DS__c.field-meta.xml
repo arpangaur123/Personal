@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inclusions_DS__c</fullName>
+    <defaultValue>&quot;- Normal import customs clearance and documentation&quot; &amp; BR() &amp;
+&quot;- One-time delivery to residence with normal access&quot; &amp; BR() &amp;
+&quot;- Unpacking, unwrapping and setting up&quot; &amp; BR() &amp;
+&quot;- One-time collection of debris&quot; &amp; BR() &amp;
+&quot;- Return of empty container (FCL)&quot; &amp; BR() &amp;
+&quot;- Setting up:&quot; &amp; BR() &amp;
+&quot;We only cover assembly of simple beds, dining table top and base.&quot;&amp; BR() &amp;
+&quot;Anything further may be consider handyman service which can be quoted in addition based on items of furniture assembly required&quot;</defaultValue>
+    <description>Inclusions information for DS</description>
+    <externalId>false</externalId>
+    <label>Inclusions</label>
+    <length>32000</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>10</visibleLines>
+</CustomField>

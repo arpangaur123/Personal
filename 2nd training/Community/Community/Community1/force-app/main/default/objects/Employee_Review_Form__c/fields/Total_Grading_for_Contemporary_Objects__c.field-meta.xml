@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Grading_for_Contemporary_Objects__c</fullName>
+    <externalId>false</externalId>
+    <formula>VALUE(Text( ContemporaryObjects_Material_Identificat__c ))+
+ VALUE(Text( Contemporary_Objects_Installation__c  ))+
+ VALUE(Text( Contemporary_Objects_Handling__c  ))+
+ VALUE(Text(Contemporary_Objects_Packing__c  ))+
+ VALUE(Text(  ContemporaryObjects_Crating_Carton__c  ))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Total Grading for Contemporary Objects:</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

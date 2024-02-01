@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Seal_Fee</fullName>
+    <active>true</active>
+    <description>Enter seal fee when Freight is involved</description>
+    <errorConditionFormula>AND (
+OR(ISNULL(Seal_Fee_No_Of_Seals__c), Seal_Fee_No_Of_Seals__c =0),
+OR(Freight_THC_LOLO_for_20_FCL_cntr__c &gt; 0, Freight_THC_LOLO_for_40_FCL_cntr__c &gt; 0)
+)</errorConditionFormula>
+    <errorDisplayField>Seal_Fee_No_Of_Seals__c</errorDisplayField>
+    <errorMessage>Please enter Seal Fee.</errorMessage>
+</ValidationRule>

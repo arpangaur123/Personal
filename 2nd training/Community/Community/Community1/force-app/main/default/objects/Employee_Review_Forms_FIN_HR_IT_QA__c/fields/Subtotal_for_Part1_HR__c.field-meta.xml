@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Subtotal_for_Part1_HR__c</fullName>
+    <externalId>false</externalId>
+    <formula>VALUE(Text(Company_Knowledge_HR__c))+
+VALUE(Text(AM_HHG_Operations_Art_Eco_System_FIN__c))+
+VALUE(Text(HR_Management__c))+
+VALUE(Text(Regulatory_Compliance__c))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Subtotal for Part1 [HR]</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

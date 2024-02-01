@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inactive__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Check this if contact has left the Account -&gt; Contact details are inactive.
+If contact has moved to new Account, Create new contact in that Account</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Check this if contact has left the Account -&gt; Contact details are inactive.
+If contact has moved to new Account, Create new contact in that Account</inlineHelpText>
+    <label>Inactive</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

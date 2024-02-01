@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Remark_Field_Mandatory</fullName>
+    <active>false</active>
+    <description>Whenever the picklist value is &quot;NO&quot; the related Remarks field will be mandatory.</description>
+    <errorConditionFormula>AND(ISPICKVAL( Answer__c , &quot;No&quot;),ISBLANK( Remarks__c ))</errorConditionFormula>
+    <errorDisplayField>Remarks__c</errorDisplayField>
+    <errorMessage>Please fill the remarks area</errorMessage>
+</ValidationRule>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Display Artworks for Collector</description>
+    <label>My Collection</label>
+    <motif>Custom16: Bank</motif>
+    <page>My_Collection</page>
+</CustomTab>

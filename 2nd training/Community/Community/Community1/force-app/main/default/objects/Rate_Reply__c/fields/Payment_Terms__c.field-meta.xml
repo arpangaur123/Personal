@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Payment_Terms__c</fullName>
+    <defaultValue>&quot;Our company policy allows us to only grant credit to FIDI/OMNI agents.&quot; &amp; BR() &amp; 
+&quot;Unless otherwise agreed we must insist  on payment before arrival of the shipment, either by payment in advance or by a certified cheque, to be sent by courier or be enclosed with shipping documents.&quot; &amp; BR() &amp; 
+&quot;KINDLY NOTE THAT FOR ANY PAYMENTS MADE THROUGH INTER-BANK - ALL BANK TRANSFER FEES WILL BE BORNE BY THE REMITTER.&quot;</defaultValue>
+    <externalId>false</externalId>
+    <label>Payment Terms</label>
+    <length>32000</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Uniform__c</fullName>
+    <defaultValue>&quot;Short sleeve polo =&quot; &amp; BR() &amp; 
+&quot;Long sleeve polo =&quot; &amp; BR() &amp; 
+&quot;Down vest =&quot; &amp; BR()&amp; 
+&quot;Down jacket =&quot;</defaultValue>
+    <externalId>false</externalId>
+    <label>Uniform</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>TextArea</type>
+</CustomField>

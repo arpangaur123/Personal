@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Enclosures__c</fullName>
+    <externalId>false</externalId>
+    <label>Enclosures</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Air Way Bill</fullName>
+                <default>false</default>
+                <label>Air Way Bill</label>
+            </value>
+            <value>
+                <fullName>Bill of Lading</fullName>
+                <default>false</default>
+                <label>Bill of Lading</label>
+            </value>
+            <value>
+                <fullName>Customs Form</fullName>
+                <default>false</default>
+                <label>Customs Form</label>
+            </value>
+            <value>
+                <fullName>Destination Rates</fullName>
+                <default>false</default>
+                <label>Destination Rates</label>
+            </value>
+            <value>
+                <fullName>Electrical List</fullName>
+                <default>false</default>
+                <label>Electrical List</label>
+            </value>
+            <value>
+                <fullName>Helutrans Way Bill</fullName>
+                <default>false</default>
+                <label>Helutrans Way Bill</label>
+            </value>
+            <value>
+                <fullName>Insurance</fullName>
+                <default>false</default>
+                <label>Insurance</label>
+            </value>
+            <value>
+                <fullName>Inventory</fullName>
+                <default>false</default>
+                <label>Inventory</label>
+            </value>
+            <value>
+                <fullName>Keys</fullName>
+                <default>false</default>
+                <label>Keys</label>
+            </value>
+            <value>
+                <fullName>Others</fullName>
+                <default>false</default>
+                <label>Others</label>
+            </value>
+            <value>
+                <fullName>Passport</fullName>
+                <default>false</default>
+                <label>Passport</label>
+            </value>
+            <value>
+                <fullName>Personal Itinerary</fullName>
+                <default>false</default>
+                <label>Personal Itinerary</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

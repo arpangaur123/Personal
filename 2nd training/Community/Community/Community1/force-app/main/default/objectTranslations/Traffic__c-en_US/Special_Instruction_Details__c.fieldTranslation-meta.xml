@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>Special_Instruction_Details__c</name>
+    <picklistValues>
+        <masterLabel>Door to Door shipment, please contact shippers for immediate clearance and delivery. Helutrans will not be responsible for any charges and delivery incurred at destination.</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Door to Door shipment, please contact shippers for immediate clearance and delivery. Helutrans will not be responsible for any storage charges.</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Door to Port shipment, please contact shippers for immediate clearance. Helutrans will not be responsible for any charges incurred at destination.</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Door to Port shipment, please contact shippers for immediate clearance. Helutrans will not be responsible for any storage charges.</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

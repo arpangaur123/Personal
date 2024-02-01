@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Comment_Visual_Check__c</fullName>
+    <description>Comment for Visual Check</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Comment for Visual Check</inlineHelpText>
+    <label>Comment Visual Check</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

@@ -1,0 +1,27 @@
+<apex:page standardStylesheets="false" lightningStylesheets="true" standardController="artApp__Exhibition__c" sidebar="false" showheader="false">
+    <head>
+        
+        <script src="/soap/ajax/30.0/connection.js" type="text/javascript" >
+        </script>
+        <apex:stylesheet value="{!URLFOR($Resource.zmulti3c, 'css/zmulti.css')}"/>
+        <apex:includeScript value="{!URLFOR($Resource.zmulti3c,'js/jquery-1.4.2.js')}"/>
+        <apex:includeScript value="{!URLFOR($Resource.zmulti3ca,'js/zmulti.js')}"/>
+        <apex:image styleClass="pic1" url="{!URLFOR($Resource.zmulti3a, 'images/drag_upload.png')}" width="50" height="50" style="display:none;"/>
+        <apex:image styleClass="pic2" url="{!URLFOR($Resource.zmulti3a, 'images/zaimultiupload.png')}" width="50" height="50" style="display:none;"/>
+        
+        <script>
+        var currentObjId = "{!artApp__Exhibition__c.id}";
+        var FirstName = "{!$User.FirstName}";
+        var LastName = "{!$User.LastName}";
+        var CompanyName = "{!$User.CompanyName}";
+        var sessionId = "{!$Api.Session_ID}";
+        var URL = "{!$CurrentPage.URL}";
+        </script>
+        
+    </head>
+    
+    <body>
+        <div id="timbaBox_Container"></div>
+    </body>
+    
+</apex:page>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Piano_Handling_New__c</fullName>
+    <defaultValue>&quot;Vendor: &quot;&amp; BR() &amp;
+&quot;Date of service: dd/mm/yy&quot;&amp; BR() &amp;
+&quot;Time of service: hrs&quot;</defaultValue>
+    <externalId>false</externalId>
+    <label>Piano Handling New</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

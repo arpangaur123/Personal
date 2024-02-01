@@ -1,0 +1,104 @@
+<apex:component language="{!languageCode}" controller="CraftingDetailsComponentController">
+
+    <apex:attribute name="craftingDetailsList" description="List of Crafting Detail records to display." type="Crafting_Details__c[]" required="true"/>
+    <apex:attribute name="language" description="Language used to render the page." type="String" assignTo="{!languageCode}" required="true"/>
+
+    <table border="0" cellpadding="0" cellspacing="0" width="100%"> 
+        <apex:variable value="{!0}" var="cdCount"/>
+        <apex:repeat value="{!craftingDetailsList}" var="cd">
+        <br/>
+        <br/>
+        <br/>
+        	<hr/>
+            <br/>
+            <tr>
+            	<td align="right" style="color:red;font-weight:bold;font-size: 16px;">{!$Label.Crate_Type}</td>
+                <td align="left" style="font-weight:bold;font-size: 16px;"><apex:outputField value="{!cd.Crate_Type__c}"/></td>
+               <!--   <td align="right">{!$Label.Crate_No}</td>
+                <td align="left"><apex:outputField value="{!cd.Crate_No__c}"/></td>-->
+                <!--  <td align="right">&nbsp;</td>
+                <td align="left">&nbsp;</td>-->
+                <td align="right" style="color:red;font-weight:bold;font-size: 16px;">{!$Label.Length}</td>
+                <td align="left" style="font-weight:bold;font-size: 16px;"><apex:outputField value="{!cd.Length_in__c}"/></td>
+            </tr>
+            <tr>
+                
+                <td align="right" style="color:red;font-weight:bold;font-size: 16px;"><b>{!$Label.Opening_Side}</b></td>
+                <td align="left" style="font-size: 16px;"><apex:outputField value="{!cd.Opening_Side__c}"/></td>
+                <td align="right" style="color:red;font-weight:bold;font-size: 16px;">{!$Label.Breadth}</td>
+                <td align="left" style="font-size: 16px;"><apex:outputField value="{!cd.Breadth_in__c}"/></td>
+            </tr>
+            <tr>
+                <td align="right" style="font-weight:bold;font-size: 16px;">{!$Label.Artwork_Type}</td>
+                <td align="left" style="font-weight:bold;font-size: 16px;"><apex:outputField value="{!cd.Artwork_Type__c}"/></td>
+                <td align="right" style="color:red;font-weight:bold;font-size: 16px;">{!$Label.Height}</td>
+                <td align="left" style="font-weight:bold;font-size: 16px;"><apex:outputField value="{!cd.Height_in__c}"/></td>
+                
+            </tr>
+           
+            <tr>
+                <td align="right" style="font-weight:bold;font-size: 16px;">{!$Label.Notes}</td>
+                <td align="left" style="font-weight:bold;font-size: 16px;"><apex:outputField value="{!cd.Notes__c}"/></td>
+            </tr>
+            <br/>
+            <hr/>
+<!--             <br/> -->
+             <tr>
+                <td align="right" style="font-weight:bold;font-size: 16px;">{!$Label.Triangle_Supports}</td>
+                <td align="left" style="font-size: 16px;"><apex:outputField value="{!cd.Triangle_Supports__c}"/></td>
+                <td align="right" style="font-weight:bold;font-size: 16px;">{!$Label.Triangle_Base_Width_cm}</td>
+                <td align="left" style="font-size: 16px;"><apex:outputField value="{!cd.Triangle_Base_Width_in__c}"/></td>
+            </tr>
+<!--             <br/> -->
+<!--             <hr/> -->
+<!--             <br/> -->
+            <tr>
+                <td align="right" style="font-weight:bold;font-size: 16px;">{!$Label.Base_Plate_Support}</td>
+                <td align="left" style="font-size: 16px;"><apex:outputField value="{!cd.Base_Support__c}"/></td>
+                <td align="right">&nbsp;</td>
+                <td align="left">&nbsp;</td>
+                <!--  <td align="right">{!$Label.Base_Plate_Length_cm}</td>
+                <td align="left"><apex:outputField value="{!cd.Base_Plate_Length_cm__c}"/></td>-->
+            </tr>
+           <!--   <tr>
+                <td align="right">&nbsp;</td>
+                <td align="left">&nbsp;</td>
+                <td align="right">{!$Label.Base_Plate_Width_cm}</td>
+                <td align="left"><apex:outputField value="{!cd.Base_Plate_Width_cm__c}"/></td>
+            </tr> -->
+            
+<!--             <br/> -->
+            <!--  <br/> -->
+            
+            <hr/>
+            <br/>
+            
+            <tr>
+                <td align="left"><font style="font-weight:bold;font-family:arial;font-size:x-large">Crating Instructions (Warehouse Crew)</font></td>
+            </tr>
+            <br/>
+            <tr>
+                <td align="right" style="font-weight:bold;font-size: 16px;">{!$Label.Foam}</td>
+                <td align="left" style="font-weight:bold;font-size: 16px;"><apex:outputField value="{!cd.Foam__c}"/></td>
+                <td align="right">&nbsp;</td>
+                <td align="left">&nbsp;</td>
+            </tr>
+            <tr>
+                <td align="right" style="font-weight:bold;font-size: 16px;">{!$Label.Artwork_Details}</td>
+                <td align="left" style="font-weight:bold;font-size: 16px;"><apex:outputField value="{!cd.Artwork_Details__c}"/></td>
+                <td align="right">&nbsp;</td>
+                <td align="left">&nbsp;</td>
+            </tr>
+            <tr>
+                <td align="right" style="font-weight:bold;font-size: 16px;">{!$Label.Crating_Notes}</td>
+                <td align="left" style="font-weight:bold;font-size: 16px;"><apex:outputField value="{!cd.Crating_Notes__c}"/></td>
+            </tr>
+            <apex:variable value="{!cdCount+1}" var="cdCount"/>
+            <apex:outputPanel rendered="{!cdCount<craftingDetailsList.size}">
+                <p style="page-break-after:always;"></p>
+            </apex:outputPanel>
+                
+        </apex:repeat>
+    </table>
+
+</apex:component>

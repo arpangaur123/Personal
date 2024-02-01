@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Collection_Address_HK__c</fullName>
+    <description>Hong Kong</description>
+    <externalId>false</externalId>
+    <label>Collection Address</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Unit 2, 11th Floor, Global Gateway, 168 Yeung Uk Road, Tsuen Wan, Hong Kong</fullName>
+                <default>false</default>
+                <label>Unit 2, 11th Floor, Global Gateway, 168 Yeung Uk Road, Tsuen Wan, Hong Kong</label>
+            </value>
+            <value>
+                <fullName>Unit 1003, 11th Floor Mapletree Logistics Centre 30 Tsing Yi Road Tsing Yi, N.T. Hong Kong</fullName>
+                <default>false</default>
+                <label>Unit 1003, 11th Floor Mapletree Logistics Centre 30 Tsing Yi Road Tsing Yi, N.T. Hong Kong</label>
+            </value>
+            <value>
+                <fullName>9/F, ATL Logistics Centre B, Berth 3, Kwai Chung, N.T., Hong Kong</fullName>
+                <default>false</default>
+                <label>9/F, ATL Logistics Centre B, Berth 3, Kwai Chung, N.T., Hong Kong</label>
+            </value>
+            <value>
+                <fullName>Others_Indicate_below</fullName>
+                <default>false</default>
+                <label>Others (Indicate below)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

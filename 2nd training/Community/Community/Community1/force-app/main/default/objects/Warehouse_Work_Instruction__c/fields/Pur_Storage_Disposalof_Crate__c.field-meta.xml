@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pur_Storage_Disposalof_Crate__c</fullName>
+    <externalId>false</externalId>
+    <label>Empty Crates to be 吉箱要</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Stored 存</fullName>
+                <default>false</default>
+                <label>Stored 存</label>
+            </value>
+            <value>
+                <fullName>DIsposed 弃</fullName>
+                <default>false</default>
+                <label>DIsposed 弃</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

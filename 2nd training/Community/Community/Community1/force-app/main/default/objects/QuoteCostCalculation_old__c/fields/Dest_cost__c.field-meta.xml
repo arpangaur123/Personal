@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Dest_cost__c</fullName>
+    <externalId>false</externalId>
+    <formula>( Dest_labour_unit__c  *  Amount__c  )  + 
+ Dest_transport__c  + 
+ Dest_haulier__c  + 
+ Dest_THC__c +
+ Dest_LOLO__c  + 
+ Dest_Handyman__c+
+ Dest_Misc__c +  
+Destinantion_lumpsum__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Destination cost</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

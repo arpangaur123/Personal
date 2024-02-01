@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Subtotal_for_Part3__c</fullName>
+    <externalId>false</externalId>
+    <formula>VALUE(Text(Ability_to_Understand_Instructions__c ))+
+VALUE(Text(Ability_to_Comm_with_Clients_Colleagu__c ))+
+VALUE(Text( Ability_to_Prepare_Return_Materials_To__c ))+
+VALUE(Text(Delivery_Collection__c ))+
+VALUE(Text(Ability_to_Organise_Job_Site_Readiness__c ))+
+VALUE(Text(Visual_check_Procedure__c  ))+
+VALUE(Text(Documentation__c  ))+
+VALUE(Text(Timely_Proper_Handover_of_Artwork_Prop__c))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Subtotal for Part3:</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

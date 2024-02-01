@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Comment_Industry_best_pract_Qualitative__c</fullName>
+    <description>Supervisor Comment Industry best practices (Qualitative).</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Supervisor Comment Industry best practices (Qualitative).</inlineHelpText>
+    <label>Comment Industry best pract(Qualitative)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

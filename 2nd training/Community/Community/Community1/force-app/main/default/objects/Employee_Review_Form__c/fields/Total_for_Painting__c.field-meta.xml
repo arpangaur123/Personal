@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_for_Painting__c</fullName>
+    <description>Total for Painting (Framed &amp; Unframed)</description>
+    <externalId>false</externalId>
+    <formula>VALUE(Text(Material_Identification__c))+
+VALUE(Text(Painting_Data_Entry_Management__c))+
+VALUE(Text(Painting_Visual_Check__c))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Total for Painting (Framed &amp; Unframed)</inlineHelpText>
+    <label>Total for Painting:</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

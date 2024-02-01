@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Comment_Validation_highest_grade76</fullName>
+    <active>true</active>
+    <description>Please indicate a reason to justify the 5 points awarded.</description>
+    <errorConditionFormula>AND(
+ISPICKVAL( Visual_check_Procedure__c  , &quot;5&quot;),
+ISBLANK( Sup_Comment_for_Visual_check_Procedure__c )
+)</errorConditionFormula>
+    <errorDisplayField>Sup_Comment_for_Visual_check_Procedure__c</errorDisplayField>
+    <errorMessage>Please indicate a reason to justify the 5 points awarded.</errorMessage>
+</ValidationRule>

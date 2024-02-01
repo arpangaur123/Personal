@@ -1,0 +1,269 @@
+<apex:page controller="QrCodeScanOnArtWorkController" docType="html-5.0" cache="false" showHeader="false" lightningStylesheets="true">
+    <style>
+        * {
+        box-sizing: border-box;
+        }
+        
+        /* Position the image container (needed to position the left and right arrows) */
+        .container {
+        position: relative;
+        }
+        
+        /* Hide the images by default */
+        .mySlides {
+        display: none;
+        }
+        
+        /* Add a pointer when hovering over the thumbnail images */
+        .cursor {
+        cursor: pointer;
+        }
+        
+        /* Next and previous buttons */
+        .prev,
+        .next {
+        cursor: pointer;
+        position: absolute;
+        top: 56%;
+        left: 30%;
+        //top: 40%;
+        width: auto;
+        padding: 16px;
+        margin-top: -50px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
+        }
+        
+        /* Position the "next button" to the right */
+        .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+        }
+        
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+        //background-color: rgba(0, 0, 0, 0.8);
+        }
+        
+        /* Number text (1/3 etc) */
+        .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+        }
+        
+        /* Container for image text */
+        .caption-container {
+        text-align: center;
+        background-color: #222;
+        padding: 2px 16px;
+        color: white;
+        }
+        
+        .row:after {
+        content: "";
+        display: table;
+        clear: both;
+        
+        }
+        
+        /* Six columns side by side */
+        .column {
+        float: left;
+        width: 33.3%;
+        }
+        
+        /* Add a transparency effect for thumnbail images */
+        .demo {
+        opacity: 0.6;
+        }
+        
+        .active,
+        .demo:hover {
+        opacity: 1;
+        }
+        
+        .setSlideAlign{
+        text-align: center;
+        width: 50%;
+        margin: auto;
+        }
+    </style>
+    
+    
+    
+    <script>
+    var slideIndex = 1;
+    setTimeout(function(){ showSlides(slideIndex); }, 1000);
+    
+    
+    // Next/previous controls
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+    
+    // Thumbnail image controls
+    function currentSlide(n) {
+        //Text txt=(Text) Event.getSource();
+        //console.log(txt.getId());
+        showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        //var captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        //captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    
+    </script>
+    
+    <apex:form id="form1">
+        <apex:slds />
+        <div class="slds-scope">
+           <apex:outputPanel rendered="{!!showValidQR}">
+            
+            <div class="slds-section slds-is-open">
+                <h3 class="slds-section__title">
+                    <!--button aria-controls="expando-unique-id" aria-expanded="true" class="slds-button slds-section__title-action"-->
+                        <!--svg class="slds-section__title-action-icon slds-button__icon slds-button__icon_left" aria-hidden="true">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                                 xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/utility-sprite/svg/symbols.svg#switch')}">
+                                            </use>
+                        </svg-->
+                        <span class="slds-truncate slds-align_center slds-section__title-action" title="Section Title">Artwork Details</span>
+                    <!--/button-->
+                </h3>
+                <div aria-hidden="false" class="slds-section__content" id="expando-unique-id">
+                </div>
+            </div>
+            
+            <div class="slds-size--1-of-1 slds-p-vertical--small">
+                <div class="slds-grid slds-wrap slds-grid--align-center">
+                    <div class="slds-size_1-of-1 slds-max-small-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_1-of-4 slds-p-horizontal--small">
+                        <apex:outputLabel value="Name " styleclass="slds-align_right slds-m-around_small"/>
+                    </div>
+                    <div class="slds-size_1-of-1 slds-max-small-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_1-of-4 slds-p-horizontal--small">
+                        <apex:outputField value="{!artWrk.Name}" styleclass="slds-align_left"/>
+                    </div>
+                    <div class="slds-size_1-of-1 slds-max-small-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_1-of-4 slds-p-horizontal--small">
+                        <apex:outputLabel value="Artist Name " styleclass="slds-align_right slds-m-around_small"/>
+                    </div>
+                    <div class="slds-size_1-of-1 slds-max-small-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_1-of-4 slds-p-horizontal--small">
+                        <apex:outputField value="{!artWrk.Artist_Name_Formula__c}" styleclass="slds-align_left"/>
+                    </div>
+                </div>
+                <div class="slds-grid slds-wrap slds-grid--align-center">
+                    <div class="slds-size_1-of-1 slds-max-small-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_1-of-4 slds-p-horizontal--small">
+                        <apex:outputLabel value="Barcode Id " styleclass="slds-m-around_small"/>
+                    </div>
+                    <div class="slds-size_1-of-1 slds-max-small-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_1-of-4 slds-p-horizontal--small">
+                        <apex:outputField value="{!artWrk.Barcode_ID__c}"/>
+                    </div>
+                    <div class="slds-size_1-of-1 slds-max-small-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_1-of-4 slds-p-horizontal--small">
+                        <apex:outputLabel value="Artwork Dimensions " styleclass="slds-m-around_small"/>
+                    </div>
+                    <div class="slds-size_1-of-1 slds-max-small-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_1-of-4 slds-p-horizontal--small">
+                        <apex:outputField value="{!artWrk.Dimensions__c}"/>
+                    </div>
+                </div>
+                <div class="slds-grid slds-wrap slds-grid--align-center">
+                    <div class="slds-size_1-of-1 slds-max-small-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_1-of-4 slds-p-horizontal--small">
+                        <apex:outputLabel value="Packed Dimensions " styleclass="slds-m-around_small"/>
+                    </div>
+                    <div class="slds-size_1-of-1 slds-max-small-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_1-of-4 slds-p-horizontal--small">
+                        <apex:outputField value="{!artWrk.Packed_Dimensions__c}"/>
+                    </div>
+                    <div class="slds-size_1-of-1 slds-max-small-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_1-of-4 slds-p-horizontal--small">
+                        <apex:outputLabel value="Permit Bond Status " styleclass="slds-m-around_small"/>
+                    </div>
+                    <div class="slds-size_1-of-1 slds-max-small-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_1-of-4 slds-p-horizontal--small">
+                        <apex:outputField value="{!artWrk.Bond_Status__c}"/>
+                    </div>
+                </div>
+                <div class="slds-grid slds-wrap slds-grid--align-center">
+                    <div class="slds-size_1-of-1 slds-max-small-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_1-of-4 slds-p-horizontal--small">
+                        <apex:outputLabel value="Collector " styleclass="slds-m-around_small"/>
+                    </div>
+                    <div class="slds-size_1-of-1 slds-max-small-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_1-of-4 slds-p-horizontal--small">
+                        <apex:outputField value="{!artWrk.artApp__Collector__r.Name}"/>
+                    </div>
+                    <div class="slds-size_1-of-1 slds-max-small-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_1-of-4 slds-p-horizontal--small">
+                        
+                    </div>
+                    <div class="slds-size_1-of-1 slds-max-small-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_1-of-4 slds-p-horizontal--small">
+                        
+                    </div>
+                </div>
+                
+            </div>
+            
+            <!-- Gallery Section -->
+                <div class="slds-section slds-is-open">
+                <h3 class="slds-section__title">
+                    <!--button aria-controls="expando-unique-id" aria-expanded="true" class="slds-button slds-section__title-action"-->
+                        <!--svg class="slds-section__title-action-icon slds-button__icon slds-button__icon_left" aria-hidden="true">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                                 xlink:href="{!URLFOR($Asset.SLDS, 'assets/icons/utility-sprite/svg/symbols.svg#switch')}">
+                                            </use>
+                        </svg-->
+                        <span class="slds-truncate slds-align_center slds-section__title-action" title="Gallery Section">Gallery</span>
+                    <!--/button-->
+                </h3>
+                <div aria-hidden="false" class="slds-section__content" id="expando-unique-id">
+                </div>
+            </div>
+            
+            
+            <!-- Gallery Section Ends Here -->
+            
+            
+            <div class="slds-text-align_center " >
+                
+                <apex:repeat var="att" value="{!attList}">
+                    <div class="mySlides">
+                        <img src="/servlet/servlet.FileDownload?file={!att.id}"   style="width:50%;height:300px;"/> 
+                    </div>
+                </apex:repeat>
+                <br/>
+                <!--a class="prev"  onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next"  onclick="plusSlides(1)">&#10095;</a-->
+                <div style="width: 100%;">
+                    <div class="setSlideAlign">
+                     <apex:variable value="{!1}" var="count"/>
+                    <apex:repeat var="att" value="{!attList}">
+                        <div class="column">
+                            <img class="demo cursor"  onclick="currentSlide({!count})" src="/servlet/servlet.FileDownload?file={!att.id}"  />
+                            <apex:variable value="{!if(attList.size>=count,count+1,count)}" var="count"/>
+                        </div>
+                    </apex:repeat>
+                    </div>
+                </div>
+            </div>
+            
+            </apex:outputPanel>
+            <apex:outputPanel rendered="{!!showImg}"  style="text-align: center;">
+                <div style="margin-top:10px"><b>{!errorMsg}</b></div>
+            </apex:outputPanel>
+        </div>
+    </apex:form>
+    
+</apex:page>

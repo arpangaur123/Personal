@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Dest_THC_5__c</fullName>
+    <externalId>false</externalId>
+    <label>Dest THC 5</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Included</fullName>
+                <default>true</default>
+                <label>Included</label>
+            </value>
+            <value>
+                <fullName>USD 180 / 20&apos;</fullName>
+                <default>false</default>
+                <label>USD 180 / 20&apos;</label>
+            </value>
+            <value>
+                <fullName>USD 250 / 40&apos;</fullName>
+                <default>false</default>
+                <label>USD 250 / 40&apos;</label>
+            </value>
+            <value>
+                <fullName>USD 0.15 / chargeable KG</fullName>
+                <default>false</default>
+                <label>USD 0.15 / chargeable KG</label>
+            </value>
+            <value>
+                <fullName>USD 0.20 / chargeable kg</fullName>
+                <default>false</default>
+                <label>USD 0.20 / chargeable kg</label>
+            </value>
+            <value>
+                <fullName>USD 40 / cbm gross</fullName>
+                <default>false</default>
+                <label>USD 40 / cbm gross</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

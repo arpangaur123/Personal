@@ -1,0 +1,37 @@
+<apex:page standardController="artApp__Transaction__c" showHeader="false" standardstylesheets="false" renderAs="PDF">
+<apex:stylesheet value="{!$Resource.PackListCSS}"/>
+<table border="0">
+<tr><td align="left"><font style="font-weight:bold;font-family:arial;font-size:x-large">Release Order</font></td>
+<td align="right"><apex:image id="theImage" value="{!$Resource.AMLogo}"/></td>
+</tr>
+</table>
+<body>
+<apex:detail relatedList="false"></apex:detail>
+<div style="page-break-after: always;">&nbsp;</div>
+<table style="text-align: left; width: 100%;border-width: 0px;border-spacing: 0px;" border="0" cellpadding="2" cellspacing="2">
+<tbody>
+<tr>
+<td style="vertical-align: top;background-color: rgb(255, 255, 255);"><br />____________________________<br/>
+Released in Good Order by  <br />
+Name:____________________________ <br />
+<br/>
+Signature: ____________________<br/>
+On behalf of Helu-Trans (S) Pte Ltd<br/>
+<br />
+Date: ____________________<br />
+</td>
+<td style="vertical-align: top;background-color: rgb(255, 255, 255);" align="right"><br />____________________________<br/>
+Received in Good Order by  <br />
+Name:____________________________ <br />
+<br/>
+Signature: ____________________<br/>
+On behalf of Helu-Trans (S) Pte Ltd<br/>
+<br />
+Date: ____________________<br />
+</td>
+</tr>
+<tr><td style="background-color: rgb(255, 255, 255);" colspan="2" align="center"><br/><br/><br/>Helu-Trans (Beijing) Pte Ltd, Rm 101B Linji Building B, No.9 Street 8 <br/> Beijing Airport Logistics Zone, Shunyi District, Beijing, China 101300</td></tr>
+</tbody>
+</table>
+</body>
+</apex:page>

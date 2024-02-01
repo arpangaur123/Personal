@@ -1,0 +1,11 @@
+<script language="javascript">
+function Go()
+{
+window.parent.location.href="{!URLFOR( $Action.Opportunity.View ,  Opportunity.Id, null, true)}"
+
+}
+if ("{!Work_Order__c.Flag__c}"== "false")
+{
+Go()
+}
+</script>

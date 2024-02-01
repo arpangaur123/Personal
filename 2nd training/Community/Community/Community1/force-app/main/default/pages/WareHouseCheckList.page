@@ -1,0 +1,17 @@
+<apex:page standardController="Warehouse_Detail__c" lightningStylesheets="true">
+    <apex:includeLightning />
+    
+    <div id="FlipcardContainer" />
+    
+    <script>
+    $Lightning.use("c:WareHouseChecklistApp", function() {
+        $Lightning.createComponent("c:WareHouseChecklist",
+                                   { "recId":'{!Warehouse_Detail__c.Id}',
+                                     "locationName":'{!Warehouse_Detail__c.Warehouse_Location__c}'
+                                   },
+                                   "FlipcardContainer",
+                                   function() {
+                                   });
+    });
+    </script>
+</apex:page>

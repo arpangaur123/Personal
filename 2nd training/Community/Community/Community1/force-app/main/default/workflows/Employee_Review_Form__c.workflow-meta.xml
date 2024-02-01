@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>EFR_Approval_email_alert_to_CEO_ST_2</fullName>
+        <description>EFR- 2 - Approval email alert to  HR</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>helutrans.user4@gmail.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/CEO_Notification_to_Second_Approver</template>
+    </alerts>
+    <alerts>
+        <fullName>EFR_Final_approval_email_notificnations</fullName>
+        <ccEmails>mdroza@gmail.com</ccEmails>
+        <description>EFR - Final approval email notification</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <recipients>
+            <recipient>uzair.k@techmatrixconsulting.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/EFR_Final_approval_email_notification</template>
+    </alerts>
+    <alerts>
+        <fullName>EFR_Rejection_email_notification</fullName>
+        <description>EFR - Rejection email notification</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>caroline@helutrans.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/EFR_Rejection_email_notification</template>
+    </alerts>
+    <alerts>
+        <fullName>EFR_approval_email_alert_to_CEO</fullName>
+        <description>EFR - Approval email alert to  GM OR CFO</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>nement@punjabemporium.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/CEO_Notification_to_Second_Approver</template>
+    </alerts>
+    <alerts>
+        <fullName>EFR_approval_email_alert_to_HR</fullName>
+        <description>EFR - approval email alert to  CEO</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>matthewchow@helutrans.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/CEO_Notification_to_Second_Approver</template>
+    </alerts>
+    <alerts>
+        <fullName>EFR_approval_email_alert_to_HR1</fullName>
+        <description>EFR - approval email alert to HR1</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>helutrans.user4@gmail.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/CEO_sent_message_to_HR_acknowledgemnt</template>
+    </alerts>
+    <alerts>
+        <fullName>EFR_rejection_email_notification1</fullName>
+        <description>EFR - rejection email notification1</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>caroline@helutrans.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/EFR_Rejection_email_notification</template>
+    </alerts>
+    <alerts>
+        <fullName>Update_rejection_status</fullName>
+        <description>Update rejection status</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>caroline@helutrans.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/EFR_Rejection_email_notification</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>BJCEO_Third_Approval_Step</fullName>
+        <description>BJCEO_Third_Approval_Step</description>
+        <field>Form_Status__c</field>
+        <literalValue>Approved by CEO</literalValue>
+        <name>BJCEO_Third_Approval_Step</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>BJGM_Appropved_GM_1</fullName>
+        <description>HKGM_Appropved_GM_1</description>
+        <field>Form_Status__c</field>
+        <literalValue>Approved by GM</literalValue>
+        <name>BJGM_Appropved_GM_1</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>BJGM_Appropved_GM_2</fullName>
+        <description>HKGM_Appropved_GM_2</description>
+        <field>Form_Status__c</field>
+        <literalValue>Approved by CEO</literalValue>
+        <name>BJGM_Appropved_GM_2</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>SHCEO_Third_Approval_Step</fullName>
+        <description>SHCEO_Third_Approval_Step</description>
+        <field>Form_Status__c</field>
+        <literalValue>Approved by CEO</literalValue>
+        <name>SHCEO_Third_Approval_Step</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update</fullName>
+        <field>Form_Status__c</field>
+        <literalValue>Rejected</literalValue>
+        <name>Update rejection status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Final_Approval_Status</fullName>
+        <field>Form_Status__c</field>
+        <literalValue>Approved</literalValue>
+        <name>Update Final Approval Status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Status_field_for_CEO_1</fullName>
+        <description>Update Status field for CEO</description>
+        <field>Form_Status__c</field>
+        <literalValue>Approved by CEO</literalValue>
+        <name>Update Status field for CEO_</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Status_field_for_CEO_11</fullName>
+        <description>Update Status field for CEO and CFO</description>
+        <field>Form_Status__c</field>
+        <literalValue>Approved by CEO</literalValue>
+        <name>Update Status field for CEO</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_recall_status</fullName>
+        <description>Update recall status</description>
+        <field>Form_Status__c</field>
+        <literalValue>Draft</literalValue>
+        <name>Update recall status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_rejection_status</fullName>
+        <description>Update rejection status</description>
+        <field>Form_Status__c</field>
+        <literalValue>CEO Rejected</literalValue>
+        <name>Update rejection status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_status_for_pending</fullName>
+        <field>Form_Status__c</field>
+        <literalValue>Pending for Approval</literalValue>
+        <name>Update status for pending</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Updated_Approval_Status</fullName>
+        <field>Form_Status__c</field>
+        <literalValue>Approved by GM</literalValue>
+        <name>Updated Approval Status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Updated_Approval_Status_ST2</fullName>
+        <description>Updated Approval Status</description>
+        <field>Form_Status__c</field>
+        <literalValue>Approved by GM</literalValue>
+        <name>Updated Approval Status_ST2</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>status_update_by_the_CEO</fullName>
+        <description>status update by the CEO</description>
+        <field>Form_Status__c</field>
+        <literalValue>Approved by CEO</literalValue>
+        <name>status update by the CEO</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>update_the_status</fullName>
+        <field>Form_Status__c</field>
+        <literalValue>Approved by GM</literalValue>
+        <name>update the status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <tasks>
+        <fullName>BJCEO_Task_Completer</fullName>
+        <assignedTo>helutrans.user4@gmail.com</assignedTo>
+        <assignedToType>user</assignedToType>
+        <description>BJCEO_Task_Completer
+
+BJCEO__Task_Completer : Placeholder</description>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>true</notifyAssignee>
+        <offsetFromField>Employee_Review_Form__c.CreatedDate</offsetFromField>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>In Progress</status>
+        <subject>BJCEO_Task_Completer</subject>
+    </tasks>
+    <tasks>
+        <fullName>EFR_Completion_task</fullName>
+        <assignedTo>helutrans.user4@gmail.com</assignedTo>
+        <assignedToType>user</assignedToType>
+        <description>EFR - Completion task
+
+Message to be provided.</description>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>true</notifyAssignee>
+        <offsetFromField>Employee_Review_Form__c.CreatedDate</offsetFromField>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>In Progress</status>
+        <subject>EFR - Completion task</subject>
+    </tasks>
+    <tasks>
+        <fullName>EFR_Completion_task1</fullName>
+        <assignedTo>helutrans.user4@gmail.com</assignedTo>
+        <assignedToType>user</assignedToType>
+        <description>EFR - Completion task
+
+Completed task placeholder</description>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>true</notifyAssignee>
+        <offsetFromField>Employee_Review_Form__c.CreatedDate</offsetFromField>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>In Progress</status>
+        <subject>EFR - Completion task</subject>
+    </tasks>
+    <tasks>
+        <fullName>EFR_Completion_task11</fullName>
+        <assignedTo>helutrans.user4@gmail.com</assignedTo>
+        <assignedToType>user</assignedToType>
+        <description>task completion template</description>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Employee_Review_Form__c.CreatedDate</offsetFromField>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>In Progress</status>
+        <subject>EFR - Completion task</subject>
+    </tasks>
+    <tasks>
+        <fullName>EFR_Completion_task_1</fullName>
+        <assignedTo>helutrans.user4@gmail.com</assignedTo>
+        <assignedToType>user</assignedToType>
+        <description>EFR - Completion task
+
+Completed task placeholder</description>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>true</notifyAssignee>
+        <offsetFromField>Employee_Review_Form__c.CreatedDate</offsetFromField>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>In Progress</status>
+        <subject>EFR - Completion task</subject>
+    </tasks>
+    <tasks>
+        <fullName>EFR_Completion_task_2</fullName>
+        <assignedTo>helutrans.user4@gmail.com</assignedTo>
+        <assignedToType>user</assignedToType>
+        <description>Place holder for task completion</description>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Employee_Review_Form__c.CreatedDate</offsetFromField>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>In Progress</status>
+        <subject>EFR - Completion task_CEO</subject>
+    </tasks>
+    <tasks>
+        <fullName>EFR_Completion_task_CEO</fullName>
+        <assignedTo>helutrans.user4@gmail.com</assignedTo>
+        <assignedToType>user</assignedToType>
+        <description>Place Holder for task completion.</description>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>true</notifyAssignee>
+        <offsetFromField>Employee_Review_Form__c.CreatedDate</offsetFromField>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>In Progress</status>
+        <subject>EFR - Completion task_CEO</subject>
+    </tasks>
+    <tasks>
+        <fullName>HKHR_Task_Completer</fullName>
+        <assignedTo>helutrans.user4@gmail.com</assignedTo>
+        <assignedToType>user</assignedToType>
+        <description>HKHR_Task_Completer
+
+HKHR_Task_Completer : Placeholder</description>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Employee_Review_Form__c.CreatedDate</offsetFromField>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>In Progress</status>
+        <subject>HKHR_Task_Completer</subject>
+    </tasks>
+    <tasks>
+        <fullName>SHCEO_Task_Completer</fullName>
+        <assignedTo>helutrans.user4@gmail.com</assignedTo>
+        <assignedToType>user</assignedToType>
+        <description>SHCEO_Task_Completer
+
+SHCEO_Task_Completer : Placeholder</description>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>true</notifyAssignee>
+        <offsetFromField>Employee_Review_Form__c.CreatedDate</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>In Progress</status>
+        <subject>SHCEO_Task_Completer</subject>
+    </tasks>
+    <tasks>
+        <fullName>Update_the_task_Complete_HR</fullName>
+        <assignedTo>helutrans.user4@gmail.com</assignedTo>
+        <assignedToType>user</assignedToType>
+        <description>Task Complete Place Holder</description>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Employee_Review_Form__c.CreatedDate</offsetFromField>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>In Progress</status>
+        <subject>Update the task Complete_HR</subject>
+    </tasks>
+</Workflow>

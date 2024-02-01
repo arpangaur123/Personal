@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DA_Other_Charges_3_in_SGD__c</fullName>
+    <description>Other cost components billable by appointed Destination Agent in Singapore Dollars.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Other cost components billable by appointed Destination Agent in Singapore Dollars.</inlineHelpText>
+    <label>DA Other Charges 3 (in SGD)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

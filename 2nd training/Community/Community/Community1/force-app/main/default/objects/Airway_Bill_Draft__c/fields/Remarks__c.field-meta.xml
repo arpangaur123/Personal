@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Remarks__c</fullName>
+    <externalId>false</externalId>
+    <label>Remarks</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Shipment will be lodge on</fullName>
+                <default>false</default>
+                <label>Shipment will be lodge on</label>
+            </value>
+            <value>
+                <fullName>Shipment to be collected on</fullName>
+                <default>false</default>
+                <label>Shipment to be collected on</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

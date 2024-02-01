@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>Testing_Singa</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Testing  Created records of Singapore is shared with Approver</description>
+        <label>Testing  Created records of Singapore is shared with Approver</label>
+        <sharedTo>
+            <group>SingaporeApprovalGroup</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>Singapore_Creator_Group1</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

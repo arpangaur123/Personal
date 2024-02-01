@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Crate_Dimensions__c</fullName>
+    <externalId>false</externalId>
+    <label>Crate Dimensions</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Looseload (LCL)</fullName>
+                <default>false</default>
+                <label>Looseload (LCL)</label>
+            </value>
+            <value>
+                <fullName>20&apos; Container</fullName>
+                <default>false</default>
+                <label>20&apos; Container</label>
+            </value>
+            <value>
+                <fullName>40&apos; Container</fullName>
+                <default>false</default>
+                <label>40&apos; Container</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

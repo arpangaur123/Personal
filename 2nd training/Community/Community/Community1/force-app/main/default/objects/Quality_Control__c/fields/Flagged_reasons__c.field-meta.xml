@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flagged_reasons__c</fullName>
+    <externalId>false</externalId>
+    <label>Flagged reason(s)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Material (Ceramic,Acrylic,Stone,Glass,Neon)</fullName>
+                <default>false</default>
+                <label>Material (Ceramic,Acrylic,Stone,Glass,Neon)</label>
+            </value>
+            <value>
+                <fullName>Unusual or protruding surface</fullName>
+                <default>false</default>
+                <label>Unusual or protruding surface</label>
+            </value>
+            <value>
+                <fullName>Oversized (&gt; 300x 200cm)</fullName>
+                <default>false</default>
+                <label>Oversized (&gt; 300x 200cm)</label>
+            </value>
+            <value>
+                <fullName>Overweight (&gt; 200kg)</fullName>
+                <default>false</default>
+                <label>Overweight (&gt; 200kg)</label>
+            </value>
+            <value>
+                <fullName>Packing show physical damage</fullName>
+                <default>false</default>
+                <label>Packing show physical damage</label>
+            </value>
+            <value>
+                <fullName>Packing shows water damage</fullName>
+                <default>false</default>
+                <label>Packing shows water damage</label>
+            </value>
+            <value>
+                <fullName>Insecure packing - internal movement detected</fullName>
+                <default>false</default>
+                <label>Insecure packing - internal movement detected</label>
+            </value>
+            <value>
+                <fullName>Tip and Tell/Shockwatch activated</fullName>
+                <default>false</default>
+                <label>Tip and Tell/Shockwatch activated</label>
+            </value>
+            <value>
+                <fullName>High value item</fullName>
+                <default>false</default>
+                <label>High value item</label>
+            </value>
+            <value>
+                <fullName>Special client</fullName>
+                <default>false</default>
+                <label>Special client</label>
+            </value>
+            <value>
+                <fullName>Others (specify in Others field below)</fullName>
+                <default>false</default>
+                <label>Others (specify in Others field below)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>10</visibleLines>
+</CustomField>

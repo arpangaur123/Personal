@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HTTR</fullName>
+    <active>true</active>
+    <label>HTTR</label>
+    <picklistValues>
+        <picklist>Collection_City__c</picklist>
+        <values>
+            <fullName>Amsterdam %28AMS airport%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Australia %28SYD airport%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Beijing %28PEK airport%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hong Kong %28HKG airport%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Japan %28NRT airport%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Korea %28ICN airport%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>London %28LHR airport%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Los Angeles %28LAX airport%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New York %28JFK airport%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paris %28CDG airport%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shanghai %28PVG airport%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Singapore %28SIN airport%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Taiwan %28TPE airport%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Destination_City__c</picklist>
+        <values>
+            <fullName>Amsterdam %28AMS airport%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Australia %28SYD airport%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Beijing %28PEK airport%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hong Kong %28HKG airport%29</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Japan %28NRT airport%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Korea %28ICN airport%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>London %28LHR airport%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Los Angeles %28LAX airport%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New York %28JFK airport%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paris %28CDG airport%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shanghai %28PVG airport%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Singapore %28SIN airport%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Taiwan %28TPE airport%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

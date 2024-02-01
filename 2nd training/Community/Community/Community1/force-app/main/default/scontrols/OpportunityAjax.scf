@@ -1,0 +1,388 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
+<HTML> 
+<BODY> 
+<link href="https://emea.salesforce.com/dCSS/Theme2/default/common.css" type="text/css" media="handheld,print,projection,screen,tty,tv" rel="stylesheet" > 
+
+<script src="https://www.salesforce.com/services/lib/ajax/beta3.3/sforceclient.js" type="text/javascript"></script> 
+
+<script language="JavaScript"> 
+var FirstTime="Yes"; 
+TheDate = new Date(); 
+TheYear = TheDate.getYear(); 
+
+// Build the date range for Current Month 
+var ThisMonth = TheDate.getMonth()+1; if (ThisMonth<10){ThisMonth = "0" + ThisMonth} 
+var Enday="31" 
+if ( ThisMonth=="04" || ThisMonth=="06" || ThisMonth=="09" || ThisMonth=="11" ) {var Enday = "30"} 
+if ( ThisMonth=="02" ){var Enday = "28"} 
+var StartDateForMonth = TheYear + "-" + ThisMonth + "-01"; 
+var EndDateForMonth = TheYear + "-" + ThisMonth + "-" + Enday; 
+var CurrentMonthtSearchString = "CloseDate >= " + StartDateForMonth + " and CloseDate <= " + EndDateForMonth; 
+
+// Build the date range for Current Year 
+var StartDateForYear = TheYear + "-01-01"; 
+var EndDateForYear = TheYear + "-12-31"; 
+var CurrentYearSearchString = "CloseDate >= " + StartDateForYear + " and CloseDate <= " + EndDateForYear; 
+
+// Build the date range for Current Quarter 
+if ( ThisMonth=="01" || ThisMonth=="02" || ThisMonth=="03") {var St = "01-01"; var En="03-31"} 
+if ( ThisMonth=="04" || ThisMonth=="05" || ThisMonth=="06") {var St = "04-01"; var En="06-30"} 
+if ( ThisMonth=="07" || ThisMonth=="08" || ThisMonth=="09") {var St = "07-01"; var En="09-30"} 
+if ( ThisMonth=="10" || ThisMonth=="11" || ThisMonth=="12") {var St = "10-01"; var En="03-31"} 
+var StartDateForQuarter = TheYear + "-" + St; 
+var EndDateForQuarter = TheYear + "-" + En; 
+var CurrentQuarterSearchString = "CloseDate >= " + StartDateForQuarter + " and CloseDate <= " + EndDateForQuarter; 
+
+
+
+function SearchOpportunities() { 
+
+sforceClient.init("{!API_Session_ID}","{!API_Partner_Server_URL_70}"); 
+ThisUserInfo = sforceClient.getUserInfo(); 
+ThisUser=ThisUserInfo.userId 
+
+SearchString="Select Id, Name, CloseDate, Stagename, Amount, Probability, AccountId From Opportunity" ; 
+
+if (FirstTime == "No"){ 
+SearchString="Select Id, Name, CloseDate, Stagename, Amount, Probability, AccountId From Opportunity"; 
+
+if (document.FilterForm.OpType[0].checked) 
+{SearchString = SearchString + " Where OwnerID = '" + ThisUser + "'"} 
+else 
+{SearchString = SearchString + " Where OwnerID !=''"} 
+
+if (document.FilterForm.AmountRange.value !="All") 
+{SearchString = SearchString + " and " + document.FilterForm.AmountRange.value} 
+
+if (document.FilterForm.Prob.value !="All") 
+{SearchString = SearchString + " and " + document.FilterForm.Prob.value} 
+
+switch (document.FilterForm.DateRange.value) { 
+case "Month": SearchString = SearchString + " and " + CurrentMonthtSearchString; break; 
+case "Quarter": SearchString = SearchString + " and " + CurrentQuarterSearchString; break; 
+case "Year": SearchString = SearchString + " and " + CurrentYearSearchString; break; 
+} 
+} 
+
+var queryResult = sforceClient.Query(SearchString); 
+
+var output = "<div class='bMyTask'><div class='bPageBlock secondaryPalette'><div class='pbHeader'><div class='pbBody'>"; 
+output += "<table class='sortable' id='unique_id'><tr class='headerRow'>"; 
+output += "<td>Opportunity Name</td>"; 
+output += "<td>Amount</td>"; 
+output += "<td>Sales Stage</td>"; 
+//output += "<th>Account</th>"; 
+output += "<td>Probability</td>"; 
+output += "<td>Close Date</td>"; 
+output += "</tr>"; 
+var NumberOfRecords = queryResult.records.length 
+var Total = 0 ; 
+var Largest = 0 
+var Smallest = 9999999999 
+var NumDeals = 0 
+var Average = 0 
+var ThisAmount = 0 
+
+for (var j = 0; j < NumberOfRecords ; j++) { 
+
+var Opportunity = queryResult.records[j]; 
+var ThisAccountName="" 
+var ThisAccountId = Opportunity.get("Accountid"); 
+
+// These are if you want to display the Account Name but be warned it is very slow 
+// if (ThisAccountId != ""){ 
+// var AccountqueryResult = sforceClient.Query("Select Name FROM Account WHERE Id = '"+ThisAccountId+"'"); 
+// var ThisAccount = AccountqueryResult.records[0]; 
+// ThisAccountName = "<a href='/" + ThisAccountId + "' target=_parent>" + ThisAccount.get("Name") + "</a>"; 
+// } 
+
+var d = new Date(); 
+d = Opportunity.get("CloseDate"); 
+//Now pad the dates with leading zeroes so they sort properly 
+var ThisMonth = d.getMonth()+1; if (ThisMonth<10){ThisMonth = "0" + ThisMonth} 
+var ThisDay = d.getDate(); if (ThisDay<10){ThisDay = "0" + ThisDay} 
+var MyDate = ThisMonth + "/" + ThisDay + "/" + d.getYear(); 
+
+var ThisAmount = parseFloat(Opportunity.get("amount")); 
+if (isNaN(ThisAmount)) {ThisAmount=0}; 
+
+TruncatedOpptyName = String(Opportunity.get("name")).substring(0,30) 
+output +="<tr><td><a href='/"+Opportunity.get("id")+"' target=_parent>" + TruncatedOpptyName + "</a></td>"; 
+output += "<td>" + formatCurrency(ThisAmount) + "</td>"; 
+output += "<td>" + Opportunity.get("stagename") + "</td>"; 
+// output += "<td>" + ThisAccountName + "</td>"; 
+output += "<td>" + Opportunity.get("Probability") + "</td>"; 
+output += "<td>" + MyDate + "</td></tr>"; 
+
+
+Total = Total + ThisAmount; 
+NumDeals += 1 
+if (ThisAmount > Largest){Largest = ThisAmount} 
+if (ThisAmount < Smallest){Smallest = ThisAmount} 
+
+} 
+
+if (NumDeals > 0){Average = Total/NumDeals}; 
+if (NumDeals <= 0){Smallest = 0;Largest=0;Average=0;Total=0}; 
+output += "</table></div></div></div></div>"; 
+document.getElementById("ResultsHolder").innerHTML = output; 
+
+//Write out the Totals 
+var totoutput = "<TABLE border='0' cellspacing='0' cellpadding='0'><TR>" 
+totoutput += "<TD><h1>Total = " + formatCurrency(Total) + "</h1></TD>"; 
+totoutput += "<TD><h1>Average = " + formatCurrency(Average) + "</h1></TD>"; 
+totoutput += "<TD><h1>Largest = " + formatCurrency(Largest) + "</h1></TD>"; 
+totoutput += "<TD><h1>Smallest = " + formatCurrency(Smallest) + "</h1></TD>"; 
+totoutput += "<TR><TABLE>" 
+document.getElementById("Totals").innerHTML = totoutput; 
+
+// Make the Table is sortable 
+sortables_init(); 
+} 
+
+
+
+function formatCurrency(num) { 
+num = num.toString().replace(/\$|\,/g,''); 
+if(isNaN(num)) 
+num = "0"; 
+sign = (num == (num = Math.abs(num))); 
+num = Math.floor(num*100+0.50000000001); 
+num = Math.floor(num/100).toString(); 
+for (var i = 0; i < Math.floor((num.length-(1+i))/3); i++) 
+num = num.substring(0,num.length-(4*i+3))+','+ num.substring(num.length-(4*i+3)); 
+return (((sign)?'':'-') + '$' + num); 
+} 
+
+addEvent(window, "load", sortables_init); 
+
+var SORT_COLUMN_INDEX; 
+
+function sortables_init() { 
+// Find all tables with class sortable and make them sortable 
+if (!document.getElementsByTagName) return; 
+tbls = document.getElementsByTagName("table"); 
+for (ti=0;ti<tbls.length;ti++) { 
+thisTbl = tbls[ti]; 
+if (((' '+thisTbl.className+' ').indexOf("sortable") != -1) && (thisTbl.id)) { 
+//initTable(thisTbl.id); 
+ts_makeSortable(thisTbl); 
+} 
+} 
+} 
+
+function ts_makeSortable(table) { 
+if (table.rows && table.rows.length > 0) { 
+var firstRow = table.rows[0]; 
+} 
+if (!firstRow) return; 
+
+// We have a first row: assume it's the header, and make its contents clickable links 
+for (var i=0;i<firstRow.cells.length;i++) { 
+var cell = firstRow.cells[i]; 
+var txt = ts_getInnerText(cell); 
+cell.innerHTML = '<a href="#" class="list" '+ 
+'onclick="ts_resortTable(this, '+i+');return false;"><h1>' + 
+txt+'</h1><span class="sortarrow"></span></a>'; 
+} 
+} 
+
+function ts_getInnerText(el) { 
+if (typeof el == "string") return el; 
+if (typeof el == "undefined") { return el }; 
+if (el.innerText) return el.innerText; //Not needed but it is faster 
+var str = ""; 
+
+var cs = el.childNodes; 
+var l = cs.length; 
+for (var i = 0; i < l; i++) { 
+switch (cs[i].nodeType) { 
+case 1: //ELEMENT_NODE 
+str += ts_getInnerText(cs[i]); 
+break; 
+case 3: //TEXT_NODE 
+str += cs[i].nodeValue; 
+break; 
+} 
+} 
+return str; 
+} 
+
+function ts_resortTable(lnk,clid) { 
+// get the span 
+var span; 
+for (var ci=0;ci<lnk.childNodes.length;ci++) { 
+if (lnk.childNodes[ci].tagName && lnk.childNodes[ci].tagName.toLowerCase() == 'span') span = lnk.childNodes[ci]; 
+} 
+var spantext = ts_getInnerText(span); 
+var td = lnk.parentNode; 
+var column = clid || td.cellIndex; 
+var table = getParent(td,'TABLE'); 
+
+// Work out a type for the column 
+if (table.rows.length <= 1) return; 
+var itm = ts_getInnerText(table.rows[1].cells[column]); 
+sortfn = ts_sort_caseinsensitive; 
+if (itm.match(/^\d\d[\/-]\d\d[\/-]\d\d\d\d$/)) sortfn = ts_sort_date; 
+if (itm.match(/^\d\d[\/-]\d\d[\/-]\d\d$/)) sortfn = ts_sort_date; 
+if (itm.match(/^[£$]/)) sortfn = ts_sort_currency; 
+if (itm.match(/^[\d\.]+$/)) sortfn = ts_sort_numeric; 
+SORT_COLUMN_INDEX = column; 
+var firstRow = new Array(); 
+var newRows = new Array(); 
+for (i=0;i<table.rows[0].length;i++) { firstRow[i] = table.rows[0][i]; } 
+for (j=1;j<table.rows.length;j++) { newRows[j-1] = table.rows[j]; } 
+
+newRows.sort(sortfn); 
+
+if (span.getAttribute("sortdir") == 'down') { 
+ARROW = "<img src='https://emea.salesforce.com/img/sort_desc_arrow_grn.gif' align='texttop'>"; 
+newRows.reverse(); 
+span.setAttribute('sortdir','up'); 
+} else { 
+ARROW = "<img src='https://emea.salesforce.com/img/sort_asc_arrow_grn.gif' align='texttop'>"; 
+span.setAttribute('sortdir','down'); 
+} 
+
+
+for (i=0;i<newRows.length;i++) { if (!newRows[i].className || (newRows[i].className && (newRows[i].className.indexOf('sortbottom') == -1))) table.tBodies[0].appendChild(newRows[i]);} 
+// do sortbottom rows only 
+for (i=0;i<newRows.length;i++) { if (newRows[i].className && (newRows[i].className.indexOf('sortbottom') != -1)) table.tBodies[0].appendChild(newRows[i]);} 
+
+// Delete any other arrows there may be showing 
+var allspans = document.getElementsByTagName("span"); 
+for (var ci=0;ci<allspans.length;ci++) { 
+if (allspans[ci].className == 'sortarrow') { 
+if (getParent(allspans[ci],"table") == getParent(lnk,"table")) { // in the same table as us? 
+allspans[ci].innerHTML = ''; 
+} 
+} 
+} 
+
+span.innerHTML = ARROW; 
+} 
+
+function getParent(el, pTagName) { 
+if (el == null) return null; 
+else if (el.nodeType == 1 && el.tagName.toLowerCase() == pTagName.toLowerCase()) 
+return el; 
+else 
+return getParent(el.parentNode, pTagName); 
+} 
+function ts_sort_date(a,b) { 
+
+aa = ts_getInnerText(a.cells[SORT_COLUMN_INDEX]); 
+bb = ts_getInnerText(b.cells[SORT_COLUMN_INDEX]); 
+if (aa.length == 10) { 
+dt1 = aa.substr(6,4)+aa.substr(3,2)+aa.substr(0,2); 
+} else { 
+yr = aa.substr(6,2); 
+if (parseInt(yr) < 50) { yr = '20'+yr; } else { yr = '19'+yr; } 
+dt1 = yr+aa.substr(3,2)+aa.substr(0,2); 
+} 
+if (bb.length == 10) { 
+dt2 = bb.substr(6,4)+bb.substr(3,2)+bb.substr(0,2); 
+} else { 
+yr = bb.substr(6,2); 
+if (parseInt(yr) < 50) { yr = '20'+yr; } else { yr = '19'+yr; } 
+dt2 = yr+bb.substr(3,2)+bb.substr(0,2); 
+} 
+if (dt1==dt2) return 0; 
+if (dt1<dt2) return -1; 
+return 1; 
+} 
+
+function ts_sort_currency(a,b) { 
+aa = ts_getInnerText(a.cells[SORT_COLUMN_INDEX]).replace(/[^0-9.]/g,''); 
+bb = ts_getInnerText(b.cells[SORT_COLUMN_INDEX]).replace(/[^0-9.]/g,''); 
+return parseFloat(aa) - parseFloat(bb); 
+} 
+
+function ts_sort_numeric(a,b) { 
+aa = parseFloat(ts_getInnerText(a.cells[SORT_COLUMN_INDEX])); 
+if (isNaN(aa)) aa = 0; 
+bb = parseFloat(ts_getInnerText(b.cells[SORT_COLUMN_INDEX])); 
+if (isNaN(bb)) bb = 0; 
+return aa-bb; 
+} 
+
+function ts_sort_caseinsensitive(a,b) { 
+aa = ts_getInnerText(a.cells[SORT_COLUMN_INDEX]).toLowerCase(); 
+bb = ts_getInnerText(b.cells[SORT_COLUMN_INDEX]).toLowerCase(); 
+if (aa==bb) return 0; 
+if (aa<bb) return -1; 
+return 1; 
+} 
+
+function ts_sort_default(a,b) { 
+aa = ts_getInnerText(a.cells[SORT_COLUMN_INDEX]); 
+bb = ts_getInnerText(b.cells[SORT_COLUMN_INDEX]); 
+if (aa==bb) return 0; 
+if (aa<bb) return -1; 
+return 1; 
+} 
+
+
+function addEvent(elm, evType, fn, useCapture) 
+{ 
+if (elm.addEventListener){ 
+elm.addEventListener(evType, fn, useCapture); 
+return true; 
+} else if (elm.attachEvent){ 
+var r = elm.attachEvent("on"+evType, fn); 
+return r; 
+} else { 
+// alert("Handler could not be removed"); 
+} 
+} 
+
+</script> 
+<BODY class="home homepage" id="homePage"> 
+
+<div class="bMyTask"><div class="bPageBlock secondaryPalette"><div class="pbHeader"> 
+
+<form name=FilterForm method="POST" action="javascript:SearchOpportunities()"> 
+<TABLE> 
+
+<td>Close Date: <SELECT NAME="DateRange" onChange='javascript:SearchOpportunities()'> 
+<OPTION VALUE="All">All 
+<OPTION VALUE="Month">This Month 
+<OPTION VALUE="Quarter">This Quarter 
+<OPTION VALUE="Year">This Year 
+</SELECT></td> 
+
+<td>Amount: <SELECT NAME="AmountRange" onChange='javascript:SearchOpportunities()'> 
+<OPTION VALUE="All">All 
+<OPTION VALUE="Amount >= 100000">>= $100k 
+<OPTION VALUE="Amount >= 250000">>= $250k 
+<OPTION VALUE="Amount >= 500000">>= $500k 
+<OPTION VALUE="Amount >= 1000000">>= $1m 
+</SELECT></td> 
+
+<td>Probability: <SELECT NAME="Prob" onChange='javascript:SearchOpportunities()'> 
+<OPTION VALUE="All">All 
+<OPTION VALUE="Probability >= 25">>= 25% 
+<OPTION VALUE="Probability >= 50">>= 50% 
+<OPTION VALUE="Probability >= 75">>= 75% 
+<OPTION VALUE="Probability >= 90">>= 90% 
+</SELECT></td> 
+
+<td> 
+<input type="radio" name="OpType" value="My" onClick='javascript:SearchOpportunities()'>Mine 
+<input type="radio" name="OpType" value="Team" checked onClick='javascript:SearchOpportunities() '>All 
+</td> 
+</TABLE> 
+<br> 
+<div id="Totals"></div> 
+</div></div></div> 
+<div id="ResultsHolder"></div> 
+
+<script language="JavaScript"> 
+if (FirstTime="Yes"){ 
+SearchOpportunities(); 
+FirstTime="No" 
+} 
+</script> 
+</form> 
+</BODY> 
+</HTML>

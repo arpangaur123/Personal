@@ -1,0 +1,4 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction" access="global" controller="dsfs.DocuSignJavascriptController">
+    <aura:handler name="doInit" value="{!this}" action="{!c.doInit}" />
+    <aura:attribute name="rcValue" type="String" />
+</aura:component>

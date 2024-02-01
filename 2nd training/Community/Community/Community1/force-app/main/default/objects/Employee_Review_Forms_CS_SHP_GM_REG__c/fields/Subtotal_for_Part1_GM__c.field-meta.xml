@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Subtotal_for_Part1_GM__c</fullName>
+    <externalId>false</externalId>
+    <formula>VALUE(Text(Company_Knowledge__c))+
+VALUE(Text(Art_Storage_Facility_GM__c))+
+VALUE(Text(Salesforce_Processes_GM__c))+
+VALUE(Text(Artmove_Operations_GM__c))+
+VALUE(Text(Art_Eco_System_GM__c))+
+VALUE(Text(Key_HT_Account_Competition_GM__c))+
+VALUE(Text(International_Freight_GM__c))+
+VALUE(Text(Customs_Formalities_Regulations_GM__c))+
+VALUE(Text(Crating_Carton_Methods_GM__c))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Subtotal for Part1 [GM]</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Vendor__c</fullName>
+    <externalId>false</externalId>
+    <label>Vendor</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>BHS KINETIC PTE LTD</fullName>
+                <default>false</default>
+                <label>BHS KINETIC PTE LTD</label>
+            </value>
+            <value>
+                <fullName>MAYOR EXPRESS FREIGHT SERVICES PTE LTD</fullName>
+                <default>false</default>
+                <label>MAYOR EXPRESS FREIGHT SERVICES PTE LTD</label>
+            </value>
+            <value>
+                <fullName>ML LOGISTICS SERVICES</fullName>
+                <default>false</default>
+                <label>ML LOGISTICS SERVICES</label>
+            </value>
+            <value>
+                <fullName>PROSPECT LOGISTICS PTE LTD</fullName>
+                <default>false</default>
+                <label>PROSPECT LOGISTICS PTE LTD</label>
+            </value>
+            <value>
+                <fullName>SIGMA CONTAINER LINE</fullName>
+                <default>false</default>
+                <label>SIGMA CONTAINER LINE</label>
+            </value>
+            <value>
+                <fullName>SUPREME CONTAINER &amp; WAREHOUSING</fullName>
+                <default>false</default>
+                <label>SUPREME CONTAINER &amp; WAREHOUSING</label>
+            </value>
+            <value>
+                <fullName>Others</fullName>
+                <default>false</default>
+                <label>Others</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

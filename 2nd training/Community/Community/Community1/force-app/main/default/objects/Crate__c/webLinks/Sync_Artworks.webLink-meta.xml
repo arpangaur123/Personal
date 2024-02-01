@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sync_Artworks</fullName>
+    <availability>online</availability>
+    <description>Sync function between Crate to Artworks by choice</description>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Sync Artworks</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>{!requireScript(&quot;/soap/ajax/33.0/connection.js&quot;)}
+
+var artworkCount = sforce.connection.query(&quot;select count() from artApp__Artwork__c where Crate__c = &apos;&quot;+&apos;{!Crate__c.Id}&apos;+&quot;&apos; limit 1&quot;).size; 
+
+var left = (screen.width/2)-(800/2);
+var top = (screen.height/2)-(400/2);
+
+var dateIn = &apos;null&apos;;
+if(&apos;{!Crate__c.Date_In__c}&apos; != &apos;&apos;)
+{
+dateIn = &apos;{!YEAR(Crate__c.Date_In__c)}&apos;+&apos;-&apos;;
+if(&apos;{!MONTH(Crate__c.Date_In__c)}&apos; &lt; 10)
+dateIn += &apos;0&apos;;
+dateIn += &apos;{!MONTH(Crate__c.Date_In__c)}&apos;+&apos;-&apos;;
+if(&apos;{!DAY(Crate__c.Date_In__c)}&apos; &lt; 10)
+dateIn += &apos;0&apos;;
+dateIn += &apos;{!DAY(Crate__c.Date_In__c)}&apos;;
+}
+var dateOut = &apos;null&apos;;
+if(&apos;{!Crate__c.Date_Out__c}&apos; != &apos;&apos;)
+{
+dateOut = &apos;{!YEAR(Crate__c.Date_Out__c)}&apos;+&apos;-&apos;;
+if(&apos;{!MONTH(Crate__c.Date_Out__c)}&apos; &lt; 10)
+dateOut += &apos;0&apos;;
+dateOut += &apos;{!MONTH(Crate__c.Date_Out__c)}&apos;+&apos;-&apos;;
+if(&apos;{!DAY(Crate__c.Date_Out__c)}&apos; &lt; 10)
+dateOut += &apos;0&apos;;
+dateOut += &apos;{!DAY(Crate__c.Date_Out__c)}&apos;;
+}
+
+
+
+if(artworkCount == 0)
+{
+  alert(&apos;No Artwork records are defined for this Crate, please define at least one Artwork record to proceed further.&apos;);
+}
+else
+{
+     window.open(&quot;/apex/CratetoArtworksSync?id=&quot;+&apos;{!Crate__c.Id}&apos;,&quot;&quot;,&quot;scrollbars=yes,width=800,height=400,top=&quot;+top+&quot;, left=&quot;+left);
+ 
+}</url>
+</WebLink>

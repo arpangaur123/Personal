@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Exclusions_OS__c</fullName>
+    <defaultValue>&quot;- Multiple or split pick up addresses&quot; &amp; BR() &amp;
+&quot;- Insurance&quot; &amp; BR() &amp;
+&quot;- Heavy lift, stair carry, long carry, hoisting, piano handling, fumigation etc, will be quoted separately If required&quot; &amp; BR() &amp;
+&quot;- Price applies for work done on normal work hours on weekdays only.&quot; &amp; BR() &amp; 
+&quot;Additional charges will apply for work carried out on weekends / public holidays&quot; &amp; BR() &amp;
+&quot;- Any third party services, such as handyman, electrician, maid services etc, will be quoted separately if required&quot;</defaultValue>
+    <externalId>false</externalId>
+    <label>Exclusions</label>
+    <length>32000</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>7</visibleLines>
+</CustomField>

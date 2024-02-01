@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stair_Carry_Long_Carry__c</fullName>
+    <defaultValue>&quot;US$ 300.00 lumpsum (min $100.00 / shipment)&quot;</defaultValue>
+    <externalId>false</externalId>
+    <label>Stair Carry / Long Carry</label>
+    <length>250</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

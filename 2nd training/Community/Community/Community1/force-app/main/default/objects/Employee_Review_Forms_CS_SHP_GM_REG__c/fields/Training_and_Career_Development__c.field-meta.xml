@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Training_and_Career_Development__c</fullName>
+    <description>Part 7: Training and Career Development
+(Please complete the section if answered &apos;NO&apos; in Part 5)
+Jointly discuss with the crew and record the following: strengths, weaknesses, work challenges, training, and career development opportunities</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Part 7: Training and Career Development
+(Please complete the section if answered &apos;NO&apos; in Part 5)
+Jointly discuss with the crew and record the following: strengths, weaknesses, work challenges, training, and career development opportunities</inlineHelpText>
+    <label>Training and Career Development</label>
+    <length>32768</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>4</visibleLines>
+</CustomField>

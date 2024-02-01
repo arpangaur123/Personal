@@ -1,0 +1,86 @@
+------------------------------------------------Class--------------------------------------------------------------
+/*
+ * Auther : Arpan Gaur
+ * Date : 20-10-2022
+ * Description : Post API call for Email through mailjet
+ */
+public class MailApiCallOut {
+    @AuraEnabled
+    public static string PostCallout(string recieverEmail ,string subject, string body){
+        string username = 'c8edf07abc5528ce0f8df8e422a36707';
+        string passward = '21bd06dc20e3a4aa25bcaeca473a7df3';
+        Http http = new Http();
+        HttpRequest request = new HttpRequest();
+        request.setEndpoint('https://api.mailjet.com/v3.1/send');
+        request.setMethod('POST');
+        request.setHeader('Content-Type', 'application/json;charset=UTF-8');
+        request.setHeader('Authorization', 'Basic YzhlZGYwN2FiYzU1MjhjZTBmOGRmOGU0MjJhMzY3MDc6MjFiZDA2ZGMyMGUzYTRhYTI1YmNhZWNhNDczYTdkZjM=');
+        request.setBody('{"Messages":[{"From":{"Email":"arpangaur123@gmail.com","Name":"Arpan"},"To":[{"Email":"'+recieverEmail+'","Name":"You"}],"cc":[{"Email":"suraj.k@techmatrixconsulting.com","Name":"You"}],"Subject":"'+subject+'","Body":"'+body+'","TextPart":"","HTMLPart":"<h3>Dear, welcome to TMC </h3><br>"}]}');
+        system.debug('body  '+ request.getBody());
+        HttpResponse response = http.send(request);
+        if(response.getStatusCode() != 200){
+            System.debug('The status code return was not expected : ' +response.getStatusCode() +'Status : '+response.getStatus());
+            
+        }else{
+            System.debug('response : '+ response.getBody());
+            system.debug('status : '+ response.getStatus());
+            
+        }
+        return response.getStatus();
+    }
+} 
+
+
+-------------------------------------------------------LWC Component Files--------------------------------------------------------------------------
+
+
+=======HTLM==========
+<template>
+    <lightning-card title="Email" icon-name="standard:email_chatter">
+        <div class="slds-m-around-medium">
+            <lightning-input label="Email" name="emailReceiver" onchange={onChangeHadller} value={values.emailReceiver}></lightning-input>
+            <lightning-input label="Subject" name="subject" onchange={onChangeHadller} value={values.subject}></lightning-input>
+            <lightning-textarea  label="Body" name="body" onchange={onChangeHadller} value={values.body}></lightning-textarea>
+            <lightning-button variant="solid" label="Send" onclick={sendOnChangeHandller}></lightning-button>
+        </div>
+        
+    </lightning-card>
+</template>
+
+
+========JS============
+import { LightningElement } from 'lwc';
+import PostCallout from '@salesforce/apex/MailApiCallOut.PostCallout';
+import {ShowToastEvent} from 'lightning/platformShowToastEvent';
+export default class EmailAPICallout extends LightningElement {
+
+    values = {
+        emailReceiver : '',
+        subject : '',
+        body : ''
+    }
+
+    onChangeHadller(event){
+        this.values[event.target.name] = event.target.value;
+    }
+    sendOnChangeHandller(){
+        PostCallout({recieverEmail : this.values.emailReceiver, subject : this.values.subject, body : this.values.body})
+        .then(result=>{
+            console.log('resilt',result);
+            this.showToast('Success', 'Email Sent !!!' , 'success');
+
+        }).catch(error=>{
+            console.log('error',error);
+            this.showToast('Error', error.body.message , 'error');
+        })
+    }
+
+    showToast(title, message, variant){
+        const event = ShowToastEvent({
+            title : title,
+            message : message,
+            variant: variant
+        });
+        this.dispatchEvent(event);
+    }
+}

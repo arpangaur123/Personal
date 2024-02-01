@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Viewing_Rm__c</fullName>
+    <externalId>false</externalId>
+    <label>Viewing Rm</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ATL</fullName>
+                <default>false</default>
+                <label>ATL</label>
+            </value>
+            <value>
+                <fullName>ATL (Main)</fullName>
+                <default>false</default>
+                <label>ATL (Main)</label>
+            </value>
+            <value>
+                <fullName>MT Main</fullName>
+                <default>false</default>
+                <label>MT Main</label>
+            </value>
+            <value>
+                <fullName>MT Studio</fullName>
+                <default>false</default>
+                <label>MT Studio</label>
+            </value>
+            <value>
+                <fullName>GG Front</fullName>
+                <default>false</default>
+                <label>GG Front</label>
+            </value>
+            <value>
+                <fullName>GG Main</fullName>
+                <default>false</default>
+                <label>GG Main</label>
+            </value>
+            <value>
+                <fullName>GG23</fullName>
+                <default>false</default>
+                <label>GG 23</label>
+            </value>
+            <value>
+                <fullName>Viewing Rm AS1</fullName>
+                <default>false</default>
+                <label>Viewing Rm AS1</label>
+            </value>
+            <value>
+                <fullName>Viewing Rm AS2</fullName>
+                <default>false</default>
+                <label>Viewing Rm AS2</label>
+            </value>
+            <value>
+                <fullName>Viewing Rm L2</fullName>
+                <default>false</default>
+                <label>Viewing Rm L2</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

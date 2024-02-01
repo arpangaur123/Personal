@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Special_Instructions__c</fullName>
+    <defaultValue>&quot;1. Door to door transit insurance is not covered by Helu-Trans (HK) Pte Ltd&quot; &amp; BR() &amp;
+&quot;   &quot; &amp; BR() &amp;
+&quot;2. Your charges are for our account (email dated       ).  Please quote our job reference number in your invoice to us. Charges are prepaid up till arrival xxx airport. Other charges, duty &amp; tax are for the consignee’s account.&quot; &amp; BR() &amp;
+&quot;   &quot; &amp; BR() &amp;
+&quot;3. Kindly confirm by return the safe arrival of shipment.&quot;</defaultValue>
+    <externalId>false</externalId>
+    <label>Special Instructions</label>
+    <length>1000</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>7</visibleLines>
+</CustomField>

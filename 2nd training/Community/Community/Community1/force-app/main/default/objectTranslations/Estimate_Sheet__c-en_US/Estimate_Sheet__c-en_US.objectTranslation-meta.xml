@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Estimate Sheet</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Estimate Sheet</value>
+    </caseValues>
+    <layouts>
+        <layout>Estimate Sheet Layout</layout>
+        <sections>
+            <label></label>
+            <section>Bedroom</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Cartons</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Dining Room</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Kitchen</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Living Room</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Miscellaneous</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Nursery</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

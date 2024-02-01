@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Field1__c</fullName>
+    <externalId>false</externalId>
+    <label>_</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>net</fullName>
+                <default>false</default>
+                <label>net</label>
+            </value>
+            <value>
+                <fullName>gross</fullName>
+                <default>false</default>
+                <label>gross</label>
+            </value>
+            <value>
+                <fullName>acwt</fullName>
+                <default>false</default>
+                <label>acwt</label>
+            </value>
+            <value>
+                <fullName>loose loaded</fullName>
+                <default>false</default>
+                <label>loose loaded</label>
+            </value>
+            <value>
+                <fullName>liftvan loaded</fullName>
+                <default>false</default>
+                <label>liftvan loaded</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

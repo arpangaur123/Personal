@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CheckOppDate_B4_Create_Job_Ref</fullName>
+    <active>false</active>
+    <description>Check Opp date_B4_Create_Job_Ref</description>
+    <errorConditionFormula>AND( 
+JROppRecordType__c  &lt;&gt; &quot;ArtmoveHK&quot;,
+DATEVALUE(Opportunity__r.CreatedDate) &lt;= DATEVALUE(&quot;2014-12-31&quot;))</errorConditionFormula>
+    <errorMessage>This Opportunity was created last year. Please CLONE this opportunity first before creating a new Job reference.</errorMessage>
+</ValidationRule>

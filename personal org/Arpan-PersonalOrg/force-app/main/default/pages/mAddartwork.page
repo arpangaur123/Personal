@@ -1,0 +1,39 @@
+<apex:page tabStyle="artApp__Artwork__c" lightningStylesheets="true" controller="myAddArtwork">
+<apex:slds />
+<apex:sectionHeader title="Add Artworks to Crate {!Cname}"></apex:sectionHeader>
+<apex:form ><apex:commandButton value="Save & Exit" action="{!mySaveExit}"></apex:commandButton>
+<apex:pageBlock title="Search for Artworks by" id="pageBlock">
+  <!-- This block will show the search textbox and the Search button -->
+  <apex:pageBlockButtons location="top">
+    <b>Artwork Title:</b> &nbsp;<apex:inputText value="{!keywords}" style="height:15px;"></apex:inputText>
+    <apex:commandButton value="Go!" action="{!ViewData}" id="theButton" rerender="pageBlock" status="status"></apex:commandButton>&nbsp;
+    <b>Or &nbsp;Barcode Id:</b> &nbsp;<apex:inputText value="{!keywords2}" style="height:15px;"></apex:inputText>
+    <apex:commandButton value="Go!" action="{!ViewData2}" id="theButton2" rerender="pageBlock" status="status"></apex:commandButton>    
+  </apex:pageBlockButtons>  
+  <!-- To show page level messages -->
+  <apex:pageMessages ></apex:pageMessages>
+
+  <!-- The below tag will provide a javascript method which when is called in turn will call a controller's method -->
+  <apex:actionFunction action="{!UpdateRecords}" name="updateRecords" rerender="pageBlock" status="status"></apex:actionFunction>
+
+  <!-- This table contains columns which have inputfield components -->
+  <apex:pageBlockTable value="{!accounts}" var="a" rendered="{!NOT(ISNULL(accounts))}">     
+     <apex:column >
+       <apex:facet name="header">Artwork Title</apex:facet>
+       <!--<apex:inputField value="{!a.Name}" onchange="updateRecords();"></apex:inputField>-->
+       {!a.Name}
+     </apex:column>
+     <apex:column >
+       <apex:facet name="header">Action</apex:facet>
+       <!--<apex:inputField value="{!a.Crate__c}" onchange="updateRecords();"></apex:inputField>-->
+       <apex:commandButton value="Add Artwork to Crate" action="{!UpdateRecords}" onClick="alert('Artwork added!')" id="theButton2" rerender="pageBlock" status="status"></apex:commandButton>
+     </apex:column>
+          
+  </apex:pageBlockTable>
+
+</apex:pageBlock>
+
+<!-- The action status to show when the AJAX postback is wroking. -->
+<apex:actionStatus id="status" startText="Requesting..."/>
+</apex:form>
+</apex:page>

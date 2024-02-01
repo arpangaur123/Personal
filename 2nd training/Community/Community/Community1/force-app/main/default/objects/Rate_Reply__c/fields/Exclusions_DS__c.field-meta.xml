@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Exclusions_DS__c</fullName>
+    <defaultValue>&quot;- Port storage / demurrage&quot; &amp; BR() &amp;
+&quot;- Import customs duties and government taxes&quot; &amp; BR() &amp;
+&quot;- Insurance&quot; &amp; BR() &amp;
+&quot;- Custom inspection fee&quot; &amp; BR() &amp;
+&quot;- Censorship fees for video cassettes, alcohol handling and related expenses&quot; &amp; BR() &amp;
+&quot;- Multiple consignee or deliveries&quot; &amp; BR() &amp;
+&quot;- Handling of piano, heavy weights (i.e. safe) and oversized objects&quot; &amp; BR() &amp;
+&quot;- Hoisting, shuttle service due to difficult access&quot; &amp; BR() &amp;
+&quot;- X-ray conducted by custom at port&quot; &amp; BR() &amp;
+&quot;- Stair carries, long carries&quot;</defaultValue>
+    <description>Exclusions information for DS</description>
+    <externalId>false</externalId>
+    <label>Exclusions</label>
+    <length>32000</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>10</visibleLines>
+</CustomField>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Quote</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Quotes</value>
+    </caseValues>
+    <layouts>
+        <layout>Agent Quote (Air)</layout>
+        <sections>
+            <label></label>
+            <section>Additional Remarks</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Quote Process</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Summary of Services</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Agent Quote (Air, Sea x 2)</layout>
+        <sections>
+            <label></label>
+            <section>Additional Remarks</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Quote Process</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Summary of Services</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Agent Quote (Air, Sea x 2, Additional Charges)</layout>
+        <sections>
+            <label></label>
+            <section>Additional Charges</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Additional Remarks</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Quote Process</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Summary of Services</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Agent Quote (Air, Sea)</layout>
+        <sections>
+            <label></label>
+            <section>Additional Remarks</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Quote Process</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Summary of Services</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Agent Quote (Air, Sea, Additional Charges)</layout>
+        <sections>
+            <label></label>
+            <section>Additional Charges</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Additional Remarks</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Quote Process</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Summary of Services</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Agent Quote (Sea x 2)</layout>
+        <sections>
+            <label></label>
+            <section>Additional Remarks</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Quote Process</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Summary of Services</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Agent Quote (Sea x 2, Additional Charges)</layout>
+        <sections>
+            <label></label>
+            <section>Additional Charges</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Additional Remarks</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Quote Process</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Summary of Services</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Agent Quote (Sea, Additional Charges)</layout>
+        <sections>
+            <label></label>
+            <section>Additional Charges</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Additional Remarks</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Quote Process</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Summary of Services</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>simple layout</layout>
+        <sections>
+            <label></label>
+            <section>Quote Process</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Agent_Quote_Air</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Agent_Quote_Air_Sea</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Agent_Quote_Air_Sea_Additional_Charges</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Agent_Quote_Air_Sea_x_2</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Agent_Quote_Air_Sea_x_2_Additional_Charges</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Agent_Quote_Sea_Additional_Charges</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Agent_Quote_Sea_x_2</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Agent_Quote_Sea_x_2_Additional_Charges</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label></label>
+        <name>Generate_PDF</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>X1_Copy_Opportunity_Lines_into_Quote</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>X4_Generate_Quote_PDF</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>x2EditLineItems</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>x4CopyDetailstoOpportunity</name>
+    </webLinks>
+</CustomObjectTranslation>

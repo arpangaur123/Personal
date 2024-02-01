@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Talent_MGMT_Organizational_Capability__c</fullName>
+    <description>-Create a cohesive &amp; high performance team that continuously strives for positive results &amp; improvements
+-Coach team by providing specific feedback &amp; hold them accountable for performance
+-Create learning &amp; development opportunities for team
+-Create &amp; effectively executes development plans based on their individual strengths, development needs, and career aspirations 
+-Ensures all managers are doing the same for their direct reports 
+-Identifies resource needed to strengthen team 
+-Creates succession plans for future job openings</description>
+    <externalId>false</externalId>
+    <inlineHelpText>-Create a cohesive &amp; high performance team that continuously strives for positive results &amp; improvements
+-Coach team by providing feedback &amp; hold them accountable for performance
+-Create learning &amp; development opportunities for team
+-Create &amp; effectively executes development plans based on their individual strengths, development needs, and career aspirations 
+-Ensures all managers are doing the same for their direct reports 
+-Identifies resource needed to strengthen team 
+-Creates succession plan</inlineHelpText>
+    <label>Talent Mgmt &amp; Organizational Capability</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1</fullName>
+                <default>true</default>
+                <label>1</label>
+            </value>
+            <value>
+                <fullName>2</fullName>
+                <default>false</default>
+                <label>2</label>
+            </value>
+            <value>
+                <fullName>3</fullName>
+                <default>false</default>
+                <label>3</label>
+            </value>
+            <value>
+                <fullName>4</fullName>
+                <default>false</default>
+                <label>4</label>
+            </value>
+            <value>
+                <fullName>5</fullName>
+                <default>false</default>
+                <label>5</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

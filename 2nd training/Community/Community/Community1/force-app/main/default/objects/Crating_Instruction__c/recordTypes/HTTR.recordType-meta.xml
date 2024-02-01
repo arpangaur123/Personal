@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HTTR</fullName>
+    <active>true</active>
+    <label>HTTR</label>
+    <picklistValues>
+        <picklist>AM_PM__c</picklist>
+        <values>
+            <fullName>AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PM</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Artwork_Type_2__c</picklist>
+        <values>
+            <fullName>Painting 画</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Photograph 照片</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Print 印</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sculpture  雕塑</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Artwork_Type_3__c</picklist>
+        <values>
+            <fullName>Painting 画</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Photograph 照片</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Print 印</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sculpture  雕塑</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Artwork_Type_4__c</picklist>
+        <values>
+            <fullName>Painting 画</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Photograph 照片</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Print 印</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sculpture  雕塑</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Artwork_Type__c</picklist>
+        <values>
+            <fullName>Painting 画</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Photograph 照片</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Print 印</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sculpture  雕塑</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Crate_Type_HK__c</picklist>
+        <values>
+            <fullName>A-字架</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A料</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B料</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Travel Frame</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>其他</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>畫%2F雕塑箱</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Crate_Type__c</picklist>
+        <values>
+            <fullName>B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Crate_order_to__c</picklist>
+        <values>
+            <fullName>External Vendor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HT Workshop</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Foam__c</picklist>
+        <values>
+            <fullName>Grey  - 1 inch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Grey  - 2 inch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>PE - 1 inch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PE - 2 inch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Styrofoam - 1 inch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Styrofoam - 2 inch</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Fumigation__c</picklist>
+        <values>
+            <fullName>No 否</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Yes 是</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Opening_Side_2__c</picklist>
+        <values>
+            <fullName>All 全面</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Broadside 宽度面</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Side %2B Top 宽面%2B顶部</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Top 顶部</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Opening_Side_3__c</picklist>
+        <values>
+            <fullName>All 全面</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Broadside 宽度面</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Side %2B Top 宽面%2B顶部</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Top 顶部</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Opening_Side_4__c</picklist>
+        <values>
+            <fullName>All 全面</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Broadside 宽度面</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Side %2B Top 宽面%2B顶部</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Top 顶部</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Opening_Side_HK2__c</picklist>
+        <values>
+            <fullName>其他%28見注釋%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>前開</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>頂開</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Opening_Side_HK3__c</picklist>
+        <values>
+            <fullName>其他%28見注釋%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>前開</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>頂開</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Opening_Side_HK4__c</picklist>
+        <values>
+            <fullName>其他%28見注釋%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>前開</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>頂開</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Opening_Side_HK__c</picklist>
+        <values>
+            <fullName>其他%28見注釋%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>前開</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>頂開</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Opening_Side__c</picklist>
+        <values>
+            <fullName>All Sides 全面</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Broadside 宽面</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Side%2BTop 宽面%2B顶</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Top 顶部</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

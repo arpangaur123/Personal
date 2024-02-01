@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cargo_Receipt_Unstuffing_Location__c</fullName>
+    <externalId>false</externalId>
+    <label>Cargo Receipt/Unstuffing Location</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>HT</fullName>
+                <default>false</default>
+                <label>HT</label>
+            </value>
+            <value>
+                <fullName>HTAM</fullName>
+                <default>false</default>
+                <label>HTAM</label>
+            </value>
+            <value>
+                <fullName>FASS</fullName>
+                <default>false</default>
+                <label>FASS</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

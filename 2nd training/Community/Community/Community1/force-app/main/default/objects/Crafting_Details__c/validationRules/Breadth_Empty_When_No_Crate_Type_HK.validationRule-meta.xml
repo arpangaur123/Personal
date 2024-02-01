@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Breadth_Empty_When_No_Crate_Type_HK</fullName>
+    <active>false</active>
+    <description>Breadth must be less than or equal to zero when Crate Type is No Crate . Supports Only
+For Hong Kong recordtype</description>
+    <errorConditionFormula>IF ( AND ( RecordType.Name  = &apos;Hong Kong&apos;,ISPICKVAL(Crate_Type__c , &quot;No Crate. Supports Only&quot; ) , Breadth_in__c &gt; 0 ) , TRUE, FALSE )</errorConditionFormula>
+    <errorDisplayField>Breadth_in__c</errorDisplayField>
+    <errorMessage>Breadth must be less than or equal to zero when Crate Type is No Crate . Supports Only</errorMessage>
+</ValidationRule>

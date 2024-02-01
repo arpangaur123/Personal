@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Other_Charges_Diplomatic__c</fullName>
+    <defaultValue>&quot;- Destination THC (included)&quot; &amp; BR() &amp;
+&quot;- Shuttle Service (included)&quot; &amp; BR() &amp;
+&quot;- Customs clearance (included)&quot; &amp; BR() &amp;
+&quot;- Handyman service (included for the first 2 hours. Thereafter @ US$ 50.00 per additional hour)&quot;</defaultValue>
+    <externalId>false</externalId>
+    <label>Other Charges (Diplomatic)</label>
+    <length>32000</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>7</visibleLines>
+</CustomField>

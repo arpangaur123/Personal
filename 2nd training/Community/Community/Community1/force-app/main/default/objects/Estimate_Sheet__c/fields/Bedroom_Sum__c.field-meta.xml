@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bedroom_Sum__c</fullName>
+    <externalId>false</externalId>
+    <formula>Bed_King_Queen_Sum__c  +  Bed_Single_Sum__c  +  Bunk_Beds_Sum__c  +   Headboard_Sum__c  +  Chests_W_Draw_Sum__c  +  Van_Dresser_Sum__c   + Stool_Sum__c  +  Night_Table_Sum__c  +  Wardrobe_Sum__c  +  Mirrors_Sum__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Bedroom Sum</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

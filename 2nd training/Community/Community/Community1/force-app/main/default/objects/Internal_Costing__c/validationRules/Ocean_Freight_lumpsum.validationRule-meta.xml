@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ocean_Freight_lumpsum</fullName>
+    <active>true</active>
+    <description>Ocean Freight (lumpsum) and Freight Origin &amp; Destination fields to be entered</description>
+    <errorConditionFormula>AND (
+LEN ( Freight_Origin_Destination__c ) = 0,
+Ocean_Freight_Lumpsum__c &gt; 0
+)</errorConditionFormula>
+    <errorDisplayField>Air_Freight_Lumpsum__c</errorDisplayField>
+    <errorMessage>Please enter Freight Origin &amp; Destination field.</errorMessage>
+</ValidationRule>

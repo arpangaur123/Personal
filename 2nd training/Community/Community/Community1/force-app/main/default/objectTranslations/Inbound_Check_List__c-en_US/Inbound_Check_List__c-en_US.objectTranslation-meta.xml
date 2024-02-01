@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Inbound CheckList</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Inbound CheckLists</value>
+    </caseValues>
+    <layouts>
+        <layout>AM CN</layout>
+        <sections>
+            <label></label>
+            <section>Brand New Import</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Declaration</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Details of Shipment</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Documents Attached</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Permanent Import</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Temporary Import</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Transhipment</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>AM HK</layout>
+        <sections>
+            <label></label>
+            <section>Brand New Import</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Claimant Information (For Embassy Only)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Declaration</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Details of Shipment</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Documents Attached</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Permanent Import</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Temporary Import</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Transhipment</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>HTTR - Inbound CheckList Layout</layout>
+        <sections>
+            <label></label>
+            <section>Brand New Temporary Import</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Claimant Information (For Embassy Only)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Declaration</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Details of Shipment</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Documents Attached</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Permanent Import</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Temporary Import</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Transhipment</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>InBoundChkList Layout</layout>
+        <sections>
+            <label></label>
+            <section>Brand New Temporary Import</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Claimant Information (For Embassy Only)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Declaration</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Details of Shipment</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Documents Attached</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Permanent Import</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Temporary Import</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Transhipment</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>AM_CN</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>AM_HK</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>AM_SG</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>HTTR</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Permit_Number_Checks</name>
+    </validationRules>
+    <webLinks>
+        <label></label>
+        <name>New</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>NewCN</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>NewCN_L</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>New_L</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>New_SG</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>New_SG_L</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Print_Inbound_Checklist</name>
+    </webLinks>
+</CustomObjectTranslation>

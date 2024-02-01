@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Skill Matrix</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Skill Matrix</value>
+    </caseValues>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Facilities_Skill_Matrix</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Operation_Skill_Matrix</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Registrar_Skill_Matrix</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

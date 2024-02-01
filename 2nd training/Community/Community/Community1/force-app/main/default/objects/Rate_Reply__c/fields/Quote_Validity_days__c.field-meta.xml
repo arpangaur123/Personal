@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Quote_Validity_days__c</fullName>
+    <defaultValue>&quot;60&quot;</defaultValue>
+    <description>Number of days quote is valid</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Number of days quote is valid</inlineHelpText>
+    <label>Quote Validity (days)</label>
+    <length>100</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

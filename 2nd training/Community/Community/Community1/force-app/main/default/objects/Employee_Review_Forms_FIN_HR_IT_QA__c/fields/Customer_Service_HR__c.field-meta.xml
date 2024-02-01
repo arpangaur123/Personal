@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Service_HR__c</fullName>
+    <description>-Ability to interface with colleagues from ALL departments 
+-Respond in a timely manner (via phone, email, calls)
+-Manage management and colleagues&apos; expectation
+-Act as the liaison between management and employees to ensure smooth communication and prompt resolution of all queries</description>
+    <externalId>false</externalId>
+    <inlineHelpText>-Ability to interface with colleagues from ALL departments 
+-Respond in a timely manner (via phone, email, calls)
+-Manage management and colleague&apos;s expectations
+-Act as the liaison between management and employees to ensure smooth communication and prompt resolution of all queries</inlineHelpText>
+    <label>Customer Service [HR]</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1</fullName>
+                <default>true</default>
+                <label>1</label>
+            </value>
+            <value>
+                <fullName>2</fullName>
+                <default>false</default>
+                <label>2</label>
+            </value>
+            <value>
+                <fullName>3</fullName>
+                <default>false</default>
+                <label>3</label>
+            </value>
+            <value>
+                <fullName>4</fullName>
+                <default>false</default>
+                <label>4</label>
+            </value>
+            <value>
+                <fullName>5</fullName>
+                <default>false</default>
+                <label>5</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

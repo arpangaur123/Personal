@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Comment_prepares_packing_material_accord__c</fullName>
+    <description>Comment prepares packing material accord. to mat.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>- Prepare packing material according to material List
+ -Update unused quantity accurately
+ -Track inventory of materials: replenish / order packing materials</inlineHelpText>
+    <label>Comment prepares packing material accord</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

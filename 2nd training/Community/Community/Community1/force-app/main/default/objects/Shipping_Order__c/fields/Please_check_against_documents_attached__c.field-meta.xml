@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Please_check_against_documents_attached__c</fullName>
+    <externalId>false</externalId>
+    <label>Please check against documents attached</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1. Export Permit</fullName>
+                <default>false</default>
+                <label>1. Export Permit</label>
+            </value>
+            <value>
+                <fullName>2. Shipping Invoice</fullName>
+                <default>false</default>
+                <label>2. Shipping Invoice</label>
+            </value>
+            <value>
+                <fullName>3. Packing List</fullName>
+                <default>false</default>
+                <label>3. Packing List</label>
+            </value>
+            <value>
+                <fullName>4. Shipping Mark</fullName>
+                <default>false</default>
+                <label>4. Shipping Mark</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,83 @@
+<apex:page standardController="Crating_Instruction__c" showHeader="false" lightningStylesheets="true" standardstylesheets="false" renderAs="PDF">
+<!--<apex:stylesheet value="{!$Resource.PackListCSS}"/>-->
+<html><head>
+<style type="text/css">
+body {
+font-size:83%;
+font-family: Arial Unicode MS;
+/*font-family: Arial, Arial Unicode MS;*/
+}
+
+
+table {
+width:100%;
+table-layout: normal;
+
+}
+
+
+th, td {
+/*border: 1px solid black;*/
+overflow: hidden;
+width: 100px;
+vertical-align: top;
+padding: 5px;
+/*text-align: left;*/
+}
+
+
+.labelCol{
+text-align: right;
+}
+
+
+input{
+display: none;
+}
+
+.mainTitle{
+display: none;
+}
+
+.actionColumn{
+display: none;
+}
+
+.backToTop{
+display: none;
+}
+
+.fewerMore{
+display: none;
+}
+
+
+.listHoverLinks{
+display: none;
+}
+
+
+.dataRow{
+background-color: #FFFFFF; color: blue;
+}
+
+/*h3{
+display: none;
+}*/
+
+.headerRow{
+background-color: #FFFFFF;
+}
+
+
+</style></head>
+<table border="0">
+<tr><td align="left"><font style="font-weight:bold;font-family:arial;font-size:x-large">Crating Instructions</font></td>
+<td align="right"><apex:image id="theImage" value="{!$Resource.AMLogo}"/></td>
+</tr>
+</table>
+<body>
+<apex:detail relatedList="false"></apex:detail>
+
+</body></html>
+</apex:page>

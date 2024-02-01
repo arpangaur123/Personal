@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Approved_Vendor__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Is this Agent on our AVL ?</description>
+    <externalId>false</externalId>
+    <label>Approved Vendor</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,191 @@
+<apex:page standardStylesheets="true"  docType="html-5.0" showheader="false">
+   <apex:slds />
+   <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+   
+   <apex:include pagename="APL_Header" />
+
+<div class="slds-p-around_small " style="background:url(https://www.aplapollo.com/wp-content/themes/aplapollo/images/footer-bg.jpg) center center no-repeat; color:#fff;">
+<small><i class="fa fa-home slds-m-right_x-small"></i>Home &nbsp; > &nbsp; Order</small>
+<p class="slds-text-align_center slds-text-heading_large slds-p-vertical_medium" style="font-weight:bold;">Order</p>
+</div>
+
+
+ <div class="slds-grid bg slds-grid_align-center slds-p-around_x-small" style="background-color:#fff;">
+      <div class="slds-large-size_10-of-12 slds-p-bottom_large" style="background-color: #fff; ">
+      <br/>
+      <br/>
+      <p class="slds-text-align_right text-sm-center"><a href="https://sdo-demo-main-166ce2cf6b6-17-173a2dc5d98.secure.force.com/DemoAplApollo08/APL_new_order" class="slds-button slds-button_neutral slds-text-align_right slds-m-horizontal_xx-large"><i class="fa fa-plus-circle slds-p-right_small"></i>New Order</a> </p>
+      <br/>
+       <div class="slds-text-align_left bg-light slds-m-horizontal_xx-large">
+                     <div class="slds-grid slds-wrap mx-0 b-white slds-grid_vertical-align-center">
+                        <div class="slds-col slds-large-size_9-of-12  slds-p-around_x-small ">
+                           <a href="https://sdodemo-main-166ce2cf6b6-171-171c3828ff0.force.com/orders_details" style="color:#fff; background-color:#73bf43 !important; padding:5px;">0D98FH7897656J</a>
+                        </div>
+                        <div class="slds-col slds-large-size_3-of-12 slds-text-align_right   slds-p-around_x-small ">
+                           <a href="https://sdo-demo-main-166ce2cf6b6-17-173a2dc5d98.secure.force.com/DemoAplApollo08/apex/APL_order_details#tracking" class="slds-button slds-button_neutral"><i class="fa fa-map-marker slds-p-right_small"></i>Track</a> 
+<a href="#" class="slds-button slds-button_destructive"><i class="fa fa-file-pdf-o slds-p-right_small"></i>Invoice</a>                         
+                        </div>
+                     </div>
+                     <div class="slds-grid  slds-wrap  mx-0" style="border-top:1px dashed #ccc;border-bottom:1px dashed #ccc; " >
+                        <div class="slds-col slds-large-size_4-of-12 slds-p-around_small ">
+                            <p class="slds-p-bottom_small"><span class="slds-text-heading_small"><b>Product Name: </b>MS Black Pipe</span></p>
+                           <p class="slds-p-bottom_small"><span class="slds-text-heading_small"><b>Weight: </b>1052 Meters/Tonne </span></p>
+                        </div>
+                        <!--<div class="slds-col slds-large-size_2-of-12 slds-text-align_center slds-p-around_small">
+                           <p class="slds-text-heading_small"><strong>₹900 </strong> </p>
+                        </div> -->
+                        <div class="slds-col slds-large-size_4-of-12  slds-p-around_small">
+                           <p class="slds-text-heading_small slds-p-bottom_small">Delivery on <strong>Saturday</strong> <span class="slds-text-heading_small">Aug 22nd, 2020</span></p>
+                           <span class="slds-text-heading_small"><b>Delivered To: </b></span>
+                        </div>
+                        <div class="slds-col slds-large-size_4-of-12  slds-p-around_small">
+                           <p class="slds-text-heading_small slds-p-bottom_small">Current Status <strong>In Transit</strong></p>
+                           <span class="slds-text-heading_small"><b>Order Date: </b>07-08-2020</span>
+                        </div>
+                     </div>
+                     <div class="slds-grid slds-wrap  mx-0 b-white slds-grid_vertical-align-center">
+                        <div class="slds-col slds-large-size_4-of-12 slds-p-around_x-small ">
+                           Shipping Date <strong>Thursday, August 14th, 2020</strong>
+                        </div>
+                        <div class="slds-col slds-large-size_4-of-12 slds-text-align_center slds-p-around_small">
+                          Order Total <strong>₹ 1,00,000.00</strong>
+                        </div>
+                        <div class="slds-col slds-large-size_4-of-12 slds-text-align_right slds-p-around_x-small">
+                          <a class="slds-button slds-button_success slds-button_pay" href="#"><i class="fa  fa-shopping-cart slds-p-right_small"></i>Pay Now</a>
+                        </div>
+                     </div>
+                  </div>
+                  
+                  
+                                    <br/>
+      <br/>
+      <div class="slds-text-align_left bg-light slds-m-horizontal_xx-large">
+                     <div class="slds-grid slds-wrap mx-0 b-white slds-grid_vertical-align-center">
+                        <div class="slds-col slds-large-size_9-of-12  slds-p-around_x-small ">
+                           <a href="https://sdodemo-main-166ce2cf6b6-171-171c3828ff0.force.com/orders_details" style="color:#fff; background-color:#73bf43 !important; padding:5px;">0D98FH7897656J</a>
+                        </div>
+                        <div class="slds-col slds-large-size_3-of-12 slds-text-align_right   slds-p-around_x-small ">
+                           <a href="https://sdo-demo-main-166ce2cf6b6-17-173a2dc5d98.secure.force.com/DemoAplApollo08/apex/APL_order_details#tracking" class="slds-button slds-button_neutral"><i class="fa fa-map-marker slds-p-right_small"></i>Track</a> 
+<a href="#" class="slds-button slds-button_destructive"><i class="fa fa-file-pdf-o slds-p-right_small"></i>Invoice</a>                         
+                        </div>
+                     </div>
+                     <div class="slds-grid  slds-wrap  mx-0" style="border-top:1px dashed #ccc;border-bottom:1px dashed #ccc; " >
+                        <div class="slds-col slds-large-size_4-of-12 slds-p-around_small ">
+                           <p class="slds-p-bottom_small"><span class="slds-text-heading_small"><b>Product Name: </b>MS Black Pipe</span></p>
+                           <p class="slds-p-bottom_small"><span class="slds-text-heading_small"><b>Weight: </b>552 Meters/Tonne </span></p>
+                        </div>
+                        <!--<div class="slds-col slds-large-size_2-of-12 slds-text-align_center slds-p-around_small">
+                           <p class="slds-text-heading_small"><strong>₹900 </strong> </p>
+                        </div> -->
+                        <div class="slds-col slds-large-size_4-of-12  slds-p-around_small">
+                           <p class="slds-text-heading_small slds-p-bottom_small">Delivery on <strong>Saturday</strong> <span class="slds-text-heading_small">Aug 2nd, 2020</span></p>
+                           <span class="slds-text-heading_small"><b>Delivered To: </b>Pratul</span>
+                        </div>
+                        <div class="slds-col slds-large-size_4-of-12  slds-p-around_small">
+                           <p class="slds-text-heading_small slds-p-bottom_small">Current Status <strong> Delivered</strong></p>
+                           <span class="slds-text-heading_small"><b>Order Date: </b>25-07-2020</span>
+                        </div>
+                     </div>
+                     <div class="slds-grid slds-wrap  mx-0 b-white slds-grid_vertical-align-center">
+                        <div class="slds-col slds-large-size_4-of-12 slds-p-around_x-small ">
+                           Shipping Date <strong>Wednesday, July 27th, 2020</strong>
+                        </div>
+                        <div class="slds-col slds-large-size_4-of-12 slds-text-align_center slds-p-around_x-small">
+                          Order Total <strong>₹ 50,000.00</strong>
+                        </div>
+                        <div class="slds-col slds-large-size_4-of-12 slds-text-align_right slds-p-around_x-small">
+                          <a class="slds-button slds-button_success slds-button_pay" href="#"><i class="fa  fa-shopping-cart slds-p-right_small"></i>Pay Now</a>
+                        </div>
+                     </div>
+                  </div>
+                  <br/>
+      <br/>
+   
+                  
+                 
+      
+      
+
+                  
+                  
+   </div>
+   </div>
+   
+<div class="slds-grid  slds-grid_align-center slds-p-around_small mx-0 footer" style="background-color:#436e79; color:#fff;">
+   <div class="slds-size_6-of-12 slds-text-align_center">
+     Copyright © 2020 APL Apollo. All right reserved.
+   </div>
+   </div>
+ 
+<div id="register" class="slds-hide"> 
+<section role="dialog" tabindex="-1" aria-label="Meaningful description of the modal content" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+  <div class="slds-modal__container">
+    <header class="slds-modal__header">
+      <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" onclick="closemodal();" title="Close">
+        <i class="fa fa-times"></i>
+        <span class="slds-assistive-text">Close</span>
+      </button>
+      <h2 id="modal-heading-01" class="slds-modal__title slds-hyphenate" style="font-weight:bold;">Contact Us</h2>
+    </header>
+    <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+    <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+     
+
+<input type="hidden" name="oid" value="00D2w000008oftm" />
+<input type="hidden" name="retURL" value="https://www.aplapollo.com/" />
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+<!--  these lines if you wish to test in debug mode.                          -->
+<!--  <input type="hidden" name="debug" value=1>                              -->
+<!--  <input type="hidden" name="debugEmail"                                  -->
+<!--  value="surinderpal.singh.0@riqcrm.com">                                 -->
+<!--  ----------------------------------------------------------------------  -->
+
+<div class="slds-grid slds-wrap slds-gutters">
+<!--<div class="slds-col slds-large-size_6-of-12 slds-p-bottom_x-small">
+<select  id="industry" name="industry" class="slds-select"><option value="">--Industry--</option><option value="Architects">Architects</option>
+<option value="Civil Engineers">Civil Engineers</option>
+<option value="Engineering Consultants">Engineering Consultants</option>
+<option value="Fabricators">Fabricators</option>
+<option value="Interior Designers">Interior Designers</option>
+<option value="Builders">Builders</option>
+<option value="Home Owners">Home Owners</option>
+<option value="Others">Others</option>
+</select>
+</div>
+<div class="slds-col slds-large-size_6-of-12 slds-p-bottom_x-small">
+<input  id="city" placeholder="City" maxlength="40" name="city" size="20" type="text" class="slds-input" required="true" />
+</div>-->
+<div class="slds-col slds-large-size_6-of-12 slds-p-bottom_x-small">
+<input  id="first_name" maxlength="40" value="Manoj" name="first_name" size="20" type="text" class="slds-input" required="true" />
+</div>
+<div class="slds-col slds-large-size_6-of-12 slds-p-bottom_x-small">
+<input  id="last_name" value="Tiwari" maxlength="80" name="last_name" size="20" type="text" class="slds-input" required="true" />
+</div>
+
+<div class="slds-col slds-large-size_6-of-12 slds-p-bottom_x-small">
+<input  id="email" value="manoj@arihant.com" maxlength="80" name="email" size="20" type="text" class="slds-input" required="true" />
+</div>
+<div class="slds-col slds-large-size_6-of-12 slds-p-bottom_x-small">
+<input  id="phone" value="9876543210" maxlength="40" name="phone" size="20" type="text" class="slds-input" required="true" />
+</div>
+</div>
+<textarea name="description" placeholder="Description" class="slds-textarea"></textarea>
+
+
+
+
+    </div>
+    <footer class="slds-modal__footer">
+      <!--<input type="submit" name="submit">-->
+      <button type="submit" name="submit" class="slds-button slds-p-horizontal_large" style="background-color:#f5863f; border-color:#f5863f; color:#fff !important;">Submit</button>
+    </footer>
+    </form>
+  </div>
+</section>
+<div class="slds-backdrop slds-backdrop_open"></div> 
+</div>    
+   
+</html>
+</apex:page>

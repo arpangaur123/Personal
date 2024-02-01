@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Artwork_Type_4__c</fullName>
+    <externalId>false</externalId>
+    <label>Artwork Type 艺术品类型</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Painting 画</fullName>
+                <default>false</default>
+                <label>Painting 画</label>
+            </value>
+            <value>
+                <fullName>Sculpture  雕塑</fullName>
+                <default>false</default>
+                <label>Sculpture  雕塑</label>
+            </value>
+            <value>
+                <fullName>Print 印</fullName>
+                <default>false</default>
+                <label>Print 印</label>
+            </value>
+            <value>
+                <fullName>Photograph 照片</fullName>
+                <default>false</default>
+                <label>Photograph 照片</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

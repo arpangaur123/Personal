@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NewCN</fullName>
+    <availability>online</availability>
+    <displayType>massActionButton</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>New</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+    <url>/a0w/e?CF00N20000003C0VF={!Job_Reference__c.Name}&amp;CF00N20000003C0VF_lkid={!Job_Reference__c.Id}&amp;retURL={!Job_Reference__c.Id}&amp;00N20000003C0cb={!Job_Reference__c.MAWB__c} {!Job_Reference__c.OBL__c}&amp;00N20000003C0c2={!Job_Reference__c.Mode_of_Shipment__c}&amp;00N20000003C0d5={!Job_Reference__c.Description_of_Goods__c}&amp;00N20000003C0cM={!Job_Reference__c.Flight_Number__c}&amp;00N20000003a2t6={!Job_Reference__c.Vessel_Voyage__c}&amp;00N20000003C0dF={!Job_Reference__c.No_of_Packages_Crates__c}&amp;RecordType=	01220000000JOdY</url>
+</WebLink>

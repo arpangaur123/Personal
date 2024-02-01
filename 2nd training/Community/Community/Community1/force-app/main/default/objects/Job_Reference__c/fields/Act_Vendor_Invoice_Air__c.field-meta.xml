@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Act_Vendor_Invoice_Air__c</fullName>
+    <externalId>false</externalId>
+    <formula>Act_Freight_Air__c  +  Act_Transport_Air__c  +  Act_Other_Charges_Air__c +  Act_ISS_FSC_Air__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Act. Vendor Invoice-Air (SGD)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

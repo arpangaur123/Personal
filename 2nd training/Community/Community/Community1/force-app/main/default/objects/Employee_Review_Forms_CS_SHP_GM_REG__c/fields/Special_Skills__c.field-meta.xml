@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Special_Skills__c</fullName>
+    <description>Kindly select Special Skill from the available list.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Kindly select Special Skill from the available list.</inlineHelpText>
+    <label>Special Skills</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <controllingField>Station_Location__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Working at Height - Mobile Boom (3B-HK)</fullName>
+                <default>false</default>
+                <label>Working at Height - Mobile Boom (3B-HK)</label>
+            </value>
+            <value>
+                <fullName>Working at Height - Metal Scaffolding Set-up (SG)</fullName>
+                <default>false</default>
+                <label>Working at Height - Metal Scaffolding Set-up (SG)</label>
+            </value>
+            <value>
+                <fullName>Working at Height - Metal Scaffolder (HK)</fullName>
+                <default>false</default>
+                <label>Working at Height - Metal Scaffolder (HK)</label>
+            </value>
+            <value>
+                <fullName>Working at Height - Metal Scaffolding Set-up Supervisor (SG)</fullName>
+                <default>false</default>
+                <label>Working at Height - Metal Scaffolding Set-up Supervisor (SG)</label>
+            </value>
+            <value>
+                <fullName>Working at Height - Mental Scaffold Erecting &amp; Dismantling Supervision Training (HK)</fullName>
+                <default>false</default>
+                <label>Working at Height - Mental Scaffold Erecting &amp; Dismantling Supervision Training (HK)</label>
+            </value>
+            <value>
+                <fullName>Working at Height - Work at Height Certification (SG)</fullName>
+                <default>false</default>
+                <label>Working at Height - Work at Height Certification (SG)</label>
+            </value>
+            <value>
+                <fullName>Working at Height - Work at Height Safety (HK)</fullName>
+                <default>false</default>
+                <label>Working at Height - Work at Height Safety (HK)</label>
+            </value>
+            <value>
+                <fullName>OTHERS - Company Truck Driver&apos;s License (Truck License: SG=Class4)</fullName>
+                <default>false</default>
+                <label>OTHERS - Company Truck Driver&apos;s License (Truck License: SG=Class4)</label>
+            </value>
+            <value>
+                <fullName>OTHERS - HK= No. 2 &amp; 8</fullName>
+                <default>false</default>
+                <label>OTHERS - HK= No. 2 &amp; 8</label>
+            </value>
+            <value>
+                <fullName>OTHERS - CN= B1 &amp; A2 (Semi-trailer trucks/牵引车 includes B1)</fullName>
+                <default>false</default>
+                <label>OTHERS - CN= B1 &amp; A2 (Semi-trailer trucks/牵引车 includes B1)</label>
+            </value>
+            <value>
+                <fullName>OTHERS - Forklift license: SG- Attend a refresher course every 3yrs (WSQ)</fullName>
+                <default>false</default>
+                <label>OTHERS - Forklift license: SG- Attend a refresher course every 3yrs (WSQ)</label>
+            </value>
+            <value>
+                <fullName>OTHERS - Carpentry</fullName>
+                <default>false</default>
+                <label>OTHERS - Carpentry</label>
+            </value>
+            <value>
+                <fullName>OTHERS - Household Goods packing</fullName>
+                <default>false</default>
+                <label>OTHERS - Household Goods packing</label>
+            </value>
+            <value>
+                <fullName>OTHERS - Electrical (Neon, AV, etc.)</fullName>
+                <default>false</default>
+                <label>OTHERS - Electrical (Neon, AV, etc.)</label>
+            </value>
+            <value>
+                <fullName>OTHERS - Construction SOC - Worker certification (SG)</fullName>
+                <default>false</default>
+                <label>OTHERS - Construction SOC - Worker certification (SG)</label>
+            </value>
+            <value>
+                <fullName>OTHERS - Green Card Safety (HK)</fullName>
+                <default>false</default>
+                <label>OTHERS - Green Card Safety (HK)</label>
+            </value>
+            <value>
+                <fullName>OTHERS - Airport/Seaport Clearance (includes the ability to clear CITES/ATA Carnet clearance, etc)</fullName>
+                <default>false</default>
+                <label>OTHERS - Airport/Seaport Clearance (includes the ability to clear CITES/ATA Carnet clearance, etc)</label>
+            </value>
+            <value>
+                <fullName>OTHERS - Computer Skills (eg. Autocad, Sketch-Up, etc)</fullName>
+                <default>false</default>
+                <label>OTHERS - Computer Skills (eg. Autocad, Sketch-Up, etc)</label>
+            </value>
+            <value>
+                <fullName>OTHERS - Occupation First aid (CPR &amp; AED)</fullName>
+                <default>false</default>
+                <label>OTHERS - Occupation First aid (CPR &amp; AED)</label>
+            </value>
+            <value>
+                <fullName>OTHERS - Refresher course</fullName>
+                <default>false</default>
+                <label>OTHERS - Refresher course</label>
+            </value>
+            <value>
+                <fullName>Visual Check Workshop</fullName>
+                <default>false</default>
+                <label>Visual Check Workshop</label>
+            </value>
+            <value>
+                <fullName>Basic Conservation workshop</fullName>
+                <default>false</default>
+                <label>Basic Conservation workshop</label>
+            </value>
+            <value>
+                <fullName>Basic Material Studies</fullName>
+                <default>false</default>
+                <label>Basic Material Studies</label>
+            </value>
+            <value>
+                <fullName>Inventory Management</fullName>
+                <default>false</default>
+                <label>Inventory Management</label>
+            </value>
+            <value>
+                <fullName>Fire Warden Certification</fullName>
+                <default>false</default>
+                <label>Fire Warden Certification</label>
+            </value>
+            <value>
+                <fullName>Basic Warehouse Operations (SG)</fullName>
+                <default>false</default>
+                <label>Basic Warehouse Operations (SG)</label>
+            </value>
+            <value>
+                <fullName>Basic Visual Check workshop</fullName>
+                <default>false</default>
+                <label>Basic Visual Check workshop</label>
+            </value>
+            <value>
+                <fullName>Basic crate &amp; carton workshop</fullName>
+                <default>false</default>
+                <label>Basic crate &amp; carton workshop</label>
+            </value>
+            <value>
+                <fullName>BizSAFE Level2</fullName>
+                <default>false</default>
+                <label>BizSAFE Level2</label>
+            </value>
+            <value>
+                <fullName>Customer training programs</fullName>
+                <default>false</default>
+                <label>Customer training programs</label>
+            </value>
+            <value>
+                <fullName>Leadership / Managerial training course</fullName>
+                <default>false</default>
+                <label>Leadership / Managerial training course</label>
+            </value>
+            <value>
+                <fullName>Writing Course</fullName>
+                <default>false</default>
+                <label>Writing Course</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Singapore</controllingFieldValue>
+            <valueName>Working at Height - Metal Scaffolding Set-up (SG)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Singapore</controllingFieldValue>
+            <valueName>Working at Height - Metal Scaffolding Set-up Supervisor (SG)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Singapore</controllingFieldValue>
+            <valueName>Working at Height - Work at Height Certification (SG)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Singapore</controllingFieldValue>
+            <valueName>OTHERS - Company Truck Driver&apos;s License (Truck License: SG=Class4)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Singapore</controllingFieldValue>
+            <controllingFieldValue>Hong Kong</controllingFieldValue>
+            <valueName>OTHERS - HK= No. 2 &amp; 8</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Singapore</controllingFieldValue>
+            <controllingFieldValue>Hong Kong</controllingFieldValue>
+            <valueName>OTHERS - CN= B1 &amp; A2 (Semi-trailer trucks/牵引车 includes B1)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Singapore</controllingFieldValue>
+            <valueName>OTHERS - Forklift license: SG- Attend a refresher course every 3yrs (WSQ)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Singapore</controllingFieldValue>
+            <controllingFieldValue>Hong Kong</controllingFieldValue>
+            <controllingFieldValue>Beijing</controllingFieldValue>
+            <controllingFieldValue>Shanghai</controllingFieldValue>
+            <controllingFieldValue>Indonesia</controllingFieldValue>
+            <valueName>OTHERS - Carpentry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Singapore</controllingFieldValue>
+            <controllingFieldValue>Hong Kong</controllingFieldValue>
+            <controllingFieldValue>Beijing</controllingFieldValue>
+            <controllingFieldValue>Shanghai</controllingFieldValue>
+            <controllingFieldValue>Indonesia</controllingFieldValue>
+            <valueName>OTHERS - Household Goods packing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Singapore</controllingFieldValue>
+            <controllingFieldValue>Hong Kong</controllingFieldValue>
+            <controllingFieldValue>Beijing</controllingFieldValue>
+            <controllingFieldValue>Shanghai</controllingFieldValue>
+            <controllingFieldValue>Indonesia</controllingFieldValue>
+            <valueName>OTHERS - Electrical (Neon, AV, etc.)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Singapore</controllingFieldValue>
+            <controllingFieldValue>Hong Kong</controllingFieldValue>
+            <controllingFieldValue>Beijing</controllingFieldValue>
+            <controllingFieldValue>Shanghai</controllingFieldValue>
+            <controllingFieldValue>Indonesia</controllingFieldValue>
+            <valueName>OTHERS - Airport/Seaport Clearance (includes the ability to clear CITES/ATA Carnet clearance, etc)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Singapore</controllingFieldValue>
+            <controllingFieldValue>Hong Kong</controllingFieldValue>
+            <controllingFieldValue>Beijing</controllingFieldValue>
+            <controllingFieldValue>Shanghai</controllingFieldValue>
+            <controllingFieldValue>Indonesia</controllingFieldValue>
+            <valueName>OTHERS - Computer Skills (eg. Autocad, Sketch-Up, etc)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Singapore</controllingFieldValue>
+            <controllingFieldValue>Hong Kong</controllingFieldValue>
+            <controllingFieldValue>Beijing</controllingFieldValue>
+            <controllingFieldValue>Shanghai</controllingFieldValue>
+            <controllingFieldValue>Indonesia</controllingFieldValue>
+            <valueName>OTHERS - Occupation First aid (CPR &amp; AED)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Singapore</controllingFieldValue>
+            <controllingFieldValue>Hong Kong</controllingFieldValue>
+            <controllingFieldValue>Beijing</controllingFieldValue>
+            <controllingFieldValue>Shanghai</controllingFieldValue>
+            <controllingFieldValue>Indonesia</controllingFieldValue>
+            <valueName>OTHERS - Refresher course</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Singapore</controllingFieldValue>
+            <controllingFieldValue>Hong Kong</controllingFieldValue>
+            <controllingFieldValue>Beijing</controllingFieldValue>
+            <controllingFieldValue>Shanghai</controllingFieldValue>
+            <controllingFieldValue>Indonesia</controllingFieldValue>
+            <valueName>Visual Check Workshop</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Singapore</controllingFieldValue>
+            <controllingFieldValue>Hong Kong</controllingFieldValue>
+            <controllingFieldValue>Beijing</controllingFieldValue>
+            <controllingFieldValue>Shanghai</controllingFieldValue>
+            <controllingFieldValue>Indonesia</controllingFieldValue>
+            <valueName>Basic Conservation workshop</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Singapore</controllingFieldValue>
+            <controllingFieldValue>Hong Kong</controllingFieldValue>
+            <controllingFieldValue>Beijing</controllingFieldValue>
+            <controllingFieldValue>Shanghai</controllingFieldValue>
+            <controllingFieldValue>Indonesia</controllingFieldValue>
+            <valueName>Basic Material Studies</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Singapore</controllingFieldValue>
+            <controllingFieldValue>Hong Kong</controllingFieldValue>
+            <controllingFieldValue>Beijing</controllingFieldValue>
+            <controllingFieldValue>Shanghai</controllingFieldValue>
+            <controllingFieldValue>Indonesia</controllingFieldValue>
+            <valueName>Inventory Management</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Singapore</controllingFieldValue>
+            <controllingFieldValue>Hong Kong</controllingFieldValue>
+            <controllingFieldValue>Beijing</controllingFieldValue>
+            <controllingFieldValue>Shanghai</controllingFieldValue>
+            <valueName>Fire Warden Certification</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Singapore</controllingFieldValue>
+            <controllingFieldValue>Hong Kong</controllingFieldValue>
+            <controllingFieldValue>Beijing</controllingFieldValue>
+            <controllingFieldValue>Shanghai</controllingFieldValue>
+            <valueName>Basic Warehouse Operations (SG)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Singapore</controllingFieldValue>
+            <controllingFieldValue>Hong Kong</controllingFieldValue>
+            <controllingFieldValue>Beijing</controllingFieldValue>
+            <controllingFieldValue>Shanghai</controllingFieldValue>
+            <valueName>Basic Visual Check workshop</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Singapore</controllingFieldValue>
+            <controllingFieldValue>Hong Kong</controllingFieldValue>
+            <controllingFieldValue>Beijing</controllingFieldValue>
+            <controllingFieldValue>Shanghai</controllingFieldValue>
+            <valueName>Basic crate &amp; carton workshop</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Singapore</controllingFieldValue>
+            <controllingFieldValue>Hong Kong</controllingFieldValue>
+            <controllingFieldValue>Beijing</controllingFieldValue>
+            <controllingFieldValue>Shanghai</controllingFieldValue>
+            <valueName>BizSAFE Level2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Singapore</controllingFieldValue>
+            <controllingFieldValue>Hong Kong</controllingFieldValue>
+            <controllingFieldValue>Beijing</controllingFieldValue>
+            <controllingFieldValue>Shanghai</controllingFieldValue>
+            <valueName>Customer training programs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Singapore</controllingFieldValue>
+            <controllingFieldValue>Hong Kong</controllingFieldValue>
+            <controllingFieldValue>Beijing</controllingFieldValue>
+            <controllingFieldValue>Shanghai</controllingFieldValue>
+            <valueName>Leadership / Managerial training course</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Singapore</controllingFieldValue>
+            <controllingFieldValue>Hong Kong</controllingFieldValue>
+            <controllingFieldValue>Beijing</controllingFieldValue>
+            <controllingFieldValue>Shanghai</controllingFieldValue>
+            <valueName>Writing Course</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hong Kong</controllingFieldValue>
+            <valueName>Working at Height - Mobile Boom (3B-HK)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hong Kong</controllingFieldValue>
+            <valueName>Working at Height - Metal Scaffolder (HK)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hong Kong</controllingFieldValue>
+            <valueName>Working at Height - Mental Scaffold Erecting &amp; Dismantling Supervision Training (HK)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hong Kong</controllingFieldValue>
+            <valueName>Working at Height - Work at Height Safety (HK)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hong Kong</controllingFieldValue>
+            <controllingFieldValue>Beijing</controllingFieldValue>
+            <controllingFieldValue>Shanghai</controllingFieldValue>
+            <controllingFieldValue>Indonesia</controllingFieldValue>
+            <valueName>OTHERS - Green Card Safety (HK)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Beijing</controllingFieldValue>
+            <controllingFieldValue>Shanghai</controllingFieldValue>
+            <controllingFieldValue>Indonesia</controllingFieldValue>
+            <valueName>OTHERS - Construction SOC - Worker certification (SG)</valueName>
+        </valueSettings>
+    </valueSet>
+    <visibleLines>10</visibleLines>
+</CustomField>

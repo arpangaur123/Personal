@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mode_DS__c</fullName>
+    <description>Mode for DS rate reply</description>
+    <externalId>false</externalId>
+    <label>Mode</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Loose Loaded 20&apos; FCL</fullName>
+                <default>false</default>
+                <label>Loose Loaded 20&apos; FCL</label>
+            </value>
+            <value>
+                <fullName>Loose Loaded 40&apos; FCL</fullName>
+                <default>false</default>
+                <label>Loose Loaded 40&apos; FCL</label>
+            </value>
+            <value>
+                <fullName>Loose Loaded 45&apos; FCL</fullName>
+                <default>false</default>
+                <label>Loose Loaded 45&apos; FCL</label>
+            </value>
+            <value>
+                <fullName>Loose Loaded 40&apos; HC</fullName>
+                <default>false</default>
+                <label>Loose Loaded 40&apos; HC</label>
+            </value>
+            <value>
+                <fullName>Loose Loaded 45&apos; HC</fullName>
+                <default>false</default>
+                <label>Loose Loaded 45&apos; HC</label>
+            </value>
+            <value>
+                <fullName>Liftvan Loaded via LCL</fullName>
+                <default>false</default>
+                <label>Liftvan Loaded via LCL</label>
+            </value>
+            <value>
+                <fullName>Air Freight</fullName>
+                <default>false</default>
+                <label>Air Freight</label>
+            </value>
+            <value>
+                <fullName>Overland by Truck</fullName>
+                <default>false</default>
+                <label>Overland by Truck</label>
+            </value>
+            <value>
+                <fullName>Loose Loaded 20&apos; + 40&apos; FCL</fullName>
+                <default>false</default>
+                <label>Loose Loaded 20&apos; + 40&apos; FCL</label>
+            </value>
+            <value>
+                <fullName>Loose Loaded 20&apos; + LCL</fullName>
+                <default>false</default>
+                <label>Loose Loaded 20&apos; + LCL</label>
+            </value>
+            <value>
+                <fullName>Loose Loaded 40&apos; + LCL</fullName>
+                <default>false</default>
+                <label>Loose Loaded 40&apos; + LCL</label>
+            </value>
+            <value>
+                <fullName>Loose loaded 20FCL Groupage</fullName>
+                <default>false</default>
+                <label>Loose loaded 20FCL Groupage</label>
+            </value>
+            <value>
+                <fullName>Loose loaded 40FCL Groupage</fullName>
+                <default>false</default>
+                <label>Loose loaded 40FCL Groupage</label>
+            </value>
+            <value>
+                <fullName>Loose Loaded 2 X 40&apos; FCL</fullName>
+                <default>false</default>
+                <label>Loose Loaded 2 X 40&apos; FCL</label>
+            </value>
+            <value>
+                <fullName>LIftvan Loaded in 1 x 20 FCL</fullName>
+                <default>false</default>
+                <label>LIftvan Loaded in 1 x 20 FCL</label>
+            </value>
+            <value>
+                <fullName>LIftvan Loaded in 1 x 40 FCL</fullName>
+                <default>false</default>
+                <label>LIftvan Loaded in 1 x 40 FCL</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Market_Knowledge__c</fullName>
+    <description>Good knowledge of the compliance of the local related authorities. 
+Knowledge of the various types of aircraft or container specifications to guide and advise the team on how to achieve maximum loading capacity
+Forecast and update on the cost of sea &amp; air freight. 
+Knowledge of the international freight market: best practice, best price, routing expertise, best services</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Good knowledge of the compliance of the local related authorities. 
+Knowledge of the various types of aircraft or container specifications to guide and advise the team on how to achieve maximum loading capacity
+Forecast and update on the cost of the sea &amp; air freight. 
+Knowledge of the international freight market: best practice, best price, routing expertise, best services</inlineHelpText>
+    <label>Market Knowledge</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1</fullName>
+                <default>true</default>
+                <label>1</label>
+            </value>
+            <value>
+                <fullName>2</fullName>
+                <default>false</default>
+                <label>2</label>
+            </value>
+            <value>
+                <fullName>3</fullName>
+                <default>false</default>
+                <label>3</label>
+            </value>
+            <value>
+                <fullName>4</fullName>
+                <default>false</default>
+                <label>4</label>
+            </value>
+            <value>
+                <fullName>5</fullName>
+                <default>false</default>
+                <label>5</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

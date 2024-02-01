@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Collector_lookup__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Collector_lookup field for WWI as per Matthew.</description>
+    <externalId>false</externalId>
+    <label>Collector</label>
+    <referenceTo>artApp__Collector__c</referenceTo>
+    <relationshipLabel>Warehouse Work Instructions</relationshipLabel>
+    <relationshipName>Warehouse_Work_Instructions</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

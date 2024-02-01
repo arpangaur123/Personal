@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ocean_Freight__c</fullName>
+    <defaultValue>&quot;- The freight is subject to changes:&quot; &amp; BR() &amp;
+&quot;- BAF, Suez Surcharge, Piracy Risk Surcharge, Peak Season Surcharge are subjected to changes by the carriers without prior notice&quot; &amp; BR() &amp;
+&quot;- Subject to all additional surcharges applicable at the time of shipment&quot; &amp; BR() &amp;
+&quot;- Subject to carrier’s space availability&quot; &amp; BR() &amp;
+&quot;- Above ocean freight is not applicable for Freight Collect arrangement&quot;</defaultValue>
+    <externalId>false</externalId>
+    <label>Ocean Freight</label>
+    <length>32000</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>7</visibleLines>
+</CustomField>

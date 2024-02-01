@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OS_Sub_Total_OS__c</fullName>
+    <description>OS Sub Total for Origin Services Record Type</description>
+    <externalId>false</externalId>
+    <formula>Labour__c +  Material__c +  Shuttling_10__c +  Shuttling_24__c +  Transport_by_Small_Truck__c +  Transport_by_Big_Truck__c + Transport_Half_Day_Trips__c  +  Handyman_Services__c +  Origin_Storage__c +  Stair_Carry_Lumpsum__c +  Long_Carry__c +  Piano_Handling_Lumpsum__c +  OA_Other_Charges_1_in_SGD__c +  OA_Other_Charges_2_in_SGD__c +  OA_Other_Charges_3_in_SGD__c +  OA_Other_Charges_4_in_SGD__c +  OA_Other_Charges_5_in_SGD__c + Crating_Lumpsum__c + Haulage_for_20_FCL__c + Haulage_for_40_FCL__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>OS Sub Total</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

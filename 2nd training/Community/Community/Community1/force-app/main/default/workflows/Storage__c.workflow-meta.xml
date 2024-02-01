@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <rules>
+        <fullName>Billing cycle expire</fullName>
+        <actions>
+            <name>NewInvoiceforstorageextension</name>
+            <type>Task</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Storage__c.Expiry_Date__c</field>
+            <operation>equals</operation>
+            <value>NEXT WEEK</value>
+        </criteriaItems>
+        <description>Prompt owner to do billing when last billing has lapsed</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <tasks>
+        <fullName>NewInvoiceforstorageextension</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>The billing cycle for storage has expired. Please continue with next billing</description>
+        <dueDateOffset>3</dueDateOffset>
+        <notifyAssignee>true</notifyAssignee>
+        <offsetFromField>Storage__c.Billing_til__c</offsetFromField>
+        <priority>High</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>New Invoice for storage extension</subject>
+    </tasks>
+</Workflow>

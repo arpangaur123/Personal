@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Grading_for_Ceramics_Glass__c</fullName>
+    <externalId>false</externalId>
+    <formula>VALUE(Text( Ceramics_Glass_Material_identification__c  ))+
+ VALUE(Text(  Ceramics_Glass_Handling__c   ))+
+ VALUE(Text( Ceramics_Glass_Installation__c   ))+
+ VALUE(Text( Ceramics_Glass_Packing__c   ))+
+ VALUE(Text( Ceramics_Glass_Crating_Carton__c  ))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Total Grading for Ceramics &amp; Glass:</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

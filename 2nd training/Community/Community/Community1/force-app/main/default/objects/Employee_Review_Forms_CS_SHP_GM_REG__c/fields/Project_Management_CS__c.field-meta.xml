@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Project_Management_CS__c</fullName>
+    <description>-Ability to coordinate and execute services according to quotation/costing
+ -Ability to ensure that all resources are well-prepared and properly equipped to carry out each and every job to the highest level of quality according to the quotation/costing
+ -Ability to convey clearly and accurately, client&apos;s request to other relevant departments (espcially Operations, Warehouse, and Shipping) for timely follow-up and execution of the project
+ -Ability to gather comprehensive information from clients for Operations/Warehouse preparation and planning
+ -Ability to monitor and ensure that project is delivered in a timely and correct manner
+ -Ability to manage &amp; resolve any issues on site (External &amp; Internal)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>-Ability to coordinate and execute services according to quotation/costing
+-Ensuring that all resources are well-prepared for the project
+-Ability to convey client&apos;s request accurately to other relevant departments for timely follow-up and execution of project
+-Ability to gather full information from client for Operations/Warehouse preparation and planning
+-Ability to ensure that project is delivered in a timely and correct manner
+-Ability to manage &amp; resolve external/internal issues on site</inlineHelpText>
+    <label>Project Management [CS]</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1</fullName>
+                <default>true</default>
+                <label>1</label>
+            </value>
+            <value>
+                <fullName>2</fullName>
+                <default>false</default>
+                <label>2</label>
+            </value>
+            <value>
+                <fullName>3</fullName>
+                <default>false</default>
+                <label>3</label>
+            </value>
+            <value>
+                <fullName>4</fullName>
+                <default>false</default>
+                <label>4</label>
+            </value>
+            <value>
+                <fullName>5</fullName>
+                <default>false</default>
+                <label>5</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

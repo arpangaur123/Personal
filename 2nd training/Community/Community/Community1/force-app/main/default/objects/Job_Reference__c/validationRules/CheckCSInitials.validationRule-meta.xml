@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CheckCSInitials</fullName>
+    <active>true</active>
+    <description>check if CS initials is chosen</description>
+    <errorConditionFormula>AND (ISBLANK(CsinchargeOpp__c),
+(Opportunity__r.RecordTypeId=&quot;012200000008bhJ,01220000000JTDC,01220000000JTCx,01220000000JTD7,01220000000JTD2&quot;),
+DATEVALUE(Opportunity__r.CreatedDate) &gt; DATE (2017,01,23))</errorConditionFormula>
+    <errorMessage>ERROR - Go back to Opportunity Page and select CS in charge of Job</errorMessage>
+</ValidationRule>

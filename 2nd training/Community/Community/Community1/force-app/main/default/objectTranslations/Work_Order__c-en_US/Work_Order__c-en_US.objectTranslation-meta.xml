@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Work Order</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Work Orders</value>
+    </caseValues>
+    <layouts>
+        <layout>Air Export</layout>
+        <sections>
+            <label></label>
+            <section>Additional Services</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Instructions to Warehouse</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Record Type</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Traffic</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Inbound Work Order</layout>
+        <sections>
+            <label></label>
+            <section>Crew Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Customer Service Action</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Operation</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Operations Instructions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Service Instructions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Traffic Action</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Local Move Work Order</layout>
+        <sections>
+            <label></label>
+            <section>Agent and Contact&apos;s contact details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Customer Service</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Operations</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Record Type</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Traffic</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Traffic : Destination Control</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Local MoveN</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Customer Service Action</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Operation</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Operations Instructions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Service Instructions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Traffic Action</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Outbound Work Order</layout>
+        <sections>
+            <label></label>
+            <section>Agent and Contact&apos;s contact details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Customer Service</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Operations</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Record Type</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Traffic</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Traffic : Destination Control</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>OutboundN</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Customer Service Action</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Operation</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Operations Instructions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Service Instructions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Traffic Action</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Sea Export</layout>
+        <sections>
+            <label></label>
+            <section>Additional Services</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Instructions to Warehouse</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Record Type</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Traffic</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Warehousing Work Order</layout>
+        <sections>
+            <label></label>
+            <section>Agent and Contact&apos;s contact details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Customer Service</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Operations</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Record Type</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Traffic</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Traffic : Destination Control</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>WarehousingN</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Customer Service Action</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Operation</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Operations Instructions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Service Instructions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Traffic Action</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Air_export</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Inbound</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>LocalMove</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Outbound</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Sea_Export</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Warehousing</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label></label>
+        <name>Air_Export</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Air_Export_L</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Inbound_WO</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Inbound_WO_L</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Local_Move</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Local_Move_L</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>New_Outbound_WO</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>New_Outbound_WO_L</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Print_HHGWO</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Print_Work_Order</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Sea_Export</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Sea_Export_L</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>ajax</name>
+    </webLinks>
+    <workflowTasks>
+        <description></description>
+        <name>NewWorkOrderCSE</name>
+        <subject></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description></description>
+        <name>NewWorkOrderOPS</name>
+        <subject></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description></description>
+        <name>NewWorkOrderTraffic</name>
+        <subject></subject>
+    </workflowTasks>
+</CustomObjectTranslation>

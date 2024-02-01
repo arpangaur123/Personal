@@ -1,0 +1,44 @@
+<apex:page standardController="artApp__Transaction__c" showHeader="false" standardstylesheets="false" renderAs="PDF">
+<apex:stylesheet value="{!$Resource.PackListCSS}"/>
+<table border="0">
+<tr><td align="left"><font style="font-weight:bold;font-family:arial;font-size:x-large">Delivery Order</font></td>
+<td align="right"><apex:image id="theImage" value="{!$Resource.AMLogo}"/></td>
+</tr>
+</table>
+<body>
+<apex:detail relatedList="true"></apex:detail>
+<br /><br />
+<div style="page-break-after: always;">&nbsp;</div>
+<p><font style="font-weight:bold;">Customer Satisfaction Survey:</font><br />Achieveing Customer Satisfaction is one of our goals. As a valuable customer,
+your feedback is crucial for us in order to serve you better. Thank you.<br/><br/> How would you rate the level of service / job performed by our 
+art handler?<br /><br />[ ] Excellent&nbsp;&nbsp; [ ] Good&nbsp;&nbsp; [ ] Fair&nbsp;&nbsp; [ ] Poor<br /><br />Any other feedback / comments:<br/>__________________________________________________________________________________________________________________________
+<br />__________________________________________________________________________________________________________________________
+<br />__________________________________________________________________________________________________________________________<br/></p>
+<br />
+<table style="text-align: left; width: 100%;border-width: 0px;border-spacing: 0px;" border="0" cellpadding="2" cellspacing="2">
+<tbody>
+<tr>
+<td style="vertical-align: top;background-color: rgb(255, 255, 255);"><br />____________________________<br/>
+Goods delivered in Good Order (on behalf of Helu-Trans (HK) Pte Ltd) <br />
+Condition By:<br /><br />
+Name:____________________________ <br />
+<br />
+<br />
+<br />
+Date: &nbsp;<br />
+Company Stamp <br />
+</td>
+<td style="vertical-align: top;background-color: rgb(255, 255, 255);" align="right"><br />____________________________<br/>
+Goods Received in Good Order <br />
+Condition By:<br /><br />
+Name:____________________________ <br />
+<br/>
+<font style="position:relative;right:191px;">Date:</font><br />
+Company Stamp <br />
+</td>
+</tr>
+<tr><td style="background-color: rgb(255, 255, 255);" colspan="2" align="center"><br/><br/><br/>HELU-TRANS HONG KONG 168 Yeung Uk Road, Unit 2, 11 Floor, Global Gateway Building Tsuen Wan, Hong Kong <br/>TEL: (+852) 2612 2711  | FAX: (+852) 2612 2815 | www.helutrans.com</td></tr>
+</tbody>
+</table>
+</body>
+</apex:page>

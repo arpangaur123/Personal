@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Subtotal_for_Part2_CS__c</fullName>
+    <externalId>false</externalId>
+    <formula>VALUE(Text(Customer_Service_CS__c))+
+VALUE(Text(Quotation_Cost_Management__c))+
+VALUE(Text(Problem_Solving_Skills__c))+
+VALUE(Text(Empathy__c))+
+VALUE(Text(Business_Acumen__c))+
+VALUE(Text(Product_Service_Knowledge__c))+
+VALUE(Text(Professional_Presentation__c))+
+VALUE(Text(Strong_Time_Management__c))+
+VALUE(Text(Site_survey_Job_visit__c))+
+VALUE(Text(Art_Handling_Knowledge__c))+
+VALUE(Text(Crate_Cartons_knowledge__c))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Subtotal for Part2 [CS]</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

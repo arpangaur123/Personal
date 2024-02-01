@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SG_LCL_Export</fullName>
+    <active>true</active>
+    <label>SG LCL Export</label>
+    <picklistValues>
+        <picklist>ATA_Carnet__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Airport_Tarmac_Supervision__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Attached_documents_provided_by_CS__c</picklist>
+        <values>
+            <fullName>Commercial Invoice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Packing List</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proforma Invoice</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>BUP_Supervision_for_HT_reference__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Book_freight_type__c</picklist>
+        <values>
+            <fullName>Air</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Courier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sea</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CITES__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Collection_Address_HK__c</picklist>
+        <values>
+            <fullName>9%2FF%2C ATL Logistics Centre B%2C Berth 3%2C Kwai Chung%2C N%2ET%2E%2C Hong Kong</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Others_Indicate_below</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unit 1003%2C 11th Floor Mapletree Logistics Centre 30 Tsing Yi Road Tsing Yi%2C N%2ET%2E Hong Kong</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unit 2%2C 11th Floor%2C Global Gateway%2C 168 Yeung Uk Road%2C Tsuen Wan%2C Hong Kong</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Collection_Address__c</picklist>
+        <values>
+            <fullName>Helu-Trans%2C 39 Keppel Road %2302-04 Tanjong Pagar Distripark %28S%29089065</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Le Freeport%2C 32 Changi North Crescent %28S%29499643</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Self-Lodge by Helu-Trans</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Courier_on_Board__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Documents_attached__c</picklist>
+        <values>
+            <fullName>Commercial Invoice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Packing List</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proforma Invoice</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Freight_Type_to_Book__c</picklist>
+        <values>
+            <fullName>Others %28State type under %27Important Field%27%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sea - FCL 20FT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sea - FCL 40FT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sea - FCL 40HC</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Fumigation_HT_ref__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>HAWB_HBL__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Permit_Type__c</picklist>
+        <values>
+            <fullName>ATA Carnet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Export under LU %28Not Applicable%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OD - Offset IM %28Export from same FTZ%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OD - Permanent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OO - Offset II under APS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OO - Offset II under TCE%2C MUSUEM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OO - Offset II under TCO%2C MUSUEM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OO - Offset II under TCS%2C MUSUEM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OO - Offset RM with Export Details</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OO - TCI %28Temporary Export%2FRe-imported goods%2C Fresh OO%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OT - Offset IM %28Export from different FTZ%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OU - Offset II %26 RM without Export Details</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RM - Removal %28Offset II%2FRM%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Shipping_to_prepare_following__c</picklist>
+        <values>
+            <fullName>Booking Form</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Export Declaration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shipping Advice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shipping Mark</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transit Insurance</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Special_requirements__c</picklist>
+        <values>
+            <fullName>ATA Carnet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Export CITES Permit</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

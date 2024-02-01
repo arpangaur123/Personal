@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Level_of_Proficiency__c</fullName>
+    <description>P0 -
+P1 - Trainee (upon joining the company)
+P2 - Skilled (Confirmed Art Handler level with less than 2 years experience)
+P3 - Highly Skilled (Team Leader level with more than 2 years experience)
+P4 - Specialist (Supervisor / Special Projects Lead level with more than 3 years experience)
+P5 - Trainer (Assistant Operations Manager level and above with more than 5 years experiene)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>P0 -
+P1 - Trainee (upon joining the company)
+P2 - Skilled (Confirmed Art Handler level with less than 2 years experience)
+P3 - Highly Skilled (Team Leader level with more than 2 years experience)
+P4 - Specialist (Supervisor / Special Projects Lead level with more than 3 years experience)
+P5 - Trainer (Assistant Operations Manager level and above with more than 5 years experiene)</inlineHelpText>
+    <label>Level of Proficiency</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>P0</fullName>
+                <default>true</default>
+                <label>P0</label>
+            </value>
+            <value>
+                <fullName>P1</fullName>
+                <default>false</default>
+                <label>P1</label>
+            </value>
+            <value>
+                <fullName>P2</fullName>
+                <default>false</default>
+                <label>P2</label>
+            </value>
+            <value>
+                <fullName>P3</fullName>
+                <default>false</default>
+                <label>P3</label>
+            </value>
+            <value>
+                <fullName>P4</fullName>
+                <default>false</default>
+                <label>P4</label>
+            </value>
+            <value>
+                <fullName>P5</fullName>
+                <default>false</default>
+                <label>P5</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

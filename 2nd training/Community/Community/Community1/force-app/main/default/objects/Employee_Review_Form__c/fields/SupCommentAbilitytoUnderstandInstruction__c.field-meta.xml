@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SupCommentAbilitytoUnderstandInstruction__c</fullName>
+    <description>Supervisor Comment for Ability to understand instructions</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Supervisor Comment for Ability to understand instructions</inlineHelpText>
+    <label>Comment Abilityto Understand Instruction</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

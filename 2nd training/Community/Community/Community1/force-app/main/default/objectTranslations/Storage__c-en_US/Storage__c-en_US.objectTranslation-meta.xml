@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Storage</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Storage</value>
+    </caseValues>
+    <layouts>
+        <layout>Common Storage</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Insurance Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Remarks</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>HHGS Storage</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>HTTR - Private Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>HTTR - Storage Common Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Remarks</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Inventory Control Storage</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Insurance Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Remarks</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Outbound</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Insurance Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Mode of Storage</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Remarks</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Private Storage</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Storage Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Insurance Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Mode of Storage</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Remarks</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>WA Storage</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label></label>
+        <name>AM_BJ_CSA</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>AM_BJ_PSA</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>AM_HK_CSA</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>AM_HK_PSA</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>AM_SG_CSA</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>AM_SG_PSA</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>HHGS</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>HTTR</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>HTTR_Private</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>PSAwInventoryControl</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label></label>
+        <name>Conga_Composer_PSA_Agreement</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Docusign_Agreement_HK</name>
+    </webLinks>
+    <workflowTasks>
+        <description></description>
+        <name>NewInvoiceforstorageextension</name>
+        <subject></subject>
+    </workflowTasks>
+</CustomObjectTranslation>

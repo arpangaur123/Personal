@@ -1,0 +1,6 @@
+.greetingClass{
+    color: green;
+}
+:host{
+    border : 6px solid green;
+}
