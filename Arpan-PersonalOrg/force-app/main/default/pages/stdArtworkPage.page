@@ -1,0 +1,8 @@
+<apex:page action="{!if($Profile.Name =='artAppCPortal',
+    '/apex/My_Collection',
+    urlFor('/a0C/o', null,
+    null, true))}">
+  
+ 
+  
+</apex:page>

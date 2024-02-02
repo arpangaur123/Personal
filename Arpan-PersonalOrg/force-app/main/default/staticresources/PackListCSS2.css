@@ -1,0 +1,66 @@
+#header, #footer {		
+float:left;
+padding:15px 0;
+min-width:100%;
+}
+
+body {
+font-size:75%
+}
+
+img {
+width:150px;
+height:150px;
+}
+
+table {
+width:100%;
+table-layout: fixed;
+
+}
+
+
+th, td {
+/*border: 1px solid black;*/
+overflow: hidden;
+width: 100px;
+}
+
+
+input{
+display: none;
+}
+
+.mainTitle{
+display: none;
+}
+
+.actionColumn{
+display: none;
+}
+
+.backToTop{
+display: none;
+}
+
+.fewerMore{
+display: none;
+}
+
+
+.listHoverLinks{
+display: none;
+}
+
+
+.dataRow{
+background-color: #FFFFFF; color: blue;
+}
+
+h3{
+display: none;
+}
+
+.headerRow{
+background-color: #FFFFFF;
+}

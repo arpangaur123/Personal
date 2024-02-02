@@ -1,0 +1,545 @@
+<apex:page standardcontroller="Material__c" lightningStylesheets="true" standardstylesheets="true"
+ showheader="false" sidebar="false" tabstyle="Material__c"><!--<table width="98%" border="0" cellpadding="0" cellspacing="0">
+
+
+
+    <tr><td>&nbsp;</td>
+
+
+
+    <td align="right"><a href="javascript:window.print();">Print</a></td></tr>
+
+
+
+    </table>-->
+    <apex:slds />
+<body fontsize="2" class="slds-scope">
+<table width="98%" border="0" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td align="left"><font
+ style="font-weight: bold; font-family: arial; font-size: x-large;">&nbsp;Materials
+Request
+Form</font></td>
+      <td align="right"><a href="javascript:window.print();">Print</a><br/>
+      <apex:image id="theImage" value="{!$Resource.AMLogo}"></apex:image></td>
+    </tr>
+  </tbody>
+</table>
+<br/>
+<table style="text-align: left; width: 98%;" border="0" cellpadding="0"
+ cellspacing="0">
+  <tbody>
+    <tr>
+      <td style="vertical-align: top;"><b>Job Reference:</b>&nbsp;<apex:outputfield value="{!Material__c.Job_Reference__r.Name}"></apex:outputfield></td>
+      <td style="vertical-align: top;"><b>Company/Shipper:</b>&nbsp;<apex:outputfield value="{!Material__c.Company_Shipper__c}"></apex:outputfield></td>
+      <td style="vertical-align: top;"><b>Company Tel:</b>&nbsp;<apex:outputfield value="{!Material__c.Tel__c}"></apex:outputfield></td>
+    </tr>
+  </tbody>
+</table>
+<!--<apex:outputLabel value="Account" for="account"/>
+
+
+
+
+
+
+
+    <apex:outputField id="account" value="{!Material__c.AFT_Return__c}"/> <br />
+
+
+
+
+
+
+
+    <apex:outputField id="AFT" value="{!Material__c.Acid_Free_Tissue__c}"/><br />
+
+
+
+
+
+
+
+    <apex:outputField id="JobID" value="{!Material__c.Job_Reference__r.Name}"/>-->
+<table style="text-align: left; width: 98%;" border="1" cellpadding="0"
+ cellspacing="0">
+  <tbody>
+    <tr style="">
+      <td
+ style="vertical-align: top; text-align: left; font-weight: bold; background-color: rgb(255, 255, 102);">Packing
+Materials</td>
+      <td
+ style="vertical-align: top; text-align: center; font-weight: bold; background-color: rgb(255, 255, 102);">Amount
+Required</td>
+      <td
+ style="vertical-align: top; text-align: center; font-weight: bold; background-color: rgb(255, 255, 102);">Used</td>
+      <td
+ style="vertical-align: top; text-align: center; font-weight: bold; background-color: rgb(255, 255, 102);">Returned</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-weight: bold;" colspan="4;">Soft
+Packing
+Materials:<br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Acid-Free Tissue (REAM)<br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.Acid_Free_Tissue__c}"></apex:outputfield><br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.AFT_Used__c}"></apex:outputfield><br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.AFT_Return__c}"></apex:outputfield><br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Glassine Paper (ROLL)<br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.Glassine_Paper__c}"></apex:outputfield> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.GP__c}"></apex:outputfield> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.GP_Returned__c}"></apex:outputfield> <br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Wax / Oil Paper (ROLL)<br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.Wax_Oil_Paper__c}"></apex:outputfield> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.WOP_Used__c}"></apex:outputfield> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.WOP_Returned__c}"></apex:outputfield> <br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Plastic Sheet (ROLL)<br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.Plastic_Sheet__c}"></apex:outputfield> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.PS_Used__c}"></apex:outputfield> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.PS_Returned__c}"></apex:outputfield> <br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Silicon Release Paper (ROLL)<br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.Silicon_Release_Paper__c}"></apex:outputfield> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.SRP_Used__c}"></apex:outputfield> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.SRP_Returned__c}"></apex:outputfield> <br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Tyvek (ROLL)<br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.Tyvek__c}"></apex:outputfield> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.T_Used__c}"></apex:outputfield> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.T_Returned__c}"></apex:outputfield> <br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Stretch Wrap (ROLL)<br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.Stretch_Wrap__c}"></apex:outputfield> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.SW_Used__c}"></apex:outputfield> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.SW_Returned__c}"></apex:outputfield> <br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Newsprint (REAM)<br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.Newsprint__c}"></apex:outputfield> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.NP_Used__c}"></apex:outputfield> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.NP_Returned__c}"></apex:outputfield> <br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Bubble PAK 20" / 40" / 60" (ROLL)<br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.Bubble_Pak_Plastic_S__c}"></apex:outputfield> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.BP_PS_Used__c}"></apex:outputfield> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.BP_PS_Returned__c}"></apex:outputfield> <br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"> <br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-weight: bold;" colspan="4;">Cardboard:<br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Corrugated Straw (ROLL)<br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.Corrugated__c}"></apex:outputfield> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.COR_Used__c}"></apex:outputfield> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.COR_Returned__c}"></apex:outputfield> <br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Single Wall (PCS)<br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.Single_Wall__c}"></apex:outputfield> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.SWC_Used__c}"></apex:outputfield> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.SWC_Returned__c}"></apex:outputfield> <br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Double Wall (PCS)<br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.Double_Wall__c}"></apex:outputfield> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.DW_Used__c}"></apex:outputfield> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.DW_Returned__c}"></apex:outputfield> <br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Triwall (PCS)<br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.Triwall__c}"></apex:outputfield> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.TW_Used__c}"></apex:outputfield> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.TW_Returned__c}"></apex:outputfield> <br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"> <br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-weight: bold;" colspan="4;">Cartons:<br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Small (PCS)<br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.SM_Amount_Required__c}"></apex:outputfield> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.SM_Used__c}"></apex:outputfield> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.SM_Returned__c}"></apex:outputfield> <br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Medium (PCS)<br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.MED_Amount__c}"></apex:outputfield> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.MED_Used__c}"></apex:outputfield> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.MED_Returned__c}"></apex:outputfield> <br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Large (PCS)<br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.LRG_Amount_Required__c}"></apex:outputfield> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.LRG_Used__c}"></apex:outputfield> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.LRG_Returned__c}"></apex:outputfield> <br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"> <br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-weight: bold;" colspan="4;">Foam:<br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Styrofoam 1" / 2" (SHEET)<br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.Styrofoam__c}"></apex:outputfield> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.SFOAM_Used__c}"></apex:outputfield> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.SFOAM_Returned__c}"></apex:outputfield> <br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Grey Foam 1" / 2" (SHEET)<br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.Grey_Foam__c}"></apex:outputfield> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.GFOAM_Used__c}"></apex:outputfield> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.GFOAM_Returned__c}"></apex:outputfield> <br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">PE Foam 1" / 2" / 5" (SHEET)<br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.Black_PE_Foam__c}"></apex:outputfield> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.BPEFOAM_Used__c}"></apex:outputfield> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.BPEFOAM_Returned__c}"></apex:outputfield> <br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Foam Sheet 1" / 2" (SHEET)<br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.PU_Sponge__c}"></apex:outputfield> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.PUS_Used__c}"></apex:outputfield> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.PUS_Returned__c}"></apex:outputfield> <br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Foam Chip (BAG)<br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.FMC_Amount_Required__c}"></apex:outputfield> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.FMC_Used__c}"></apex:outputfield> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.FMC_Returned__c}"></apex:outputfield> <br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"> <br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-weight: bold;" colspan="4;">Tapes:<br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Glass Tape (ROLL)<br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.Glass_Tape__c}"></apex:outputfield> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.GT_Used__c}"></apex:outputfield> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.GT_Returned__c}"></apex:outputfield> <br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Watergum Tape (ROLL)<br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.Watergum__c}"></apex:outputfield> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.WG_Used__c}"></apex:outputfield> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.WG_Returned__c}"></apex:outputfield> <br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Masking Tape (ROLL)<br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.Masking__c}"></apex:outputfield> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.MT_Used__c}"></apex:outputfield> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.MT_Returned__c}"></apex:outputfield> <br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Logo PVC Tape (ROLL)<br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.Logo_PVC__c}"></apex:outputfield> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.LPVC_Used__c}"></apex:outputfield> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.LPVC_Returned__c}"></apex:outputfield> <br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Normal PVC Tape (ROLL)<br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.Normal_PVC__c}"></apex:outputfield> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.NPVC_Used__c}"></apex:outputfield> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.NPVC_Returned__c}"></apex:outputfield> <br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Other Tape (ROLL)<br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.OTT_Amount_Re__c}"></apex:outputfield> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.OTT_Used__c}"></apex:outputfield> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.OTT_Returned__c}"></apex:outputfield> <br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"> <br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-weight: bold;" colspan="4;">Others:<br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Cotton Gloves (PAIRS)<br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.Gloves__c}"></apex:outputfield> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.GVS_Used__c}"></apex:outputfield> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.GVS_Returned__c}"></apex:outputfield> <br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Latex Gloves (PAIRS)</td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.GVL_Amt_Required__c}"></apex:outputfield> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.GVL_Used__c}"></apex:outputfield> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.GVL_Returned__c}"></apex:outputfield> <br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Blanket (PCS)<br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.OB_Amt_Required__c}"></apex:outputfield> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.OB_Used__c}"></apex:outputfield> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.OB_Returned__c}"></apex:outputfield> <br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Cordless Drill (SET)<br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.OCD_Amount_Required__c}"></apex:outputfield> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.OCD_Used__c}"></apex:outputfield> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.OCD_Returned__c}"></apex:outputfield> <br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Concrete / Wall Drill (SET)<br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.Power_Drill__c}"></apex:outputfield> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.PD_Used__c}"></apex:outputfield> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.PD_Returned__c}"></apex:outputfield> <br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Ladder Short/Med/Long (UNIT)<br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.OL_Amount_Required__c}"></apex:outputfield> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.OL_Used__c}"></apex:outputfield> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.OL_Returned__c}"></apex:outputfield> <br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Flat Trolley (UNIT)<br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.OFT_Amount_Required__c}"></apex:outputfield> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.OFT_Used__c}"></apex:outputfield> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.OFT_Returned__c}"></apex:outputfield> <br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Painting Trolley (UNIT)<br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.OPT_Amount_Required__c}"></apex:outputfield> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.OPT_Used__c}"></apex:outputfield> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.OPT_Returned__c}"></apex:outputfield> <br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Others: &nbsp;<apex:outputfield value="{!Material__c.If_Others__c}"></apex:outputfield><br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.Other_Amount_Required__c}"></apex:outputfield> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.Other_Used__c}"></apex:outputfield> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"><apex:outputfield value="{!Material__c.Other_Returned__c}"></apex:outputfield> <br/>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"> <br/>
+      </td>
+      <td style="vertical-align: top; text-align: center;"> <br/>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br/>
+<table style="text-align: left; width: 98%;" border="0" cellpadding="2"
+ cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="vertical-align: top;" colspan="2"><font
+ style="font-weight: bold;">Specific
+Requirements / Instructions:</font>&nbsp;<apex:outputfield value="{!Material__c.Specific_Requirements_Instructions__c}"></apex:outputfield></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><span style="font-weight: bold;">Requested
+by:</span>&nbsp;<apex:outputfield value="{!Material__c.Requested_By__c}"></apex:outputfield>
+      </td>
+      <td style="vertical-align: top;"><span style="font-weight: bold;">Date:</span>&nbsp;<apex:outputfield value="{!Material__c.Date__c}"></apex:outputfield> </td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</apex:page>

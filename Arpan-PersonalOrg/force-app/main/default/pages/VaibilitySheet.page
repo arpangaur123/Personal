@@ -1,0 +1,54 @@
+<apex:page >
+    <style>
+        
+        table td {word-wrap:break-word;}
+        .no-outline {
+        width:95%; 
+        border:0px
+        
+        }
+        
+        .THIS.slds-box {
+        border: 100px solid green;
+        }
+        
+        .applyBioStyles{
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 5px;
+        }
+        
+        
+        
+        .h1 {
+        border: 5px solid black;
+        }
+        .body {
+        background-color: yellow;
+        hight : 100px;
+        }
+        
+    </style> 
+    <div class="h1" style="border: 2px solid black; padding:2px; margin:10px">
+        <table class="applyBioStyles " style="width:70%">
+            <div style="width:69%" class="applyBioStyles ">
+                HIRE VS. BUY
+            </div>
+            <tbody>
+                <tr>
+                    <td style="color:black" class="applyBioStyles ">
+                        Applicant Name :
+                    </td>
+                    <td class="applyBioStyles "><input type="text" name="last_name" id="last_name" placeholder="ABC- Test" class="form-control no-outline" /></td>
+                </tr>
+                <tr >
+                    <td colspan="2" style="color:black" class="applyBioStyles ">
+                        REVENUE/HIRE CHARGES PER MONTH
+                    </td>
+                   
+                </tr>
+            </tbody>
+            
+        </table>
+    </div>
+</apex:page>

@@ -1,0 +1,9 @@
+<apex:page >
+  <script>
+ 
+    if(true){
+        let name = 'krishna';
+     }
+    console.log(name);
+  </script>
+</apex:page>

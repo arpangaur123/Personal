@@ -1,0 +1,15 @@
+<apex:page standardController="Crate__c" extensions="showCrateDetail">
+<apex:includeScript value="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"/>
+<style>
+.fewerMore { display: none;}
+</style>
+<apex:form >
+ <apex:pageMessages />
+ <apex:detail relatedList="true"></apex:detail>
+</apex:form>
+<script>
+    // Using jQuery, hide all of the actionLinks (edit link specifically) on the Workshops
+    // This forces the user to click the Workshop name and then click the [Edit] button
+    $(".actionLink").css("display","none");
+</script>
+</apex:page>

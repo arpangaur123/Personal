@@ -1,0 +1,89 @@
+<apex:page controller="MassDeleteEventRecordsCtrl" lightningStylesheets="true" showHeader="false" sidebar="false" id="pg">
+    
+
+    <script>
+        function checkAllMethod(valInfo){
+        
+            var total = '{!realtedOppLineWrapList.size}';
+            
+            if(valInfo.checked){
+                for(var i = 0; i < total; i++){
+                    document.getElementById('pg:formId:rpt:'+i+':chk').checked = true;
+                }
+            }else{
+                for(var i = 0; i < total; i++){
+                    document.getElementById('pg:formId:rpt:'+i+':chk').checked = false;
+                }
+            }
+        }
+    </script>
+
+    <apex:form id="formId">
+    
+        <apex:slds />
+        
+        
+        <apex:outputPanel rendered="{!IF(LEN(errorStr)<>0 ,TRUE,FALSE)}">
+            <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_error" role="alert">
+                <span class="slds-assistive-text">error</span>
+                <span class="slds-icon_container slds-icon-utility-error slds-m-right_x-small" title="Description of icon when needed">
+                <svg class="slds-icon slds-icon_x-small" aria-hidden="true">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#error" />
+                </svg>
+                </span>
+                <h2><strong><b> {!errorStr} </b></strong></h2>
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+            </div>
+        </apex:outputPanel>
+        
+        <br/>
+        <div style="text-align: left;margin-left: 11px;">
+            <p style="font-size: 25px;"> Events </p>
+        </div>
+        
+        
+        <div style="text-align: right;margin-right: 11px;">
+        
+            <apex:commandButton value="Mass Delete" action="{!deleteBtn}" styleClass="slds-button slds-button_neutral"/>
+            <apex:commandButton value="Back" action="{!backButton}" styleClass="slds-button slds-button_neutral"/>
+        </div>
+        <br/><br/>
+        
+        <table class="slds-table slds-table_cell-buffer slds-table_header-hidden slds-table_bordered">
+            <tr>
+                <td>
+                    <apex:inputCheckbox id="chkAll" onchange="checkAllMethod(this);"/>
+                </td>
+                <td>
+                    <b> SUBJECT </b>
+                </td>
+                <td>
+                    <b> START TIME</b>
+                </td>
+                <td>
+                    <b> END TIME</b>
+                </td>
+            </tr>
+            
+            <apex:repeat value="{!realtedOppLineWrapList}" var="rel" id="rpt">
+                <tr>
+                    <td>
+                        <apex:inputCheckbox id="chk" value="{!rel.isSelected}"/>
+                    </td>
+                    <td>
+                        <apex:outputField value="{!rel.event.Subject}"/>
+                    </td>
+                    <td>
+                        <apex:outputField value="{!rel.event.StartDateTime}"/>
+                    </td>
+                    <td>
+                        <apex:outputField value="{!rel.event.EndDateTime}"/>
+                    </td>
+                </tr>
+            </apex:repeat>
+            
+        </table>
+        
+        
+    </apex:form>
+</apex:page>

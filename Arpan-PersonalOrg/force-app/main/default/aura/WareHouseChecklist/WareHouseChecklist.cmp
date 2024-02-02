@@ -1,0 +1,102 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction" controller="WareHouseChecklist">
+    <aura:attribute name="recId" type="String"/>
+    <aura:attribute name="selectedFrequency" type="String"/>
+    <aura:attribute name="Master_Checklist_Item__c" type="List"/>
+    <aura:attribute name="answersListMap" type="Object"/>
+    <aura:attribute name="confirmMessage" type="String"/>
+    <aura:attribute name="InspectedByUser" type="String"/>
+    <aura:attribute name="answersList" type="List"/>
+    <aura:attribute name="locationName" type="String"/>
+    <aura:attribute name="frequencyPickListOption" type="String[]" default="Daily,Weekly,Monthly"/>
+    <aura:attribute name="pickListOption" type="String[]" default="Yes,No"/>
+    <aura:attribute name="headerName" type="String"/>
+    <aura:attribute name="showMessage" type="boolean" default="false" />
+    <aura:attribute name="fillMinAns" type="boolean" default="false" /> 
+    <aura:attribute name="selectedPickList" type="String"/>
+    
+    <lightning:spinner aura:id="mySpinner" variant="brand" size="large" class="slds-hide"/>
+    <aura:handler name="init" value="{!this}" action="{!c.init}"/>
+    <div class="slds-p-top_medium"/>
+    <div style="color:black;text-align:center;background-color:darkgrey" class="slds-text-heading_medium"><b>Warehouse Checklist</b></div>
+    <div class="demo-only demo-only--sizing slds-grid slds-wrap">
+        <div class="slds-size_1-of-7"><span style="color:red; font-size:large;">*&nbsp;</span>Warehouse Location
+            <span><lightning:input variant="label-hidden" name="input5" disabled="true" value="{!v.locationName}" label="Warehouse Location" /></span>
+        </div>
+        <div class="slds-size_1-of-7">
+            <span></span>
+        </div>
+        <div class="slds-size_1-of-7">
+            <span></span>
+        </div>
+        <div class="slds-size_1-of-7">
+            <span>
+                <div><span style="color:red; font-size:large;">*&nbsp;</span>Frequency
+                    <lightning:select variant="label-hidden" aura:id="field" required="true" name="frequencyPicklist" value="{!v.selectedFrequency}" label="Frequency" onchange="{!c.onSelectchange}">
+                        <option value="">-- None --</option>
+                        <aura:iteration items="{!v.frequencyPickListOption}" var="per">
+                            <option value="{!per}" text="{!per}"/>
+                        </aura:iteration>
+                    </lightning:select>    
+                </div>
+                
+            </span>
+        </div>
+        <div class="slds-size_1-of-7">
+            <span></span>
+        </div>
+        <div class="slds-size_1-of-7">
+            <span></span>
+        </div>
+        <div class="slds-size_1-of-7"><span style="color:red; font-size:large;">*&nbsp;</span>Inspected by
+            <span><lightning:input variant="label-hidden" aura:id="field" required="true" name="input5" value="{!v.InspectedByUser}" label="Inspected by" onchange="{!c.setInspectedBy}"/></span>
+        </div>
+    </div>
+    
+    <div class="slds-p-bottom_medium"></div>
+    <aura:iteration items="{!v.Master_Checklist_Item__c}" var="chck" indexVar="i">
+        <div style="color:black; text-align:center; " class="slds-text-heading_small"><b>{!chck.Header__c}</b></div>
+        <div class="slds-p-vertical--medium">	
+            <div class="demo-only demo-only--sizing slds-grid slds-wrap" >
+                <div class="slds-size_1-of-3">
+                    <div class="slds-text-align_left slds-m-around_x-small">{!i+1}.&nbsp;&nbsp;{!chck.Item__c}&nbsp;
+                        <aura:if isTrue="{!chck.Mandatory__c}"><span style="color:red; font-size:large;">*</span></aura:if>&nbsp;&nbsp;&nbsp;</div>
+                </div>
+                <div class="slds-size_1-of-3">
+                    <div class="slds-text-align_center slds-m-around_x-small">
+                        <!--	aura:id="checkListAnswers"	 -->
+                        <lightning:select required="{!chck.Mandatory__c}" aura:id="field" onchange="{!c.onSelectchange}" name="picklist" accesskey="{!chck.Id}">
+                            <option value="">-- None --</option>
+                            <aura:iteration items="{!v.pickListOption}" var="per">
+                                <option value="{!per}" text="{!per}"/> 
+                            </aura:iteration>
+                        </lightning:select>
+                    </div>
+                </div>
+                <div class="slds-size_1-of-3">
+                    <div class="slds-text-align_center slds-m-around_x-small">
+                        <lightning:textarea onchange="{!c.onSelectchange}" aura:id="field" id="{!chck.Id+'rem'}" accesskey="{!chck.Id}" name="remarks"/>
+                        <span id="{!chck.Id}" style="display:none; color:rgb(194, 57, 52);">Complete this field</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aura:iteration>
+    
+    <div style="text-align:center;">
+        <aura:if isTrue = "{!v.showMessage}">
+            <div class="slds-show  slds-p-top--xx-small" style="text-align:center;color:rgb(194, 57, 52);font-size:var(--lwc-fontSize2,0.75rem);">
+                Please fill all the mandatory fields.
+            </div>
+        </aura:if>
+        <aura:if isTrue = "{!v.fillMinAns}">
+            <div class="slds-show  slds-p-top--xx-small" style="text-align:center;color:rgb(194, 57, 52);font-size:var(--lwc-fontSize2,0.75rem);">
+                Answer at least 1 question.
+            </div>
+        </aura:if>
+        <lightning:button label="Save" aura:id='calcSave' title="Save" class="slds-button slds-button_brand slds-m-right_medium" onclick="{!c.handleSave}"/>
+        <lightning:button label="Cancel" title="Cancel" onclick="{!c.handleCancel}"/>
+    </div><br/>
+    <div class="slds-p-top_small"/>
+    <lightning:input style="color:red;text-align:left;" class="slds-hide" aura:id="confirm" readonly="true" value="{!v.confirmMessage}"/>
+    <div class="slds-p-top_small"/>
+</aura:component>

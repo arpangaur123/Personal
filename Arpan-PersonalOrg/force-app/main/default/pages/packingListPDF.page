@@ -1,0 +1,111 @@
+<apex:page standardController="artApp__Transaction__c" showHeader="false" renderAs="PDF">
+<apex:stylesheet value="{!$Resource.visualforcePageCounter}"/>
+<apex:stylesheet value="{!$Resource.rateReplyCSS}"/>
+
+<body>
+	<table width="100%" columns="1">
+        <tr><td><apex:image value="https://emea.salesforce.com/servlet/servlet.ImageServer?id=015200000013waY&oid=00D200000001RQA&lastMod=1262155691000"/ width="180" height="50"></td></tr>
+        <tr><td><apex:image value="https://emea.salesforce.com/servlet/servlet.ImageServer?id=015200000013F0p&oid=00D200000001RQA&lastMod=1260237899000" width="100%" height="38"/></td></tr>           
+    </table>
+    
+    <apex:panelGrid columns="1" styleClass="rateTable" width="100%">
+        <thead><tr><th><center>Packing List Information</center></th></tr></thead>
+    </apex:panelGrid> 
+    
+	<table width="100%" columns="2">
+        <tr><td width="60px"><apex:outputText value="Date of Service:" styleClass="labelName"/></td><td><apex:outputText value="{0,date,dd-MMM-yyyy}" styleClass="labelValue"><apex:param value="{!artApp__Transaction__c.artApp__Date__c}" /></apex:outputText></td></tr>
+    </table>
+    <table width="100%" columns="2">
+    	<tr><td width="80px"><apex:outputText value="Job Number:" styleClass="labelName"/></td><td><apex:outputText value="{!artApp__Transaction__c.Job_Number__c}" styleClass="labelValue"/></td></tr>    	
+    </table>
+    <table width="100%" columns="2">
+    	<tr><td width="60px"><apex:outputText value="Address:" styleClass="labelName"/></td><td><apex:outputText value="{!artApp__Transaction__c.artApp__Address_1__c}" styleClass="labelValue"/></td></tr>
+    	<tr><td width="60px"><apex:outputText value="" styleClass="labelName"/></td><td><apex:outputText value="{!artApp__Transaction__c.artApp__Address_2__c}" styleClass="labelValue"/></td></tr>
+    	<tr><td width="60px"><apex:outputText value="Postal Code" styleClass="labelName"/></td><td><apex:outputText value="{!artApp__Transaction__c.artApp__Country__c} {!artApp__Transaction__c.artApp__Zip_Postal_Code__c}" styleClass="labelValue"/></td></tr>    	
+    	<tr><td width="60px"><apex:outputText value="Attention To:" styleClass="labelName"/></td><td><apex:outputText value="{!artApp__Transaction__c.artApp__Addressee__c}" styleClass="labelValue"/></td></tr>    	
+        <tr><td width="60px"><apex:outputText value="Tel:" styleClass="labelName"/></td><td><apex:outputText value="{!artApp__Transaction__c.artApp__Phone__c}" styleClass="labelValue"/></td></tr>    	
+     	<tr><td width="60px"><apex:outputText value="" styleClass="labelName"/></td><td><apex:outputText value="{!artApp__Transaction__c.Phone_2__c}" styleClass="labelValue"/></td></tr>    	
+    
+    </table>
+    
+    <apex:panelGrid columns="1" styleClass="rateTable" width="100%">
+        <apex:outputText value=""/>
+        <apex:outputText value=""/>
+        <apex:outputText value=""/>
+        <apex:outputText value=""/>
+    </apex:panelGrid>
+    
+    <apex:panelGrid columns="1" styleClass="rateTable" width="100%">
+        <thead><tr><th><center>Item List</center></th></tr></thead>
+        <apex:outputText value=""/>
+        <apex:outputText value=""/>
+        <apex:outputText value=""/>
+        <apex:outputText value=""/>
+    </apex:panelGrid> 
+   
+   <apex:variable var="count" value="{!1}"/>
+   <apex:dataTable value="{!artApp__Transaction__c.artApp__Line_Items__r}" var="con" columnClasses="left,left,left,left,right,right,right" border="1" cellpadding="5" width="100%">
+         <apex:column >
+         	<apex:facet name="header"><div align="center" styleClass="labelValue">NO</div></apex:facet>
+         	<div align="center" class="labelValue"><apex:outputText value="{0, number, #}">
+				<apex:param value="{!count}"/>
+			</apex:outputText></div>
+         	<apex:variable var="count" value="{!count + 1}"/>
+         </apex:column>
+         <apex:column >
+	          <apex:facet name="header"><div align="center" styleClass="labelValue">ITEM INFORMATION</div></apex:facet>
+	          <div align="left">
+	              <apex:outputText value="{!con.artApp__Type__c}" styleClass="labelValue" rendered="{!con.RecordType.DeveloperName = 'Transaction_Expense'}"/>
+	              <apex:outputPanel rendered="{!con.RecordType.DeveloperName != 'Transaction_Expense'}">
+	              
+	              <table width="100%" columns="2">
+	                <tr><td width="60px"><apex:outputText value="Artist:" styleClass="labelName"/></td><td><apex:outputText value="{!con.Artist_Name__c}" styleClass="labelValue"/></td></tr>				
+					<tr><td width="60px"><apex:outputText value="Item Name:" styleClass="labelName"/></td><td><apex:outputText value="{!con.artApp__Artwork__r.name}" styleClass="labelValue"/></td></tr>
+			        <tr><td width="60px"><apex:outputText value="Type:" styleClass="labelName"/></td><td><apex:outputText value="{!con.artApp__Artwork__r.artApp__Type__c}" styleClass="labelValue"/></td></tr>
+			        <tr><td width="60px"><apex:outputText value="Media:" styleClass="labelName"/></td><td><apex:outputText value="{!con.artApp__Artwork__r.artApp__Media__c}" styleClass="labelValue"/></td></tr>
+			        <tr><td width="60px"><apex:outputText value=""/></td><td><apex:outputText value=""/></td></tr>
+			      </table>
+	              </apex:outputPanel>
+	         </div>
+         </apex:column>
+         <apex:column >
+               <apex:facet name="header"><div align="center" class="labelValue">DESCRIPTION</div></apex:facet>
+               <div align="left">
+                <apex:outputText value="{!con.artApp__Artwork__r.artApp__Description__c}" styleClass="labelValue"/>
+               </div>
+     	</apex:column>
+     	<apex:column >
+               <apex:facet name="header"><div align="center" class="labelValue">Lot Number</div></apex:facet>
+               <div align="left">
+                <apex:outputText value="{!con.Lot_Number__c}" styleClass="labelValue"/>
+               </div>
+     	</apex:column>
+         <apex:column >
+               <apex:facet name="header"><div align="center" class="labelValue">IMAGE</div></apex:facet>
+               <div align="center"><apex:image id="theImage"  value="/servlet/servlet.FileDownload?file={!con.artApp__Artwork__r.artApp__Primary_Image_Id__c}" height="50px" rendered="{!Len(con.artApp__Artwork__r.artApp__Primary_Image_Id__c)>0}"/>           
+            </div>
+         </apex:column>
+         <apex:column width="10%">
+              <apex:facet name="header"><div align="center" class="labelValue">DIMENSIONS</div></apex:facet>
+              <div align="right" class="labelValue"><apex:outputField value="{!con.Dimensions__c}"/></div>
+         </apex:column>
+     </apex:dataTable>
+     
+     <apex:panelGrid columns="1" styleClass="rateTable" width="100%">
+   		<apex:outputText value=""/>
+        <apex:outputText value=""/>
+        <apex:outputText value=""/>
+        <apex:outputText value=""/>
+    </apex:panelGrid> 
+	<apex:panelGrid columns="1" styleClass="rateTable" width="100%">
+        <thead><tr><th><center>Remarks</center></th></tr></thead>
+    </apex:panelGrid>
+ 	<apex:panelGrid columns="1" styleClass="rateTable" width="100%">
+        <apex:outputText value=""/>
+        <apex:outputText value=""/>
+        <apex:outputText value=""/>
+        <apex:outputText value=""/>
+        <tr><td><apex:outputText value="{!artApp__Transaction__c.Remarks__c}" styleClass="labelValue"/></td></tr>          
+    </apex:panelGrid>
+</body>
+</apex:page>

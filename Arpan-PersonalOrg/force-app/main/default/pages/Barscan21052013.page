@@ -1,0 +1,31 @@
+<apex:page id="Bar_Scan2" sidebar="false">
+<head>
+<script type="text/javascript">
+function notEmpty(){
+    var myTextField = document.getElementById('myText');
+    if(myTextField.value != "")
+        //alert(myTextField.value.substring(0, myTextField.value.length-1))
+        window.location.href="https://emea.salesforce.com/ui/list/FilterEditPage?id=00B20000006fjIo&fval1="+myTextField.value.substring(0, myTextField.value.length-1)+"&retURL=%2Fapex%2FBarscan2";
+        //alert("https://emea.salesforce.com/ui/list/FilterEditPage?id=00B20000006faeq&fval1="+myTextField.value.substring(0, myTextField.value.length-1)+"&retURL=%2Fapex%2FBarscan2");
+    else
+        alert("No input provided!")     
+}
+</script></head>
+<body>
+<!--<a href="https://emea.salesforce.com/ui/list/FilterEditPage?id=00B20000006faeq&fval1=&retURL=%2Fapex%2FBarscan2">Start Scan</a>-->
+<b><font size="6">Artmove Barcode Scanner 1.1</font></b>
+<br /><br />
+<input type="text" id="myText" size="83" autofocus="autofocus" style="background-color: #66CCFF" />
+<input type="button" onclick="notEmpty()" value="Start Scan" /><br />
+<b><i><font size="2" color="red">Note: You can scan up to 6 items at a time</font></i></b>
+<br />
+<!--<form><input type="button" value="Start Scan" onClick="window.location.href='https://emea.salesforce.com/ui/list/FilterEditPage?id=00B20000006faeq&fval1=&retURL=%2Fapex%2FBarscan2'" />&nbsp;
+<b><i><font size="2" color="red">Note: You can only scan up to 6 items at a time</font></i></b>
+</form>-->
+<br />How to use the Artmove Barcode Scanner 1.1?<br /><br />1. Scan your items with the barcode scanner<br /><br />2. Then Click on 'Start Scan' button<br /><br />
+3. On the next page just hit 'Enter' key<br /><br />4. Check the top check box to select all of the items that has been scanned<br /><br />
+5. Do your updates (remember to select all records for mass column update)<br /><br />     
+<apex:enhancedlist type="artApp__Artwork__c" height="730" customizable="false" rowsPerPage="25" />
+<!-- Listid="00B20000006fjIo"-->
+</body>
+</apex:page>

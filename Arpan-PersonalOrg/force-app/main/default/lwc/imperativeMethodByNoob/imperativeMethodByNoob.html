@@ -1,0 +1,23 @@
+<template>
+    <lightning-card title="Imperative Methode">
+        <div style="height: 200px; ">
+            <lightning-datatable key-field="Id" data={condate} columns={colms} hide-checkbox-column="true">
+            </lightning-datatable>
+        </div>
+        <br>
+        <div>
+            <lightning-button label="Load Contacts" onclick={onClickHandler}></lightning-button>
+        </div>
+
+            <template if:true={contacts}>
+                <template for:each={contacts} for:item="contact">
+                        <li key={contact.Id}>
+                            <div if:true={contact.first} class="slds-border_top"></div>
+                            <lightning-formatted-text value={contact.Name}></lightning-formatted-text>
+                            <div if:true={contact.last} class="slds-border_top"></div>
+                        </li>
+                </template>
+            </template>
+       
+    </lightning-card>
+</template>

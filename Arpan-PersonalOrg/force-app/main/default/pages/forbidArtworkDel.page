@@ -1,0 +1,14 @@
+<apex:page standardController="artApp__Artwork__c">
+
+<div style="width:100%;" align="center">
+<br /><br />
+<div id="userRoundedCornersBox">
+<h1>FORBIDDEN!</h1>
+<br/><br/>
+You are not allowed to delete Artworks from the Collector page. <br /><br />
+This action can only be done from the Artwork Tab.
+<br /><br/>
+Click <a href="javascript: history.go(-1);">here</a> to go back to the previous page!
+</div>
+</div>
+</apex:page>

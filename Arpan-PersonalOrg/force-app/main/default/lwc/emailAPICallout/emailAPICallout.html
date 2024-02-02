@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Email" icon-name="standard:email_chatter">
+        <div class="slds-m-around-medium">
+            <lightning-input  required label="Email" name="emailReceiver" onchange={onChangeHadller} value={values.emailReceiver}></lightning-input>
+            <lightning-input label="Subject" name="subject" onchange={onChangeHadller} value={values.subject}></lightning-input>
+            <lightning-textarea  label="Body" name="body" onchange={onChangeHadller} value={values.body}></lightning-textarea>
+            <lightning-button variant="solid" label="Send" onclick={sendOnClickHandller}></lightning-button>
+        </div>
+        
+    </lightning-card>
+</template>

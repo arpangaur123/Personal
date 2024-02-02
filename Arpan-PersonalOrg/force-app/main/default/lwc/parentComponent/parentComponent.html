@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Parent">
+        <c-child-component ></c-child-component>
+        <lightning-input
+            label="Type something here" 
+            onchange={handlechange}
+        ></lightning-input>
+        Hi- {itemname2}
+        <br>
+        <lightning-button variant="brand" label="Sumbit" onclick={handleClick}></lightning-button>
+    </lightning-card>
+</template>

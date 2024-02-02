@@ -1,0 +1,88 @@
+<apex:page standardController="Freight_Calculator__c" sidebar="false" showHeader="true" lightningStylesheets="true" extensions="FC_Products_Controller">
+    <apex:slds />
+    <apex:sectionHeader title="Manage Products" subtitle="Add / Remove Products" />
+    <apex:form >
+        
+        <apex:pageBlock title="Mandatory Products">
+                        
+            <apex:actionStatus id="ajaxStatus" startText="Deleting Mandatory Products...">
+            <apex:facet name="stop">
+            <apex:outputPanel id="man">
+                <table>
+
+                    <tr>
+                        <apex:repeat value="{!mheaders}" var="h">
+                            <td class="hdr">{!h}</td>
+                        </apex:repeat>
+                    </tr>
+
+                    <apex:repeat value="{!MProducts}" var="mp">
+                     <tr>
+                      <td><apex:inputField value="{!mp.Product_Name__c}" /></td>
+                      <td><apex:inputField value="{!mp.Product_Code__c}" /></td>
+                      <td><apex:inputField value="{!mp.Price__c}" /></td>
+                     </tr>
+                    </apex:repeat>  
+                </table>
+            </apex:outputPanel>
+            </apex:facet>
+            </apex:actionStatus>  
+        </apex:pageBlock>
+
+        <apex:pageBlock title="Optional Products">
+            <apex:pageBlockButtons location="bottom">
+                <apex:commandButton action="{!Cancel}" value="Exit" styleClass="btn"/>
+                
+            </apex:pageBlockButtons>
+
+            <apex:actionStatus id="ajaxStatus" startText="Deleting Optional Products...">
+            <apex:facet name="stop">
+            <apex:outputPanel id="opt">
+                <table>
+
+                    <tr>
+                        <apex:repeat value="{!oheaders}" var="h">
+                        <td class="hdr">{!h}</td>
+                        </apex:repeat>
+                    </tr>
+
+                    <apex:repeat value="{!OProducts}" var="op">
+                        <tr>
+                            <td>
+                                <apex:variable value="{!op.Price__c}" var="priceValue"/>
+                                <apex:commandLink value="Del" action="{!deleteOptProduct}"><!-- rerender="opt" status="ajaxStatus" title="Delete Product which have price {!op.Price__c}" oncomplete="calculationTotal(this);"-->
+                                    <apex:param name="deleteId" value="{!op.Id}" /> 
+                                </apex:commandLink>
+                            </td>                    
+                            <td><apex:inputField value="{!op.Product_Name__c}" /></td>
+                            <td><apex:inputField value="{!op.Product_Code__c}" /></td>
+                            <td><apex:inputField value="{!op.Price__c}" /></td>
+                        </tr>
+                    </apex:repeat>
+                </table>
+
+                <br/>
+                
+                <apex:outputText escape="false"  value="<b>This Freight Calculations Grand Total is  <span id='calId'>{0}</span> HKD.</b>">
+                       <apex:param value="{!Freight_Calculator__c.Cost__c}"/>
+                </apex:outputText>
+                
+            </apex:outputPanel>
+            </apex:facet>
+            </apex:actionStatus>  
+        </apex:pageBlock>
+    
+    </apex:form>
+    <script>
+        function calculationTotal(src){
+            try{
+                var total = parseFloat(document.getElementById('calId').innerText.replace(',',''));
+                var remNUmber = parseFloat(src.title.replace('Delete Product which have price ','').replace(',',''));
+                document.getElementById('calId').innerText = total - remNUmber; 
+                document.getElementById('calId').innerText = document.getElementById('calId').innerText.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+            }catch(e){
+                alert(e);
+            }
+        }
+    </script>
+</apex:page>

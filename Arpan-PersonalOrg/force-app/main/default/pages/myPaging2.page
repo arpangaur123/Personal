@@ -1,0 +1,87 @@
+<apex:page controller="MyPagingController2" showheader="false" sidebar="false">
+<STYLE>div#home_Tab{display:none!important;}</STYLE>
+<div id="demoContainer"><script
+language="JavaScript">try{var
+pa=document.getElementById("demoContainer").parentNode.parentNode;
+pa.style.display = "none";}catch(err){alert('There was an error on this
+webpage='+err.description);}</script><script
+language="JavaScript">function removeSerchbox(){var a = [];var re =
+new RegExp('\\bsearchCell\\b');var els =
+document.getElementsByTagName("td");for(var i=0,j=els.length; i<j;
+i++)if(re.test(els[i].className))a.push(els[i]);var
+parent=a[0];parent.style.display='none';} function removeSerchbox2(){var a = [];var re =
+new RegExp('\\blast\\b');var els =
+document.getElementsByTagName("td");for(var i=0,j=els.length; i<j;
+i++)if(re.test(els[i].className))a.push(els[i]);var
+parent=a[0];parent.style.display='none';} function removeSerchbox3(){var a = [];var re =
+new RegExp('\\bright\\b');var els =
+document.getElementsByTagName("td");for(var i=0,j=els.length; i<j;
+i++)if(re.test(els[i].className))a.push(els[i]);var
+parent=a[0];parent.style.display='none';} var oldonload = window.onload;
+   if (typeof window.onload != 'function')    {     window.onload =
+oldonload;   } else {     window.onload = function() {      if
+(oldonload) {      oldonload();    }    removeSerchbox();removeSerchbox2();removeSerchbox3();   }  }
+</script></div>
+<div align="right"><a href="../secur/logout.jsp" target="_top">Logout</a>&nbsp;</div><br></br>
+<p>&nbsp;<b>Collection of Artworks by {!$User.FirstName}, ( Total No. of Artworks:&nbsp;<apex:outputLabel value="{!totalRecords}"/> )&nbsp;</b></p>
+<apex:form >
+<apex:pageBlock title="" id="pageBlock">
+<apex:pageBlockButtons location="top">
+
+</apex:pageBlockButtons>
+<apex:pageMessages ></apex:pageMessages>
+<div align="right" style="display:{!IF(NOT(ISNULL(accounts)),'block','none')}">
+<font size="1pt">Page #:&nbsp;<apex:outputLabel value="{!PageNumber}"/>&nbsp;out of&nbsp;<apex:outputLabel value="{!totalPageNumber}"/>&nbsp;&nbsp;&nbsp;&nbsp;</font>
+<apex:commandButton value="Previous" action="{!previousBtnClick}" disabled="{!previousButtonEnabled}" reRender="pageBlock"></apex:commandButton>
+<apex:commandButton value="Next" action="{!nextBtnClick}" reRender="pageBlock" disabled="{!nextButtonDisabled}" ></apex:commandButton>
+</div>
+<br/><br/>
+<apex:pageBlockTable value="{!accounts}" var="artwk" rendered="{!NOT(ISNULL(accounts))}" rows="{!PageSize}">
+        <apex:column >
+         <apex:facet name="header">   
+           <apex:commandLink action="{!ViewData}" value="Artist{!IF(sortExpression=='artApp__Artist__r.Name',IF(sortDirection='ASC','▼','▲'),'')}" id="cmdSort">
+             <apex:param value="artApp__Artist__r.Name" name="column" assignTo="{!sortExpression}" ></apex:param>
+           </apex:commandLink>
+         </apex:facet>
+         <apex:outputtext value="{!artwk.artApp__Artist__r.Name}"/>         
+       </apex:column>
+       <apex:column >
+         <apex:facet name="header">   
+           <apex:commandLink action="{!ViewData}" value="Title{!IF(sortExpression=='Name',IF(sortDirection='ASC','▼','▲'),'')}">
+             <apex:param value="Name" name="column" assignTo="{!sortExpression}" ></apex:param>
+           </apex:commandLink>
+         </apex:facet>
+         <apex:outputtext value="{!artwk.Name}"/>         
+       </apex:column>                          
+            <apex:column headervalue="Type">
+                    <apex:outputtext value="{!artwk.artApp__Type__c}"/>
+            </apex:column>            
+            <apex:column headervalue="Barcode">
+                    <apex:outputtext value="{!artwk.Barcode_ID__c}"/>
+            </apex:column>
+            <apex:column headervalue="II Permit Declared Date">
+                    <apex:outputtext value="{!artwk.II_Permit_Declared_Date__c}"/>
+            </apex:column>
+            <apex:column headervalue="Date In">
+                    <apex:outputtext value="{!artwk.Date_In__c}"/>
+            </apex:column>
+            <apex:column headervalue="Date Out">
+                    <apex:outputtext value="{!artwk.Date_Out__c}"/>
+            </apex:column>
+            <apex:column headervalue="Location">
+                    <apex:outputtext value="{!artwk.Internal_Location__r.Name}"/>
+            </apex:column>
+            <apex:column headervalue="Image">
+                    <apex:outputlink value="../servlet/servlet.FileDownload?file={!artwk.artApp__Primary_Image_Id__c}" target="_blank"><apex:image value="../servlet/servlet.FileDownload?file={!artwk.artApp__Primary_Image_Id__c}" width="50" height="50"/></apex:outputlink>
+            </apex:column>
+</apex:pageBlockTable>
+<div align="right" style="display:{!IF(NOT(ISNULL(accounts)),'block','none')}">
+<br/>
+<font size="1pt">Page #:&nbsp;<apex:outputLabel value="{!PageNumber}"/>&nbsp;out of&nbsp;<apex:outputLabel value="{!totalPageNumber}"/>&nbsp;&nbsp;&nbsp;&nbsp;</font>
+<apex:commandButton value="Previous" action="{!previousBtnClick}" disabled="{!previousButtonEnabled}" reRender="pageBlock"></apex:commandButton>
+<apex:commandButton value="Next" action="{!nextBtnClick}" reRender="pageBlock" disabled="{!nextButtonDisabled}" ></apex:commandButton>
+</div>
+
+</apex:pageBlock>
+</apex:form>
+</apex:page>

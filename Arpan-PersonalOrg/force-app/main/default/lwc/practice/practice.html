@@ -1,0 +1,59 @@
+<template>
+    <lightning-card title = 'Hello World LWC'>
+        <!-- on-change event  -->
+    <div class="greetingClass"> Hello {dynamicGreeting}! </div>
+    <div style="position: center ; color:blue;  border : 1px solid red; " > This is inner CSS</div>
+        <lightning-input font="bold" label="greeting" value="Arpan" onchange={greetingChangeHandler}></lightning-input>
+
+        <!-- Condition Rendering -->
+        <br>
+        <lightning-input type="checkbox" label="show div" onchange={conditionalIfElse}></lightning-input>
+        <template if:true={displayDiv}>
+            <div> I am here</div>
+        </template>
+
+        <template if:false={displayDiv}>
+            <div> I am out of office</div>
+        </template>
+
+        <!-- Looping or iteration -->
+        <br>
+        <p>Office Locations </p>
+        
+        <template for:each={cityName} for:item='city' for:index='index' > 
+        <p key={city}>{index} - {city}</p>
+        </template>
+        
+    </lightning-card>
+</template>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <lightning-card  title = 'Pratice' variant="narrow" icon-name="standard:opportunity">
+        <h1 slot="title">This is a title......</h1>
+        <h1>This is the body</h1>
+        <div slot="actions">
+            <lightning-button-icons
+                icon-name="utility:down"
+            ></lightning-button-icon>
+        </div>
+        <div slot="footer">
+            <h6>This is the footer</h6>
+        </div>
+    </lightning-card> -->

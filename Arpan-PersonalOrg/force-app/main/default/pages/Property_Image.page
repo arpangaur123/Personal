@@ -1,0 +1,13 @@
+<apex:page controller="ImagInsertionIntoRichText">
+ <apex:form >
+  <apex:outputLabel value="Document Name"></apex:outputLabel>
+     <apex:inputText id="name" value="{!naam}"/> 
+     <br/>
+     
+
+  <apex:outputLabel value="Upload Document"></apex:outputLabel>
+  <apex:inputfile value="{!naam}"></apex:inputfile>
+	 <br/>
+  <apex:commandButton value="Save" action="{!insrt}" id="save"/>
+ </apex:form>
+</apex:page>

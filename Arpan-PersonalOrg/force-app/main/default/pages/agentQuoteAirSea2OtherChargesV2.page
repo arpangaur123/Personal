@@ -1,0 +1,161 @@
+<apex:page standardController="SFDC_520_Quote__c" showHeader="false" renderAs="PDF">
+<apex:stylesheet value="{!$Resource.visualforcePageCounter}"/>
+<apex:stylesheet value="{!$Resource.rateReplyCSS}"/>
+
+    <body>
+    <table width="100%" columns="1">
+        <tr><td><apex:image value="https://emea.salesforce.com/servlet/servlet.ImageServer?id=015200000013HQB&oid=00D200000001RQA&lastMod=1262155691000"/ width="100%"></td></tr>
+        <tr><td><apex:image value="https://emea.salesforce.com/servlet/servlet.ImageServer?id=015200000013F0p&oid=00D200000001RQA&lastMod=1260237899000" width="100%" height="38"/></td></tr>           
+    </table>
+    
+    <table width="100%" columns="2">
+        <tr><td><apex:outputText value="{0,date,dd-MMM-yyyy}"><apex:param value="{!now()}"/></apex:outputText></td><td align="right" width="300px"><apex:outputText value="Quotation No.: {!SFDC_520_Quote__c.Name}{!SFDC_520_Quote__c.Quote_Revision__c}"/></td></tr>
+        <tr><td><apex:outputText value=""/></td></tr>
+        <tr><td><apex:outputText value=""/></td></tr>
+    </table>
+    <table width="100%" columns="1">
+        <tr><td><apex:outputText value="Dear {!SFDC_520_Quote__c.Agent_Name__r.FirstName} {!SFDC_520_Quote__c.Agent_Name__r.LastName}," styleClass="labelValue2"/></td></tr>
+        <tr><td><apex:outputText value=""/></td></tr>
+        <tr><td><apex:outputText value=""/></td></tr>
+        <tr><td><apex:outputText value=""/></td></tr>
+        <tr><td><apex:outputText value="Subject: {!SFDC_520_Quote__c.Shipper_Name__r.LastName}, {!SFDC_520_Quote__c.Shipper_Name__r.FirstName} - {!SFDC_520_Quote__c.Origin__c} To {!SFDC_520_Quote__c.Destination__c}" styleClass="labelTitle3"/></td></tr>
+        <tr><td><apex:outputText value=""/></td></tr>
+        <tr><td><apex:outputText value=""/></td></tr>
+        <tr><td><apex:outputText value=""/></td></tr>
+        <tr><td><apex:outputText value="Thank you for giving Helutrans the opportunity to handle the above shipment, please find below our quotation for your kind reference: " styleClass="labelValue2"/></td></tr>
+        <tr><td><apex:outputText value=""/></td></tr>
+    </table><br></br>    
+    
+    <apex:panelGrid columns="1" styleClass="rateTable" width="100%">
+        <thead><tr><th><center>Summary of Services</center></th></tr></thead>
+    </apex:panelGrid>
+    <table width="100%" columns="1">
+        <apex:outputText value="Survey Date: {0,date,dd-MMM-yyyy}" styleClass="labelValue2"><apex:param value="{!SFDC_520_Quote__c.Opportunity__r.Survey_Date__c}" /></apex:outputText>
+        <tr><td><apex:outputText value=""/></td></tr>
+        <tr><td><apex:outputText value=""/></td></tr>
+        <tr><td><apex:outputText value=""/></td></tr>
+        <tr><td><apex:outputText value=""/></td></tr>
+        <tr><td><apex:outputText value=""/></td></tr>
+        <tr><td><apex:outputText value="BASED ON SURVEY VOLUME" styleClass="labelTitle2"/></td></tr>
+        <tr><td><apex:outputText value=""/></td></tr>
+    </table>
+    
+    <table width="100%" columns="2">
+    	<tr><td><u><apex:outputText value="Air Shipment - Breakpoint Applied" styleClass="labelName2"/></u></td></tr>
+    </table>
+    <table width="100%" columns="2">
+        <tr><td width="150px"><apex:outputText value="Estimated Volume:" styleClass="labelValue2"/></td><td><apex:outputText value="{0,number,###,###,###,###} cuft gross / {1,number,###,###,###,###} lbs net" styleClass="labelValue2">
+        <apex:param value="{!SFDC_520_Quote__c.Estimated_Volume_Air_cuft__c}"/>
+        <apex:param value="{!SFDC_520_Quote__c.Estimated_Volume_Air_lbs_net__c}"/>
+        </apex:outputText></td></tr>
+        <tr><td width="150px"><apex:outputText value="Origin Services:" styleClass="labelValue2"/></td><td><apex:outputText value="{0,number,###,###,###,###} cuft @ {!SFDC_520_Quote__c.OS_Air__c}" styleClass="labelValue2">
+        <apex:param value="{!SFDC_520_Quote__c.Estimated_Volume_Air_cuft__c}"/>
+        </apex:outputText></td></tr>
+        <tr><td width="150px"><apex:outputText value="Pack and Load Date:" styleClass="labelValue2"/></td><td><apex:outputText value="{0,date,dd-MMM-yyyy}" styleClass="labelValue2">
+        <apex:param value="{!SFDC_520_Quote__c.Pack_Load_Date_Air__c}"/>
+        </apex:outputText></td></tr>
+        <tr><td width="150px"><apex:outputText value="Air Freight:" styleClass="labelValue2"/></td><td><apex:outputText value="{!SFDC_520_Quote__c.CurrencyIsoCode}{0,number,###,###,###,##0.00} per KG" styleClass="labelValue2">
+        <apex:param value="{!SFDC_520_Quote__c.Air_Freight_per_KG__c}"/>
+        </apex:outputText></td></tr>
+    </table><br></br> 
+    
+    <table width="100%" columns="1">
+        <tr><td ><u><apex:outputText value="Sea Shipment - Breakpoint Applied" styleClass="labelName2"/></u></td></tr>
+    </table>
+    <table width="100%" columns="2">
+        <tr><td width="150px"><apex:outputText value="Mode:" styleClass="labelValue2"/></td><td><apex:outputText value="{!SFDC_520_Quote__c.Mode__c}" styleClass="labelValue2"/></td></tr>
+        <tr><td width="150px"><apex:outputText value="Estimated Volume:" styleClass="labelValue2"/></td><td><apex:outputText value="{0,number,###,###,###,###} cuft net / {1,number,###,###,###,###} lbs net" styleClass="labelValue2">
+        <apex:param value="{!SFDC_520_Quote__c.Estimated_Volume_Sea_cuft_net__c}"/>
+        <apex:param value="{!SFDC_520_Quote__c.Estimated_Volume_Sea_lbs__c}"/>
+        </apex:outputText></td></tr>
+        <tr><td width="150px"><apex:outputText value="Origin Services:" styleClass="labelValue2"/></td><td><apex:outputText value="{0,number,###,###,###,###} lbs @ {!SFDC_520_Quote__c.OS_Sea__c}" styleClass="labelValue2">
+        <apex:param value="{!SFDC_520_Quote__c.Estimated_Volume_Sea_cuft_net__c}"/>
+        </apex:outputText></td></tr>
+        <tr><td width="150px"><apex:outputText value="Ocean Freight:" styleClass="labelValue2"/></td><td><apex:outputText value="{!SFDC_520_Quote__c.CurrencyIsoCode}{0,number,###,###,###,##0.00}" styleClass="labelValue2">
+        <apex:param value="{!SFDC_520_Quote__c.Ocean_Freight__c}"/>
+        </apex:outputText></td></tr>
+        
+        <tr><td><apex:outputText value=""/></td></tr>
+        <tr><td><apex:outputText value=""/></td></tr>
+        <tr><td><apex:outputText value=""/></td></tr>
+        <tr><td><apex:outputText value=""/></td></tr>
+        <tr><td><apex:outputText value=""/></td></tr>
+        <tr><td><apex:outputText value=""/></td></tr>
+        
+        <tr><td width="150px"><apex:outputText value="Mode:" styleClass="labelValue2"/></td><td><apex:outputText value="{!SFDC_520_Quote__c.Mode_2__c}" styleClass="labelValue2"/></td></tr>
+        <tr><td width="150px"><apex:outputText value="Estimated Volume:" styleClass="labelValue2"/></td><td><apex:outputText value="{0,number,###,###,###,###} cuft net / {1,number,###,###,###,###} lbs net" styleClass="labelValue2">
+        <apex:param value="{!SFDC_520_Quote__c.Estimated_Volume_2_Sea_cuft_net__c}"/>
+        <apex:param value="{!SFDC_520_Quote__c.Estimated_Volume_2_Sea_lbs_net__c}"/>
+        </apex:outputText></td></tr>
+        <tr><td width="150px"><apex:outputText value="Origin Services:" styleClass="labelValue2"/></td><td><apex:outputText value="{0,number,###,###,###,###} lbs @ {!SFDC_520_Quote__c.OS_2_Sea__c}" styleClass="labelValue2">
+        <apex:param value="{!SFDC_520_Quote__c.Estimated_Volume_2_Sea_lbs_net__c}"/>
+        </apex:outputText></td></tr>
+        <tr><td width="150px"><apex:outputText value="Ocean Freight:" styleClass="labelValue2"/></td><td><apex:outputText value="{!SFDC_520_Quote__c.CurrencyIsoCode}{0,number,###,###,###,##0.00}" styleClass="labelValue2">
+        <apex:param value="{!SFDC_520_Quote__c.Ocean_Freight_2__c}"/>
+        </apex:outputText></td></tr>
+        
+        <tr><td><apex:outputText value=""/></td></tr>
+        <tr><td width="150px"><apex:outputText value="Pack and Load Date:" styleClass="labelValue2"/></td><td><apex:outputText value="{0,date,dd-MMM-yyyy}" styleClass="labelValue2">
+        <apex:param value="{!SFDC_520_Quote__c.Pack_Load_Date_Air__c}"/>
+        </apex:outputText></td></tr>
+    </table><br></br> 
+
+    <apex:panelGrid columns="1" styleClass="rateTable" width="100%">
+        <thead><tr><th><center>Additional Charges</center></th></tr></thead>
+    </apex:panelGrid>
+    <table width="100%" columns="2">
+        <tr><td width="150px"><apex:outputText value="Estimated Volume (Crating):" styleClass="labelValue2"/></td><td><apex:outputText value="{0,number,###,###,###,###} cuft gross / {1,number,###,###,###,###} lbs net" styleClass="labelValue2">
+        <apex:param value="{!SFDC_520_Quote__c.Estimated_Volume_Crating_cuft__c}"/>
+        <apex:param value="{!SFDC_520_Quote__c.Estimated_Volume_crating_lbs__c}"/>
+        </apex:outputText></td>
+        <td><apex:outputText value="SIT: {!SFDC_520_Quote__c.SIT__c}" styleClass="labelValue2"/></td>
+        </tr>
+        <tr><td width="150px"><apex:outputText value="Crating Charges:" styleClass="labelValue2"/></td><td><apex:outputText value="{0,number,###,###,###,###} cuft @ {!SFDC_520_Quote__c.Crating_Charges_2__c}" styleClass="labelValue2">
+        <apex:param value="{!SFDC_520_Quote__c.Estimated_Volume_Crating_cuft__c}"/>
+        </apex:outputText></td>
+        <td><apex:outputText value="Warehouse: {!SFDC_520_Quote__c.Warehouse__c}" styleClass="labelValue2"/></td>
+        </tr>
+        <tr><td width="150px"><apex:outputText value="Crated Items:" styleClass="labelValue2"/></td><td><apex:outputText value="{!SFDC_520_Quote__c.Crated_Items__c}" styleClass="labelValue2"/></td>
+        <td><apex:outputText value="Others: {!SFDC_520_Quote__c.Others__c}" styleClass="labelValue2"/></td>
+        </tr>
+        <br></br>
+        <tr><td width="150px"><apex:outputText value="Shuttle Service:" styleClass="labelValue2"/></td><td><apex:outputText value="NA" styleClass="labelValue2">
+        </apex:outputText></td></tr>
+    </table><br></br>
+    
+    <apex:panelGrid columns="1" styleClass="rateTable" width="100%">
+        <thead><tr><th><center>Additional Remarks</center></th></tr></thead>
+    </apex:panelGrid>
+    <table width="100%" columns="1">
+        <tr><td><apex:outputField value="{!SFDC_520_Quote__c.Additional_Remarks__c}" styleClass="labelValue2"/></td></tr>
+    </table>
+           
+    <table width="100%" columns="1">
+        <tr><td><apex:outputText value=""/></td></tr>
+        <tr><td><apex:outputText value=""/></td></tr>
+        <tr><td><apex:outputText value=""/></td></tr>
+        <tr><td><apex:outputText value=""/></td></tr>
+        <tr><td><apex:outputText value=""/></td></tr>
+        <tr><td><apex:outputText value=""/></td></tr>
+        <tr><td><apex:outputText value=""/></td></tr>
+        <tr><td><apex:outputText value=""/></td></tr>
+        <tr><td><apex:outputText value="Trust that the above is clear and we would appreciate your earliest approval." styleClass="labelValue2"/></td></tr>
+        <tr><td><apex:outputText value=""/></td></tr>
+        <tr><td><apex:outputText value=""/></td></tr>
+        <tr><td><apex:outputText value=""/></td></tr>
+        <tr><td><apex:outputText value=""/></td></tr>
+        <tr><td><apex:outputText value=""/></td></tr>
+        <tr><td><apex:outputText value=""/></td></tr>
+        <tr><td><apex:outputText value=""/></td></tr>
+        <tr><td><apex:outputText value=""/></td></tr>
+        <tr><td><apex:outputText value="Yours Sincerely," styleClass="labelValue2"/></td></tr>
+        <tr><td><apex:outputText value=""/></td></tr>
+        <tr><td><apex:outputText value=""/></td></tr>
+        <tr><td><apex:outputText value="{!SFDC_520_Quote__c.CreatedBy.FirstName} {!SFDC_520_Quote__c.CreatedBy.LastName}" styleClass="labelValue2"/></td></tr>
+        <tr><td><apex:outputText value=""/></td></tr>
+        <tr><td><apex:outputText value="{!SFDC_520_Quote__c.CreatedBy.Title}" styleClass="labelValue2"/></td></tr>
+    </table><br></br>
+    
+               
+</body>
+</apex:page>

@@ -1,0 +1,186 @@
+<apex:page >
+  
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+   <style>
+   .bg-white{background-color:#fff; width: 158px;
+height: 120px; font-weight:bold;}
+.b-white{background-color:#fff;}
+body { margin: 0; } 
+a:hover,.slds-scope a:hover{text-decoration:none;}
+.nav{margin-bottom:8px; }
+.nav a{color:#000;text-transform:uppercase; border-radius:6px; padding:5px; border: #fff solid 1px; display:inline-block;}
+.nav .slds-text-align_right a:hover{color:#27b2cd;border: #dedede solid 1px; }
+.top .fa{background-color:#00acb6; color:#fff; border-radius:50%; padding:3px;}
+.s4Content{padding:10px;}
+.s4Content h4{font-size:20px; font-weight:bold;}
+.ml-minus30{margin-left:-30px;}
+@media(max-width:768px){
+.ml-minus30{margin-left:0px;}
+.d-sm-none{display:none !important;}
+.text-sm-center, .text-sm-center .slds-col{text-align:center !important; margin:0 auto;}
+#rowToClone .slds-input{width:110% !important;}
+.profile form{padding:10px !important;}
+}
+.mx-0{margin:0px !important;}
+.box{position;relative;
+border-radius:4px; background-color:#fff;
+border:1px solid #ccc;display:block; overflow:hidden; transition: transform 0.2s ease;}
+.box img{transition: transform 0.2s ease;}
+.box:hover img{
+ transform:scale(1.1);
+}
+@media(max-width:1023px){.flip-card{border:1px solid #ccc; border-radius:6px; padding:10px;} .flip-card .flip-card-back{border-top:1px solid #ccc; padding:10px 0px;} .flip-card-back a{margin:8px !important;}
+.slds-m-horizontal_xx-large{margin:0px !important;}
+}
+.image{overflow:hidden;}
+@media(min-width:1024px){
+
+
+
+
+.flip-card img{vertical-align: middle;}
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 300px;
+  border: 1px solid #ccc;
+  border-radius:6px;
+  overflow:hidden;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: #f5863f;
+  padding:40px 15px;
+  color: white;
+  transform: rotateY(180deg);
+}
+.flip-card-front p{position:absolute; top:10px; left: 0px;
+margin: 0 auto;
+right: 0px;}
+}
+.bg-light{border:1px solid #ccc; border-radius:6px; background-color:#f7f7f7; box-shadow: 0 .125rem .25rem rgba(0,0,0,.075) !important; overflow:hidden;}
+.slds-button_pay{color:#fff !important; background-color:#73bf43 !important;}
+.slds-scope .slds-page-header{border-color:#ccc !important; border-bottom:0px !important;}
+ .slds-scope .profile .slds-table thead th,  .slds-scope .profile .slds-table thead td, .slds-scope .profile .slds-table--bordered tbody td,.slds-scope .profile .slds-table--cell-buffer tr > th:first-child{padding:5px !important;}
+ .slds-scope p > img{position:fixed !important;}
+ @keyframes slidy {
+5% { left: 0%; }
+50% { left: 0%; }
+75% { left: -100%; }
+100% { left: -100%; }
+}
+
+
+div#slider { overflow: hidden; }
+div#slider figure img { width: 20%; float: left; cursor:pointer; }
+div#slider figure { 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 6s slidy infinite; 
+}
+.d-sm-block{display:none !important;}
+@media(max-width:990px){
+.d-sm-block{display:inline-block !important; font-size:18px; float:right; padding-top:30px !important; padding-right:10px !important;}
+.menusmall{position:absolute; top:0px; background-color:#fff; padding:10px; width:200px !important; right:0px;
+transform: translatex(100%);transition:all 0.3s ease-in;box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important; z-index:9999; overflow:hidden;}
+.menusmall a{display:block;}
+.nav a:hover{border-color:#fff !important;}
+.slds-scope .nav{overflow: hidden !important;}
+.slds-scope{overflow-x:hidden;}
+.slds-scope .slds-modal__close {top:0px !important; right:10px !important; color:#333 !important;}
+}
+.slideright{
+ transform: translatex(0%) !important;
+ display:block;
+}
+
+   </style>
+ 
+ <script>
+ function viewProduct(){
+   window.location.href= "https://sdo-demo-main-166ce2cf6b6-17-173a2dc5d98.secure.force.com/DemoAplApollo08/APL_product";
+ };
+ function showmodal(){
+  document.getElementById('register').classList.remove("slds-hide");
+ }
+ function closemodal(){
+  document.getElementById('register').classList.add("slds-hide");
+ }
+ function showmenu(){
+   document.getElementById('menu').classList.add("slideright");
+ }
+ function hidemenu(){
+ document.getElementById('menu').classList.remove("slideright");
+ }
+ 
+ </script>
+
+ 
+   <div class="slds-p-vertical_xx-small slds-p-horizontal_small slds-text-align_right top d-sm-none" >
+   <i class="fa fa-phone slds-m-right_small"></i> 1800-102-3737 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-envelope slds-m-right_small"></i>info@aplapollo.com
+   </div>
+   <div style="overflow:hidden;">
+   <div class="slds-grid slds-wrap slds-grid_vertical-align-center nav ">
+   <div class="slds-col slds-size_12-of-12 slds-large-size_2-of-12">
+   <a href="https://sdo-demo-main-166ce2cf6b6-17-173a2dc5d98.secure.force.com/DemoAplApollo08/APL_home"><img src="https://demoaplapollo.my.salesforce.com/resource/1614835415000/APLlogo?" alt="logo"  style="width:190px;"/>
+   </a>
+   <a href="javascript:void(0);" onclick="showmenu();" class="d-sm-block fa fa-align-justify"></a>
+   
+   </div>
+   <div id="menu" class="slds-col  slds-large-size_10-of-12 slds-text-align_right slds-text-heading_small menusmall">
+   <a onclick="hidemenu();" class="d-sm-block fa  fa-angle-right" style="position: absolute;
+left: 10px;
+top: 7px;
+border: 1px solid #ddd;
+font-size: 20px;
+padding: 4px 12px 8px !important;
+font-weight: bold;
+background-color: #f6873f; color:#fff !important;"></a>
+   <a href="https://sdo-demo-main-166ce2cf6b6-17-173a2dc5d98.secure.force.com/DemoAplApollo08/APL_home" class="slds-m-horizontal_small fa fa-home" style="color:#183650; font-weight:bold; font-size:22px;"></a>
+   <a href="https://sdo-demo-main-166ce2cf6b6-17-173a2dc5d98.secure.force.com/DemoAplApollo08/APL_account" class="slds-m-horizontal_small" style="color:#183650; font-weight:bold;">My Account</a>
+   <a href="https://sdo-demo-main-166ce2cf6b6-17-173a2dc5d98.secure.force.com/DemoAplApollo08/APL_product" class="slds-m-horizontal_small" style="color:#183650; font-weight:bold;">Product</a>
+   <a href="https://sdo-demo-main-166ce2cf6b6-17-173a2dc5d98.secure.force.com/DemoAplApollo08/APL_order" class="slds-m-horizontal_small" style="color:#183650; font-weight:bold;">Orders</a>
+   <a href="https://demoaplapollo.my.salesforce.com/apex/Apl_Dispatch_Order?core.apexpages.request.devconsole=1" class="slds-m-horizontal_small" style="color:#183650; font-weight:bold;">Dispatch Order</a>
+   <a href="javascript:void(0)" class="slds-m-horizontal_small" style="color:#183650; font-weight:bold;" onclick="showmodal();" >Contact Us</a>
+   <a href="https://sdo-demo-main-166ce2cf6b6-17-173a2dc5d98.secure.force.com/DemoAplApollo08/APL_case" class="slds-m-horizontal_small" style="color:#183650; font-weight:bold;">Complaints</a>
+  
+   </div>
+   </div>
+   </div>
+</apex:page>

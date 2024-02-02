@@ -1,0 +1,176 @@
+<apex:page standardcontroller="artApp__Transaction__c" extensions="artworkCon">
+ <apex:sectionHeader title="Create new Artwork" subtitle="Step 1 of 3"/>
+ 
+<apex:form >
+	<apex:pageblock id="pb" >
+	<apex:pageBlockSection title="Job Information"/>
+
+	<apex:repeat value="{!firstInner}" var="inner2" id="therepeat">
+	<apex:panelGrid columns="5">
+		<apex:panelGrid >
+			<apex:facet name="header">Job Number</apex:facet>
+			<apex:inputField value="{!inner2.myArtwork.Job_No__c}"/>
+		</apex:panelGrid> 
+		<apex:panelGrid >
+			<apex:facet name="header">II Permit Number</apex:facet>
+			<apex:inputField value="{!inner2.myArtwork.II_Permit_No__c}"/>
+		</apex:panelGrid>
+		<apex:panelGrid >
+			<apex:facet name="header">II Permit Declared Date</apex:facet>
+			<apex:inputField value="{!inner2.myArtwork.II_Permit_Declared_Date__c}"/>
+		</apex:panelGrid>
+		<apex:panelGrid >
+			<apex:facet name="header">Collector Name</apex:facet>
+			<apex:inputField value="{!inner2.myArtwork.artApp__Collector__c}"/>
+		</apex:panelGrid>
+		<apex:panelGrid >
+			<apex:facet name="header">Exhibition</apex:facet>
+			<apex:inputField value="{!inner2.myArtwork.artApp__Exhibition__c}"/>
+		</apex:panelGrid>
+		
+	</apex:panelGrid>	
+	</apex:repeat>
+	
+	<apex:pageBlockButtons >
+		<apex:commandbutton value="Add" action="{!add}" rerender="pb1"/>
+		<apex:commandbutton value="Next" action="{!save}"/>
+	</apex:pageBlockButtons>
+	
+	<apex:pageBlockSection title="Artwork Information"/>
+		<apex:pageblock id="pb1">	
+		<apex:repeat value="{!firstInner}" var="inner1" id="therepeat">
+			<apex:panelGrid columns="10">
+				<apex:panelGrid headerClass="Name">
+					<apex:facet name="header">Delete</apex:facet>
+					<apex:commandButton value="X" action="{!del}" rerender="pb1">
+						<apex:param name="rowToBeDeleted" value="{!inner1.counter}" assignTo="{!selectedRowIndex}"></apex:param>
+					</apex:commandButton>
+				</apex:panelGrid>				                   
+			
+				<apex:panelGrid >
+					<apex:facet name="header">Barcode ID</apex:facet>
+					<apex:inputField value="{!inner1.myArtwork.Barcode_ID__c}"/>
+				</apex:panelGrid>
+				<apex:panelGrid >
+					<apex:facet name="header">Artist Name</apex:facet>
+					<apex:inputField value="{!inner1.myArtwork.artApp__Artist__c}"/>
+				</apex:panelGrid>
+				<apex:panelGrid >
+					<apex:facet name="header">Artwork Title</apex:facet>
+					<apex:inputField value="{!inner1.myArtwork.Name}"/>
+				</apex:panelGrid>					
+				<apex:panelGrid >
+					<apex:facet name="header">Year</apex:facet>
+					<apex:inputField value="{!inner1.myArtwork.artApp__Year__c}"/>
+				</apex:panelGrid>
+				<apex:panelGrid >
+					<apex:facet name="header">Location</apex:facet>
+					<apex:inputField value="{!inner1.myArtwork.Internal_Location__c}"/>
+				</apex:panelGrid>
+				
+				<apex:panelGrid >
+					<apex:outputText value=""/>
+				</apex:panelGrid>
+				<apex:panelGrid >
+					<apex:outputText value=""/>
+				</apex:panelGrid>
+				<apex:panelGrid >
+					<apex:outputText value=""/>
+				</apex:panelGrid>
+				<apex:panelGrid >
+					<apex:outputText value=""/>
+				</apex:panelGrid>
+				<apex:panelGrid >
+					<apex:outputText value=""/>
+				</apex:panelGrid>
+				
+				
+				<apex:panelGrid >
+					<apex:facet name="header">Item No.</apex:facet>
+					<apex:inputField value="{!inner1.myArtwork.Item_No__c}"/>
+				</apex:panelGrid>
+				<apex:panelGrid >
+					<apex:facet name="header">Collection No.</apex:facet>
+					<apex:inputField value="{!inner1.myArtwork.Collection_No__c}"/>
+				</apex:panelGrid>
+				<apex:panelGrid >
+					<apex:facet name="header">Type</apex:facet>
+					<apex:inputField value="{!inner1.myArtwork.artApp__Type__c}"/>
+				</apex:panelGrid>
+				<apex:panelGrid >
+					<apex:facet name="header">Media</apex:facet>
+					<apex:inputField value="{!inner1.myArtwork.artApp__Media__c}"/>
+				</apex:panelGrid>
+				<apex:panelGrid >
+					<apex:facet name="header">Currency</apex:facet>
+					<apex:inputField value="{!inner1.myArtwork.CurrencyIsoCode}"/>
+				</apex:panelGrid>
+				
+
+				<apex:panelGrid >
+					<apex:outputText value=""/>
+				</apex:panelGrid>
+				<apex:panelGrid >
+					<apex:outputText value=""/>
+				</apex:panelGrid>
+				<apex:panelGrid >
+					<apex:outputText value=""/>
+				</apex:panelGrid>
+				<apex:panelGrid >
+					<apex:outputText value=""/>
+				</apex:panelGrid>
+				<apex:panelGrid >
+					<apex:outputText value=""/>
+				</apex:panelGrid>
+				
+				<apex:panelGrid >
+					<apex:facet name="header">Cost</apex:facet>
+					<apex:inputField value="{!inner1.myArtwork.artApp__Cost__c}"/>
+				</apex:panelGrid>
+				<apex:panelGrid >
+					<apex:facet name="header">UOM</apex:facet>
+					<apex:inputField value="{!inner1.myArtwork.artApp__UOM__c}"/>
+				</apex:panelGrid>
+				<apex:panelGrid >
+					<apex:facet name="header">Width</apex:facet>
+					<apex:inputField value="{!inner1.myArtwork.artApp__Width__c}"/>
+				</apex:panelGrid>
+				<apex:panelGrid >
+					<apex:facet name="header">Height</apex:facet>
+					<apex:inputField value="{!inner1.myArtwork.artApp__Height__c}"/>
+				</apex:panelGrid>
+				<apex:panelGrid >
+					<apex:facet name="header">Length</apex:facet>
+					<apex:inputField value="{!inner1.myArtwork.artApp__Length__c}"/>
+				</apex:panelGrid>
+				
+				<apex:panelGrid >
+					<apex:outputText value=""/>
+				</apex:panelGrid>
+				<apex:panelGrid >
+					<apex:outputText value=""/>
+				</apex:panelGrid>
+				<apex:panelGrid >
+					<apex:outputText value=""/>
+				</apex:panelGrid>
+				<apex:panelGrid >
+					<apex:outputText value=""/>
+				</apex:panelGrid>
+				<apex:panelGrid >
+					<apex:outputText value=""/>
+				</apex:panelGrid>
+				
+				<apex:panelGrid >
+					<apex:facet name="header">Description</apex:facet>
+					<apex:inputField value="{!inner1.myArtwork.artApp__Description__c}"/>
+				</apex:panelGrid>
+				
+			</apex:panelgrid>
+		</apex:repeat>
+	</apex:pageBlock>
+		
+</apex:pageblock>
+</apex:form> 
+
+
+</apex:page>

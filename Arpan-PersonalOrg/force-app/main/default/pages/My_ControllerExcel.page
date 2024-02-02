@@ -1,0 +1,41 @@
+<apex:page controller="MyPagingController2" contentType="application/vnd.ms-excel#{!$User.FirstName}{!$User.LastName}{!todayDate}.xls" action="{!loadExportPage}">
+    <apex:pageBlock >
+        <apex:pageBlockTable value="{!artWorkWrapperListForExcelPage}" var="artwk" rendered="{!NOT(ISNULL(accounts))}">
+                <apex:column headervalue="Artist" rendered="{!if(showArtist == true, True, False)}">             
+                 <apex:outputtext value="{!artwk.apArt.artApp__Artist__r.Name}"/>         
+                </apex:column>
+           
+               <apex:column headervalue="Title" rendered="{!if(showTitle == true, True, False)}">
+                 <apex:outputtext value="{!artwk.apArt.Name}"/>        
+               </apex:column>
+           
+               <apex:column headervalue="Barcode" rendered="{!if(showBarCode == true, True, False)}">                
+                 <apex:outputtext value="{!artwk.apArt.Barcode_ID__c}"/>         
+               </apex:column>
+               
+                <apex:column headervalue="Item No" rendered="{!if(showItemNo == true, True, False)}">            
+                 <apex:outputtext value="{!artwk.apArt.Item_No__c}"/>         
+               </apex:column>
+               
+               <apex:column headervalue="Lot No." rendered="{!if(showLotNo == true, True, False)}">              
+                 <apex:outputtext value="{!artwk.apArt.Lot_No__c}"/>         
+               </apex:column>
+               
+               <apex:column headervalue="Dimension" rendered="{!if(showDimension == true, True, False)}">                
+                 <apex:outputtext value="{!artwk.apArt.Dimensions__c}"/>         
+               </apex:column>
+           
+                <apex:column headervalue="Exhibition" rendered="{!if(showExhibition == true, True, False)}">             
+                 <apex:outputtext value="{!artwk.apArt.artApp__Exhibition__r.Name}"/>         
+                </apex:column>
+                
+                <apex:column headervalue="Packed Dimensions" rendered="{!if(showPD == true, True, False)}">           
+                 <apex:outputtext value="{!artwk.apArt.Packed_Dimensions__c}"/>         
+                </apex:column>
+                
+                <!--<apex:column headervalue="Packing Method" rendered="{!if(showPM == true, True, False)}">             
+                 <apex:outputtext value="{!artwk.apArt.Packing_Method__c}"/>         
+                </apex:column> -->
+        </apex:pageBlockTable>
+        </apex:pageBlock>
+</apex:page>

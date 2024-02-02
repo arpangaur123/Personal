@@ -1,0 +1,124 @@
+<apex:page standardStylesheets="true"  docType="html-5.0" showheader="false">
+   <apex:slds />
+   <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+   <apex:include pagename="APL_Header" />
+   
+   
+   <div id="slider">
+<figure>
+<img src="https://demoaplapollo.my.salesforce.com/resource/1614836015000/APLs1?" onclick="viewProduct();" />
+<img src="https://demoaplapollo.my.salesforce.com/resource/1614836101000/APLs2?" onclick="viewProduct();" />
+</figure>
+</div>
+
+
+
+<div class="slds-grid slds-wrap slds-gutters slds-p-horizontal_large slds-p-vertical_x-large mx-0" style="background-color:#f7f7f7;">
+<div class="slds-col slds-small-size_6-of-12 slds-large-size_3-of-12 slds-p-bottom_medium">
+<a href="https://www.aplapollo.com/architects-event/" class="box" style="color: #414141;"><div class="s4Wrap"><div class="image"><img src="https://demoaplapollo.my.salesforce.com/resource/1614836700000/APLarchitech?" class="" />
+</div><div class="s4Content"><h4>Architects</h4><p>APL Apollo enables Architects to design Large Structures without compromising on Aesthetics and Strength.</p></div></div></a></div>
+<div class="slds-col slds-small-size_6-of-12 slds-large-size_3-of-12 slds-p-bottom_medium">
+<a href="https://www.aplapollo.com/dealers-retailers-events/" class="box" style="color: #414141;"><div class="s4Wrap"><div class="image"><img src="https://demoaplapollo.my.salesforce.com/resource/1614837027000/APLengineers?" class=""/></div><div class="s4Content"><h4>Engineers</h4><p>APL Apollo’s Lightweight and High Strength Steel Tubes and Pipes provide a spectrum of choice to Engineers to develop and construct Large Structures with Ease.</p></div></div></a></div>
+<div class="slds-col slds-small-size_6-of-12 slds-large-size_3-of-12 slds-p-bottom_medium">
+<a href="https://www.aplapollo.com/fabricators-hub/" class="box" style="color: #414141;"><div class="s4Wrap"><div class="image"><img src="https://demoaplapollo.my.salesforce.com/resource/1614836718000/APLfabicators?" class="" />
+</div><div class="s4Content"><h4>Fabricators</h4><p>The Ease of Fabrication coupled with a High Strength to Weight ratio is ideal for Contractors and Fabricators who need to build strong, sturdy and Long Lasting Structures.</p></div></div></a></div>
+<div class="slds-col slds-small-size_6-of-12 slds-large-size_3-of-12">
+<a href="https://www.aplapollo.com/consultants-contractors-events/" class="box" style="color: #414141;"><div class="s4Wrap"><div class="image"><img src="https://demoaplapollo.my.salesforce.com/resource/1614834404000/APLconsultant?" class="" /></div><div class="s4Content"><h4>Consultants / Contractors</h4><p>Strength, Durability, Ease of Bending and suited for Welding, the uses of APL Apollo's Steel Pipes and Tubes are immense for home builders.</p></div></div></a></div>
+</div>
+
+<div class="slds-grid slds-wrap mx-0 slds-grid_vertical-align-center" style="background-color:#fff;">
+<div class="slds-col slds-small-size_4-of-12 slds-large-size_8-of-12">
+<center><img src="https://demoaplapollo.my.salesforce.com/resource/1614836237000/AplChairman?" /></center>
+</div>
+<div class="slds-col slds-small-size_8-of-12 slds-large-size_4-of-12 slds-p-horizontal_large  slds-p-vertical_x-large slds-text-heading_small slds-border_left ml-minus30" style="box-shadow: 0 0 40px rgba(0,0,0,0.3); background-color:#fff;">
+<p style="font-weight:bold; color:#9cd1e5; text-transform:uppercase; font-size:44px;">The Visionary</p>
+<br/>
+ <p style="line-height:24px;">Our focus on capacity utilisation, gaining market-share, branding, strong distribution, better margins and the enhancement of shareholder value-creation remains uninterrupted. We also foresee the continuation of a strong demand for our products as they have become a household name.</p>
+<br/>
+<strong>Mr. Sanjay Gupta</strong><br/>
+<p>The Chairman</p>
+<br/>
+<a class="slds-m-horizontal_small" href="https://www.aplapollo.com/about-us/chairmans-note" style="background-color:#f5863f;color:#fff; border-radius:6px !important; font-weight:bold; padding:5px 10px !important;">Read More</a>
+<br/>
+</div>
+</div>
+
+
+<div class="slds-grid  slds-grid_align-center slds-p-around_small mx-0 footer" style="background-color:#436e79; color:#fff;">
+   <div class="slds-size_6-of-12 slds-text-align_center">
+     Copyright © 2020 APL Apollo. All right reserved.
+   </div>
+   </div>
+ 
+<div id="register" class="slds-hide"> 
+<section role="dialog" tabindex="-1" aria-label="Meaningful description of the modal content" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+  <div class="slds-modal__container">
+    <header class="slds-modal__header">
+      <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" onclick="closemodal();" title="Close">
+        <i class="fa fa-times"></i>
+        <span class="slds-assistive-text">Close</span>
+      </button>
+      <h2 id="modal-heading-01" class="slds-modal__title slds-hyphenate" style="font-weight:bold;">Contact Us</h2>
+    </header>
+    <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+    <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+     
+
+<input type="hidden" name="oid" value="00D2w000008oftm" />
+<input type="hidden" name="retURL" value="https://www.aplapollo.com/" />
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+<!--  these lines if you wish to test in debug mode.                          -->
+<!--  <input type="hidden" name="debug" value=1>                              -->
+<!--  <input type="hidden" name="debugEmail"                                  -->
+<!--  value="surinderpal.singh.0@riqcrm.com">                                 -->
+<!--  ----------------------------------------------------------------------  -->
+
+<div class="slds-grid slds-wrap slds-gutters">
+<!--<div class="slds-col slds-large-size_6-of-12 slds-p-bottom_x-small">
+<select  id="industry" name="industry" class="slds-select"><option value="">--Industry--</option><option value="Architects">Architects</option>
+<option value="Civil Engineers">Civil Engineers</option>
+<option value="Engineering Consultants">Engineering Consultants</option>
+<option value="Fabricators">Fabricators</option>
+<option value="Interior Designers">Interior Designers</option>
+<option value="Builders">Builders</option>
+<option value="Home Owners">Home Owners</option>
+<option value="Others">Others</option>
+</select>
+</div>
+<div class="slds-col slds-large-size_6-of-12 slds-p-bottom_x-small">
+<input  id="city" placeholder="City" maxlength="40" name="city" size="20" type="text" class="slds-input" required="true" />
+</div>-->
+<div class="slds-col slds-large-size_6-of-12 slds-p-bottom_x-small">
+<input  id="first_name" maxlength="40" placeholder="First Name" name="first_name" size="20" type="text" class="slds-input" required="true" />
+</div>
+<div class="slds-col slds-large-size_6-of-12 slds-p-bottom_x-small">
+<input  id="last_name" placeholder="Last Name" maxlength="80" name="last_name" size="20" type="text" class="slds-input" required="true" />
+</div>
+
+<div class="slds-col slds-large-size_6-of-12 slds-p-bottom_x-small">
+<input  id="email" placeholder="Email" maxlength="80" name="email" size="20" type="text" class="slds-input" required="true" />
+</div>
+<div class="slds-col slds-large-size_6-of-12 slds-p-bottom_x-small">
+<input  id="phone" placeholder="Phone" maxlength="40" name="phone" size="20" type="text" class="slds-input" required="true" />
+</div>
+</div>
+<textarea name="description" placeholder="Description" class="slds-textarea"></textarea>
+
+
+
+
+    </div>
+    <footer class="slds-modal__footer">
+      <!--<input type="submit" name="submit">-->
+      <button type="submit" name="submit" class="slds-button slds-p-horizontal_large" style="background-color:#f5863f; border-color:#f5863f; color:#fff !important;">Submit</button>
+    </footer>
+               </form>
+  </div>
+</section>
+<div class="slds-backdrop slds-backdrop_open"></div> 
+</div>   
+   
+</html>
+</apex:page>

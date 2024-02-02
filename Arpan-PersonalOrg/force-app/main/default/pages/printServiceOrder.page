@@ -1,0 +1,44 @@
+<apex:page standardController="Service_Order__c" showHeader="false" standardstylesheets="false" renderAs="PDF">
+<apex:stylesheet value="{!$Resource.PackListCSS}"/>
+<table border="0">
+<tr><td align="left"><font style="font-weight:bold;font-family:arial;font-size:x-large">Service Order</font></td>
+<td align="right"><apex:image id="theImage" value="{!$Resource.AMLogo}"/></td>
+</tr>
+</table>
+<body>
+<apex:detail relatedList="true"></apex:detail>
+
+<p><font style="font-weight:bold;">Customer Satisfaction Survey:</font><br />Achieveing Customer Satisfaction is one of our goals. As a valuable customer,
+your feedback is crucial for us in order to serve you better. Thank you.<br/><br/> How would you rate the level of service / job performed by our 
+art handler?<br /><br />[ ] Excellent&nbsp;&nbsp; [ ] Good&nbsp;&nbsp; [ ] Fair&nbsp;&nbsp; [ ] Poor<br /><br />Any other feedback / comments:<br/>__________________________________________________________________________________________________________________________
+<br />__________________________________________________________________________________________________________________________
+<br />__________________________________________________________________________________________________________________________<br/></p>
+<br />
+<table style="text-align: left; width: 100%;border-width: 0px;border-spacing: 0px;" border="0" cellpadding="2" cellspacing="2">
+<tbody>
+<tr>
+<td style="vertical-align: top;background-color: rgb(255, 255, 255);"><br />____________________________<br/>
+Service Acknowledge By:  <br />
+Name: <br />
+On behalf of <br />
+<br/>
+<br/>
+<br />
+Date: <br />
+Company Stamp<br /><br />
+</td>
+<td style="vertical-align: top;background-color: rgb(255, 255, 255);" align="left"><br />____________________________<br/>
+Service Rendered By:  <br />
+Name: <br />
+<br/>
+On behalf of Helu-Trans (S) Pte Ltd<br/>
+<br /><br />
+Date: <br />
+Company Stamp<br />
+</td>
+</tr>
+<tr><td style="background-color: rgb(255, 255, 255);" colspan="2" align="center"><br/><br/>39 Keppel Road, Tanjong Pagar Distripark, #02-04/05 Singapore 089065 <br/>TEL: (+65) 6225 5448 | FAX: (+65) 62732282 | www.helutrans.com</td></tr>
+</tbody>
+</table>
+</body>
+</apex:page>

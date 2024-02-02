@@ -1,0 +1,534 @@
+<apex:page standardStylesheets="true"  docType="html-5.0" showheader="false">
+   <apex:slds />
+   <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+   
+   <apex:include pagename="APL_Header" />
+<div class="slds-p-around_small " style="background:url(https://www.aplapollo.com/wp-content/themes/aplapollo/images/career_section_three_bg.jpg) center center no-repeat; color:#fff;">
+<small><i class="fa fa-home slds-m-right_x-small"></i>Home &nbsp; > &nbsp; Profile</small>
+<p class="slds-text-align_center slds-text-heading_large slds-p-vertical_medium" style="font-weight:bold;">My Profile</p>
+</div>
+
+
+<div class="profile slds-grid slds-wrap slds-gutters slds-grid slds-grid_align-center slds-m-top_medium slds-m-horizontal_xx-large slds-m-vertical_large" style="background-color:#f7f7f7; margin:0px;">
+            <div class="slds-col slds-large-size_8-of-12 slds-text-align_left slds-p-vertical_xx-medium slds-p-around_small form-body">
+
+    <div class="slds-page-header" role="banner" style="height: 4.3rem;">
+      <div class="slds-media slds-media--center" style="width: 95%;float: left;margin: -10px 0px;">
+        <div class="slds-media__figure" style="background: #34becd;padding: 10px;border-radius: 5px;">
+          <i class="fa fa-user" style="font-size: xx-large;color: white;"></i>
+        </div>
+        <div class="slds-media__body">
+          <p class="slds-page-header__title slds-truncate slds-align-middle" title="TechMatrix Consulting">
+Arihant Electric </p>
+          <p class="slds-text-body--small page-header__info">Anand Parbhat Industrial Area • Unlimited Customer • 11/13/15</p>
+        </div>
+      </div>
+        <!-- <div class="slds-col slds-no-flex slds-grid slds-align-top"> -->
+          <!-- <div class="slds-button-group" role="group"> -->
+            <!-- <button class="slds-button slds-button--neutral">Edit</button> -->
+          <!-- </div> -->
+        <!-- </div>   -->
+    </div>
+                <!-- PI Form::START -->
+                <form class="profile-form slds-p-around_medium box">
+                    <fieldset class="slds-form--compound">
+                      <legend class="slds-form-element__label">Basic Details</legend>
+                      <div class="form-element__group">
+                        <div class="slds-form-element__row slds-wrap slds-wrap">
+                          <div class="slds-form-element slds-col slds-size_1-of-1 slds-p-bottom_x-small slds-p-bottom_x-small slds-large-size--1-of-2">
+                            <label class="slds-form-element__label" for="input-01">First Name</label>
+                            <input id="input-01" class="slds-input" type="text" value="Amanjit" />
+                          </div>
+                          <div class="slds-form-element slds-col slds-size_1-of-1 slds-p-bottom_x-small slds-large-size--1-of-2">
+                            <label class="slds-form-element__label" for="input-02">Last Name</label>
+                            <input id="input-02" class="slds-input" type="text" value="Singh" />
+                          </div>
+                        </div>
+                        <div class="slds-form-element__row slds-wrap slds-wrap">
+                          <div class="slds-form-element slds-col slds-size_1-of-1 slds-p-bottom_x-small slds-large-size--1-of-2">
+                            <label class="slds-form-element__label" for="input-01">Email</label>
+                            <input id="input-01" class="slds-input" type="text" value="info@arihantElectric.com " />
+                          </div>
+                          <div class="slds-form-element slds-col slds-size_1-of-1 slds-p-bottom_x-small slds-large-size--1-of-2">
+                            <label class="slds-form-element__label" for="input-02">Phone</label>
+                            <input id="input-02" class="slds-input" type="text" value="+919152756295" />
+                          </div>
+                        </div>
+                      </div>
+                    </fieldset>
+                    <fieldset class="slds-form--compound">
+                      <legend class="slds-form-element__label">Primary Address</legend>
+                      <div class="form-element__group">
+                        <div class="slds-form-element__row slds-wrap slds-wrap">
+                          <div class="slds-form-element slds-col slds-size_1-of-1 slds-p-bottom_x-small slds-size--1-of-1">
+                            <label class="slds-form-element__label" for="input-03">Street</label>
+                            <input id="input-03" class="slds-input" type="text" value=" J-40, Gali Number -8, Anand Parbat Industrial Area" />
+                          </div>
+                        </div>
+                        <div class="slds-form-element__row slds-wrap slds-wrap">
+                          <div class="slds-form-element slds-col slds-size_1-of-1 slds-p-bottom_x-small slds-large-size--1-of-2">
+                            <label class="slds-form-element__label" for="input-04">City</label>
+                            <input id="input-04" class="slds-input" type="text" value="Delhi" />
+                          </div>
+                          <div class="slds-form-element slds-col slds-size_1-of-1 slds-p-bottom_x-small slds-large-size--1-of-2">
+                            <label class="slds-form-element__label" for="input-05">State</label>
+                            <input id="input-05" class="slds-input" type="text" value="Delhi" />
+                          </div>
+                        </div>
+                        <div class="slds-form-element__row slds-wrap slds-wrap">
+                          <div class="slds-form-element slds-col slds-size_1-of-1 slds-p-bottom_x-small slds-large-size--1-of-2">
+                            <label class="slds-form-element__label" for="input-06">ZIP Code</label>
+                            <input id="input-06" class="slds-input" type="text" value="110005 " />
+                          </div>
+                          <div class="slds-form-element slds-col slds-size_1-of-1 slds-p-bottom_x-small  slds-large-size--1-of-2">
+                             <label class="slds-form-element__label" for="input-06">Default Pick-up Address</label>
+                            <label class="slds-checkbox_toggle slds-grid">
+                            <input aria-describedby="checkbox-toggle-16" name="checkbox-toggle-16" type="checkbox" value="checkbox-toggle-16" />
+                            <span aria-live="assertive" class="slds-checkbox_faux_container" id="checkbox-toggle-16">
+                              <span class="slds-checkbox_faux"></span>
+                              <span class="slds-checkbox_on">Enabled</span>
+                              <span class="slds-checkbox_off">Disabled</span>
+                            </span>
+                          </label>
+                          </div>
+                        </div>
+                      </div>
+                    </fieldset>
+                    <fieldset class="slds-form--compound">
+                      <legend class="slds-form-element__label">Secondary Address</legend>
+                      <div class="form-element__group">
+                        <div class="slds-form-element__row slds-wrap slds-wrap">
+                          <div class="slds-form-element slds-col slds-size_1-of-1 slds-p-bottom_x-small slds-large-size--1-of-1">
+                            <label class="slds-form-element__label" for="input-03">Street</label>
+                            <input id="input-03" class="slds-input" type="text" value="47 A,Hasanpur, Block E" />
+                          </div>
+                        </div>
+                        <div class="slds-form-element__row slds-wrap slds-wrap">
+                          <div class="slds-form-element slds-col slds-size_1-of-1 slds-p-bottom_x-small  slds-large-size--1-of-2">
+                            <label class="slds-form-element__label" for="input-04">City</label>
+                            <input id="input-04" class="slds-input" type="text" value="Delhi" />
+                          </div>
+                          <div class="slds-form-element slds-col slds-size_1-of-1 slds-p-bottom_x-small  slds-large-size--1-of-2">
+                            <label class="slds-form-element__label" for="input-05">State</label>
+                            <input id="input-05" class="slds-input" type="text" value="Delhi" />
+                          </div>
+                        </div>
+                        <div class="slds-form-element__row slds-wrap slds-wrap">
+                          <div class="slds-form-element slds-col slds-size_1-of-1 slds-p-bottom_x-small slds-large-size--1-of-2">
+                            <label class="slds-form-element__label" for="input-06">ZIP Code</label>
+                            <input id="input-06" class="slds-input" type="text" value="201020" />
+                          </div>
+
+                          <div class="slds-form-element slds-col slds-size_1-of-1 slds-p-bottom_x-small slds-large-size--1-of-2">
+                             <label class="slds-form-element__label" for="input-06">Default Pick-up Address</label>
+                            <label class="slds-checkbox_toggle slds-grid">
+                            <input aria-describedby="checkbox-toggle-16" name="checkbox-toggle-16" type="checkbox" value="checkbox-toggle-16" checked="checked" />
+                            <span aria-live="assertive" class="slds-checkbox_faux_container" id="checkbox-toggle-16">
+                              <span class="slds-checkbox_faux"></span>
+                              <span class="slds-checkbox_on">Enabled</span>
+                              <span class="slds-checkbox_off">Disabled</span>
+                            </span>
+                          </label>
+                          </div>
+                        </div>
+                      </div>
+                    </fieldset>
+                    <fieldset class="slds-form--compound">
+                      <legend class="slds-form-element__label">Documents</legend>
+                      </fieldset> 
+                      <div style="overflow-x:auto;">
+                      <table class="slds-table slds-table--bordered slds-table--cell-buffer">
+  <thead>
+    <tr class="slds-text-heading--label">
+      <th scope="col">
+        <div class="slds-truncate" title="Document Name">Doc Name</div>
+      </th>
+      <th scope="col">
+        <div class="slds-truncate" title="Number">Number</div>
+      </th>
+      <th scope="col">
+        <div class="slds-truncate" title="Status">Status</div>
+      </th>
+      <th scope="col">
+        <div class="slds-truncate" title="Edit">Edit</div>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row" data-label="Opportunity Name">
+        <div class="slds-truncate" title="PAN Card"><a href="javascript:void(0);">PAN Card</a></div>
+      </th>
+      <td data-label="Account Name">
+        <div class="slds-truncate" title="ABC6758142">ABC6758142</div>
+      </td>
+      <td data-label="Close Date">
+        <div class="slds-truncate" title=""><i class="fa fa-check" style="color: #30ca6d;font-size: small;"></i></div>
+      </td>
+      <td data-label="Prospecting">
+        <div class="slds-truncate" title=""></div>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row" data-label="Opportunity Name">
+        <div class="slds-truncate" title="CIN Number"><a href="javascript:void(0);">CIN Number</a></div>
+      </th>
+      <td data-label="Account Name">
+        <div class="slds-truncate" title="2587f893856c">2587f893856c</div>
+      </td>
+      <td data-label="Close Date">
+        <div class="slds-truncate" title=""><i class="fa fa-check" style="color: #30ca6d;font-size: small;"></i></div>
+      </td>
+      <td data-label="Prospecting">
+        <div class="slds-truncate" title=""></div>
+      </td>
+      
+    </tr>
+    <tr>
+      <th scope="row" data-label="Opportunity Name">
+        <div class="slds-truncate" title="Aadhaar"><a href="javascript:void(0);">Aadhaar</a></div>
+      </th>
+      <td data-label="Account Name">
+        <div class="slds-truncate" title="27755817-c176-4b81">27755817-c176-4b81</div>
+      </td>
+      <td data-label="Close Date">
+        <div class="slds-truncate" title=""><i class="fa fa-times" style="color: red;font-size: small;"></i></div>
+      </td>
+      <td data-label="Prospecting">
+        <div class="slds-truncate" title=""><a href="javascript:void(0);">Edit</a></div>
+      </td>
+      
+    </tr>
+  </tbody>
+</table>
+                      
+                      
+                      
+
+                </div>
+                <!-- Documents Table:: END -->  
+                <div class="slds-grid slds-grid--align-center slds-m-top_medium">
+                        <button class="slds-button slds-button--neutral slds-p-horizontal_large" style="background-color:#f5863f; color:#fff;">
+                        <i class="fa fa-download" style="color: white;font-size: small;"></i>&nbsp;
+                        Save</button>
+                </div>
+                
+                </form>
+<!-- PI Form:: END -->              
+            </div>
+            
+            <div class="slds-col slds-large-size_4-of-12 slds-p-vertical_xx-medium slds-p-around_small form-body">
+            <div class="slds-page-header" role="banner" style="height: 2.8rem;">
+      <div class="slds-media slds-media--center" style="width: 95%;float: left;margin: -10px 0px;">
+        <div class="slds-media__figure" style="background: #87b296;padding: 5px 10px;border-radius: 5px;">
+          <i class="fa  fa-money" style="font-size: 18px;color: white;"></i>
+        </div>
+        <div class="slds-media__body">
+          <p class="slds-page-header__title slds-truncate slds-align-middle" title="TechMatrix Consulting">Payment Pending</p>
+        </div>
+      </div>
+    </div>
+     <table class="slds-table slds-table--bordered slds-table--cell-buffer slds-border_right slds-border_left slds-m-bottom_medium">
+                  <thead>
+                    <tr class="slds-text-heading--label">
+                      <th scope="col">
+                        <div class="slds-truncate" title="Date">Date</div>
+                      </th>
+                      <th scope="col">
+                        <div class="slds-truncate" title="Number">Order Number</div>
+                      </th>
+                      <th scope="col">
+                        <div class="slds-truncate" title="Amount">Amount</div>
+                      </th>
+                      <th scope="col">
+                        <div class="slds-truncate" title="Status">Status</div>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row" data-label="Opportunity Name">
+                        <div class="slds-truncate" title="Charu Rajendra"><a href="javascript:void(0);">2/02/2020</a></div>
+                      </th>
+                      <td data-label="Account Name">
+                        <div class="slds-truncate" title="ABC6758142">9887778</div>
+                      </td>
+                      <td data-label="Close Date">
+                        <div class="slds-truncate" title="Verified">₹5,000</div>
+                      </td>
+                      <td data-label="Confidence">
+                        <div class="slds-truncate" title="Edit">Pending</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row" data-label="Opportunity Name">
+                        <div class="slds-truncate" title="Mohanlal Trivedi"><a href="javascript:void(0);">15/02/2020</a></div>
+                      </th>
+                      <td data-label="Account Name">
+                        <div class="slds-truncate" title="2587f893856c">976453</div>
+                      </td>
+                      <td data-label="Close Date">
+                        <div class="slds-truncate" title="Verified">₹10,000</div>
+                      </td>
+                      <td class="slds-truncate_container_25" data-label="Confidence">
+                        <div class="slds-truncate" title="Payment Recialliation">Pending</div>
+                      </td>
+                    </tr>
+
+                  </tbody>
+                </table>
+    
+    
+    <div class="slds-page-header" role="banner" style="height: 2.8rem;">
+      <div class="slds-media slds-media--center" style="width: 95%;float: left;margin: -10px 0px;">
+        <div class="slds-media__figure" style="background: #87b296;padding: 5px 10px;border-radius: 5px;">
+          <i class="fa  fa-money" style="font-size: 18px;color: white;"></i>
+        </div>
+        <div class="slds-media__body">
+          <p class="slds-page-header__title slds-truncate slds-align-middle" title="TechMatrix Consulting">Last Transactions
+</p>
+        </div>
+      </div>
+    </div>
+     <table class="slds-table slds-table--bordered slds-table--cell-buffer slds-border_right slds-border_left slds-m-bottom_medium">
+                  <thead>
+                    <tr class="slds-text-heading--label">
+                      <th scope="col">
+                        <div class="slds-truncate" title="Date">Date</div>
+                      </th>
+                      <th scope="col">
+                        <div class="slds-truncate" title="Number">Order Number</div>
+                      </th>
+                      <th scope="col">
+                        <div class="slds-truncate" title="Amount">Amount</div>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row" data-label="Opportunity Name">
+                        <div class="slds-truncate" title="Charu Rajendra"><a href="javascript:void(0);">29/01/2020</a></div>
+                      </th>
+                      <td data-label="Account Name">
+                        <div class="slds-truncate" title="ABC6758142">9887778</div>
+                      </td>
+                      <td data-label="Close Date">
+                        <div class="slds-truncate" title="Verified">₹1,05,000</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row" data-label="Opportunity Name">
+                        <div class="slds-truncate" title="Mohanlal Trivedi"><a href="javascript:void(0);">1/02/2020</a></div>
+                      </th>
+                      <td data-label="Account Name">
+                        <div class="slds-truncate" title="2587f893856c">906453</div>
+                      </td>
+                      <td data-label="Close Date">
+                        <div class="slds-truncate" title="Verified">₹25,000</div>
+                      </td>
+                    </tr>
+                       <tr>
+                      <th scope="row" data-label="Opportunity Name">
+                        <div class="slds-truncate" title="Mohanlal Trivedi"><a href="javascript:void(0);">7/10/2020</a></div>
+                      </th>
+                      <td data-label="Account Name">
+                        <div class="slds-truncate" title="2587f893856c">706757</div>
+                      </td>
+                      <td data-label="Close Date">
+                        <div class="slds-truncate" title="Verified">₹65,000</div>
+                      </td>
+                    </tr>
+                       <tr>
+                      <th scope="row" data-label="Opportunity Name">
+                        <div class="slds-truncate" title="Mohanlal Trivedi"><a href="javascript:void(0);">12/12/2020</a></div>
+                      </th>
+                      <td data-label="Account Name">
+                        <div class="slds-truncate" title="2587f893856c">637485</div>
+                      </td>
+                      <td data-label="Close Date">
+                        <div class="slds-truncate" title="Verified">₹125,000</div>
+                      </td>
+                    </tr>
+                       <tr>
+                      <th scope="row" data-label="Opportunity Name">
+                        <div class="slds-truncate" title="Mohanlal Trivedi"><a href="javascript:void(0);">9/04/2020</a></div>
+                      </th>
+                      <td data-label="Account Name">
+                        <div class="slds-truncate" title="2587f893856c">453983</div>
+                      </td>
+                      <td data-label="Close Date">
+                        <div class="slds-truncate" title="Verified">₹75,000</div>
+                      </td>
+                    </tr>
+                       <tr>
+                      <th scope="row" data-label="Opportunity Name">
+                        <div class="slds-truncate" title="Mohanlal Trivedi"><a href="javascript:void(0);">9/09/2020</a></div>
+                      </th>
+                      <td data-label="Account Name">
+                        <div class="slds-truncate" title="2587f893856c">906453</div>
+                      </td>
+                      <td data-label="Close Date">
+                        <div class="slds-truncate" title="Verified">₹88,000</div>
+                      </td>
+                    </tr>
+                      
+                       <tr>
+                      <th scope="row" data-label="Opportunity Name">
+                        <div class="slds-truncate" title="Mohanlal Trivedi"><a href="javascript:void(0);">9/12/2020</a></div>
+                      </th>
+                      <td data-label="Account Name">
+                        <div class="slds-truncate" title="2587f893856c">649853</div>
+                      </td>
+                      <td data-label="Close Date">
+                        <div class="slds-truncate" title="Verified">₹85,000</div>
+                      </td>
+                    </tr>
+
+                  </tbody>
+                </table>
+    
+    
+   <!-- <div class="slds-page-header" role="banner" style="height: 2.8rem;">
+      <div class="slds-media slds-media--center" style="width: 95%;float: left;margin: -10px 0px;">
+        <div class="slds-media__figure" style="background: #87b296;padding: 5px 10px;border-radius: 5px;">
+          <i class="fa  fa-share-alt" style="font-size: 18px;color: white;"></i>
+        </div>
+        <div class="slds-media__body">
+          <p class="slds-page-header__title slds-truncate slds-align-middle" title="TechMatrix Consulting">Influencer Leads </p>
+        </div>
+      </div>
+    </div>
+    <div class="box slds-p-around_small slds-m-bottom_medium" >
+    <div class="demo-only ">
+  <div class="slds-media">
+    <div class="slds-media__figure">
+      <span class="">
+        <img alt="Person name" src="https://www.aplapollo.com/wp-content/uploads/2019/01/product-new-img.png" title="Product" style="width:77px;" />
+      </span>
+    </div>
+    <div class="slds-media__body  slds-align-middle">
+      <p class="slds-text-heading_small"><strong>TechMatrix Consulting, MS Black Pipe</strong> </p>
+      <p class="slds-text-body--small page-header__info">997747899 • info@tmc.com </p>
+      <p class="">Status - <strong class="slds-text-color_success">Active</strong> </p>
+    </div>
+  </div>
+  <hr class="slds-m-vertical_small"/>
+  
+  <div class="slds-media">
+    <div class="slds-media__figure">
+      <span class="">
+        <img alt="Person name" src="https://www.aplapollo.com/wp-content/uploads/2019/01/new-produc2.png" title="Product" style="width:77px;" />
+      </span>
+    </div>
+    <div class="slds-media__body  slds-align-middle">
+      <p class="slds-text-heading_small"><strong>Torp-Price, Pre-Galvanised Tube</strong> </p>
+      <p class="slds-text-body--small page-header__info">982279098 • ablitzer@example.com </p>
+      <p class="">Status - <strong class="slds-text-color_success">Active</strong> </p>
+    </div>
+  </div>
+   <hr class="slds-m-vertical_small"/>
+   <div class="slds-media">
+    <div class="slds-media__figure">
+      <span class="">
+        <img alt="Person name" src="https://www.aplapollo.com/wp-content/uploads/2019/01/product-new-img.png" title="Product" style="width:77px;" />
+      </span>
+    </div>
+    <div class="slds-media__body  slds-align-middle">
+      <p class="slds-text-heading_small"><strong>Kerluke Group, MS Black Pipe</strong> </p>
+      <p class="slds-text-body--small page-header__info">975555054 • ahorst@example.com </p>
+      <p class="">Status - <strong class="slds-text-color_success">Active</strong> </p>
+    </div>
+  </div>
+</div>
+    </div>-->
+    
+
+
+                
+            
+            </div>
+<br/>
+        <br/>
+        <br/>
+        <br/>
+        </div>
+        
+       
+<div class="slds-grid  slds-grid_align-center slds-p-around_small mx-0 footer" style="background-color:#436e79; color:#fff;">
+   <div class="slds-size_6-of-12 slds-text-align_center">
+     Copyright © 2020 APL Apollo. All right reserved.
+   </div>
+   </div>
+ 
+<div id="register" class="slds-hide"> 
+<section role="dialog" tabindex="-1" aria-label="Meaningful description of the modal content" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+  <div class="slds-modal__container">
+    <header class="slds-modal__header">
+      <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" onclick="closemodal();" title="Close">
+        <i class="fa fa-times"></i>
+        <span class="slds-assistive-text">Close</span>
+      </button>
+      <h2 id="modal-heading-01" class="slds-modal__title slds-hyphenate" style="font-weight:bold;">Contact Us</h2>
+    </header>
+    <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+    <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+     
+
+<input type="hidden" name="oid" value="00D2w000008oftm" />
+<input type="hidden" name="retURL" value="https://www.aplapollo.com/" />
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+<!--  these lines if you wish to test in debug mode.                          -->
+<!--  <input type="hidden" name="debug" value=1>                              -->
+<!--  <input type="hidden" name="debugEmail"                                  -->
+<!--  value="surinderpal.singh.0@riqcrm.com">                                 -->
+<!--  ----------------------------------------------------------------------  -->
+
+<div class="slds-grid slds-wrap slds-gutters">
+<!--<div class="slds-col slds-large-size_6-of-12 slds-p-bottom_x-small">
+<select  id="industry" name="industry" class="slds-select"><option value="">--Industry--</option><option value="Architects">Architects</option>
+<option value="Civil Engineers">Civil Engineers</option>
+<option value="Engineering Consultants">Engineering Consultants</option>
+<option value="Fabricators">Fabricators</option>
+<option value="Interior Designers">Interior Designers</option>
+<option value="Builders">Builders</option>
+<option value="Home Owners">Home Owners</option>
+<option value="Others">Others</option>
+</select>
+</div>
+<div class="slds-col slds-large-size_6-of-12 slds-p-bottom_x-small">
+<input  id="city" placeholder="City" maxlength="40" name="city" size="20" type="text" class="slds-input" required="true" />
+</div>-->
+<div class="slds-col slds-large-size_6-of-12 slds-p-bottom_x-small">
+<input  id="first_name" maxlength="40" placeholder="First Name" name="first_name" value="Amanjit" size="20" type="text" class="slds-input" required="true" />
+</div>
+<div class="slds-col slds-large-size_6-of-12 slds-p-bottom_x-small">
+<input  id="last_name" placeholder="Last Name" maxlength="80" name="last_name" value="Singh" size="20" type="text" class="slds-input" required="true" />
+</div>
+
+<div class="slds-col slds-large-size_6-of-12 slds-p-bottom_x-small">
+<input  id="email" placeholder="Email" maxlength="80" name="email" value="info@arihantpipe.com " size="20" type="text" class="slds-input" required="true" />
+</div>
+<div class="slds-col slds-large-size_6-of-12 slds-p-bottom_x-small">
+<input  id="phone" placeholder="Phone" maxlength="40" name="phone" value="+919152756295" size="20" type="text" class="slds-input" required="true" />
+</div>
+</div>
+<textarea name="description" placeholder="Description" class="slds-textarea"></textarea>
+
+
+
+
+    </div>
+    <footer class="slds-modal__footer">
+      <!--<input type="submit" name="submit">-->
+      <button type="submit" name="submit" class="slds-button slds-p-horizontal_large" style="background-color:#f5863f; border-color:#f5863f; color:#fff !important;">Submit</button>
+    </footer>
+    </form>
+  </div>
+</section>
+<div class="slds-backdrop slds-backdrop_open"></div> 
+</div>    
+   
+</html>
+</apex:page>

@@ -1,0 +1,28 @@
+<template>
+	<div class="slds-path">
+		<div class="slds-grid slds-path__track">
+			<div class="slds-grid slds-path__scroller-container">
+				<div class="slds-path__scroller">
+					<div class="slds-path__scroller_inner">
+						<ul class="slds-path__nav" role="listbox" aria-orientation="horizontal">
+							<template for:each={items} for:item="stagevalue">
+
+								<li key={stagevalue.value} onclick={handlestageValue}
+									data-id={stagevalue.Id} class="slds-path__item slds-is-incomplete"
+									aria-expanded="true" role="presentation" id={stagevalue.value}>
+									<a class="slds-path__link" role="option" tabindex="-1">
+										<span class="slds-path__stage">
+                                        <lightning-icon icon-name="action:approval" alternative-text="Approved" title="Approved" style="background-color: rgb(69, 198, 90);" size="xx-small"></lightning-icon>
+                                        </span>
+
+										<span class="slds-path__title">{stagevalue.value}</span>
+									</a>
+								</li>
+							</template>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</template>
